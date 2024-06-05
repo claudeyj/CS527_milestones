@@ -1,0 +1,23 @@
+diff -x .* -x .git -x repairnator.maven.*.log -x target -ruw /Users/jun/Documents/TA/CS527/milestone_answer/subjects/Bears/Bears-122/Buggy-Version/src/org/traccar/protocol/Gl200TextProtocolDecoder.java /Users/jun/Documents/TA/CS527/milestone_answer/subjects/Bears/Bears-122/Patched-Version/src/org/traccar/protocol/Gl200TextProtocolDecoder.java
+--- /Users/jun/Documents/TA/CS527/milestone_answer/subjects/Bears/Bears-122/Buggy-Version/src/org/traccar/protocol/Gl200TextProtocolDecoder.java	2024-05-26 20:56:37
++++ /Users/jun/Documents/TA/CS527/milestone_answer/subjects/Bears/Bears-122/Patched-Version/src/org/traccar/protocol/Gl200TextProtocolDecoder.java	2024-05-26 20:56:40
+@@ -76,7 +76,7 @@
+             .number("(?:d),")                    // led
+             .number("(?:d)?,")                   // gps on need
+             .number("(?:d)?,")                   // gps antenna type
+-            .number("(?:d),").optional()         // gps antenna state
++            .number("(?:d)?,").optional()        // gps antenna state
+             .number("d{14},")                    // last fix time
+             .groupBegin()
+             .number("(d+),")                     // battery percentage
+@@ -388,10 +388,6 @@
+     }
+ 
+     private Object decodeInf(Channel channel, SocketAddress remoteAddress, String sentence) {
+-
+-        org.traccar.helper.PatternUtil.MatchResult matchResult =
+-                org.traccar.helper.PatternUtil.checkPattern(PATTERN_INF.pattern(), sentence);
+-
+         Parser parser = new Parser(PATTERN_INF, sentence);
+         Position position = initPosition(parser, channel, remoteAddress);
+         if (position == null) {

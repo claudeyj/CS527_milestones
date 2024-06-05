@@ -1,0 +1,2075 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../style.css');
+        @import url('../../tree.css');
+        
+    </style>
+
+    <script src="../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../clover.js" type="text/javascript"></script>
+    <script src="../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../cloud.js" type="text/javascript"></script>
+
+            <title>traccar 3.10-SNAPSHOT</title>
+    </head>
+
+<body  >
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="https://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="https://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                    <a href="https://www.traccar.org" target="_top">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+                    </a>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                            <a href="https://www.traccar.org" target="_top">
+                                        traccar 3.10-SNAPSHOT
+                                        </a>
+                    </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../" data-package-name="org.traccar">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="../../dashboard.html">Project Clover database Wed Jun 5 2024 13:25:39 CST</a></li> 
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            Package org.traccar
+    </h1>
+<div class="aui-tabs horizontal-tabs">
+            <ul class="tabs-menu">
+                <li class="menu-item ">
+            <a href="pkg-summary.html"><strong>Application code</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="testsrc-pkg-summary.html"><strong>Test code</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="test-pkg-summary.html"><strong>Test results</strong></a>
+        </li>
+                <li class="menu-item active-tab">
+            <a href="top-risks.html"><strong>Top risks</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="quick-wins.html"><strong>Quick wins</strong></a>
+        </li>
+                            </ul>
+    <div class="tabs-pane active-pane" id="tabs-first">
+
+        <div>&#160;</div>
+
+        
+
+
+                        <div style="text-align: right; margin-bottom: 10px">
+            
+                            <button id="cloudDepthCheckbox" class="aui-button active"
+                        onclick="showDeepPackageCloud(this)">Include classes from sub-packages</button>
+            
+                                    <button class="aui-button aui-button-subtle" id="popupHelp">
+    <span class="aui-icon aui-icon-small aui-iconfont-help"></span>&#160;How to read this chart
+</button>
+<script>
+    AJS.InlineDialog(AJS.$("#popupHelp"), "helpDialog",
+            function (content, trigger, showPopup) {
+                var description = topRisksDescription();
+                var title = 'Top Risks';
+                content.css({"padding": "20px"}).html(
+                        '<h2>' + title + '</h2>' + description);
+                showPopup();
+                return false;
+            },
+            {
+                width: 600
+            }
+    );
+</script>
+        </div>
+
+        
+
+<div style="padding: 20px; border: 1px solid #cccccc; background-color: #f5f5f5; border-radius: 3px">
+          <div id="deepPackageCloud"  >
+                          
+    
+        
+    
+            <a href="../traccar/geocoder/Address.html" class="tag"
+            style="font-size: 14px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 75% ">Address</a>
+            
+    
+            <a href="../traccar/geocoder/AddressFormat.html" class="tag"
+            style="font-size: 14px;color:#14892c"
+            title="Average Method Complexity - 1.2 , Coverage - 84.6% ">AddressFormat</a>
+            
+    
+            <a href="../traccar/protocol/AdmProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">AdmProtocol</a>
+            
+    
+            <a href="../traccar/protocol/AdmProtocolDecoder.html" class="tag"
+            style="font-size: 25px;color:#fae1a0"
+            title="Average Method Complexity - 5.5 , Coverage - 81.2% ">AdmProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/AisProtocol.html" class="tag"
+            style="font-size: 14px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 28.6% ">AisProtocol</a>
+            
+    
+            <a href="../traccar/protocol/AisProtocolDecoder.html" class="tag"
+            style="font-size: 24px;color:#14892c"
+            title="Average Method Complexity - 5 , Coverage - 94.4% ">AisProtocolDecoder</a>
+            
+    
+            <a href="../traccar/events/AlertEventHandler.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 2 , Coverage - 77.8% ">AlertEventHandler</a>
+            
+    
+            <a href="../traccar/protocol/ApelProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">ApelProtocol</a>
+            
+    
+            <a href="../traccar/protocol/ApelProtocolDecoder.html" class="tag"
+            style="font-size: 26px;color:#d04437"
+            title="Average Method Complexity - 6 , Coverage - 1.6% ">ApelProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/AplicomProtocol.html" class="tag"
+            style="font-size: 14px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 28.6% ">AplicomProtocol</a>
+            
+    
+            <a href="../traccar/protocol/AplicomProtocolDecoder.html" class="tag"
+            style="font-size: 39px;color:#f6c342"
+            title="Average Method Complexity - 11.3 , Coverage - 68.3% ">AplicomProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/AppelloProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">AppelloProtocol</a>
+            
+    
+            <a href="../traccar/protocol/AppelloProtocolDecoder.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 2.5 , Coverage - 87.1% ">AppelloProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/AquilaProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">AquilaProtocol</a>
+            
+    
+            <a href="../traccar/protocol/AquilaProtocolDecoder.html" class="tag"
+            style="font-size: 20px;color:#89c495"
+            title="Average Method Complexity - 3.5 , Coverage - 95.8% ">AquilaProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/Ardi01Protocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">Ardi01Protocol</a>
+            
+    
+            <a href="../traccar/protocol/Ardi01ProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 86.7% ">Ardi01ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/ArknavProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">ArknavProtocol</a>
+            
+    
+            <a href="../traccar/protocol/ArknavProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 84% ">ArknavProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/ArknavX8Protocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">ArknavX8Protocol</a>
+            
+    
+            <a href="../traccar/protocol/ArknavX8ProtocolDecoder.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 2.5 , Coverage - 93.9% ">ArknavX8ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/ArnaviProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">ArnaviProtocol</a>
+            
+    
+            <a href="../traccar/protocol/ArnaviProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 87.1% ">ArnaviProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/AstraProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 20% ">AstraProtocol</a>
+            
+    
+            <a href="../traccar/protocol/AstraProtocolDecoder.html" class="tag"
+            style="font-size: 20px;color:#14892c"
+            title="Average Method Complexity - 3.5 , Coverage - 88.5% ">AstraProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/At2000FrameDecoder.html" class="tag"
+            style="font-size: 25px;color:#f6c342"
+            title="Average Method Complexity - 5.5 , Coverage - 65.8% ">At2000FrameDecoder</a>
+            
+    
+            <a href="../traccar/protocol/AtrackProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 20% ">AtrackProtocol</a>
+            
+    
+            <a href="../traccar/protocol/AtrackProtocolDecoder.html" class="tag"
+            style="font-size: 27px;color:#e7a19b"
+            title="Average Method Complexity - 6.286 , Coverage - 55.2% ">AtrackProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/AuroProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">AuroProtocol</a>
+            
+    
+            <a href="../traccar/protocol/AuroProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 85.2% ">AuroProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/AutoFonProtocol.html" class="tag"
+            style="font-size: 14px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 28.6% ">AutoFonProtocol</a>
+            
+    
+            <a href="../traccar/protocol/AutoFonProtocolDecoder.html" class="tag"
+            style="font-size: 22px;color:#fae1a0"
+            title="Average Method Complexity - 4.2 , Coverage - 80.8% ">AutoFonProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/AutoGradeProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">AutoGradeProtocol</a>
+            
+    
+            <a href="../traccar/protocol/AutoGradeProtocolDecoder.html" class="tag"
+            style="font-size: 19px;color:#14892c"
+            title="Average Method Complexity - 3 , Coverage - 88.9% ">AutoGradeProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/Avl301Protocol.html" class="tag"
+            style="font-size: 14px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 28.6% ">Avl301Protocol</a>
+            
+    
+            <a href="../traccar/protocol/Avl301ProtocolDecoder.html" class="tag"
+            style="font-size: 20px;color:#fae1a0"
+            title="Average Method Complexity - 3.5 , Coverage - 77.6% ">Avl301ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/BaseDataHandler.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 2 , Coverage - 66.7% ">BaseDataHandler</a>
+            
+    
+            <a href="../traccar/BaseProtocol.html" class="tag"
+            style="font-size: 15px;color:#d9695f"
+            title="Average Method Complexity - 1.6 , Coverage - 24% ">BaseProtocol</a>
+            
+    
+            <a href="../traccar/BaseProtocolDecoder.html" class="tag"
+            style="font-size: 24px;color:#de7b72"
+            title="Average Method Complexity - 5.125 , Coverage - 36.8% ">BaseProtocolDecoder</a>
+            
+    
+            <a href="../traccar/BaseProtocolEncoder.html" class="tag"
+            style="font-size: 17px;color:#de7b72"
+            title="Average Method Complexity - 2.333 , Coverage - 35.5% ">BaseProtocolEncoder</a>
+            
+    
+            <a href="../traccar/reports/model/BaseReport.html" class="tag"
+            style="font-size: 14px;color:#f6c342"
+            title="Average Method Complexity - 1.091 , Coverage - 72% ">BaseReport</a>
+            
+    
+            <a href="../traccar/BaseTest.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">BaseTest</a>
+            
+    
+            <a href="../traccar/helper/BcdUtil.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 2 , Coverage - 96.9% ">BcdUtil</a>
+            
+    
+            <a href="../traccar/protocol/BceProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">BceProtocol</a>
+            
+    
+            <a href="../traccar/protocol/BceProtocolDecoder.html" class="tag"
+            style="font-size: 36px;color:#fae1a0"
+            title="Average Method Complexity - 10 , Coverage - 74.5% ">BceProtocolDecoder</a>
+            
+    
+            <a href="../traccar/helper/BitBuffer.html" class="tag"
+            style="font-size: 18px;color:#89c495"
+            title="Average Method Complexity - 2.5 , Coverage - 100% ">BitBuffer</a>
+            
+    
+            <a href="../traccar/helper/BitUtil.html" class="tag"
+            style="font-size: 14px;color:#14892c"
+            title="Average Method Complexity - 1 , Coverage - 93.3% ">BitUtil</a>
+            
+    
+            <a href="../traccar/protocol/BlackKiteProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">BlackKiteProtocol</a>
+            
+    
+            <a href="../traccar/protocol/BlackKiteProtocolDecoder.html" class="tag"
+            style="font-size: 36px;color:#fae1a0"
+            title="Average Method Complexity - 10 , Coverage - 76.1% ">BlackKiteProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/BoxProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">BoxProtocol</a>
+            
+    
+            <a href="../traccar/protocol/BoxProtocolDecoder.html" class="tag"
+            style="font-size: 21px;color:#14892c"
+            title="Average Method Complexity - 4 , Coverage - 89.1% ">BoxProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/CalAmpProtocol.html" class="tag"
+            style="font-size: 14px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 33.3% ">CalAmpProtocol</a>
+            
+    
+            <a href="../traccar/protocol/CalAmpProtocolDecoder.html" class="tag"
+            style="font-size: 30px;color:#fae1a0"
+            title="Average Method Complexity - 7.75 , Coverage - 81.2% ">CalAmpProtocolDecoder</a>
+            
+    
+            <a href="../traccar/model/Calendar.html" class="tag"
+            style="font-size: 15px;color:#f6c342"
+            title="Average Method Complexity - 1.5 , Coverage - 64% ">Calendar</a>
+            
+    
+            <a href="../traccar/protocol/CarTrackProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">CarTrackProtocol</a>
+            
+    
+            <a href="../traccar/protocol/CarTrackProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 89.2% ">CarTrackProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/CarscopProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">CarscopProtocol</a>
+            
+    
+            <a href="../traccar/protocol/CarscopProtocolDecoder.html" class="tag"
+            style="font-size: 18px;color:#89c495"
+            title="Average Method Complexity - 2.5 , Coverage - 100% ">CarscopProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/CastelProtocol.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="Average Method Complexity - 1 , Coverage - 14.3% ">CastelProtocol</a>
+            
+    
+            <a href="../traccar/protocol/CastelProtocolDecoder.html" class="tag"
+            style="font-size: 22px;color:#fae1a0"
+            title="Average Method Complexity - 4.545 , Coverage - 81.9% ">CastelProtocolDecoder</a>
+            
+    
+            <a href="../traccar/model/CellTower.html" class="tag"
+            style="font-size: 14px;color:#14892c"
+            title="Average Method Complexity - 1 , Coverage - 84.6% ">CellTower</a>
+            
+    
+            <a href="../traccar/protocol/CellocatorProtocol.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="Average Method Complexity - 1 , Coverage - 14.3% ">CellocatorProtocol</a>
+            
+    
+            <a href="../traccar/protocol/CellocatorProtocolDecoder.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 2.667 , Coverage - 90.9% ">CellocatorProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/CguardProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">CguardProtocol</a>
+            
+    
+            <a href="../traccar/protocol/CguardProtocolDecoder.html" class="tag"
+            style="font-size: 21px;color:#14892c"
+            title="Average Method Complexity - 4 , Coverage - 92.1% ">CguardProtocolDecoder</a>
+            
+    
+            <a href="../traccar/helper/Checksum.html" class="tag"
+            style="font-size: 18px;color:#fae1a0"
+            title="Average Method Complexity - 2.6 , Coverage - 82.4% ">Checksum</a>
+            
+    
+            <a href="../traccar/protocol/CityeasyProtocol.html" class="tag"
+            style="font-size: 14px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 33.3% ">CityeasyProtocol</a>
+            
+    
+            <a href="../traccar/protocol/CityeasyProtocolDecoder.html" class="tag"
+            style="font-size: 20px;color:#14892c"
+            title="Average Method Complexity - 3.5 , Coverage - 90.2% ">CityeasyProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/CityeasyProtocolEncoder.html" class="tag"
+            style="font-size: 20px;color:#e7a19b"
+            title="Average Method Complexity - 3.5 , Coverage - 61.1% ">CityeasyProtocolEncoder</a>
+            
+    
+            <a href="../traccar/events/CommandResultEventHandler.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 2 , Coverage - 77.8% ">CommandResultEventHandler</a>
+            
+    
+            <a href="../traccar/Config.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 2 , Coverage - 53.8% ">Config</a>
+            
+    
+            <a href="../traccar/Context.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="Average Method Complexity - 2 , Coverage - 7.4% ">Context</a>
+            
+    
+            <a href="../traccar/protocol/CradlepointProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">CradlepointProtocol</a>
+            
+    
+            <a href="../traccar/protocol/CradlepointProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 84.6% ">CradlepointProtocolDecoder</a>
+            
+    
+            <a href="../traccar/helper/DateBuilder.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1.048 , Coverage - 100% ">DateBuilder</a>
+            
+    
+            <a href="../traccar/helper/DateUtil.html" class="tag"
+            style="font-size: 15px;color:#fae1a0"
+            title="Average Method Complexity - 1.571 , Coverage - 81.2% ">DateUtil</a>
+            
+    
+            <a href="../traccar/model/Device.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1.091 , Coverage - 26.9% ">Device</a>
+            
+    
+            <a href="../traccar/DeviceSession.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">DeviceSession</a>
+            
+    
+            <a href="../traccar/protocol/DishaProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">DishaProtocol</a>
+            
+    
+            <a href="../traccar/protocol/DishaProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 87.9% ">DishaProtocolDecoder</a>
+            
+    
+            <a href="../traccar/helper/DistanceCalculator.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1.667 , Coverage - 95.7% ">DistanceCalculator</a>
+            
+    
+            <a href="../traccar/DistanceHandler.html" class="tag"
+            style="font-size: 17px;color:#e7a19b"
+            title="Average Method Complexity - 2.333 , Coverage - 55.2% ">DistanceHandler</a>
+            
+    
+            <a href="../traccar/protocol/EasyTrackProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">EasyTrackProtocol</a>
+            
+    
+            <a href="../traccar/protocol/EasyTrackProtocolDecoder.html" class="tag"
+            style="font-size: 19px;color:#14892c"
+            title="Average Method Complexity - 3 , Coverage - 94.9% ">EasyTrackProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/EelinkProtocol.html" class="tag"
+            style="font-size: 14px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 33.3% ">EelinkProtocol</a>
+            
+    
+            <a href="../traccar/protocol/EelinkProtocolDecoder.html" class="tag"
+            style="font-size: 27px;color:#f6c342"
+            title="Average Method Complexity - 6.667 , Coverage - 69.9% ">EelinkProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/EelinkProtocolEncoder.html" class="tag"
+            style="font-size: 19px;color:#e7a19b"
+            title="Average Method Complexity - 3 , Coverage - 60% ">EelinkProtocolEncoder</a>
+            
+    
+            <a href="../traccar/protocol/EnforaProtocol.html" class="tag"
+            style="font-size: 14px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 28.6% ">EnforaProtocol</a>
+            
+    
+            <a href="../traccar/protocol/EnforaProtocolDecoder.html" class="tag"
+            style="font-size: 19px;color:#14892c"
+            title="Average Method Complexity - 3.333 , Coverage - 84.3% ">EnforaProtocolDecoder</a>
+            
+    
+            <a href="../traccar/model/Event.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1.222 , Coverage - 23.3% ">Event</a>
+            
+    
+            <a href="../traccar/ExtendedObjectDecoder.html" class="tag"
+            style="font-size: 19px;color:#d5584c"
+            title="Average Method Complexity - 3.25 , Coverage - 8.7% ">ExtendedObjectDecoder</a>
+            
+    
+            <a href="../traccar/model/Extensible.html" class="tag"
+            style="font-size: 15px;color:#fae1a0"
+            title="Average Method Complexity - 1.6 , Coverage - 82.1% ">Extensible</a>
+            
+    
+            <a href="../traccar/protocol/ExtremTracProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">ExtremTracProtocol</a>
+            
+    
+            <a href="../traccar/protocol/ExtremTracProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 92% ">ExtremTracProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/FifotrackProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 25% ">FifotrackProtocol</a>
+            
+    
+            <a href="../traccar/protocol/FifotrackProtocolDecoder.html" class="tag"
+            style="font-size: 22px;color:#14892c"
+            title="Average Method Complexity - 4.5 , Coverage - 90.2% ">FifotrackProtocolDecoder</a>
+            
+    
+            <a href="../traccar/FilterHandler.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1.9 , Coverage - 82.9% ">FilterHandler</a>
+            
+    
+            <a href="../traccar/protocol/FlextrackProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">FlextrackProtocol</a>
+            
+    
+            <a href="../traccar/protocol/FlextrackProtocolDecoder.html" class="tag"
+            style="font-size: 19px;color:#14892c"
+            title="Average Method Complexity - 3 , Coverage - 84.2% ">FlextrackProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/FoxProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">FoxProtocol</a>
+            
+    
+            <a href="../traccar/protocol/FoxProtocolDecoder.html" class="tag"
+            style="font-size: 19px;color:#fae1a0"
+            title="Average Method Complexity - 3 , Coverage - 83.3% ">FoxProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/FreedomProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">FreedomProtocol</a>
+            
+    
+            <a href="../traccar/protocol/FreedomProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 2 , Coverage - 82.6% ">FreedomProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/GalileoFrameDecoder.html" class="tag"
+            style="font-size: 19px;color:#f6c342"
+            title="Average Method Complexity - 3 , Coverage - 63.6% ">GalileoFrameDecoder</a>
+            
+    
+            <a href="../traccar/protocol/GalileoProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">GalileoProtocol</a>
+            
+    
+            <a href="../traccar/protocol/GalileoProtocolDecoder.html" class="tag"
+            style="font-size: 26px;color:#14892c"
+            title="Average Method Complexity - 6 , Coverage - 92.3% ">GalileoProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/GatorProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 20% ">GatorProtocol</a>
+            
+    
+            <a href="../traccar/protocol/GatorProtocolDecoder.html" class="tag"
+            style="font-size: 18px;color:#fae1a0"
+            title="Average Method Complexity - 2.5 , Coverage - 75.9% ">GatorProtocolDecoder</a>
+            
+    
+            <a href="../traccar/geofence/GeofenceCircle.html" class="tag"
+            style="font-size: 17px;color:#f6c342"
+            title="Average Method Complexity - 2.333 , Coverage - 65.3% ">GeofenceCircle</a>
+            
+    
+            <a href="../traccar/geofence/GeofenceGeometry.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">GeofenceGeometry.Coordinate</a>
+            
+    
+            <a href="../traccar/geofence/GeofencePolygon.html" class="tag"
+            style="font-size: 21px;color:#fae1a0"
+            title="Average Method Complexity - 4.143 , Coverage - 78.9% ">GeofencePolygon</a>
+            
+    
+            <a href="../traccar/geofence/GeofencePolyline.html" class="tag"
+            style="font-size: 18px;color:#fae1a0"
+            title="Average Method Complexity - 2.5 , Coverage - 79.3% ">GeofencePolyline</a>
+            
+    
+            <a href="../traccar/protocol/Gl100Protocol.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="Average Method Complexity - 1 , Coverage - 14.3% ">Gl100Protocol</a>
+            
+    
+            <a href="../traccar/protocol/Gl100ProtocolDecoder.html" class="tag"
+            style="font-size: 19px;color:#fae1a0"
+            title="Average Method Complexity - 3 , Coverage - 78.8% ">Gl100ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/Gl200Protocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 17.6% ">Gl200Protocol</a>
+            
+    
+            <a href="../traccar/protocol/Gl200ProtocolDecoder.html" class="tag"
+            style="font-size: 27px;color:#14892c"
+            title="Average Method Complexity - 6.615 , Coverage - 88.4% ">Gl200ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/GlobalSatProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">GlobalSatProtocol</a>
+            
+    
+            <a href="../traccar/protocol/GlobalSatProtocolDecoder.html" class="tag"
+            style="font-size: 30px;color:#f6c342"
+            title="Average Method Complexity - 7.667 , Coverage - 69.1% ">GlobalSatProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/GnxProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">GnxProtocol</a>
+            
+    
+            <a href="../traccar/protocol/GnxProtocolDecoder.html" class="tag"
+            style="font-size: 20px;color:#89c495"
+            title="Average Method Complexity - 3.5 , Coverage - 95.1% ">GnxProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/GoSafeProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">GoSafeProtocol</a>
+            
+    
+            <a href="../traccar/protocol/GoSafeProtocolDecoder.html" class="tag"
+            style="font-size: 25px;color:#14892c"
+            title="Average Method Complexity - 5.667 , Coverage - 90.2% ">GoSafeProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/GotopProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">GotopProtocol</a>
+            
+    
+            <a href="../traccar/protocol/GotopProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 92% ">GotopProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/Gps103Protocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 17.6% ">Gps103Protocol</a>
+            
+    
+            <a href="../traccar/protocol/Gps103ProtocolDecoder.html" class="tag"
+            style="font-size: 48px;color:#14892c"
+            title="Average Method Complexity - 15 , Coverage - 85.3% ">Gps103ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/Gps103ProtocolEncoder.html" class="tag"
+            style="font-size: 28px;color:#de7b72"
+            title="Average Method Complexity - 7 , Coverage - 38.5% ">Gps103ProtocolEncoder</a>
+            
+    
+            <a href="../traccar/protocol/GpsGateProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">GpsGateProtocol</a>
+            
+    
+            <a href="../traccar/protocol/GpsGateProtocolDecoder.html" class="tag"
+            style="font-size: 24px;color:#fae1a0"
+            title="Average Method Complexity - 5.333 , Coverage - 75% ">GpsGateProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/GpsMarkerProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">GpsMarkerProtocol</a>
+            
+    
+            <a href="../traccar/protocol/GpsMarkerProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 93.1% ">GpsMarkerProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/GpsmtaProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 25% ">GpsmtaProtocol</a>
+            
+    
+            <a href="../traccar/protocol/GpsmtaProtocolDecoder.html" class="tag"
+            style="font-size: 18px;color:#fae1a0"
+            title="Average Method Complexity - 2.5 , Coverage - 81.8% ">GpsmtaProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/GranitFrameDecoder.html" class="tag"
+            style="font-size: 24px;color:#fae1a0"
+            title="Average Method Complexity - 5 , Coverage - 78.9% ">GranitFrameDecoder</a>
+            
+    
+            <a href="../traccar/protocol/GranitProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 27.3% ">GranitProtocol</a>
+            
+    
+            <a href="../traccar/protocol/GranitProtocolDecoder.html" class="tag"
+            style="font-size: 21px;color:#fae1a0"
+            title="Average Method Complexity - 4.167 , Coverage - 77.5% ">GranitProtocolDecoder</a>
+            
+    
+            <a href="../traccar/model/Group.html" class="tag"
+            style="font-size: 14px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 75% ">Group</a>
+            
+    
+            <a href="../traccar/database/GroupTree.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 2.25 , Coverage - 95.3% ">GroupTree</a>
+            
+    
+            <a href="../traccar/database/GroupTree.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 2 , Coverage - 77.5% ">GroupTree.TreeNode</a>
+            
+    
+            <a href="../traccar/protocol/Gt02Protocol.html" class="tag"
+            style="font-size: 14px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 28.6% ">Gt02Protocol</a>
+            
+    
+            <a href="../traccar/protocol/Gt02ProtocolDecoder.html" class="tag"
+            style="font-size: 22px;color:#14892c"
+            title="Average Method Complexity - 4.5 , Coverage - 86.4% ">Gt02ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/Gt06FrameDecoder.html" class="tag"
+            style="font-size: 26px;color:#f6c342"
+            title="Average Method Complexity - 6 , Coverage - 71.4% ">Gt06FrameDecoder</a>
+            
+    
+            <a href="../traccar/protocol/Gt06Protocol.html" class="tag"
+            style="font-size: 14px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 33.3% ">Gt06Protocol</a>
+            
+    
+            <a href="../traccar/protocol/Gt06ProtocolDecoder.html" class="tag"
+            style="font-size: 23px;color:#14892c"
+            title="Average Method Complexity - 4.909 , Coverage - 84% ">Gt06ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/Gt06ProtocolEncoder.html" class="tag"
+            style="font-size: 20px;color:#f6c342"
+            title="Average Method Complexity - 3.5 , Coverage - 68.6% ">Gt06ProtocolEncoder</a>
+            
+    
+            <a href="../traccar/protocol/Gt30Protocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">Gt30Protocol</a>
+            
+    
+            <a href="../traccar/protocol/Gt30ProtocolDecoder.html" class="tag"
+            style="font-size: 21px;color:#fae1a0"
+            title="Average Method Complexity - 4 , Coverage - 73.3% ">Gt30ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/H02FrameDecoder.html" class="tag"
+            style="font-size: 30px;color:#f6c342"
+            title="Average Method Complexity - 7.5 , Coverage - 65.1% ">H02FrameDecoder</a>
+            
+    
+            <a href="../traccar/protocol/H02Protocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 27.3% ">H02Protocol</a>
+            
+    
+            <a href="../traccar/protocol/H02ProtocolDecoder.html" class="tag"
+            style="font-size: 23px;color:#14892c"
+            title="Average Method Complexity - 4.75 , Coverage - 88% ">H02ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/H02ProtocolEncoder.html" class="tag"
+            style="font-size: 18px;color:#fae1a0"
+            title="Average Method Complexity - 2.667 , Coverage - 76% ">H02ProtocolEncoder</a>
+            
+    
+            <a href="../traccar/protocol/HaicomProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">HaicomProtocol</a>
+            
+    
+            <a href="../traccar/protocol/HaicomProtocolDecoder.html" class="tag"
+            style="font-size: 19px;color:#14892c"
+            title="Average Method Complexity - 3 , Coverage - 85.7% ">HaicomProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/HomtecsProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 25% ">HomtecsProtocol</a>
+            
+    
+            <a href="../traccar/protocol/HomtecsProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 84% ">HomtecsProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/HuaShengFrameDecoder.html" class="tag"
+            style="font-size: 28px;color:#f6c342"
+            title="Average Method Complexity - 7 , Coverage - 69% ">HuaShengFrameDecoder</a>
+            
+    
+            <a href="../traccar/protocol/HuaShengProtocol.html" class="tag"
+            style="font-size: 14px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 28.6% ">HuaShengProtocol</a>
+            
+    
+            <a href="../traccar/protocol/HuaShengProtocolDecoder.html" class="tag"
+            style="font-size: 21px;color:#fae1a0"
+            title="Average Method Complexity - 4 , Coverage - 78.5% ">HuaShengProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/HuabaoFrameDecoder.html" class="tag"
+            style="font-size: 28px;color:#fae1a0"
+            title="Average Method Complexity - 7 , Coverage - 82.8% ">HuabaoFrameDecoder</a>
+            
+    
+            <a href="../traccar/protocol/HuabaoProtocol.html" class="tag"
+            style="font-size: 14px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 33.3% ">HuabaoProtocol</a>
+            
+    
+            <a href="../traccar/protocol/HuabaoProtocolDecoder.html" class="tag"
+            style="font-size: 23px;color:#f6c342"
+            title="Average Method Complexity - 4.6 , Coverage - 64.8% ">HuabaoProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/HunterProProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">HunterProProtocol</a>
+            
+    
+            <a href="../traccar/protocol/HunterProProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 84.6% ">HunterProProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/IdplProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">IdplProtocol</a>
+            
+    
+            <a href="../traccar/protocol/IdplProtocolDecoder.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 2.5 , Coverage - 86% ">IdplProtocolDecoder</a>
+            
+    
+            <a href="../traccar/events/IgnitionEventHandler.html" class="tag"
+            style="font-size: 38px;color:#e28e87"
+            title="Average Method Complexity - 11 , Coverage - 48.3% ">IgnitionEventHandler</a>
+            
+    
+            <a href="../traccar/protocol/IntellitracProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">IntellitracProtocol</a>
+            
+    
+            <a href="../traccar/protocol/IntellitracProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 2 , Coverage - 95.2% ">IntellitracProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/JpKorjarProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 25% ">JpKorjarProtocol</a>
+            
+    
+            <a href="../traccar/protocol/JpKorjarProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 84.6% ">JpKorjarProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/Jt600FrameDecoder.html" class="tag"
+            style="font-size: 28px;color:#fae1a0"
+            title="Average Method Complexity - 7 , Coverage - 74.1% ">Jt600FrameDecoder</a>
+            
+    
+            <a href="../traccar/protocol/Jt600Protocol.html" class="tag"
+            style="font-size: 14px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 30% ">Jt600Protocol</a>
+            
+    
+            <a href="../traccar/protocol/Jt600ProtocolDecoder.html" class="tag"
+            style="font-size: 23px;color:#14892c"
+            title="Average Method Complexity - 4.667 , Coverage - 87.7% ">Jt600ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/Jt600ProtocolEncoder.html" class="tag"
+            style="font-size: 24px;color:#fae1a0"
+            title="Average Method Complexity - 5 , Coverage - 73.3% ">Jt600ProtocolEncoder</a>
+            
+    
+            <a href="../traccar/protocol/KenjiProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">KenjiProtocol</a>
+            
+    
+            <a href="../traccar/protocol/KenjiProtocolDecoder.html" class="tag"
+            style="font-size: 20px;color:#e7a19b"
+            title="Average Method Complexity - 3.667 , Coverage - 61.7% ">KenjiProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/KhdProtocol.html" class="tag"
+            style="font-size: 14px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 33.3% ">KhdProtocol</a>
+            
+    
+            <a href="../traccar/protocol/KhdProtocolDecoder.html" class="tag"
+            style="font-size: 24px;color:#fae1a0"
+            title="Average Method Complexity - 5 , Coverage - 75.8% ">KhdProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/KhdProtocolEncoder.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 2 , Coverage - 70% ">KhdProtocolEncoder</a>
+            
+    
+            <a href="../traccar/protocol/L100FrameDecoder.html" class="tag"
+            style="font-size: 24px;color:#f6c342"
+            title="Average Method Complexity - 5 , Coverage - 70% ">L100FrameDecoder</a>
+            
+    
+            <a href="../traccar/protocol/L100Protocol.html" class="tag"
+            style="font-size: 14px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 28.6% ">L100Protocol</a>
+            
+    
+            <a href="../traccar/protocol/L100ProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 88.9% ">L100ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/LaipacProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">LaipacProtocol</a>
+            
+    
+            <a href="../traccar/protocol/LaipacProtocolDecoder.html" class="tag"
+            style="font-size: 30px;color:#14892c"
+            title="Average Method Complexity - 7.5 , Coverage - 87.5% ">LaipacProtocolDecoder</a>
+            
+    
+            <a href="../traccar/helper/LocationTree.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 2.167 , Coverage - 95.9% ">LocationTree</a>
+            
+    
+            <a href="../traccar/helper/LocationTree.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1.2 , Coverage - 100% ">LocationTree.Item</a>
+            
+    
+            <a href="../traccar/helper/Log.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 2.077 , Coverage - 57.8% ">Log</a>
+            
+    
+            <a href="../traccar/protocol/M2mProtocol.html" class="tag"
+            style="font-size: 14px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 28.6% ">M2mProtocol</a>
+            
+    
+            <a href="../traccar/protocol/M2mProtocolDecoder.html" class="tag"
+            style="font-size: 25px;color:#14892c"
+            title="Average Method Complexity - 5.5 , Coverage - 88.6% ">M2mProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/MaestroProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">MaestroProtocol</a>
+            
+    
+            <a href="../traccar/protocol/MaestroProtocolDecoder.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 2.5 , Coverage - 88.9% ">MaestroProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/ManPowerProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">ManPowerProtocol</a>
+            
+    
+            <a href="../traccar/protocol/ManPowerProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 2 , Coverage - 83.3% ">ManPowerProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/MegastekFrameDecoder.html" class="tag"
+            style="font-size: 31px;color:#f6c342"
+            title="Average Method Complexity - 8 , Coverage - 69% ">MegastekFrameDecoder</a>
+            
+    
+            <a href="../traccar/protocol/MegastekProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">MegastekProtocol</a>
+            
+    
+            <a href="../traccar/protocol/MegastekProtocolDecoder.html" class="tag"
+            style="font-size: 29px;color:#fae1a0"
+            title="Average Method Complexity - 7.333 , Coverage - 83.2% ">MegastekProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/MeiligaoFrameDecoder.html" class="tag"
+            style="font-size: 24px;color:#14892c"
+            title="Average Method Complexity - 5 , Coverage - 92.9% ">MeiligaoFrameDecoder</a>
+            
+    
+            <a href="../traccar/protocol/MeiligaoProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 23.1% ">MeiligaoProtocol</a>
+            
+    
+            <a href="../traccar/protocol/MeiligaoProtocolDecoder.html" class="tag"
+            style="font-size: 24px;color:#f6c342"
+            title="Average Method Complexity - 5.3 , Coverage - 66.5% ">MeiligaoProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/MeiligaoProtocolEncoder.html" class="tag"
+            style="font-size: 22px;color:#fae1a0"
+            title="Average Method Complexity - 4.5 , Coverage - 74.4% ">MeiligaoProtocolEncoder</a>
+            
+    
+            <a href="../traccar/protocol/MeitrackFrameDecoder.html" class="tag"
+            style="font-size: 21px;color:#f6c342"
+            title="Average Method Complexity - 4 , Coverage - 66.7% ">MeitrackFrameDecoder</a>
+            
+    
+            <a href="../traccar/protocol/MeitrackProtocol.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="Average Method Complexity - 1 , Coverage - 15.8% ">MeitrackProtocol</a>
+            
+    
+            <a href="../traccar/protocol/MeitrackProtocolDecoder.html" class="tag"
+            style="font-size: 24px;color:#fae1a0"
+            title="Average Method Complexity - 5 , Coverage - 81.6% ">MeitrackProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/MeitrackProtocolEncoder.html" class="tag"
+            style="font-size: 22px;color:#e28e87"
+            title="Average Method Complexity - 4.5 , Coverage - 48.1% ">MeitrackProtocolEncoder</a>
+            
+    
+            <a href="../traccar/model/Message.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Message</a>
+            
+    
+            <a href="../traccar/protocol/MiniFinderProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 27.3% ">MiniFinderProtocol</a>
+            
+    
+            <a href="../traccar/protocol/MiniFinderProtocolDecoder.html" class="tag"
+            style="font-size: 33px;color:#fae1a0"
+            title="Average Method Complexity - 9 , Coverage - 75.7% ">MiniFinderProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/MiniFinderProtocolEncoder.html" class="tag"
+            style="font-size: 36px;color:#e28e87"
+            title="Average Method Complexity - 10 , Coverage - 40.4% ">MiniFinderProtocolEncoder</a>
+            
+    
+            <a href="../traccar/model/MiscFormatter.html" class="tag"
+            style="font-size: 15px;color:#fae1a0"
+            title="Average Method Complexity - 1.667 , Coverage - 81.2% ">MiscFormatter</a>
+            
+    
+            <a href="../traccar/events/MotionEventHandler.html" class="tag"
+            style="font-size: 24px;color:#e7a19b"
+            title="Average Method Complexity - 5 , Coverage - 57.1% ">MotionEventHandler</a>
+            
+    
+            <a href="../traccar/protocol/MtxProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">MtxProtocol</a>
+            
+    
+            <a href="../traccar/protocol/MtxProtocolDecoder.html" class="tag"
+            style="font-size: 18px;color:#fae1a0"
+            title="Average Method Complexity - 2.5 , Coverage - 81.8% ">MtxProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/MxtProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">MxtProtocol</a>
+            
+    
+            <a href="../traccar/protocol/MxtProtocolDecoder.html" class="tag"
+            style="font-size: 28px;color:#f6c342"
+            title="Average Method Complexity - 7 , Coverage - 68.8% ">MxtProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/NavigilProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">NavigilProtocol</a>
+            
+    
+            <a href="../traccar/protocol/NavigilProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#de7b72"
+            title="Average Method Complexity - 1.9 , Coverage - 32.6% ">NavigilProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/NavisProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">NavisProtocol</a>
+            
+    
+            <a href="../traccar/protocol/NavisProtocolDecoder.html" class="tag"
+            style="font-size: 21px;color:#fae1a0"
+            title="Average Method Complexity - 3.778 , Coverage - 84% ">NavisProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/NavisProtocolDecoder.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">NavisProtocolDecoder.ParseResult</a>
+            
+    
+            <a href="../traccar/model/Network.html" class="tag"
+            style="font-size: 14px;color:#e28e87"
+            title="Average Method Complexity - 1.111 , Coverage - 44.2% ">Network</a>
+            
+    
+            <a href="../traccar/protocol/NoranProtocol.html" class="tag"
+            style="font-size: 14px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 30% ">NoranProtocol</a>
+            
+    
+            <a href="../traccar/protocol/NoranProtocolDecoder.html" class="tag"
+            style="font-size: 43px;color:#f6c342"
+            title="Average Method Complexity - 13 , Coverage - 72.6% ">NoranProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/NoranProtocolEncoder.html" class="tag"
+            style="font-size: 20px;color:#e7a19b"
+            title="Average Method Complexity - 3.5 , Coverage - 55.2% ">NoranProtocolEncoder</a>
+            
+    
+            <a href="../traccar/protocol/NvsFrameDecoder.html" class="tag"
+            style="font-size: 21px;color:#fae1a0"
+            title="Average Method Complexity - 4 , Coverage - 75% ">NvsFrameDecoder</a>
+            
+    
+            <a href="../traccar/protocol/NvsProtocol.html" class="tag"
+            style="font-size: 14px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 28.6% ">NvsProtocol</a>
+            
+    
+            <a href="../traccar/protocol/NvsProtocolDecoder.html" class="tag"
+            style="font-size: 21px;color:#14892c"
+            title="Average Method Complexity - 4 , Coverage - 88.6% ">NvsProtocolDecoder</a>
+            
+    
+            <a href="../traccar/helper/ObdDecoder.html" class="tag"
+            style="font-size: 24px;color:#fae1a0"
+            title="Average Method Complexity - 5.2 , Coverage - 82.4% ">ObdDecoder</a>
+            
+    
+            <a href="../traccar/protocol/ObdDongleProtocol.html" class="tag"
+            style="font-size: 14px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 28.6% ">ObdDongleProtocol</a>
+            
+    
+            <a href="../traccar/protocol/ObdDongleProtocolDecoder.html" class="tag"
+            style="font-size: 19px;color:#fae1a0"
+            title="Average Method Complexity - 3 , Coverage - 75.8% ">ObdDongleProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/OigoProtocol.html" class="tag"
+            style="font-size: 14px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 33.3% ">OigoProtocol</a>
+            
+    
+            <a href="../traccar/protocol/OigoProtocolDecoder.html" class="tag"
+            style="font-size: 26px;color:#fae1a0"
+            title="Average Method Complexity - 6.2 , Coverage - 77.2% ">OigoProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/OrionProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">OrionProtocol</a>
+            
+    
+            <a href="../traccar/protocol/OrionProtocolDecoder.html" class="tag"
+            style="font-size: 17px;color:#fae1a0"
+            title="Average Method Complexity - 2.25 , Coverage - 81.8% ">OrionProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/OsmAndProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 25% ">OsmAndProtocol</a>
+            
+    
+            <a href="../traccar/protocol/OsmAndProtocolDecoder.html" class="tag"
+            style="font-size: 31px;color:#fae1a0"
+            title="Average Method Complexity - 8.333 , Coverage - 83.3% ">OsmAndProtocolDecoder</a>
+            
+    
+            <a href="../traccar/helper/Parser.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 2.357 , Coverage - 97% ">Parser</a>
+            
+    
+            <a href="../traccar/protocol/PathAwayProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 25% ">PathAwayProtocol</a>
+            
+    
+            <a href="../traccar/protocol/PathAwayProtocolDecoder.html" class="tag"
+            style="font-size: 18px;color:#fae1a0"
+            title="Average Method Complexity - 2.5 , Coverage - 78.1% ">PathAwayProtocolDecoder</a>
+            
+    
+            <a href="../traccar/helper/PatternBuilder.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">PatternBuilder</a>
+            
+    
+            <a href="../traccar/helper/PatternUtil.html" class="tag"
+            style="font-size: 18px;color:#fae1a0"
+            title="Average Method Complexity - 2.5 , Coverage - 82.4% ">PatternUtil</a>
+            
+    
+            <a href="../traccar/helper/PatternUtil.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 25% ">PatternUtil.MatchResult</a>
+            
+    
+            <a href="../traccar/protocol/PiligrimProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">PiligrimProtocol</a>
+            
+    
+            <a href="../traccar/protocol/PiligrimProtocolDecoder.html" class="tag"
+            style="font-size: 24px;color:#fae1a0"
+            title="Average Method Complexity - 5.333 , Coverage - 77.7% ">PiligrimProtocolDecoder</a>
+            
+    
+            <a href="../traccar/model/Position.html" class="tag"
+            style="font-size: 14px;color:#f6c342"
+            title="Average Method Complexity - 1.207 , Coverage - 71.1% ">Position</a>
+            
+    
+            <a href="../traccar/protocol/PretraceProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">PretraceProtocol</a>
+            
+    
+            <a href="../traccar/protocol/PretraceProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 86.2% ">PretraceProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/PricolProtocol.html" class="tag"
+            style="font-size: 14px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 28.6% ">PricolProtocol</a>
+            
+    
+            <a href="../traccar/protocol/PricolProtocolDecoder.html" class="tag"
+            style="font-size: 20px;color:#14892c"
+            title="Average Method Complexity - 3.5 , Coverage - 87% ">PricolProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/ProgressProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">ProgressProtocol</a>
+            
+    
+            <a href="../traccar/protocol/ProgressProtocolDecoder.html" class="tag"
+            style="font-size: 28px;color:#d5584c"
+            title="Average Method Complexity - 7 , Coverage - 15.6% ">ProgressProtocolDecoder</a>
+            
+    
+            <a href="../traccar/ProtocolTest.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1.318 , Coverage - 98.2% ">ProtocolTest</a>
+            
+    
+            <a href="../traccar/protocol/Pt3000Protocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">Pt3000Protocol</a>
+            
+    
+            <a href="../traccar/protocol/Pt3000ProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 84% ">Pt3000ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/Pt502FrameDecoder.html" class="tag"
+            style="font-size: 26px;color:#fae1a0"
+            title="Average Method Complexity - 6 , Coverage - 79.2% ">Pt502FrameDecoder</a>
+            
+    
+            <a href="../traccar/protocol/Pt502Protocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 23.1% ">Pt502Protocol</a>
+            
+    
+            <a href="../traccar/protocol/Pt502ProtocolDecoder.html" class="tag"
+            style="font-size: 24px;color:#fae1a0"
+            title="Average Method Complexity - 5.333 , Coverage - 80.9% ">Pt502ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/Pt502ProtocolEncoder.html" class="tag"
+            style="font-size: 24px;color:#e7a19b"
+            title="Average Method Complexity - 5 , Coverage - 57.1% ">Pt502ProtocolEncoder</a>
+            
+    
+            <a href="../traccar/protocol/RaveonProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">RaveonProtocol</a>
+            
+    
+            <a href="../traccar/protocol/RaveonProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 87.5% ">RaveonProtocolDecoder</a>
+            
+    
+            <a href="../traccar/reports/ReportUtils.html" class="tag"
+            style="font-size: 19px;color:#e7a19b"
+            title="Average Method Complexity - 3.143 , Coverage - 50% ">ReportUtils</a>
+            
+    
+            <a href="../traccar/protocol/RitiProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">RitiProtocol</a>
+            
+    
+            <a href="../traccar/protocol/RitiProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 89.2% ">RitiProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/RuptelaProtocol.html" class="tag"
+            style="font-size: 14px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 33.3% ">RuptelaProtocol</a>
+            
+    
+            <a href="../traccar/protocol/RuptelaProtocolDecoder.html" class="tag"
+            style="font-size: 32px;color:#14892c"
+            title="Average Method Complexity - 8.5 , Coverage - 90.5% ">RuptelaProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/RuptelaProtocolEncoder.html" class="tag"
+            style="font-size: 15px;color:#fae1a0"
+            title="Average Method Complexity - 1.5 , Coverage - 73.3% ">RuptelaProtocolEncoder</a>
+            
+    
+            <a href="../traccar/protocol/SanavProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">SanavProtocol</a>
+            
+    
+            <a href="../traccar/protocol/SanavProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 84% ">SanavProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/SkypatrolProtocol.html" class="tag"
+            style="font-size: 14px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 33.3% ">SkypatrolProtocol</a>
+            
+    
+            <a href="../traccar/protocol/SkypatrolProtocolDecoder.html" class="tag"
+            style="font-size: 39px;color:#fae1a0"
+            title="Average Method Complexity - 11.333 , Coverage - 74.8% ">SkypatrolProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/SmokeyProtocol.html" class="tag"
+            style="font-size: 14px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 33.3% ">SmokeyProtocol</a>
+            
+    
+            <a href="../traccar/protocol/SmokeyProtocolDecoder.html" class="tag"
+            style="font-size: 23px;color:#e7a19b"
+            title="Average Method Complexity - 4.667 , Coverage - 61.9% ">SmokeyProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/Stl060Protocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">Stl060Protocol</a>
+            
+    
+            <a href="../traccar/protocol/Stl060ProtocolDecoder.html" class="tag"
+            style="font-size: 19px;color:#14892c"
+            title="Average Method Complexity - 3 , Coverage - 90.7% ">Stl060ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/helper/StringFinder.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1.5 , Coverage - 100% ">StringFinder</a>
+            
+    
+            <a href="../traccar/StringProtocolEncoder.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 2 , Coverage - 100% ">StringProtocolEncoder</a>
+            
+    
+            <a href="../traccar/protocol/SuntechProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 27.3% ">SuntechProtocol</a>
+            
+    
+            <a href="../traccar/protocol/SuntechProtocolDecoder.html" class="tag"
+            style="font-size: 24px;color:#14892c"
+            title="Average Method Complexity - 5 , Coverage - 94.1% ">SuntechProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/SupermateProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">SupermateProtocol</a>
+            
+    
+            <a href="../traccar/protocol/SupermateProtocolDecoder.html" class="tag"
+            style="font-size: 20px;color:#fae1a0"
+            title="Average Method Complexity - 3.5 , Coverage - 73.9% ">SupermateProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/T55Protocol.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="Average Method Complexity - 1 , Coverage - 14.3% ">T55Protocol</a>
+            
+    
+            <a href="../traccar/protocol/T55ProtocolDecoder.html" class="tag"
+            style="font-size: 25px;color:#14892c"
+            title="Average Method Complexity - 5.667 , Coverage - 91.8% ">T55ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/T800xProtocol.html" class="tag"
+            style="font-size: 14px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 33.3% ">T800xProtocol</a>
+            
+    
+            <a href="../traccar/protocol/T800xProtocolDecoder.html" class="tag"
+            style="font-size: 21px;color:#fae1a0"
+            title="Average Method Complexity - 4 , Coverage - 77% ">T800xProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/T800xProtocolEncoder.html" class="tag"
+            style="font-size: 15px;color:#fae1a0"
+            title="Average Method Complexity - 1.5 , Coverage - 78.9% ">T800xProtocolEncoder</a>
+            
+    
+            <a href="../traccar/protocol/TaipProtocol.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="Average Method Complexity - 1 , Coverage - 14.3% ">TaipProtocol</a>
+            
+    
+            <a href="../traccar/protocol/TaipProtocolDecoder.html" class="tag"
+            style="font-size: 25px;color:#14892c"
+            title="Average Method Complexity - 5.5 , Coverage - 89.4% ">TaipProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/TelicFrameDecoder.html" class="tag"
+            style="font-size: 26px;color:#14892c"
+            title="Average Method Complexity - 6 , Coverage - 84% ">TelicFrameDecoder</a>
+            
+    
+            <a href="../traccar/protocol/TelicProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 18.2% ">TelicProtocol</a>
+            
+    
+            <a href="../traccar/protocol/TelicProtocolDecoder.html" class="tag"
+            style="font-size: 23px;color:#fae1a0"
+            title="Average Method Complexity - 4.667 , Coverage - 78.6% ">TelicProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/TeltonikaProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 23.1% ">TeltonikaProtocol</a>
+            
+    
+            <a href="../traccar/protocol/TeltonikaProtocolDecoder.html" class="tag"
+            style="font-size: 26px;color:#d04437"
+            title="Average Method Complexity - 6.222 , Coverage - 3.9% ">TeltonikaProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/TeltonikaProtocolDecoder_ESTest_scaffolding.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">TeltonikaProtocolDecoder_ESTest_scaffolding</a>
+            
+    
+            <a href="../traccar/protocol/TeltonikaProtocolEncoder.html" class="tag"
+            style="font-size: 15px;color:#fae1a0"
+            title="Average Method Complexity - 1.5 , Coverage - 81.8% ">TeltonikaProtocolEncoder</a>
+            
+    
+            <a href="../traccar/protocol/ThinkRaceProtocol.html" class="tag"
+            style="font-size: 14px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 28.6% ">ThinkRaceProtocol</a>
+            
+    
+            <a href="../traccar/protocol/ThinkRaceProtocolDecoder.html" class="tag"
+            style="font-size: 19px;color:#f6c342"
+            title="Average Method Complexity - 3.333 , Coverage - 72.1% ">ThinkRaceProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/Tk102Protocol.html" class="tag"
+            style="font-size: 14px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 28.6% ">Tk102Protocol</a>
+            
+    
+            <a href="../traccar/protocol/Tk102ProtocolDecoder.html" class="tag"
+            style="font-size: 20px;color:#fae1a0"
+            title="Average Method Complexity - 3.667 , Coverage - 81% ">Tk102ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/Tk103Protocol.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="Average Method Complexity - 1 , Coverage - 14.3% ">Tk103Protocol</a>
+            
+    
+            <a href="../traccar/protocol/Tk103ProtocolDecoder.html" class="tag"
+            style="font-size: 36px;color:#f6c342"
+            title="Average Method Complexity - 10.333 , Coverage - 67.4% ">Tk103ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/Tlt2hProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">Tlt2hProtocol</a>
+            
+    
+            <a href="../traccar/protocol/Tlt2hProtocolDecoder.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 2.5 , Coverage - 87.5% ">Tlt2hProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/TmgProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">TmgProtocol</a>
+            
+    
+            <a href="../traccar/protocol/TmgProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 87.5% ">TmgProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/TopflytechProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">TopflytechProtocol</a>
+            
+    
+            <a href="../traccar/protocol/TopflytechProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 2 , Coverage - 83.3% ">TopflytechProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/TotemFrameDecoder.html" class="tag"
+            style="font-size: 28px;color:#fae1a0"
+            title="Average Method Complexity - 7 , Coverage - 76.9% ">TotemFrameDecoder</a>
+            
+    
+            <a href="../traccar/protocol/TotemProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 27.3% ">TotemProtocol</a>
+            
+    
+            <a href="../traccar/protocol/TotemProtocolDecoder.html" class="tag"
+            style="font-size: 32px;color:#14892c"
+            title="Average Method Complexity - 8.667 , Coverage - 88.2% ">TotemProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/TotemProtocolEncoder.html" class="tag"
+            style="font-size: 19px;color:#e28e87"
+            title="Average Method Complexity - 3 , Coverage - 45.5% ">TotemProtocolEncoder</a>
+            
+    
+            <a href="../traccar/protocol/Tr20Protocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">Tr20Protocol</a>
+            
+    
+            <a href="../traccar/protocol/Tr20ProtocolDecoder.html" class="tag"
+            style="font-size: 19px;color:#fae1a0"
+            title="Average Method Complexity - 3 , Coverage - 81.8% ">Tr20ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/Tr900Protocol.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="Average Method Complexity - 1 , Coverage - 14.3% ">Tr900Protocol</a>
+            
+    
+            <a href="../traccar/protocol/Tr900ProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 86.7% ">Tr900ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/TrackboxProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">TrackboxProtocol</a>
+            
+    
+            <a href="../traccar/protocol/TrackboxProtocolDecoder.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 2.667 , Coverage - 84.8% ">TrackboxProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/TrakMateProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">TrakMateProtocol</a>
+            
+    
+            <a href="../traccar/protocol/TrakMateProtocolDecoder.html" class="tag"
+            style="font-size: 19px;color:#fae1a0"
+            title="Average Method Complexity - 3.167 , Coverage - 79.6% ">TrakMateProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/TramigoProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">TramigoProtocol</a>
+            
+    
+            <a href="../traccar/protocol/TramigoProtocolDecoder.html" class="tag"
+            style="font-size: 30px;color:#f6c342"
+            title="Average Method Complexity - 7.5 , Coverage - 69.7% ">TramigoProtocolDecoder</a>
+            
+    
+            <a href="../traccar/reports/model/TripReport.html" class="tag"
+            style="font-size: 14px;color:#e7a19b"
+            title="Average Method Complexity - 1.167 , Coverage - 59.4% ">TripReport</a>
+            
+    
+            <a href="../traccar/reports/Trips.html" class="tag"
+            style="font-size: 24px;color:#e7a19b"
+            title="Average Method Complexity - 5.167 , Coverage - 54.9% ">Trips</a>
+            
+    
+            <a href="../traccar/protocol/TrvProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">TrvProtocol</a>
+            
+    
+            <a href="../traccar/protocol/TrvProtocolDecoder.html" class="tag"
+            style="font-size: 25px;color:#14892c"
+            title="Average Method Complexity - 5.5 , Coverage - 85.3% ">TrvProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/Tt8850Protocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">Tt8850Protocol</a>
+            
+    
+            <a href="../traccar/protocol/Tt8850ProtocolDecoder.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 2.5 , Coverage - 93.1% ">Tt8850ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/TytanProtocol.html" class="tag"
+            style="font-size: 14px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 33.3% ">TytanProtocol</a>
+            
+    
+            <a href="../traccar/protocol/TytanProtocolDecoder.html" class="tag"
+            style="font-size: 36px;color:#f6c342"
+            title="Average Method Complexity - 10 , Coverage - 71.1% ">TytanProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/TzoneProtocol.html" class="tag"
+            style="font-size: 14px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 28.6% ">TzoneProtocol</a>
+            
+    
+            <a href="../traccar/protocol/TzoneProtocolDecoder.html" class="tag"
+            style="font-size: 27px;color:#fae1a0"
+            title="Average Method Complexity - 6.6 , Coverage - 83.4% ">TzoneProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/UlbotechFrameDecoder.html" class="tag"
+            style="font-size: 33px;color:#f6c342"
+            title="Average Method Complexity - 9 , Coverage - 73% ">UlbotechFrameDecoder</a>
+            
+    
+            <a href="../traccar/protocol/UlbotechProtocol.html" class="tag"
+            style="font-size: 14px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 28.6% ">UlbotechProtocol</a>
+            
+    
+            <a href="../traccar/protocol/UlbotechProtocolDecoder.html" class="tag"
+            style="font-size: 30px;color:#fae1a0"
+            title="Average Method Complexity - 7.714 , Coverage - 80% ">UlbotechProtocolDecoder</a>
+            
+    
+            <a href="../traccar/helper/UnitsConverter.html" class="tag"
+            style="font-size: 14px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 52.6% ">UnitsConverter</a>
+            
+    
+            <a href="../traccar/protocol/UproProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 25% ">UproProtocol</a>
+            
+    
+            <a href="../traccar/protocol/UproProtocolDecoder.html" class="tag"
+            style="font-size: 31px;color:#14892c"
+            title="Average Method Complexity - 8 , Coverage - 88.3% ">UproProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/V680Protocol.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="Average Method Complexity - 1 , Coverage - 14.3% ">V680Protocol</a>
+            
+    
+            <a href="../traccar/protocol/V680ProtocolDecoder.html" class="tag"
+            style="font-size: 26px;color:#14892c"
+            title="Average Method Complexity - 6 , Coverage - 93.8% ">V680ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/VisiontekProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">VisiontekProtocol</a>
+            
+    
+            <a href="../traccar/protocol/VisiontekProtocolDecoder.html" class="tag"
+            style="font-size: 21px;color:#89c495"
+            title="Average Method Complexity - 4 , Coverage - 96.4% ">VisiontekProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/WatchProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 27.3% ">WatchProtocol</a>
+            
+    
+            <a href="../traccar/protocol/WatchProtocolDecoder.html" class="tag"
+            style="font-size: 27px;color:#14892c"
+            title="Average Method Complexity - 6.4 , Coverage - 85.5% ">WatchProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/WatchProtocolEncoder.html" class="tag"
+            style="font-size: 21px;color:#e7a19b"
+            title="Average Method Complexity - 3.833 , Coverage - 55.3% ">WatchProtocolEncoder</a>
+            
+    
+            <a href="../traccar/WebDataHandler.html" class="tag"
+            style="font-size: 19px;color:#f6c342"
+            title="Average Method Complexity - 3.2 , Coverage - 65.5% ">WebDataHandler</a>
+            
+    
+            <a href="../traccar/protocol/WialonProtocol.html" class="tag"
+            style="font-size: 15px;color:#d9695f"
+            title="Average Method Complexity - 1.333 , Coverage - 18.8% ">WialonProtocol</a>
+            
+    
+            <a href="../traccar/protocol/WialonProtocolDecoder.html" class="tag"
+            style="font-size: 26px;color:#f6c342"
+            title="Average Method Complexity - 6 , Coverage - 72.3% ">WialonProtocolDecoder</a>
+            
+    
+            <a href="../traccar/model/WifiAccessPoint.html" class="tag"
+            style="font-size: 14px;color:#e28e87"
+            title="Average Method Complexity - 1 , Coverage - 42.9% ">WifiAccessPoint</a>
+            
+    
+            <a href="../traccar/protocol/WondexFrameDecoder.html" class="tag"
+            style="font-size: 24px;color:#fae1a0"
+            title="Average Method Complexity - 5 , Coverage - 81.8% ">WondexFrameDecoder</a>
+            
+    
+            <a href="../traccar/protocol/WondexProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 20% ">WondexProtocol</a>
+            
+    
+            <a href="../traccar/protocol/WondexProtocolDecoder.html" class="tag"
+            style="font-size: 21px;color:#14892c"
+            title="Average Method Complexity - 4 , Coverage - 92.7% ">WondexProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/WondexProtocolEncoder.html" class="tag"
+            style="font-size: 21px;color:#de7b72"
+            title="Average Method Complexity - 4 , Coverage - 38.5% ">WondexProtocolEncoder</a>
+            
+    
+            <a href="../traccar/protocol/XexunFrameDecoder.html" class="tag"
+            style="font-size: 26px;color:#e7a19b"
+            title="Average Method Complexity - 6 , Coverage - 53.8% ">XexunFrameDecoder</a>
+            
+    
+            <a href="../traccar/protocol/XexunProtocol.html" class="tag"
+            style="font-size: 15px;color:#d9695f"
+            title="Average Method Complexity - 1.333 , Coverage - 18.8% ">XexunProtocol</a>
+            
+    
+            <a href="../traccar/protocol/XexunProtocolDecoder.html" class="tag"
+            style="font-size: 22px;color:#14892c"
+            title="Average Method Complexity - 4.333 , Coverage - 88.1% ">XexunProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/XirgoProtocol.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="Average Method Complexity - 1 , Coverage - 14.3% ">XirgoProtocol</a>
+            
+    
+            <a href="../traccar/protocol/XirgoProtocolDecoder.html" class="tag"
+            style="font-size: 24px;color:#14892c"
+            title="Average Method Complexity - 5 , Coverage - 89.8% ">XirgoProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/Xt013Protocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">Xt013Protocol</a>
+            
+    
+            <a href="../traccar/protocol/Xt013ProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 86.2% ">Xt013ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/YwtProtocol.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">YwtProtocol</a>
+            
+    
+            <a href="../traccar/protocol/YwtProtocolDecoder.html" class="tag"
+            style="font-size: 25px;color:#f6c342"
+            title="Average Method Complexity - 5.5 , Coverage - 66% ">YwtProtocolDecoder</a>
+           </div>
+   
+          <div id="shallowPackageCloud"  style="display: none"  >
+                          
+    
+        
+    
+            <a href="../traccar/BaseDataHandler.html" class="tag"
+            style="font-size: 26px;color:#f6c342"
+            title="Average Method Complexity - 2 , Coverage - 66.7% ">BaseDataHandler</a>
+            
+    
+            <a href="../traccar/BaseProtocol.html" class="tag"
+            style="font-size: 23px;color:#d9695f"
+            title="Average Method Complexity - 1.6 , Coverage - 24% ">BaseProtocol</a>
+            
+    
+            <a href="../traccar/BaseProtocolDecoder.html" class="tag"
+            style="font-size: 48px;color:#de7b72"
+            title="Average Method Complexity - 5.125 , Coverage - 36.8% ">BaseProtocolDecoder</a>
+            
+    
+            <a href="../traccar/BaseProtocolEncoder.html" class="tag"
+            style="font-size: 28px;color:#de7b72"
+            title="Average Method Complexity - 2.333 , Coverage - 35.5% ">BaseProtocolEncoder</a>
+            
+    
+            <a href="../traccar/BaseTest.html" class="tag"
+            style="font-size: 19px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">BaseTest</a>
+            
+    
+            <a href="../traccar/Config.html" class="tag"
+            style="font-size: 26px;color:#e7a19b"
+            title="Average Method Complexity - 2 , Coverage - 53.8% ">Config</a>
+            
+    
+            <a href="../traccar/Context.html" class="tag"
+            style="font-size: 26px;color:#d5584c"
+            title="Average Method Complexity - 2 , Coverage - 7.4% ">Context</a>
+            
+    
+            <a href="../traccar/DeviceSession.html" class="tag"
+            style="font-size: 19px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">DeviceSession</a>
+            
+    
+            <a href="../traccar/DistanceHandler.html" class="tag"
+            style="font-size: 28px;color:#e7a19b"
+            title="Average Method Complexity - 2.333 , Coverage - 55.2% ">DistanceHandler</a>
+            
+    
+            <a href="../traccar/ExtendedObjectDecoder.html" class="tag"
+            style="font-size: 34px;color:#d5584c"
+            title="Average Method Complexity - 3.25 , Coverage - 8.7% ">ExtendedObjectDecoder</a>
+            
+    
+            <a href="../traccar/FilterHandler.html" class="tag"
+            style="font-size: 25px;color:#fae1a0"
+            title="Average Method Complexity - 1.9 , Coverage - 82.9% ">FilterHandler</a>
+            
+    
+            <a href="../traccar/ProtocolTest.html" class="tag"
+            style="font-size: 21px;color:#89c495"
+            title="Average Method Complexity - 1.318 , Coverage - 98.2% ">ProtocolTest</a>
+            
+    
+            <a href="../traccar/StringProtocolEncoder.html" class="tag"
+            style="font-size: 26px;color:#89c495"
+            title="Average Method Complexity - 2 , Coverage - 100% ">StringProtocolEncoder</a>
+            
+    
+            <a href="../traccar/WebDataHandler.html" class="tag"
+            style="font-size: 34px;color:#f6c342"
+            title="Average Method Complexity - 3.2 , Coverage - 65.5% ">WebDataHandler</a>
+           </div>
+   </div>
+    </div> <!-- tabs-pane active-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="https://openclover.org">OpenClover</a> v 4.5.2
+                on Wed Jun 5 2024 13:26:10 CST using coverage data from Wed Jun 5 2024 13:26:06 CST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

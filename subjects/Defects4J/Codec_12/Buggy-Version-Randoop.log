@@ -1,0 +1,70 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< commons-codec:commons-codec >---------------------
+[INFO] Building Commons Codec 1.7-SNAPSHOT
+[INFO]   from pom_for_clover.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ commons-codec ---
+[INFO] Deleting /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Codec_12/Buggy-Version/target
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.7:run (javadoc.resources) @ commons-codec ---
+[INFO] Executing tasks
+
+main:
+     [copy] Copying 2 files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Codec_12/Buggy-Version/target/apidocs/META-INF
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.2.1:process (default) @ commons-codec ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.0:create (default) @ commons-codec ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Codec_12/Buggy-Version && svn --non-interactive info
+[INFO] Working directory: /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Codec_12/Buggy-Version
+[INFO] Storing buildNumber: ?????? at timestamp: 1717404801419
+[INFO] Executing: /bin/sh -c cd /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Codec_12/Buggy-Version && svn --non-interactive info
+[INFO] Working directory: /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Codec_12/Buggy-Version
+[INFO] Storing buildScmBranch: UNKNOWN_BRANCH
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ commons-codec ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 125 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ commons-codec ---
+[INFO] Compiling 48 source files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Codec_12/Buggy-Version/target/classes
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ commons-codec ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ commons-codec ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Codec_12/Buggy-Version/src/test/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ commons-codec ---
+[INFO] Compiling 43 source files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Codec_12/Buggy-Version/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ commons-codec ---
+[INFO] Surefire report directory: /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Codec_12/Buggy-Version/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running RegressionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.088 sec
+Running RegressionTest0
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  13.915 s
+[INFO] Finished at: 2024-06-03T16:53:32+08:00
+[INFO] ------------------------------------------------------------------------

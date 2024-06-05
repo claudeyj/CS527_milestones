@@ -1,0 +1,104 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------------< quixbugs:quixbugs >--------------------------
+[INFO] Building quixbugs 1.0-SNAPSHOT
+[INFO]   from pom_for_clover.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ quixbugs ---
+[INFO] Deleting /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/QuixBugs/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ quixbugs ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/QuixBugs/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ quixbugs ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 88 source files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/QuixBugs/target/classes
+[INFO] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/QuixBugs/src/main/java/java_programs/SHUNTING_YARD.java: Some input files use unchecked or unsafe operations.
+[INFO] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/QuixBugs/src/main/java/java_programs/SHUNTING_YARD.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ quixbugs ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/QuixBugs/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ quixbugs ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 109 source files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/QuixBugs/target/test-classes
+[INFO] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/QuixBugs/src/test/java/java_testcases/junit/crt_program/MERGESORT_TEST.java: Some input files use unchecked or unsafe operations.
+[INFO] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/QuixBugs/src/test/java/java_testcases/junit/crt_program/MERGESORT_TEST.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ quixbugs ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running RegressionTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 s - in RegressionTest
+[INFO] Running RegressionTest0
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in RegressionTest0
+[INFO] Running java_programs.WRAP_ESTest
+Warning: the font "Times" is not available, so "Lucida Bright" has been substituted, but may have unexpected appearance or behavor. Re-enable the "Times" font to remove this warning.
+2
+[ERROR] Tests run: 7, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 12.304 s <<< FAILURE! - in java_programs.WRAP_ESTest
+[ERROR] java_programs.WRAP_ESTest.test2  Time elapsed: 10.408 s  <<< ERROR!
+org.junit.runners.model.TestTimedOutException: test timed out after 4000 milliseconds
+	at java_programs.WRAP_ESTest.test2(WRAP_ESTest.java:48)
+
+[INFO] Running java_testcases.junit.WRAP_TEST
+[ERROR] Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.032 s <<< FAILURE! - in java_testcases.junit.WRAP_TEST
+[ERROR] java_testcases.junit.WRAP_TEST.test_0  Time elapsed: 0 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...whenweforgetourhuman[,dignityandthehigheraimsofourexistence.]]> but was:<...whenweforgetourhuman[]]>
+	at java_testcases.junit.WRAP_TEST.test_0(WRAP_TEST.java:9)
+
+[ERROR] java_testcases.junit.WRAP_TEST.test_1  Time elapsed: 0.003 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...dthe,higheraimsofour[,existence.]]> but was:<...dthe,higheraimsofour[]]>
+	at java_testcases.junit.WRAP_TEST.test_1(WRAP_TEST.java:16)
+
+[ERROR] java_testcases.junit.WRAP_TEST.test_2  Time elapsed: 0.004 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...nityandthehigheraims[,ofourexistence.]]> but was:<...nityandthehigheraims[]]>
+	at java_testcases.junit.WRAP_TEST.test_2(WRAP_TEST.java:23)
+
+[ERROR] java_testcases.junit.WRAP_TEST.test_3  Time elapsed: 0.009 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...elveswhenweforgetour[,humandignityandthehigheraimsofourexistence.]]> but was:<...elveswhenweforgetour[]]>
+	at java_testcases.junit.WRAP_TEST.test_3(WRAP_TEST.java:30)
+
+[ERROR] java_testcases.junit.WRAP_TEST.test_4  Time elapsed: 0.005 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...ulinthisworldwhenone[,reflects:everythingexceptwhatwethinkordoourselveswhenweforgetourhumandignityandthehigheraimsofourexistence.]]> but was:<...ulinthisworldwhenone[]]>
+	at java_testcases.junit.WRAP_TEST.test_4(WRAP_TEST.java:37)
+
+[WARNING] ForkStarter IOException: Stream closed. See the dump file /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/QuixBugs/target/surefire-reports/2024-06-05T11-40-03_602-jvmRun1.dumpstream
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   WRAP_TEST.test_0:9 expected:<...whenweforgetourhuman[,dignityandthehigheraimsofourexistence.]]> but was:<...whenweforgetourhuman[]]>
+[ERROR]   WRAP_TEST.test_1:16 expected:<...dthe,higheraimsofour[,existence.]]> but was:<...dthe,higheraimsofour[]]>
+[ERROR]   WRAP_TEST.test_2:23 expected:<...nityandthehigheraims[,ofourexistence.]]> but was:<...nityandthehigheraims[]]>
+[ERROR]   WRAP_TEST.test_3:30 expected:<...elveswhenweforgetour[,humandignityandthehigheraimsofourexistence.]]> but was:<...elveswhenweforgetour[]]>
+[ERROR]   WRAP_TEST.test_4:37 expected:<...ulinthisworldwhenone[,reflects:everythingexceptwhatwethinkordoourselveswhenweforgetourhumandignityandthehigheraimsofourexistence.]]> but was:<...ulinthisworldwhenone[]]>
+[ERROR] Errors: 
+[ERROR]   WRAP_ESTest.test2:48 » TestTimedOut test timed out after 4000 milliseconds
+[INFO] 
+[ERROR] Tests run: 16, Failures: 5, Errors: 1, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  30.255 s
+[INFO] Finished at: 2024-06-05T11:40:24+08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.0.0-M5:test (default-test) on project quixbugs: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/QuixBugs/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[INFO] Build failures were ignored.

@@ -1,0 +1,560 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< org.traccar:traccar >-------------------------
+[INFO] Building traccar 3.12-SNAPSHOT
+[INFO]   from pom_for_clover.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ traccar ---
+[INFO] Deleting /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Patched-Version/target
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (checkstyle) @ traccar ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bytecode-version) @ traccar ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ traccar ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ traccar ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 549 source files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Patched-Version/target/classes
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Patched-Version/src/org/traccar/geolocation/UniversalGeolocationProvider.java:[45,46] unchecked method invocation: method execute in class com.ning.http.client.AsyncHttpClient.BoundRequestBuilder is applied to given types
+  required: com.ning.http.client.AsyncHandler<T>
+  found: <anonymous com.ning.http.client.AsyncCompletionHandler>
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Patched-Version/src/org/traccar/geolocation/UniversalGeolocationProvider.java:[45,47] unchecked conversion
+  required: com.ning.http.client.AsyncHandler<T>
+  found:    <anonymous com.ning.http.client.AsyncCompletionHandler>
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Patched-Version/src/org/traccar/model/Calendar.java:[73,48] unchecked method invocation: constructor <init> in class net.fortuna.ical4j.filter.Filter is applied to given types
+  required: net.fortuna.ical4j.filter.Rule<T>[],int
+  found: net.fortuna.ical4j.filter.Rule[],int
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Patched-Version/src/org/traccar/model/Calendar.java:[73,61] unchecked conversion
+  required: net.fortuna.ical4j.filter.Rule<T>[]
+  found:    net.fortuna.ical4j.filter.Rule[]
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Patched-Version/src/org/traccar/model/Calendar.java:[73,48] unchecked conversion
+  required: net.fortuna.ical4j.filter.Filter<net.fortuna.ical4j.model.component.CalendarComponent>
+  found:    net.fortuna.ical4j.filter.Filter
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Patched-Version/src/org/traccar/geocoder/JsonGeocoder.java:[62,25] unchecked method invocation: method execute in class com.ning.http.client.AsyncHttpClient.BoundRequestBuilder is applied to given types
+  required: com.ning.http.client.AsyncHandler<T>
+  found: <anonymous com.ning.http.client.AsyncCompletionHandler>
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Patched-Version/src/org/traccar/geocoder/JsonGeocoder.java:[62,26] unchecked conversion
+  required: com.ning.http.client.AsyncHandler<T>
+  found:    <anonymous com.ning.http.client.AsyncCompletionHandler>
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Patched-Version/src/org/traccar/database/QueryBuilder.java:[286,70] unchecked method invocation: method toXmlString in class org.traccar.model.MiscFormatter is applied to given types
+  required: java.util.Map<java.lang.String,java.lang.Object>
+  found: java.util.Map
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Patched-Version/src/org/traccar/database/QueryBuilder.java:[286,71] unchecked conversion
+  required: java.util.Map<java.lang.String,java.lang.Object>
+  found:    java.util.Map
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Patched-Version/src/org/traccar/Context.java:[383,43] unchecked cast
+  required: org.traccar.database.BaseObjectManager<T>
+  found:    org.traccar.database.DeviceManager
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Patched-Version/src/org/traccar/Context.java:[385,43] unchecked cast
+  required: org.traccar.database.BaseObjectManager<T>
+  found:    org.traccar.database.GroupsManager
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Patched-Version/src/org/traccar/Context.java:[387,43] unchecked cast
+  required: org.traccar.database.BaseObjectManager<T>
+  found:    org.traccar.database.UsersManager
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Patched-Version/src/org/traccar/Context.java:[389,43] unchecked cast
+  required: org.traccar.database.BaseObjectManager<T>
+  found:    org.traccar.database.CalendarManager
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Patched-Version/src/org/traccar/Context.java:[391,43] unchecked cast
+  required: org.traccar.database.BaseObjectManager<T>
+  found:    org.traccar.database.AttributesManager
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Patched-Version/src/org/traccar/Context.java:[393,43] unchecked cast
+  required: org.traccar.database.BaseObjectManager<T>
+  found:    org.traccar.database.GeofenceManager
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Patched-Version/src/org/traccar/Context.java:[395,43] unchecked cast
+  required: org.traccar.database.BaseObjectManager<T>
+  found:    org.traccar.database.DriversManager
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Patched-Version/src/org/traccar/reports/Trips.java:[54,41] unchecked cast
+  required: java.util.Collection<org.traccar.reports.model.TripReport>
+  found:    java.util.Collection<capture#1 of ? extends org.traccar.reports.model.BaseReport>
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Patched-Version/src/org/traccar/geolocation/OpenCellIdGeolocationProvider.java:[48,69] unchecked method invocation: method execute in class com.ning.http.client.AsyncHttpClient.BoundRequestBuilder is applied to given types
+  required: com.ning.http.client.AsyncHandler<T>
+  found: <anonymous com.ning.http.client.AsyncCompletionHandler>
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Patched-Version/src/org/traccar/geolocation/OpenCellIdGeolocationProvider.java:[48,70] unchecked conversion
+  required: com.ning.http.client.AsyncHandler<T>
+  found:    <anonymous com.ning.http.client.AsyncCompletionHandler>
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Patched-Version/src/org/traccar/protocol/Gl200TextProtocolDecoder.java:[872,56] unchecked cast
+  required: java.util.List<org.traccar.model.Position>
+  found:    java.lang.Object
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Patched-Version/src/org/traccar/reports/Stops.java:[55,41] unchecked cast
+  required: java.util.Collection<org.traccar.reports.model.StopReport>
+  found:    java.util.Collection<capture#2 of ? extends org.traccar.reports.model.BaseReport>
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Patched-Version/src/org/traccar/geolocation/UnwiredGeolocationProvider.java:[100,46] unchecked method invocation: method execute in class com.ning.http.client.AsyncHttpClient.BoundRequestBuilder is applied to given types
+  required: com.ning.http.client.AsyncHandler<T>
+  found: <anonymous com.ning.http.client.AsyncCompletionHandler>
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Patched-Version/src/org/traccar/geolocation/UnwiredGeolocationProvider.java:[100,47] unchecked conversion
+  required: com.ning.http.client.AsyncHandler<T>
+  found:    <anonymous com.ning.http.client.AsyncCompletionHandler>
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ traccar ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Patched-Version/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ traccar ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 235 source files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Patched-Version/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ traccar ---
+[INFO] Surefire report directory: /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Patched-Version/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.traccar.protocol.Gl200TextProtocolDecoder_ESTest
+[main] INFO org.evosuite.runtime.agent.AgentLoader - dynamically loading javaagent
+[main] INFO org.evosuite.runtime.agent.AgentLoader - Using JavaAgent in /Users/jun/.m2/repository/org/evosuite/evosuite-standalone-runtime/1.2.0/evosuite-standalone-runtime-1.2.0.jar
+[main] INFO org.evosuite.runtime.agent.AgentLoader - Classpath: /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Patched-Version/target/test-classes:/Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Patched-Version/target/classes:/Users/jun/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/jun/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/jun/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/Users/jun/.m2/repository/joda-time/joda-time/2.9.9/joda-time-2.9.9.jar:/Users/jun/.m2/repository/com/h2database/h2/1.4.196/h2-1.4.196.jar:/Users/jun/.m2/repository/mysql/mysql-connector-java/5.1.42/mysql-connector-java-5.1.42.jar:/Users/jun/.m2/repository/org/postgresql/postgresql/42.1.1.jre7/postgresql-42.1.1.jre7.jar:/Users/jun/.m2/repository/com/microsoft/sqlserver/mssql-jdbc/6.2.0.jre7/mssql-jdbc-6.2.0.jre7.jar:/Users/jun/.m2/repository/com/zaxxer/HikariCP-java7/2.4.12/HikariCP-java7-2.4.12.jar:/Users/jun/.m2/repository/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar:/Users/jun/.m2/repository/io/netty/netty/3.10.6.Final/netty-3.10.6.Final.jar:/Users/jun/.m2/repository/com/ning/async-http-client/1.9.40/async-http-client-1.9.40.jar:/Users/jun/.m2/repository/org/slf4j/slf4j-simple/1.7.25/slf4j-simple-1.7.25.jar:/Users/jun/.m2/repository/org/glassfish/javax.json/1.0.4/javax.json-1.0.4.jar:/Users/jun/.m2/repository/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar:/Users/jun/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/jun/.m2/repository/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar:/Users/jun/.m2/repository/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar:/Users/jun/.m2/repository/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar:/Users/jun/.m2/repository/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar:/Users/jun/.m2/repository/org/eclipse/jetty/jetty-webapp/9.2.22.v20170606/jetty-webapp-9.2.22.v20170606.jar:/Users/jun/.m2/repository/org/eclipse/jetty/jetty-xml/9.2.22.v20170606/jetty-xml-9.2.22.v20170606.jar:/Users/jun/.m2/repository/org/eclipse/jetty/jetty-jndi/9.2.22.v20170606/jetty-jndi-9.2.22.v20170606.jar:/Users/jun/.m2/repository/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar:/Users/jun/.m2/repository/org/eclipse/jetty/websocket/websocket-server/9.2.22.v20170606/websocket-server-9.2.22.v20170606.jar:/Users/jun/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.2.22.v20170606/websocket-common-9.2.22.v20170606.jar:/Users/jun/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.2.22.v20170606/websocket-api-9.2.22.v20170606.jar:/Users/jun/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.2.22.v20170606/websocket-client-9.2.22.v20170606.jar:/Users/jun/.m2/repository/org/eclipse/jetty/websocket/websocket-servlet/9.2.22.v20170606/websocket-servlet-9.2.22.v20170606.jar:/Users/jun/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet/2.25.1/jersey-container-servlet-2.25.1.jar:/Users/jun/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet-core/2.25.1/jersey-container-servlet-core-2.25.1.jar:/Users/jun/.m2/repository/org/glassfish/hk2/external/javax.inject/2.5.0-b32/javax.inject-2.5.0-b32.jar:/Users/jun/.m2/repository/org/glassfish/jersey/core/jersey-common/2.25.1/jersey-common-2.25.1.jar:/Users/jun/.m2/repository/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2.jar:/Users/jun/.m2/repository/org/glassfish/jersey/bundles/repackaged/jersey-guava/2.25.1/jersey-guava-2.25.1.jar:/Users/jun/.m2/repository/org/glassfish/hk2/hk2-api/2.5.0-b32/hk2-api-2.5.0-b32.jar:/Users/jun/.m2/repository/org/glassfish/hk2/hk2-utils/2.5.0-b32/hk2-utils-2.5.0-b32.jar:/Users/jun/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.5.0-b32/aopalliance-repackaged-2.5.0-b32.jar:/Users/jun/.m2/repository/org/glassfish/hk2/hk2-locator/2.5.0-b32/hk2-locator-2.5.0-b32.jar:/Users/jun/.m2/repository/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar:/Users/jun/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.1/osgi-resource-locator-1.0.1.jar:/Users/jun/.m2/repository/org/glassfish/jersey/core/jersey-server/2.25.1/jersey-server-2.25.1.jar:/Users/jun/.m2/repository/org/glassfish/jersey/core/jersey-client/2.25.1/jersey-client-2.25.1.jar:/Users/jun/.m2/repository/org/glassfish/jersey/media/jersey-media-jaxb/2.25.1/jersey-media-jaxb-2.25.1.jar:/Users/jun/.m2/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar:/Users/jun/.m2/repository/javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1.jar:/Users/jun/.m2/repository/org/glassfish/jersey/media/jersey-media-json-jackson/2.25.1/jersey-media-json-jackson-2.25.1.jar:/Users/jun/.m2/repository/org/glassfish/jersey/ext/jersey-entity-filtering/2.25.1/jersey-entity-filtering-2.25.1.jar:/Users/jun/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-base/2.8.4/jackson-jaxrs-base-2.8.4.jar:/Users/jun/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.8.4/jackson-core-2.8.4.jar:/Users/jun/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.8.4/jackson-databind-2.8.4.jar:/Users/jun/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-json-provider/2.8.4/jackson-jaxrs-json-provider-2.8.4.jar:/Users/jun/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.8.4/jackson-module-jaxb-annotations-2.8.4.jar:/Users/jun/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.8.4/jackson-annotations-2.8.4.jar:/Users/jun/.m2/repository/org/liquibase/liquibase-core/3.5.3/liquibase-core-3.5.3.jar:/Users/jun/.m2/repository/org/yaml/snakeyaml/1.17/snakeyaml-1.17.jar:/Users/jun/.m2/repository/javax/mail/mail/1.4.7/mail-1.4.7.jar:/Users/jun/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/Users/jun/.m2/repository/org/jxls/jxls/2.4.0/jxls-2.4.0.jar:/Users/jun/.m2/repository/org/apache/commons/commons-jexl/2.1.1/commons-jexl-2.1.1.jar:/Users/jun/.m2/repository/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar:/Users/jun/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.12/jcl-over-slf4j-1.7.12.jar:/Users/jun/.m2/repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar:/Users/jun/.m2/repository/org/jxls/jxls-poi/1.0.12/jxls-poi-1.0.12.jar:/Users/jun/.m2/repository/org/apache/poi/poi/3.14/poi-3.14.jar:/Users/jun/.m2/repository/org/apache/poi/poi-ooxml/3.14/poi-ooxml-3.14.jar:/Users/jun/.m2/repository/org/apache/poi/poi-ooxml-schemas/3.14/poi-ooxml-schemas-3.14.jar:/Users/jun/.m2/repository/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.jar:/Users/jun/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar:/Users/jun/.m2/repository/com/github/virtuald/curvesapi/1.03/curvesapi-1.03.jar:/Users/jun/.m2/repository/org/apache/velocity/velocity/1.7/velocity-1.7.jar:/Users/jun/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar:/Users/jun/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar:/Users/jun/.m2/repository/org/apache/velocity/velocity-tools/2.0/velocity-tools-2.0.jar:/Users/jun/.m2/repository/commons-digester/commons-digester/1.8/commons-digester-1.8.jar:/Users/jun/.m2/repository/commons-chain/commons-chain/1.1/commons-chain-1.1.jar:/Users/jun/.m2/repository/commons-logging/commons-logging/1.1/commons-logging-1.1.jar:/Users/jun/.m2/repository/javax/servlet/servlet-api/2.3/servlet-api-2.3.jar:/Users/jun/.m2/repository/commons-validator/commons-validator/1.3.1/commons-validator-1.3.1.jar:/Users/jun/.m2/repository/dom4j/dom4j/1.1/dom4j-1.1.jar:/Users/jun/.m2/repository/oro/oro/2.0.8/oro-2.0.8.jar:/Users/jun/.m2/repository/sslext/sslext/1.2-0/sslext-1.2-0.jar:/Users/jun/.m2/repository/org/apache/struts/struts-core/1.3.8/struts-core-1.3.8.jar:/Users/jun/.m2/repository/antlr/antlr/2.7.2/antlr-2.7.2.jar:/Users/jun/.m2/repository/org/apache/struts/struts-taglib/1.3.8/struts-taglib-1.3.8.jar:/Users/jun/.m2/repository/org/apache/struts/struts-tiles/1.3.8/struts-tiles-1.3.8.jar:/Users/jun/.m2/repository/org/mnode/ical4j/ical4j/2.0.0/ical4j-2.0.0.jar:/Users/jun/.m2/repository/org/apache/commons/commons-collections4/4.0/commons-collections4-4.0.jar:/Users/jun/.m2/repository/org/codehaus/groovy/groovy-all/2.3.2/groovy-all-2.3.2.jar:/Users/jun/.m2/repository/biz/aQute/bnd/bndlib/2.3.0/bndlib-2.3.0.jar:/Users/jun/.m2/repository/org/osgi/org.osgi.core/4.3.1/org.osgi.core-4.3.1.jar:/Users/jun/.m2/repository/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar:/Users/jun/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/Users/jun/.m2/repository/com/fizzed/ch-smpp/5.0.9/ch-smpp-5.0.9.jar:/Users/jun/.m2/repository/com/cloudhopper/ch-commons-util/6.0.2/ch-commons-util-6.0.2.jar:/Users/jun/.m2/repository/com/cloudhopper/ch-commons-charset/3.0.2/ch-commons-charset-3.0.2.jar:/Users/jun/.m2/repository/org/evosuite/evosuite-standalone-runtime/1.2.0/evosuite-standalone-runtime-1.2.0.jar:
+[main] INFO org.evosuite.runtime.agent.AgentLoader - Going to attach agent to process 11346
+[Attach Listener] INFO org.evosuite.runtime.agent.InstrumentingAgent - Executing agentmain of JavaAgent
+Warning: the font "Times" is not available, so "Lucida Bright" has been substituted, but may have unexpected appearance or behavor. Re-enable the "Times" font to remove this warning.
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/traccar/ExtendedObjectDecoder
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/traccar/ExtendedObjectDecoder
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/traccar/BaseProtocolDecoder
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/traccar/BaseProtocolDecoder
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/traccar/model/BaseModel
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/traccar/model/BaseModel
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/traccar/model/Device
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/traccar/model/Device
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field STATUS_UNKNOWN
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field STATUS_ONLINE
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field STATUS_OFFLINE
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/traccar/model/ExtendedModel
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/traccar/model/ExtendedModel
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/logging/JdkLoggerFactory
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/logging/JdkLoggerFactory
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/logging/InternalLoggerFactory
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jboss/netty/logging/InternalLoggerFactory
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/socket/nio/AbstractNioSelector
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jboss/netty/channel/socket/nio/AbstractNioSelector
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/ChannelException
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/channel/ChannelException
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/logging/JdkLogger
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/logging/JdkLogger
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/logging/AbstractInternalLogger
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/logging/AbstractInternalLogger
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/traccar/BaseProtocol
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/traccar/BaseProtocol
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/providers/netty/chmv8/ConcurrentHashMapV8$TreeNode
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/ning/http/client/providers/netty/chmv8/ConcurrentHashMapV8$TreeNode
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/providers/netty/chmv8/ConcurrentHashMapV8$Node
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/ning/http/client/providers/netty/chmv8/ConcurrentHashMapV8$Node
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/providers/netty/channel/ChannelManager$7
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/handler/codec/http/HttpContentDecompressor
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/handler/codec/http/HttpContentDecompressor
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/handler/codec/http/HttpContentDecoder
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/handler/codec/http/HttpContentDecoder
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/SimpleChannelUpstreamHandler
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jboss/netty/channel/SimpleChannelUpstreamHandler
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/providers/netty/channel/ChannelManager$8
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/providers/netty/Callback
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/ning/http/client/providers/netty/Callback
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/socket/nio/NioClientBoss$1
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/providers/netty/channel/CleanupChannelGroup
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class com/ning/http/client/providers/netty/channel/CleanupChannelGroup
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/group/DefaultChannelGroup
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jboss/netty/channel/group/DefaultChannelGroup
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/traccar/database/BaseObjectManager
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/traccar/database/BaseObjectManager
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/traccar/StringProtocolEncoder
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/traccar/StringProtocolEncoder
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/traccar/BaseProtocolEncoder
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/traccar/BaseProtocolEncoder
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/handler/codec/oneone/OneToOneEncoder
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/handler/codec/oneone/OneToOneEncoder
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/providers/netty/channel/pool/DefaultChannelPool$1
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/AsyncHttpClientConfig$Builder$1
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/ChannelFutureListener$1
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/ChannelFutureListener$2
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/traccar/database/UsersManager
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/traccar/database/UsersManager
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/traccar/database/SimpleObjectManager
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/traccar/database/SimpleObjectManager
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/traccar/model/User
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/traccar/model/User
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/providers/netty/NettyAsyncHttpProviderConfig
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/ning/http/client/providers/netty/NettyAsyncHttpProviderConfig
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/providers/netty/request/NettyRequestFactory
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/ning/http/client/providers/netty/request/NettyRequestFactory
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field GZIP_DEFLATE
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/traccar/Config
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/traccar/Config
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/ChannelHandlerLifeCycleException
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/channel/ChannelHandlerLifeCycleException
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/providers/netty/chmv8/ConcurrentHashMapV8$Segment
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/ning/http/client/providers/netty/chmv8/ConcurrentHashMapV8$Segment
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/util/internal/DeadLockProofWorker
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jboss/netty/util/internal/DeadLockProofWorker
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/group/DefaultChannelGroup$1
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/providers/netty/channel/pool/DefaultChannelPool$IdleChannelDetector
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/ning/http/client/providers/netty/channel/pool/DefaultChannelPool$IdleChannelDetector
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/socket/nio/NioClientBoss
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/channel/socket/nio/NioClientBoss
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/socket/nio/AbstractNioChannel
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/channel/socket/nio/AbstractNioChannel
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/AbstractChannel
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jboss/netty/channel/AbstractChannel
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/socket/nio/NioClientSocketChannel
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jboss/netty/channel/socket/nio/NioClientSocketChannel
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/socket/nio/NioSocketChannel
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jboss/netty/channel/socket/nio/NioSocketChannel
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/ConnectTimeoutException
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/channel/ConnectTimeoutException
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/util/ThreadRenamingRunnable
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jboss/netty/util/ThreadRenamingRunnable
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/util/ThreadNameDeterminer$1
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/util/ThreadNameDeterminer$2
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/traccar/database/AttributesManager
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/traccar/database/AttributesManager
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/traccar/database/ExtendedObjectManager
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/traccar/database/ExtendedObjectManager
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/listenable/AbstractListenableFuture
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/ning/http/client/listenable/AbstractListenableFuture
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/socket/nio/NioClientBossPool
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/channel/socket/nio/NioClientBossPool
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/socket/nio/AbstractNioBossPool
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jboss/netty/channel/socket/nio/AbstractNioBossPool
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/providers/netty/NettyAsyncHttpProvider
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class com/ning/http/client/providers/netty/NettyAsyncHttpProvider
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/traccar/database/GroupsManager
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/traccar/database/GroupsManager
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/traccar/model/Group
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/traccar/model/Group
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/util/internal/SharedResourceMisuseDetector
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jboss/netty/util/internal/SharedResourceMisuseDetector
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/bootstrap/ServerBootstrap
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/bootstrap/ServerBootstrap
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/bootstrap/Bootstrap
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jboss/netty/bootstrap/Bootstrap
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/traccar/protocol/Gl200Protocol
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/traccar/protocol/Gl200Protocol
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/bootstrap/ConnectionlessBootstrap
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/bootstrap/ConnectionlessBootstrap
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/socket/nio/SocketReceiveBufferAllocator
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/channel/socket/nio/SocketReceiveBufferAllocator
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/providers/netty/NettyAsyncHttpProviderConfig$DefaultNettyWebSocketFactory
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/ning/http/client/providers/netty/NettyAsyncHttpProviderConfig$DefaultNettyWebSocketFactory
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/traccar/database/CalendarManager
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/traccar/database/CalendarManager
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/providers/netty/chmv8/ConcurrentHashMapV8$ValuesView
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/ning/http/client/providers/netty/chmv8/ConcurrentHashMapV8$ValuesView
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/providers/netty/chmv8/ConcurrentHashMapV8$CollectionView
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/ning/http/client/providers/netty/chmv8/ConcurrentHashMapV8$CollectionView
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field oomeMsg
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/traccar/Context
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/traccar/Context
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/traccar/database/DeviceManager
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/traccar/database/DeviceManager
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field DEFAULT_REFRESH_DELAY
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/traccar/database/GeofenceManager
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/traccar/database/GeofenceManager
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/traccar/database/DriversManager
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/traccar/database/DriversManager
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/AsyncHttpClient
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class com/ning/http/client/AsyncHttpClient
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/AsyncHttpClientConfig$Builder
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/ning/http/client/AsyncHttpClientConfig$Builder
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/AsyncHttpClientConfigDefaults
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class com/ning/http/client/AsyncHttpClientConfigDefaults
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/AsyncHttpClientConfig
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/ning/http/client/AsyncHttpClientConfig
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/util/MiscUtils
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/ning/http/util/MiscUtils
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/ProxyServerSelector$1
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/providers/netty/handler/DefaultConnectionStrategy
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/ning/http/client/providers/netty/handler/DefaultConnectionStrategy
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/util/HashedWheelTimer
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jboss/netty/util/HashedWheelTimer
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/util/HashedWheelTimer$Worker
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/util/HashedWheelTimer$Worker
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/util/HashedWheelTimer$HashedWheelBucket
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jboss/netty/util/HashedWheelTimer$HashedWheelBucket
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/providers/netty/channel/ChannelManager
+[Hashed wheel timer #1] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/util/internal/DetectionUtil
+[Hashed wheel timer #1] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jboss/netty/util/internal/DetectionUtil
+[Hashed wheel timer #1] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/util/internal/SystemPropertyUtil
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class com/ning/http/client/providers/netty/channel/ChannelManager
+[Hashed wheel timer #1] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jboss/netty/util/internal/SystemPropertyUtil
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/providers/netty/handler/Protocol
+[Hashed wheel timer #1] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/util/internal/DetectionUtil$1
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class com/ning/http/client/providers/netty/handler/Protocol
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/providers/netty/handler/HttpProtocol
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/ning/http/client/providers/netty/handler/HttpProtocol
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/providers/netty/handler/WebSocketProtocol
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/ning/http/client/providers/netty/handler/WebSocketProtocol
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/SSLEngineFactory$DefaultSSLEngineFactory
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/ning/http/client/SSLEngineFactory$DefaultSSLEngineFactory
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/providers/netty/channel/pool/DefaultChannelPool
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class com/ning/http/client/providers/netty/channel/pool/DefaultChannelPool
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/providers/netty/chmv8/ConcurrentHashMapV8
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class com/ning/http/client/providers/netty/chmv8/ConcurrentHashMapV8
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/providers/netty/chmv8/ConcurrentHashMapV8$TreeBin
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class com/ning/http/client/providers/netty/chmv8/ConcurrentHashMapV8$TreeBin
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/providers/netty/chmv8/ConcurrentHashMapV8$ReservationNode
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/ning/http/client/providers/netty/chmv8/ConcurrentHashMapV8$ReservationNode
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/providers/netty/chmv8/ConcurrentHashMapV8$ForwardingNode
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/ning/http/client/providers/netty/chmv8/ConcurrentHashMapV8$ForwardingNode
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/providers/netty/chmv8/ConcurrentHashMapV8$1
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/providers/netty/chmv8/ConcurrentHashMapV8$CounterCell
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/ning/http/client/providers/netty/chmv8/ConcurrentHashMapV8$CounterCell
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/providers/netty/chmv8/ConcurrentHashMapV8$KeySetView
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/ning/http/client/providers/netty/chmv8/ConcurrentHashMapV8$KeySetView
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/providers/netty/chmv8/ConcurrentHashMapV8$EntrySetView
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/ning/http/client/providers/netty/chmv8/ConcurrentHashMapV8$EntrySetView
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/util/HashedWheelTimer$HashedWheelTimeout
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jboss/netty/util/HashedWheelTimer$HashedWheelTimeout
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/socket/nio/NioClientSocketChannelFactory
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/channel/socket/nio/NioClientSocketChannelFactory
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field DEFAULT_BOSS_COUNT
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/socket/nio/NioWorkerPool
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/channel/socket/nio/NioWorkerPool
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/socket/nio/AbstractNioWorkerPool
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jboss/netty/channel/socket/nio/AbstractNioWorkerPool
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/socket/nio/AbstractNioWorker
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/channel/socket/nio/AbstractNioWorker
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/socket/nio/NioWorker
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/channel/socket/nio/NioWorker
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/socket/nio/SelectorUtil
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jboss/netty/channel/socket/nio/SelectorUtil
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/util/internal/DeadLockProofWorker$1
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/socket/nio/SocketSendBufferPool
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jboss/netty/channel/socket/nio/SocketSendBufferPool
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/socket/nio/SocketSendBufferPool$EmptySendBuffer
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/channel/socket/nio/SocketSendBufferPool$EmptySendBuffer
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/socket/nio/SocketSendBufferPool$Preallocation
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/channel/socket/nio/SocketSendBufferPool$Preallocation
+Jun 03, 2024 8:38:15 AM org.jboss.netty.channel.socket.nio.AbstractNioWorkerPool
+WARNING: Failed to get all worker threads ready within 10 second(s). Make sure to specify the executor which has more threads than the requested workerCount. If unsure, use Executors.newCachedThreadPool().
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/socket/nio/NioClientSocketPipelineSink
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jboss/netty/channel/socket/nio/NioClientSocketPipelineSink
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/socket/nio/AbstractNioChannelSink
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/channel/socket/nio/AbstractNioChannelSink
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/AbstractChannelSink
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/channel/AbstractChannelSink
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/ChannelPipelineException
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/channel/ChannelPipelineException
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/bootstrap/ClientBootstrap
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/bootstrap/ClientBootstrap
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/Channels
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/channel/Channels
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/DefaultChannelPipeline
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jboss/netty/channel/DefaultChannelPipeline
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/DefaultChannelPipeline$DiscardingChannelSink
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/channel/DefaultChannelPipeline$DiscardingChannelSink
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/Channels$1
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/DefaultChannelFuture
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jboss/netty/channel/DefaultChannelFuture
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/providers/netty/request/NettyRequestSender
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class com/ning/http/client/providers/netty/request/NettyRequestSender
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/filter/FilterException
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/ning/http/client/filter/FilterException
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/MaxRedirectException
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/ning/http/client/MaxRedirectException
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/HttpResponseHeaders
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/ning/http/client/HttpResponseHeaders
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/providers/netty/response/NettyResponseHeaders
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/ning/http/client/providers/netty/response/NettyResponseHeaders
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/HttpResponseBodyPart
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/ning/http/client/HttpResponseBodyPart
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/providers/netty/response/NettyResponseBodyPart
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/ning/http/client/providers/netty/response/NettyResponseBodyPart
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/HttpResponseStatus
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/ning/http/client/HttpResponseStatus
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/providers/netty/response/NettyResponseStatus
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/ning/http/client/providers/netty/response/NettyResponseStatus
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/handler/codec/http/HttpResponseStatus
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jboss/netty/handler/codec/http/HttpResponseStatus
+[main] ERROR com.ning.http.client.AsyncHttpClient - Unable to instantiate provider com.ning.http.client.providers.netty.NettyAsyncHttpProvider.  Trying other providers.
+[main] ERROR com.ning.http.client.AsyncHttpClient - java.lang.ArrayIndexOutOfBoundsException: 0
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at org.evosuite.runtime.mock.java.lang.MockException.<init>(MockException.java:91)
+	at com.ning.http.client.MaxRedirectException.<init>(MaxRedirectException.java:29)
+	at com.ning.http.client.providers.netty.handler.Protocol.<init>(Protocol.java:82)
+	at com.ning.http.client.providers.netty.handler.HttpProtocol.<init>(HttpProtocol.java:62)
+	at com.ning.http.client.providers.netty.channel.ChannelManager.configureBootstraps(ChannelManager.java:214)
+	at com.ning.http.client.providers.netty.NettyAsyncHttpProvider.<init>(NettyAsyncHttpProvider.java:58)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.ning.http.client.AsyncHttpClient.loadDefaultProvider(AsyncHttpClient.java:565)
+	at com.ning.http.client.AsyncHttpClient.<init>(AsyncHttpClient.java:187)
+	at com.ning.http.client.AsyncHttpClient.<init>(AsyncHttpClient.java:167)
+	at org.traccar.Context.<clinit>(Context.java)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.evosuite.runtime.classhandling.ClassStateSupport.loadClasses(ClassStateSupport.java:163)
+	at org.evosuite.runtime.classhandling.ClassStateSupport.initializeClasses(ClassStateSupport.java:64)
+	at org.traccar.protocol.Gl200TextProtocolDecoder_ESTest_scaffolding.initializeClasses(Gl200TextProtocolDecoder_ESTest_scaffolding.java:68)
+	at org.traccar.protocol.Gl200TextProtocolDecoder_ESTest_scaffolding.initEvoSuiteFramework(Gl200TextProtocolDecoder_ESTest_scaffolding.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Jun 03, 2024 8:38:26 AM org.jboss.netty.channel.socket.nio.AbstractNioWorkerPool
+WARNING: Failed to get all worker threads ready within 10 second(s). Make sure to specify the executor which has more threads than the requested workerCount. If unsure, use Executors.newCachedThreadPool().
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/providers/jdk/JDKAsyncHttpProvider
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class com/ning/http/client/providers/jdk/JDKAsyncHttpProvider
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/providers/jdk/JDKAsyncHttpProvider$1
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/providers/jdk/JDKFuture
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class com/ning/http/client/providers/jdk/JDKFuture
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/providers/jdk/JDKDelegateFuture
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/ning/http/client/providers/jdk/JDKDelegateFuture
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/AbstractChannel$ChannelCloseFuture
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/channel/AbstractChannel$ChannelCloseFuture
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/traccar/database/ActiveDevice
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/traccar/database/ActiveDevice
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/traccar/helper/PatternBuilder
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/traccar/helper/PatternBuilder
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/traccar/protocol/Gl200TextProtocolDecoder
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/traccar/protocol/Gl200TextProtocolDecoder
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/traccar/model/Driver
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/traccar/model/Driver
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/traccar/model/Message
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/traccar/model/Message
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/traccar/model/Command
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/traccar/model/Command
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_CUSTOM
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_IDENTIFICATION
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_POSITION_SINGLE
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_POSITION_PERIODIC
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_POSITION_STOP
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_ENGINE_STOP
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_ENGINE_RESUME
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_ALARM_ARM
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_ALARM_DISARM
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_SET_TIMEZONE
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_REQUEST_PHOTO
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_REBOOT_DEVICE
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_SEND_SMS
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_SEND_USSD
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_SOS_NUMBER
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_SILENCE_TIME
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_SET_PHONEBOOK
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_VOICE_MESSAGE
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_OUTPUT_CONTROL
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_VOICE_MONITORING
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_SET_AGPS
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_SET_INDICATOR
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_CONFIGURATION
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_GET_VERSION
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_FIRMWARE_UPDATE
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_SET_CONNECTION
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_SET_ODOMETER
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_GET_MODEM_STATUS
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_GET_DEVICE_STATUS
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_MODE_POWER_SAVING
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_MODE_DEEP_SLEEP
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_ALARM_GEOFENCE
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_ALARM_BATTERY
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_ALARM_SOS
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_ALARM_REMOVE
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_ALARM_CLOCK
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_ALARM_SPEED
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_ALARM_FALL
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_ALARM_VIBRATION
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_UNIQUE_ID
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_FREQUENCY
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_TIMEZONE
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_DEVICE_PASSWORD
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_RADIUS
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_MESSAGE
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_ENABLE
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_DATA
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_INDEX
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_PHONE
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_SERVER
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_PORT
+Jun 03, 2024 8:38:36 AM org.jboss.netty.channel.socket.nio.AbstractNioWorkerPool
+WARNING: Failed to get all worker threads ready within 10 second(s). Make sure to specify the executor which has more threads than the requested workerCount. If unsure, use Executors.newCachedThreadPool().
+[main] ERROR com.ning.http.client.AsyncHttpClient - Unable to instantiate provider com.ning.http.client.providers.netty.NettyAsyncHttpProvider.  Trying other providers.
+[main] ERROR com.ning.http.client.AsyncHttpClient - java.lang.ArrayIndexOutOfBoundsException: 0
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at org.evosuite.runtime.mock.java.lang.MockException.<init>(MockException.java:91)
+	at com.ning.http.client.MaxRedirectException.<init>(MaxRedirectException.java:29)
+	at com.ning.http.client.providers.netty.handler.Protocol.<init>(Protocol.java:82)
+	at com.ning.http.client.providers.netty.handler.HttpProtocol.<init>(HttpProtocol.java:62)
+	at com.ning.http.client.providers.netty.channel.ChannelManager.configureBootstraps(ChannelManager.java:214)
+	at com.ning.http.client.providers.netty.NettyAsyncHttpProvider.<init>(NettyAsyncHttpProvider.java:58)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.ning.http.client.AsyncHttpClient.loadDefaultProvider(AsyncHttpClient.java:565)
+	at com.ning.http.client.AsyncHttpClient.<init>(AsyncHttpClient.java:187)
+	at com.ning.http.client.AsyncHttpClient.<init>(AsyncHttpClient.java:167)
+	at org.traccar.Context.__STATIC_RESET(Context.java:190)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.evosuite.runtime.classhandling.ClassResetter.reset(ClassResetter.java:159)
+	at org.evosuite.runtime.classhandling.ClassStateSupport.resetClasses(ClassStateSupport.java:137)
+	at org.traccar.protocol.Gl200TextProtocolDecoder_ESTest_scaffolding.resetClasses(Gl200TextProtocolDecoder_ESTest_scaffolding.java:262)
+	at org.traccar.protocol.Gl200TextProtocolDecoder_ESTest_scaffolding.doneWithTestCase(Gl200TextProtocolDecoder_ESTest_scaffolding.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+	at org.evosuite.runtime.vnet.NonFunctionalRequirementRule$1.evaluate(NonFunctionalRequirementRule.java:41)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Jun 03, 2024 8:38:46 AM org.jboss.netty.channel.socket.nio.AbstractNioWorkerPool
+WARNING: Failed to get all worker threads ready within 10 second(s). Make sure to specify the executor which has more threads than the requested workerCount. If unsure, use Executors.newCachedThreadPool().
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 44.755 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:01 min
+[INFO] Finished at: 2024-06-03T16:38:46+08:00
+[INFO] ------------------------------------------------------------------------

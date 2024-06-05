@@ -1,0 +1,30 @@
+{
+    "Bears": [
+        "Bears-122",
+        "Bears-189",
+        "Bears-202",
+        "Bears-20",
+        "Bears-17"
+    ],
+    "BugSwarm": [
+        "tananaev-traccar-68883949",
+        "tananaev-traccar-201008629",
+        "tananaev-traccar-82839755",
+        "apache-commons-lang-224267191",
+        "openpnp-openpnp-130246850"
+    ],
+    "Defects4J": [
+        "Codec_12",
+        "Math_5",
+        "Math_9",
+        "Math_22",
+        "Math_27"
+    ],
+    "QuixBugs": [
+        "BUCKETSORT",
+        "FLATTEN",
+        "KTH",
+        "LONGEST_COMMON_SUBSEQUENCE",
+        "WRAP"
+    ]
+}

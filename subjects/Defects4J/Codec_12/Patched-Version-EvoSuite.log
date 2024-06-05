@@ -1,0 +1,81 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< commons-codec:commons-codec >---------------------
+[INFO] Building Commons Codec 1.7-SNAPSHOT
+[INFO]   from pom_for_clover.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ commons-codec ---
+[INFO] Deleting /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Codec_12/Patched-Version/target
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.7:run (javadoc.resources) @ commons-codec ---
+[INFO] Executing tasks
+
+main:
+     [copy] Copying 2 files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Codec_12/Patched-Version/target/apidocs/META-INF
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.2.1:process (default) @ commons-codec ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.0:create (default) @ commons-codec ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Codec_12/Patched-Version && svn --non-interactive info
+[INFO] Working directory: /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Codec_12/Patched-Version
+[INFO] Storing buildNumber: ?????? at timestamp: 1717404854192
+[INFO] Executing: /bin/sh -c cd /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Codec_12/Patched-Version && svn --non-interactive info
+[INFO] Working directory: /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Codec_12/Patched-Version
+[INFO] Storing buildScmBranch: UNKNOWN_BRANCH
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ commons-codec ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 125 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ commons-codec ---
+[INFO] Compiling 48 source files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Codec_12/Patched-Version/target/classes
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ commons-codec ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ commons-codec ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Codec_12/Patched-Version/src/test/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ commons-codec ---
+[INFO] Compiling 43 source files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Codec_12/Patched-Version/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ commons-codec ---
+[INFO] Surefire report directory: /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Codec_12/Patched-Version/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Warning: the font "Times" is not available, so "Lucida Bright" has been substituted, but may have unexpected appearance or behavor. Re-enable the "Times" font to remove this warning.
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.57 sec
+Z,0,BYE!
+
+Results :
+
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  16.830 s
+[INFO] Finished at: 2024-06-03T16:54:28+08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12:test (default-test) on project commons-codec: Execution default-test of goal org.apache.maven.plugins:maven-surefire-plugin:2.12:test failed: The forked VM terminated without saying properly goodbye. VM crash or System.exit called ? -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException
+[INFO] Build failures were ignored.

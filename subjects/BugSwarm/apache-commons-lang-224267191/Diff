@@ -1,0 +1,12 @@
+diff -x ".*" -x .git -ruw /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/apache-commons-lang-224267191/Buggy-Version/src/main/java/org/apache/commons/lang3/reflect/MethodUtils.java /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/apache-commons-lang-224267191/Patched-Version/src/main/java/org/apache/commons/lang3/reflect/MethodUtils.java
+--- /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/apache-commons-lang-224267191/Buggy-Version/src/main/java/org/apache/commons/lang3/reflect/MethodUtils.java	2024-06-05 14:10:35
++++ /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/apache-commons-lang-224267191/Patched-Version/src/main/java/org/apache/commons/lang3/reflect/MethodUtils.java	2024-06-05 14:10:36
+@@ -904,7 +904,7 @@
+         Validate.isTrue(annotationCls != null, "The annotation class must not be null");
+         List<Class<?>> classes = (searchSupers ? getAllSuperclassesAndInterfaces(cls)
+                 : new ArrayList<Class<?>>());
+-        classes.add(cls);
++        classes.add(0, cls);
+         final List<Method> annotatedMethods = new ArrayList<>();
+         for (Class<?> acls : classes) {
+             final Method[] methods = (ignoreAccess ? acls.getDeclaredMethods() : acls.getMethods());

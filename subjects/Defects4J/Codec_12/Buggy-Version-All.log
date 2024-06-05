@@ -1,0 +1,164 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< commons-codec:commons-codec >---------------------
+[INFO] Building Commons Codec 1.7-SNAPSHOT
+[INFO]   from pom_for_clover.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ commons-codec ---
+[INFO] Deleting /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Codec_12/Buggy-Version/target
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.7:run (javadoc.resources) @ commons-codec ---
+[INFO] Executing tasks
+
+main:
+     [copy] Copying 2 files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Codec_12/Buggy-Version/target/apidocs/META-INF
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.2.1:process (default) @ commons-codec ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.0:create (default) @ commons-codec ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Codec_12/Buggy-Version && svn --non-interactive info
+[INFO] Working directory: /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Codec_12/Buggy-Version
+[INFO] Storing buildNumber: ?????? at timestamp: 1717404817697
+[INFO] Executing: /bin/sh -c cd /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Codec_12/Buggy-Version && svn --non-interactive info
+[INFO] Working directory: /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Codec_12/Buggy-Version
+[INFO] Storing buildScmBranch: UNKNOWN_BRANCH
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ commons-codec ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 125 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ commons-codec ---
+[INFO] Compiling 48 source files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Codec_12/Buggy-Version/target/classes
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ commons-codec ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ commons-codec ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Codec_12/Buggy-Version/src/test/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ commons-codec ---
+[INFO] Compiling 43 source files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Codec_12/Buggy-Version/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ commons-codec ---
+[INFO] Surefire report directory: /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Codec_12/Buggy-Version/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.commons.codec.net.RFC1522CodecTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 sec
+Running org.apache.commons.codec.net.BCodecTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
+Running org.apache.commons.codec.net.QuotedPrintableCodecTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec
+Running org.apache.commons.codec.net.UtilsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.apache.commons.codec.net.URLCodecTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Running org.apache.commons.codec.net.QCodecTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running org.apache.commons.codec.EncoderExceptionTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.apache.commons.codec.digest.DigestUtilsTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.346 sec
+Running org.apache.commons.codec.DecoderExceptionTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.commons.codec.language.MetaphoneTest
+Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.074 sec
+Running org.apache.commons.codec.language.bm.LanguageGuessingTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.167 sec
+Running org.apache.commons.codec.language.bm.RuleTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
+Running org.apache.commons.codec.language.bm.PhoneticEngineTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.766 sec
+Running org.apache.commons.codec.language.bm.BeiderMorseEncoderTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.067 sec
+Running org.apache.commons.codec.language.Caverphone2Test
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec
+Running org.apache.commons.codec.language.DoubleMetaphoneTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 sec
+Running org.apache.commons.codec.language.SoundexTest
+Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+Running org.apache.commons.codec.language.ColognePhoneticTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running org.apache.commons.codec.language.Caverphone1Test
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running org.apache.commons.codec.language.RefinedSoundexTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.apache.commons.codec.language.DoubleMetaphone2Test
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec
+Running org.apache.commons.codec.language.NysiisTest
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+Running org.apache.commons.codec.StringEncoderComparatorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.apache.commons.codec.binary.HexTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.244 sec
+Running org.apache.commons.codec.binary.BaseNCodecTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+Running org.apache.commons.codec.binary.StringUtilsTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.apache.commons.codec.binary.Base32InputStreamTest
+Tests run: 16, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 0.322 sec <<< FAILURE!
+Running org.apache.commons.codec.binary.Base64Test
+Tests run: 52, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.059 sec
+Running org.apache.commons.codec.binary.Base32Test
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.apache.commons.codec.binary.BinaryCodecTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.apache.commons.codec.binary.Base64InputStreamTest
+Tests run: 19, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 0.206 sec <<< FAILURE!
+Running org.apache.commons.codec.binary.Base32OutputStreamTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.072 sec
+Running org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Warning: the font "Times" is not available, so "Lucida Bright" has been substituted, but may have unexpected appearance or behavor. Re-enable the "Times" font to remove this warning.
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.569 sec
+Running org.apache.commons.codec.binary.Base64OutputStreamTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.284 sec
+Running org.apache.commons.codec.CharEncodingTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
+Running RegressionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+Z,0,BYE!
+
+Results :
+
+Failed tests:   testSkipToEnd(org.apache.commons.codec.binary.Base32InputStreamTest): expected:<-1> but was:<183>
+  testCodec130(org.apache.commons.codec.binary.Base32InputStreamTest): expected:<[ello World]> but was:<[����(..)
+  testSkipWrongArgument(org.apache.commons.codec.binary.Base32InputStreamTest): Expected exception: java.lang.IllegalArgumentException
+  testAvailable(org.apache.commons.codec.binary.Base32InputStreamTest): expected:<1> but was:<8>
+  testSkipPastEnd(org.apache.commons.codec.binary.Base32InputStreamTest): expected:<3> but was:<8>
+  testSkipBig(org.apache.commons.codec.binary.Base32InputStreamTest): expected:<3> but was:<8>
+  testSkipToEnd(org.apache.commons.codec.binary.Base64InputStreamTest): expected:<-1> but was:<255>
+  testCodec130(org.apache.commons.codec.binary.Base64InputStreamTest): expected:<[ello World]> but was:<[[��ܛ]>
+  testSkipWrongArgument(org.apache.commons.codec.binary.Base64InputStreamTest): Expected exception: java.lang.IllegalArgumentException
+  testAvailable(org.apache.commons.codec.binary.Base64InputStreamTest): expected:<1> but was:<8>
+  testSkipPastEnd(org.apache.commons.codec.binary.Base64InputStreamTest): expected:<6> but was:<8>
+  testSkipBig(org.apache.commons.codec.binary.Base64InputStreamTest): expected:<6> but was:<8>
+
+Tests run: 463, Failures: 12, Errors: 0, Skipped: 1
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  25.567 s
+[INFO] Finished at: 2024-06-03T16:54:00+08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12:test (default-test) on project commons-codec: Execution default-test of goal org.apache.maven.plugins:maven-surefire-plugin:2.12:test failed: The forked VM terminated without saying properly goodbye. VM crash or System.exit called ? -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException
+[INFO] Build failures were ignored.

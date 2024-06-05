@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../style.css');
+        @import url('../../../tree.css');
+        
+    </style>
+
+    <script src="../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../clover.js" type="text/javascript"></script>
+    <script src="../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../cloud.js" type="text/javascript"></script>
+
+            <title>openpnp-gui 0.0.1-alpha-SNAPSHOT</title>
+    </head>
+
+<body  >
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="https://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="https://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                    <a href="http://openpnp.org" target="_top">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+                    </a>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                            <a href="http://openpnp.org" target="_top">
+                                        openpnp-gui 0.0.1-alpha-SNAPSHOT
+                                        </a>
+                    </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../" data-package-name="org.openpnp.model">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="../../../dashboard.html">Project Clover database Wed Jun 5 2024 14:58:10 CST</a></li> 
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            Package org.openpnp.model
+    </h1>
+<div class="aui-tabs horizontal-tabs">
+
+            <ul class="tabs-menu">
+                <li class="menu-item active-tab">
+            <a href="pkg-summary.html"><strong>Application code</strong></a>
+        </li>
+                    <li class="menu-item ">
+            <a href="top-risks.html"><strong>Top risks</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="quick-wins.html"><strong>Quick wins</strong></a>
+        </li>
+                            </ul>
+    <div class="tabs-pane active-pane" id="tabs-first">
+
+        <div>&#160;</div>
+
+            <div class="dashboard-widget">
+        <header class="dashboard-widget-header">
+            <h3>Code metrics</h3>
+        </header>
+        <div class="dashboard-widget-content">
+                        
+
+<div id="td-header-stats" class="aui-item" style="display: ">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this package">Branches:</label></div>
+        <div class="stats-box-value">170</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this package">Statements:</label></div>
+        <div class="stats-box-value">731</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this package">Methods:</label></div>
+        <div class="stats-box-value">276</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this package">Classes:</label></div>
+        <div class="stats-box-value">36</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of files in this package">Files:</label></div>
+            <div class="stats-box-value">21</div>
+        </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this package">LOC:</label></div>
+        <div class="stats-box-value">2,922</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this package">NCLOC:</label></div>
+        <div class="stats-box-value">1,864</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this package">Total complexity:</label></div>
+        <div class="stats-box-value">382</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this package">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.52</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">2.65</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">7.67</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this package">Average method complexity:</label></div>
+        <div class="stats-box-value">1.38</div>
+    </div>
+</div>
+
+</div>
+                        
+
+<div id="td-filtered-header-stats" class="aui-item" style="display: none">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this package">Branches:</label></div>
+        <div class="stats-box-value">170</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this package">Statements:</label></div>
+        <div class="stats-box-value">731</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this package">Methods:</label></div>
+        <div class="stats-box-value">276</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this package">Classes:</label></div>
+        <div class="stats-box-value">36</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of files in this package">Files:</label></div>
+            <div class="stats-box-value">21</div>
+        </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this package">LOC:</label></div>
+        <div class="stats-box-value">2,922</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this package">NCLOC:</label></div>
+        <div class="stats-box-value">1,864</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this package">Total complexity:</label></div>
+        <div class="stats-box-value">382</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this package">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.52</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">2.65</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">7.67</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this package">Average method complexity:</label></div>
+        <div class="stats-box-value">1.38</div>
+    </div>
+</div>
+
+</div>        </div>
+    </div>
+        
+
+
+        
+
+        
+        <table id="packageSummaryTable" class="aui">
+                        <thead>
+    <tr>
+        <th width="30%">Package</th>
+                    <th colspan="1">
+                <label >Files</label>
+            </th>
+                    <th colspan="1">
+                <label  title="The percentage of elements that have been filtered from this report.">% Filtered</label>
+            </th>
+                    <th colspan="1">
+                <label  title="The average number of paths per method.">Average Method Complexity</label>
+            </th>
+                    <th colspan="1">
+                <label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label>
+            </th>
+                    <th colspan="2">
+                <label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label>
+            </th>
+            </tr>
+</thead>
+            <tbody>
+                                <tr>
+    <td>
+                <span class="sortValue">org.openpnp.model</span>
+                    org.openpnp.model
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">21.0</span>
+            21
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.384058</span>
+            1.38
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">682.0</span>
+            682
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.42056075</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.42056075</span>42.1%</div><div style="display: table-cell">
+ <div title="42.1% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:42.1%"></div></div></div></div>
+        </td>
+        
+    </tr>
+            </tbody>
+        </table>
+
+        <div>&#160;</div>
+
+        
+        <table id="packageClassesTable" class="aui aui-table-sortable">
+                        <thead>
+    <tr>
+        <th width="30%">Class</th>
+                            <th colspan="1">
+                <label >
+                    Methods
+                </label>
+            </th>
+                                <th colspan="1">
+                <label  title="The percentage of elements that have been filtered from this report.">
+                    % Filtered
+                </label>
+            </th>
+                                <th colspan="1">
+                <label  title="The average number of paths per method.">
+                    Average Method Complexity
+                </label>
+            </th>
+                                <th colspan="1">
+                <label  title="The number of statements and branches that were not covered during testing.">
+                    Uncovered Elements
+                </label>
+            </th>
+                                <th colspan="2">
+                <label  title="The amount of code that was hit at least once during testing.">
+                    TOTAL Coverage
+                </label>
+            </th>
+                        </tr>
+</thead>
+            <tbody>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <tr>
+    <td>
+                    
+                <span class="sortValue">MassUnit</span>
+                    <a href="MassUnit.html" title="MassUnit">MassUnit</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">7.0</span>
+            7
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Outline</span>
+                    <a href="Outline.html" title="Outline">Outline</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.3333334</span>
+            1.33
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">13.0</span>
+            13
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Outline.Circle</span>
+                    <a href="Outline.html" title="Outline.Circle">Outline.Circle</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Outline.Ellipse</span>
+                    <a href="Outline.html" title="Outline.Ellipse">Outline.Ellipse</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Outline.Line</span>
+                    <a href="Outline.html" title="Outline.Line">Outline.Line</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Pad</span>
+                    <a href="Pad.html" title="Pad">Pad</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">6.0</span>
+            6
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Pad.Circle</span>
+                    <a href="Pad.html" title="Pad.Circle">Pad.Circle</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">13.0</span>
+            13
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Pad.Ellipse</span>
+                    <a href="Pad.html" title="Pad.Ellipse">Pad.Ellipse</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">6.0</span>
+            6
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">20.0</span>
+            20
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Pad.RoundRectangle</span>
+                    <a href="Pad.html" title="Pad.RoundRectangle">Pad.RoundRectangle</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">8.0</span>
+            8
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">26.0</span>
+            26
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Rectangle</span>
+                    <a href="Rectangle.html" title="Rectangle">Rectangle</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">10.0</span>
+            10
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">22.0</span>
+            22
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">BoardPad</span>
+                    <a href="BoardPad.html" title="BoardPad">BoardPad</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">12.0</span>
+            12
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">33.0</span>
+            33
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.029411765</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.029411765</span>2.9%</div><div style="display: table-cell">
+ <div title="2.9% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:2.9%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Length</span>
+                    <a href="Length.html" title="Length">Length</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">22.0</span>
+            22
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.7272727</span>
+            2.73
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">177.0</span>
+            177
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.13658537</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.13658537</span>13.7%</div><div style="display: table-cell">
+ <div title="13.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:13.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Point</span>
+                    <a href="Point.html" title="Point">Point</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">10.0</span>
+            10
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.5</span>
+            1.5
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">41.0</span>
+            41
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.14583333</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.14583333</span>14.6%</div><div style="display: table-cell">
+ <div title="14.6% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:14.6%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Footprint.Pad</span>
+                    <a href="Footprint.html" title="Footprint.Pad">Footprint.Pad</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">15.0</span>
+            15
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">24.0</span>
+            24
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.29411766</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.29411766</span>29.4%</div><div style="display: table-cell">
+ <div title="29.4% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:29.4%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">AbstractModelObject</span>
+                    <a href="AbstractModelObject.html" title="AbstractModelObject">AbstractModelObject</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">5.0</span>
+            5
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">6.0</span>
+            6
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.4</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.4</span>40%</div><div style="display: table-cell">
+ <div title="40% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:40%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Footprint</span>
+                    <a href="Footprint.html" title="Footprint">Footprint</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">10.0</span>
+            10
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">16.0</span>
+            16
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.4074074</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.4074074</span>40.7%</div><div style="display: table-cell">
+ <div title="40.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:40.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Package</span>
+                    <a href="Package.html" title="Package">Package</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">11.0</span>
+            11
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">14.0</span>
+            14
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.41666666</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.41666666</span>41.7%</div><div style="display: table-cell">
+ <div title="41.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:41.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Board</span>
+                    <a href="Board.html" title="Board">Board</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">23.0</span>
+            23
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.2608696</span>
+            1.26
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">54.0</span>
+            54
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.4489796</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.4489796</span>44.9%</div><div style="display: table-cell">
+ <div title="44.9% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:44.9%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Part</span>
+                    <a href="Part.html" title="Part">Part</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">14.0</span>
+            14
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.2142857</span>
+            1.21
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">24.0</span>
+            24
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.5</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.5</span>50%</div><div style="display: table-cell">
+ <div title="50% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:50%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Configuration</span>
+                    <a href="Configuration.html" title="Configuration">Configuration</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">42.0</span>
+            42
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.7857143</span>
+            1.79
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">106.0</span>
+            106
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.61172163</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.61172163</span>61.2%</div><div style="display: table-cell">
+ <div title="61.2% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:61.2%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Placement</span>
+                    <a href="Placement.html" title="Placement">Placement</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">14.0</span>
+            14
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.3571428</span>
+            1.36
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">17.0</span>
+            17
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.6730769</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.6730769</span>67.3%</div><div style="display: table-cell">
+ <div title="67.3% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:67.3%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">LengthUnit</span>
+                    <a href="LengthUnit.html" title="LengthUnit">LengthUnit</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.71428573</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.71428573</span>71.4%</div><div style="display: table-cell">
+ <div title="71.4% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:71.4%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Job</span>
+                    <a href="Job.html" title="Job">Job</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">10.0</span>
+            10
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.2</span>
+            1.2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">10.0</span>
+            10
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.7222222</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.7222222</span>72.2%</div><div style="display: table-cell">
+ <div title="72.2% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:72.2%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">BoardLocation</span>
+                    <a href="BoardLocation.html" title="BoardLocation">BoardLocation</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">16.0</span>
+            16
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">12.0</span>
+            12
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.72727275</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.72727275</span>72.7%</div><div style="display: table-cell">
+ <div title="72.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:72.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Location</span>
+                    <a href="Location.html" title="Location">Location</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">30.0</span>
+            30
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.4333333</span>
+            1.43
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">33.0</span>
+            33
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.733871</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.733871</span>73.4%</div><div style="display: table-cell">
+ <div title="73.4% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:73.4%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                </tbody>
+        </table>
+                    <div>
+                <small>
+                    This package contains 11 empty classes or
+                    interfaces which are not listed.
+                </small>
+            </div>
+        
+    </div> <!-- tabs-pane active-pane -->
+</div>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="https://openclover.org">OpenClover</a> v 4.5.2
+                on Wed Jun 5 2024 14:59:08 CST using coverage data from Wed Jun 5 2024 14:59:04 CST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

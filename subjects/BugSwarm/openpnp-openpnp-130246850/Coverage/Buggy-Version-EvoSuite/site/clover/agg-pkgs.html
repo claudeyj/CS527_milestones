@@ -1,0 +1,1878 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="img/clover.ico" />
+
+    <link rel="stylesheet" href="aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('style.css');
+        @import url('tree.css');
+        
+    </style>
+
+    <script src="jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="package-nodes-tree.js" type="text/javascript"></script>
+    <script src="clover-tree.js" type="text/javascript"></script>
+    <script src="clover.js" type="text/javascript"></script>
+    <script src="clover-descriptions.js" type="text/javascript"></script>
+    <script src="cloud.js" type="text/javascript"></script>
+
+            <title>openpnp-gui 0.0.1-alpha-SNAPSHOT</title>
+    </head>
+
+<body  >
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="https://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="https://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                    <a href="http://openpnp.org" target="_top">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+                    </a>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                            <a href="http://openpnp.org" target="_top">
+                                        openpnp-gui 0.0.1-alpha-SNAPSHOT
+                                        </a>
+                    </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="aui-nav-selected">
+                    <a href="dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                  <div class="packages-tree-wrapper" data-root-relative="" data-package-name="">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="dashboard.html">Project Clover database Wed Jun 5 2024 14:51:45 CST</a></li>
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            Project overview
+    </h1>
+<div class="aui-tabs horizontal-tabs">
+
+            <ul class="tabs-menu">
+            <li class="menu-item ">
+            <a href="dashboard.html">Dashboard</a>
+        </li>
+                <li class="menu-item active-tab">
+            <a href="pkg-summary.html"><strong>Application code</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="testsrc-pkg-summary.html"><strong>Test code</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="test-pkg-summary.html"><strong>Test results</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="top-risks.html"><strong>Top risks</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="quick-wins.html"><strong>Quick wins</strong></a>
+        </li>
+                                                <li class="menu-item ">
+                <a href="treemap.html"><strong>Coverage tree map</strong></a>
+            </li>
+            </ul>
+    <div class="tabs-pane active-pane" id="tabs-first">
+
+        <div>&#160;</div>
+
+            <div class="dashboard-widget">
+        <header class="dashboard-widget-header">
+            <h3>Code metrics</h3>
+        </header>
+        <div class="dashboard-widget-content">
+                        
+
+<div id="td-header-stats" class="aui-item" style="display: ">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this project">Branches:</label></div>
+        <div class="stats-box-value">3,416</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this project">Statements:</label></div>
+        <div class="stats-box-value">14,942</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this project">Methods:</label></div>
+        <div class="stats-box-value">3,436</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this project">Classes:</label></div>
+        <div class="stats-box-value">451</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of files in this project">Files:</label></div>
+            <div class="stats-box-value">344</div>
+        </div>
+                <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of packages in this project">Packages:</label></div>
+            <div class="stats-box-value">35</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this project">LOC:</label></div>
+        <div class="stats-box-value">56,897</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this project">NCLOC:</label></div>
+        <div class="stats-box-value">36,365</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this project">Total complexity:</label></div>
+        <div class="stats-box-value">5,733</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this project">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.38</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">4.35</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">7.62</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Number of classes per package.">Classes/Package:</label></div>
+            <div class="stats-box-value">12.89</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this project">Average method complexity:</label></div>
+        <div class="stats-box-value">1.67</div>
+    </div>
+</div>
+
+</div>
+                        
+
+<div id="td-filtered-header-stats" class="aui-item" style="display: none">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this project">Branches:</label></div>
+        <div class="stats-box-value">3,416</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this project">Statements:</label></div>
+        <div class="stats-box-value">14,942</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this project">Methods:</label></div>
+        <div class="stats-box-value">3,436</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this project">Classes:</label></div>
+        <div class="stats-box-value">451</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of files in this project">Files:</label></div>
+            <div class="stats-box-value">344</div>
+        </div>
+                <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of packages in this project">Packages:</label></div>
+            <div class="stats-box-value">35</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this project">LOC:</label></div>
+        <div class="stats-box-value">56,897</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this project">NCLOC:</label></div>
+        <div class="stats-box-value">36,365</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this project">Total complexity:</label></div>
+        <div class="stats-box-value">5,733</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this project">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.38</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">4.35</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">7.62</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Number of classes per package.">Classes/Package:</label></div>
+            <div class="stats-box-value">12.89</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this project">Average method complexity:</label></div>
+        <div class="stats-box-value">1.67</div>
+    </div>
+</div>
+
+</div>        </div>
+    </div>
+        
+
+
+        
+        <table id="projectSummaryTable" class="aui">
+                        <thead>
+    <tr>
+        <th width="30%">Project</th>
+                    <th colspan="1">
+                <label >Packages</label>
+            </th>
+                    <th colspan="1">
+                <label  title="The percentage of elements that have been filtered from this report.">% Filtered</label>
+            </th>
+                    <th colspan="1">
+                <label  title="The average number of paths per method.">Average Method Complexity</label>
+            </th>
+                    <th colspan="1">
+                <label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label>
+            </th>
+                    <th colspan="2">
+                <label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label>
+            </th>
+            </tr>
+</thead>
+            <tbody>
+                                <tr>
+    <td>
+                <span class="sortValue">Clover&#160;database&#160;Wed&#160;Jun&#160;5&#160;2024&#160;14:51:45&#160;CST</span>
+                    Clover&#160;database&#160;Wed&#160;Jun&#160;5&#160;2024&#160;14:51:45&#160;CST
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">35.0</span>
+            35
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.6685098</span>
+            1.67
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">21780.0</span>
+            21,780
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">6.4237864E-4</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">6.4237864E-4</span>0.1%</div><div style="display: table-cell">
+ <div title="0.1% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0.1%"></div></div></div></div>
+        </td>
+        
+    </tr>
+            </tbody>
+        </table>
+
+        <div>&#160;</div>
+                <div>
+    Metrics from sub-packages:
+            <p class="aui-buttons">
+        <a href="pkg-summary.html"
+           class="aui-button"
+           id="simple-tooltip"
+           title="Calculate code metrics from sub-packages separately">
+            Separated
+        </a>
+        <a href="agg-pkgs.html"
+           class="aui-button active"
+           id="simple-tooltip"
+           title="Calculate a sum of metrics from a given package and all its sub-packages">
+            Aggregated
+        </a>
+    </p>
+</div>
+        
+        <table id="aggregatedPacakgesTable" class="aui aui-table-sortable">
+                        <thead>
+    <tr>
+        <th width="30%">Package (aggregated)</th>
+                            <th colspan="1">
+                <label >
+                    Packages
+                </label>
+            </th>
+                                <th colspan="1">
+                <label  title="The percentage of elements that have been filtered from this report.">
+                    % Filtered
+                </label>
+            </th>
+                                <th colspan="1">
+                <label  title="The average number of paths per method.">
+                    Average Method Complexity
+                </label>
+            </th>
+                                <th colspan="1">
+                <label  title="The number of statements and branches that were not covered during testing.">
+                    Uncovered Elements
+                </label>
+            </th>
+                                <th colspan="2">
+                <label  title="The amount of code that was hit at least once during testing.">
+                    TOTAL Coverage
+                </label>
+            </th>
+                        </tr>
+</thead>
+            <tbody>
+                <!-- render list of package coverage bargraphs -->
+                                                                                                            <tr>
+    <td>
+                <span class="sortValue">org.openpnp.machine.reference.camera</span>
+                    <a href="org/openpnp/machine/reference/camera/pkg-summary.html" title="org.openpnp.machine.reference.camera">org.openpnp.machine.reference.camera</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.6803279</span>
+            1.68
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">742.0</span>
+            742
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.openpnp.gui.components</span>
+                    <a href="org/openpnp/gui/components/pkg-summary.html" title="org.openpnp.gui.components">org.openpnp.gui.components</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.8621908</span>
+            1.86
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2346.0</span>
+            2,346
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.openpnp.vision.pipeline.stages.convert</span>
+                    <a href="org/openpnp/vision/pipeline/stages/convert/pkg-summary.html" title="org.openpnp.vision.pipeline.stages.convert">org.openpnp.vision.pipeline.stages.convert</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">11.0</span>
+            11
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.openpnp.machine.reference.driver</span>
+                    <a href="org/openpnp/machine/reference/driver/pkg-summary.html" title="org.openpnp.machine.reference.driver">org.openpnp.machine.reference.driver</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.186567</span>
+            2.19
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2065.0</span>
+            2,065
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.openpnp.model.eagle</span>
+                    <a href="org/openpnp/model/eagle/pkg-summary.html" title="org.openpnp.model.eagle">org.openpnp.model.eagle</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.1980474</span>
+            1.2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2016.0</span>
+            2,016
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.openpnp.vision.experiments</span>
+                    <a href="org/openpnp/vision/experiments/pkg-summary.html" title="org.openpnp.vision.experiments">org.openpnp.vision.experiments</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.1538461</span>
+            1.15
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">108.0</span>
+            108
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.openpnp.experiments</span>
+                    <a href="org/openpnp/experiments/pkg-summary.html" title="org.openpnp.experiments">org.openpnp.experiments</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.1666665</span>
+            4.17
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">120.0</span>
+            120
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.openpnp.gui</span>
+                    <a href="org/openpnp/gui/pkg-summary.html" title="org.openpnp.gui">org.openpnp.gui</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">9.0</span>
+            9
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.9775281</span>
+            1.98
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">8552.0</span>
+            8,552
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.openpnp.gui.importer</span>
+                    <a href="org/openpnp/gui/importer/pkg-summary.html" title="org.openpnp.gui.importer">org.openpnp.gui.importer</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">3.265625</span>
+            3.27
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1841.0</span>
+            1,841
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.openpnp.machine.openbuilds</span>
+                    <a href="org/openpnp/machine/openbuilds/pkg-summary.html" title="org.openpnp.machine.openbuilds">org.openpnp.machine.openbuilds</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">3.3214285</span>
+            3.32
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">339.0</span>
+            339
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.openpnp.vision.pipeline</span>
+                    <a href="org/openpnp/vision/pipeline/pkg-summary.html" title="org.openpnp.vision.pipeline">org.openpnp.vision.pipeline</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.6387832</span>
+            1.64
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1468.0</span>
+            1,468
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.openpnp.planner</span>
+                    <a href="org/openpnp/planner/pkg-summary.html" title="org.openpnp.planner">org.openpnp.planner</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.5</span>
+            2.5
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">81.0</span>
+            81
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.openpnp.gui.processes</span>
+                    <a href="org/openpnp/gui/processes/pkg-summary.html" title="org.openpnp.gui.processes">org.openpnp.gui.processes</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.4</span>
+            2.4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">96.0</span>
+            96
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.openpnp.gui.components.reticle</span>
+                    <a href="org/openpnp/gui/components/reticle/pkg-summary.html" title="org.openpnp.gui.components.reticle">org.openpnp.gui.components.reticle</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.2941177</span>
+            1.29
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">204.0</span>
+            204
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.openpnp.gui.importer.rs274x</span>
+                    <a href="org/openpnp/gui/importer/rs274x/pkg-summary.html" title="org.openpnp.gui.importer.rs274x">org.openpnp.gui.importer.rs274x</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">3.322034</span>
+            3.32
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">748.0</span>
+            748
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.openpnp.vision.pipeline.stages</span>
+                    <a href="org/openpnp/vision/pipeline/stages/pkg-summary.html" title="org.openpnp.vision.pipeline.stages">org.openpnp.vision.pipeline.stages</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.6133333</span>
+            1.61
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">700.0</span>
+            700
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.openpnp.gui.support</span>
+                    <a href="org/openpnp/gui/support/pkg-summary.html" title="org.openpnp.gui.support">org.openpnp.gui.support</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.4178082</span>
+            1.42
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">625.0</span>
+            625
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.openpnp.gui.tablemodel</span>
+                    <a href="org/openpnp/gui/tablemodel/pkg-summary.html" title="org.openpnp.gui.tablemodel">org.openpnp.gui.tablemodel</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.3863637</span>
+            2.39
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">638.0</span>
+            638
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.openpnp.vision.pipeline.ui</span>
+                    <a href="org/openpnp/vision/pipeline/ui/pkg-summary.html" title="org.openpnp.vision.pipeline.ui">org.openpnp.vision.pipeline.ui</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.7910448</span>
+            1.79
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">562.0</span>
+            562
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.openpnp.util</span>
+                    <a href="org/openpnp/util/pkg-summary.html" title="org.openpnp.util">org.openpnp.util</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.8030303</span>
+            1.8
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">475.0</span>
+            475
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.openpnp.vision</span>
+                    <a href="org/openpnp/vision/pkg-summary.html" title="org.openpnp.vision">org.openpnp.vision</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">6.0</span>
+            6
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.7285714</span>
+            1.73
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2228.0</span>
+            2,228
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.openpnp.machine.reference.vision</span>
+                    <a href="org/openpnp/machine/reference/vision/pkg-summary.html" title="org.openpnp.machine.reference.vision">org.openpnp.machine.reference.vision</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.2962964</span>
+            2.3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">512.0</span>
+            512
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.openpnp.machine.reference.driver.wizards</span>
+                    <a href="org/openpnp/machine/reference/driver/wizards/pkg-summary.html" title="org.openpnp.machine.reference.driver.wizards">org.openpnp.machine.reference.driver.wizards</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0862069</span>
+            1.09
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">386.0</span>
+            386
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.openpnp.machine.reference.camera.wizards</span>
+                    <a href="org/openpnp/machine/reference/camera/wizards/pkg-summary.html" title="org.openpnp.machine.reference.camera.wizards">org.openpnp.machine.reference.camera.wizards</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.7058823</span>
+            1.71
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">186.0</span>
+            186
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.openpnp.machine.reference.vision.wizards</span>
+                    <a href="org/openpnp/machine/reference/vision/wizards/pkg-summary.html" title="org.openpnp.machine.reference.vision.wizards">org.openpnp.machine.reference.vision.wizards</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.3636364</span>
+            1.36
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">119.0</span>
+            119
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.openpnp.machine.reference.feeder.wizards</span>
+                    <a href="org/openpnp/machine/reference/feeder/wizards/pkg-summary.html" title="org.openpnp.machine.reference.feeder.wizards">org.openpnp.machine.reference.feeder.wizards</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.4594594</span>
+            1.46
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">573.0</span>
+            573
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.openpnp.gui.wizards</span>
+                    <a href="org/openpnp/gui/wizards/pkg-summary.html" title="org.openpnp.gui.wizards">org.openpnp.gui.wizards</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">79.0</span>
+            79
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.openpnp.machine.reference.wizards</span>
+                    <a href="org/openpnp/machine/reference/wizards/pkg-summary.html" title="org.openpnp.machine.reference.wizards">org.openpnp.machine.reference.wizards</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.2954545</span>
+            1.3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">770.0</span>
+            770
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.openpnp.model.eagle.xml</span>
+                    <a href="org/openpnp/model/eagle/xml/pkg-summary.html" title="org.openpnp.model.eagle.xml">org.openpnp.model.eagle.xml</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.1918768</span>
+            1.19
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1975.0</span>
+            1,975
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.openpnp.machine</span>
+                    org.openpnp.machine
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">11.0</span>
+            11
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.8394333</span>
+            1.84
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">6548.0</span>
+            6,548
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">6.1050063E-4</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">6.1050063E-4</span>0.1%</div><div style="display: table-cell">
+ <div title="0.1% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0.1%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.openpnp</span>
+                    <a href="org/openpnp/pkg-summary.html" title="org.openpnp">org.openpnp</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">35.0</span>
+            35
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.6685098</span>
+            1.67
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">21780.0</span>
+            21,780
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">6.4237864E-4</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">6.4237864E-4</span>0.1%</div><div style="display: table-cell">
+ <div title="0.1% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0.1%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org</span>
+                    org
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">35.0</span>
+            35
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.6685098</span>
+            1.67
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">21780.0</span>
+            21,780
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">6.4237864E-4</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">6.4237864E-4</span>0.1%</div><div style="display: table-cell">
+ <div title="0.1% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0.1%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.openpnp.machine.reference</span>
+                    <a href="org/openpnp/machine/reference/pkg-summary.html" title="org.openpnp.machine.reference">org.openpnp.machine.reference</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">10.0</span>
+            10
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.7887667</span>
+            1.79
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">6209.0</span>
+            6,209
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">6.4381136E-4</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">6.4381136E-4</span>0.1%</div><div style="display: table-cell">
+ <div title="0.1% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0.1%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.openpnp.model</span>
+                    <a href="org/openpnp/model/pkg-summary.html" title="org.openpnp.model">org.openpnp.model</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.2497482</span>
+            1.25
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">3187.0</span>
+            3,187
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0018791106</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0018791106</span>0.2%</div><div style="display: table-cell">
+ <div title="0.2% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0.2%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.openpnp.machine.reference.feeder</span>
+                    <a href="org/openpnp/machine/reference/feeder/pkg-summary.html" title="org.openpnp.machine.reference.feeder">org.openpnp.machine.reference.feeder</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.3082192</span>
+            1.31
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">992.0</span>
+            992
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.004016064</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.004016064</span>0.4%</div><div style="display: table-cell">
+ <div title="0.4% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0.4%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.openpnp.spi</span>
+                    <a href="org/openpnp/spi/pkg-summary.html" title="org.openpnp.spi">org.openpnp.spi</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.2023121</span>
+            1.2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">539.0</span>
+            539
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0073664826</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0073664826</span>0.7%</div><div style="display: table-cell">
+ <div title="0.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.openpnp.spi.base</span>
+                    <a href="org/openpnp/spi/base/pkg-summary.html" title="org.openpnp.spi.base">org.openpnp.spi.base</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.2121212</span>
+            1.21
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">524.0</span>
+            524
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.007575758</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.007575758</span>0.8%</div><div style="display: table-cell">
+ <div title="0.8% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0.8%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                </tbody>
+        </table>
+
+    </div> <!-- tabs-pane active-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="https://openclover.org">OpenClover</a> v 4.5.2
+                on Wed Jun 5 2024 14:52:21 CST using coverage data from Wed Jun 5 2024 14:52:17 CST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

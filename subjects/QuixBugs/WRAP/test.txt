@@ -1,0 +1,5 @@
+java_testcases.junit.WRAP_TEST.test_0
+java_testcases.junit.WRAP_TEST.test_1
+java_testcases.junit.WRAP_TEST.test_2
+java_testcases.junit.WRAP_TEST.test_3
+java_testcases.junit.WRAP_TEST.test_4

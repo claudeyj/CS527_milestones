@@ -1,0 +1,56 @@
+Only in /Users/jun/Documents/TA/CS527/milestone_answer/subjects/Bears/Bears-189/Patched-Version: classpath.info
+diff -x .* -x .git -x repairnator.maven.*.log -x target -ruw /Users/jun/Documents/TA/CS527/milestone_answer/subjects/Bears/Bears-189/Buggy-Version/src/main/java/hu/oe/nik/szfmv/Main.java /Users/jun/Documents/TA/CS527/milestone_answer/subjects/Bears/Bears-189/Patched-Version/src/main/java/hu/oe/nik/szfmv/Main.java
+--- /Users/jun/Documents/TA/CS527/milestone_answer/subjects/Bears/Bears-189/Buggy-Version/src/main/java/hu/oe/nik/szfmv/Main.java	2024-05-24 18:28:06
++++ /Users/jun/Documents/TA/CS527/milestone_answer/subjects/Bears/Bears-189/Patched-Version/src/main/java/hu/oe/nik/szfmv/Main.java	2024-05-24 18:28:12
+@@ -32,10 +32,6 @@
+ 
+         // create the world
+         World w = new World(worldWidth, worldHeight);
+-        //create detector
+-        Detector d = Detector.getDetector();
+-        //set detector's list
+-        d.setWorldObjects(w.getWorldObjects());
+         // create an automated car
+         AutomatedCar car = new AutomatedCar(carX, carY, "car_2_white.png");
+         // add car to the world
+diff -x .* -x .git -x repairnator.maven.*.log -x target -ruw /Users/jun/Documents/TA/CS527/milestone_answer/subjects/Bears/Bears-189/Buggy-Version/src/main/java/hu/oe/nik/szfmv/automatedcar/AutomatedCar.java /Users/jun/Documents/TA/CS527/milestone_answer/subjects/Bears/Bears-189/Patched-Version/src/main/java/hu/oe/nik/szfmv/automatedcar/AutomatedCar.java
+--- /Users/jun/Documents/TA/CS527/milestone_answer/subjects/Bears/Bears-189/Buggy-Version/src/main/java/hu/oe/nik/szfmv/automatedcar/AutomatedCar.java	2024-05-24 18:28:06
++++ /Users/jun/Documents/TA/CS527/milestone_answer/subjects/Bears/Bears-189/Patched-Version/src/main/java/hu/oe/nik/szfmv/automatedcar/AutomatedCar.java	2024-05-24 18:28:12
+@@ -7,6 +7,7 @@
+ import hu.oe.nik.szfmv.automatedcar.bus.powertrain.ReadOnlyPowertrainPacket;
+ import hu.oe.nik.szfmv.automatedcar.sensors.UltrasonicSensor;
+ import hu.oe.nik.szfmv.automatedcar.systemcomponents.*;
++import hu.oe.nik.szfmv.detector.classes.Detector;
+ import hu.oe.nik.szfmv.environment.WorldObject;
+ import org.apache.logging.log4j.LogManager;
+ import org.apache.logging.log4j.Logger;
+@@ -62,7 +63,6 @@
+         powertrainSystem = new PowertrainSystem(virtualFunctionBus);
+         steeringSystem = new SteeringSystem(virtualFunctionBus);
+         steeringWheel = new SteeringWheel(virtualFunctionBus);
+-
+         new Driver(virtualFunctionBus);
+     }
+ 
+diff -x .* -x .git -x repairnator.maven.*.log -x target -ruw /Users/jun/Documents/TA/CS527/milestone_answer/subjects/Bears/Bears-189/Buggy-Version/src/main/java/hu/oe/nik/szfmv/environment/World.java /Users/jun/Documents/TA/CS527/milestone_answer/subjects/Bears/Bears-189/Patched-Version/src/main/java/hu/oe/nik/szfmv/environment/World.java
+--- /Users/jun/Documents/TA/CS527/milestone_answer/subjects/Bears/Bears-189/Buggy-Version/src/main/java/hu/oe/nik/szfmv/environment/World.java	2024-05-24 18:28:06
++++ /Users/jun/Documents/TA/CS527/milestone_answer/subjects/Bears/Bears-189/Patched-Version/src/main/java/hu/oe/nik/szfmv/environment/World.java	2024-05-24 18:28:12
+@@ -14,6 +14,7 @@
+     private int width = 0;
+     private int height = 0;
+     private List<WorldObject> worldObjects = new ArrayList<>();
++    Detector d;
+ 
+     /**
+      * Creates the virtual world with the given dimension.
+@@ -26,6 +27,10 @@
+         this.width = width;
+         this.height = height;
+         this.build("src/main/resources/test.xml");
++        //create detector
++        d = Detector.getDetector();
++        //set detector's list
++        d.setWorldObjects(getWorldObjects());
+     }
+ 
+     public int getWidth() {

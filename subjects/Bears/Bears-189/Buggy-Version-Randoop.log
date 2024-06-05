@@ -1,0 +1,51 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< AutomatedCar:AutomatedCar >----------------------
+[INFO] Building AutomatedCar 1.0
+[INFO]   from pom_for_clover.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ AutomatedCar ---
+[INFO] Deleting /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-189/Buggy-Version/target
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.8:prepare-agent (prepare-agent) @ AutomatedCar ---
+[INFO] argLine set to -javaagent:/Users/jun/.m2/repository/org/jacoco/org.jacoco.agent/0.7.8/org.jacoco.agent-0.7.8-runtime.jar=destfile=/Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-189/Buggy-Version/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ AutomatedCar ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 44 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ AutomatedCar ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 57 source files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-189/Buggy-Version/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ AutomatedCar ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-189/Buggy-Version/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ AutomatedCar ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 24 source files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-189/Buggy-Version/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ AutomatedCar ---
+[INFO] Surefire report directory: /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-189/Buggy-Version/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running RegressionTest
+ERROR StatusLogger No log4j2 configuration file found. Using default configuration: logging only errors to the console.
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.387 sec
+Running RegressionTest0
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  12.112 s
+[INFO] Finished at: 2024-06-03T16:40:23+08:00
+[INFO] ------------------------------------------------------------------------

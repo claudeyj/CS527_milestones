@@ -1,0 +1,298 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< org.traccar:traccar >-------------------------
+[INFO] Building traccar 3.10-SNAPSHOT
+[INFO]   from pom_for_clover.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ traccar ---
+[INFO] Deleting /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-201008629/Buggy-Version/target
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (checkstyle) @ traccar ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ traccar ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ traccar ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 489 source files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-201008629/Buggy-Version/target/classes
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-201008629/Buggy-Version/src/org/traccar/database/QueryBuilder.java:[283,70] unchecked method invocation: method toXmlString in class org.traccar.model.MiscFormatter is applied to given types
+  required: java.util.Map<java.lang.String,java.lang.Object>
+  found: java.util.Map
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-201008629/Buggy-Version/src/org/traccar/database/QueryBuilder.java:[283,71] unchecked conversion
+  required: java.util.Map<java.lang.String,java.lang.Object>
+  found:    java.util.Map
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-201008629/Buggy-Version/src/org/traccar/geolocation/UniversalGeolocationProvider.java:[45,46] unchecked method invocation: method execute in class com.ning.http.client.AsyncHttpClient.BoundRequestBuilder is applied to given types
+  required: com.ning.http.client.AsyncHandler<T>
+  found: <anonymous com.ning.http.client.AsyncCompletionHandler>
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-201008629/Buggy-Version/src/org/traccar/geolocation/UniversalGeolocationProvider.java:[45,47] unchecked conversion
+  required: com.ning.http.client.AsyncHandler<T>
+  found:    <anonymous com.ning.http.client.AsyncCompletionHandler>
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-201008629/Buggy-Version/src/org/traccar/geocoder/JsonGeocoder.java:[62,25] unchecked method invocation: method execute in class com.ning.http.client.AsyncHttpClient.BoundRequestBuilder is applied to given types
+  required: com.ning.http.client.AsyncHandler<T>
+  found: <anonymous com.ning.http.client.AsyncCompletionHandler>
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-201008629/Buggy-Version/src/org/traccar/geocoder/JsonGeocoder.java:[62,26] unchecked conversion
+  required: com.ning.http.client.AsyncHandler<T>
+  found:    <anonymous com.ning.http.client.AsyncCompletionHandler>
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-201008629/Buggy-Version/src/org/traccar/model/Calendar.java:[71,48] unchecked method invocation: constructor <init> in class net.fortuna.ical4j.filter.Filter is applied to given types
+  required: net.fortuna.ical4j.filter.Rule<T>[],int
+  found: net.fortuna.ical4j.filter.Rule[],int
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-201008629/Buggy-Version/src/org/traccar/model/Calendar.java:[71,61] unchecked conversion
+  required: net.fortuna.ical4j.filter.Rule<T>[]
+  found:    net.fortuna.ical4j.filter.Rule[]
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-201008629/Buggy-Version/src/org/traccar/model/Calendar.java:[71,48] unchecked conversion
+  required: net.fortuna.ical4j.filter.Filter<net.fortuna.ical4j.model.component.CalendarComponent>
+  found:    net.fortuna.ical4j.filter.Filter
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-201008629/Buggy-Version/src/org/traccar/geolocation/OpenCellIdGeolocationProvider.java:[48,69] unchecked method invocation: method execute in class com.ning.http.client.AsyncHttpClient.BoundRequestBuilder is applied to given types
+  required: com.ning.http.client.AsyncHandler<T>
+  found: <anonymous com.ning.http.client.AsyncCompletionHandler>
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-201008629/Buggy-Version/src/org/traccar/geolocation/OpenCellIdGeolocationProvider.java:[48,70] unchecked conversion
+  required: com.ning.http.client.AsyncHandler<T>
+  found:    <anonymous com.ning.http.client.AsyncCompletionHandler>
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-201008629/Buggy-Version/src/org/traccar/protocol/Gl200ProtocolDecoder.java:[809,56] unchecked cast
+  required: java.util.List<org.traccar.model.Position>
+  found:    java.lang.Object
+[INFO] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-201008629/Buggy-Version/src/org/traccar/model/Network.java: Some input files use or override a deprecated API.
+[INFO] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-201008629/Buggy-Version/src/org/traccar/model/Network.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ traccar ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-201008629/Buggy-Version/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ traccar ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 209 source files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-201008629/Buggy-Version/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ traccar ---
+[INFO] Surefire report directory: /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-201008629/Buggy-Version/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.traccar.protocol.TeltonikaProtocolDecoder_ESTest
+[main] INFO org.evosuite.runtime.agent.AgentLoader - dynamically loading javaagent
+[main] INFO org.evosuite.runtime.agent.AgentLoader - Using JavaAgent in /Users/jun/.m2/repository/org/evosuite/evosuite-standalone-runtime/1.2.0/evosuite-standalone-runtime-1.2.0.jar
+[main] INFO org.evosuite.runtime.agent.AgentLoader - Classpath: /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-201008629/Buggy-Version/target/test-classes:/Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-201008629/Buggy-Version/target/classes:/Users/jun/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/jun/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/jun/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/Users/jun/.m2/repository/joda-time/joda-time/2.9.7/joda-time-2.9.7.jar:/Users/jun/.m2/repository/com/h2database/h2/1.4.193/h2-1.4.193.jar:/Users/jun/.m2/repository/mysql/mysql-connector-java/5.1.40/mysql-connector-java-5.1.40.jar:/Users/jun/.m2/repository/org/postgresql/postgresql/9.4.1212.jre7/postgresql-9.4.1212.jre7.jar:/Users/jun/.m2/repository/com/microsoft/sqlserver/mssql-jdbc/6.1.0.jre7/mssql-jdbc-6.1.0.jre7.jar:/Users/jun/.m2/repository/com/zaxxer/HikariCP-java7/2.4.11/HikariCP-java7-2.4.11.jar:/Users/jun/.m2/repository/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar:/Users/jun/.m2/repository/io/netty/netty/3.10.6.Final/netty-3.10.6.Final.jar:/Users/jun/.m2/repository/com/ning/async-http-client/1.9.40/async-http-client-1.9.40.jar:/Users/jun/.m2/repository/org/slf4j/slf4j-simple/1.7.22/slf4j-simple-1.7.22.jar:/Users/jun/.m2/repository/org/glassfish/javax.json/1.0.4/javax.json-1.0.4.jar:/Users/jun/.m2/repository/org/eclipse/jetty/jetty-server/9.2.21.v20170120/jetty-server-9.2.21.v20170120.jar:/Users/jun/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/jun/.m2/repository/org/eclipse/jetty/jetty-http/9.2.21.v20170120/jetty-http-9.2.21.v20170120.jar:/Users/jun/.m2/repository/org/eclipse/jetty/jetty-io/9.2.21.v20170120/jetty-io-9.2.21.v20170120.jar:/Users/jun/.m2/repository/org/eclipse/jetty/jetty-servlet/9.2.21.v20170120/jetty-servlet-9.2.21.v20170120.jar:/Users/jun/.m2/repository/org/eclipse/jetty/jetty-security/9.2.21.v20170120/jetty-security-9.2.21.v20170120.jar:/Users/jun/.m2/repository/org/eclipse/jetty/jetty-webapp/9.2.21.v20170120/jetty-webapp-9.2.21.v20170120.jar:/Users/jun/.m2/repository/org/eclipse/jetty/jetty-xml/9.2.21.v20170120/jetty-xml-9.2.21.v20170120.jar:/Users/jun/.m2/repository/org/eclipse/jetty/jetty-jndi/9.2.21.v20170120/jetty-jndi-9.2.21.v20170120.jar:/Users/jun/.m2/repository/org/eclipse/jetty/jetty-util/9.2.21.v20170120/jetty-util-9.2.21.v20170120.jar:/Users/jun/.m2/repository/org/eclipse/jetty/websocket/websocket-server/9.2.21.v20170120/websocket-server-9.2.21.v20170120.jar:/Users/jun/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.2.21.v20170120/websocket-common-9.2.21.v20170120.jar:/Users/jun/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.2.21.v20170120/websocket-api-9.2.21.v20170120.jar:/Users/jun/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.2.21.v20170120/websocket-client-9.2.21.v20170120.jar:/Users/jun/.m2/repository/org/eclipse/jetty/websocket/websocket-servlet/9.2.21.v20170120/websocket-servlet-9.2.21.v20170120.jar:/Users/jun/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet/2.25.1/jersey-container-servlet-2.25.1.jar:/Users/jun/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet-core/2.25.1/jersey-container-servlet-core-2.25.1.jar:/Users/jun/.m2/repository/org/glassfish/hk2/external/javax.inject/2.5.0-b32/javax.inject-2.5.0-b32.jar:/Users/jun/.m2/repository/org/glassfish/jersey/core/jersey-common/2.25.1/jersey-common-2.25.1.jar:/Users/jun/.m2/repository/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2.jar:/Users/jun/.m2/repository/org/glassfish/jersey/bundles/repackaged/jersey-guava/2.25.1/jersey-guava-2.25.1.jar:/Users/jun/.m2/repository/org/glassfish/hk2/hk2-api/2.5.0-b32/hk2-api-2.5.0-b32.jar:/Users/jun/.m2/repository/org/glassfish/hk2/hk2-utils/2.5.0-b32/hk2-utils-2.5.0-b32.jar:/Users/jun/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.5.0-b32/aopalliance-repackaged-2.5.0-b32.jar:/Users/jun/.m2/repository/org/glassfish/hk2/hk2-locator/2.5.0-b32/hk2-locator-2.5.0-b32.jar:/Users/jun/.m2/repository/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar:/Users/jun/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.1/osgi-resource-locator-1.0.1.jar:/Users/jun/.m2/repository/org/glassfish/jersey/core/jersey-server/2.25.1/jersey-server-2.25.1.jar:/Users/jun/.m2/repository/org/glassfish/jersey/core/jersey-client/2.25.1/jersey-client-2.25.1.jar:/Users/jun/.m2/repository/org/glassfish/jersey/media/jersey-media-jaxb/2.25.1/jersey-media-jaxb-2.25.1.jar:/Users/jun/.m2/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar:/Users/jun/.m2/repository/javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1.jar:/Users/jun/.m2/repository/org/glassfish/jersey/media/jersey-media-json-jackson/2.25.1/jersey-media-json-jackson-2.25.1.jar:/Users/jun/.m2/repository/org/glassfish/jersey/ext/jersey-entity-filtering/2.25.1/jersey-entity-filtering-2.25.1.jar:/Users/jun/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-base/2.8.4/jackson-jaxrs-base-2.8.4.jar:/Users/jun/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.8.4/jackson-core-2.8.4.jar:/Users/jun/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.8.4/jackson-databind-2.8.4.jar:/Users/jun/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-json-provider/2.8.4/jackson-jaxrs-json-provider-2.8.4.jar:/Users/jun/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.8.4/jackson-module-jaxb-annotations-2.8.4.jar:/Users/jun/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.8.4/jackson-annotations-2.8.4.jar:/Users/jun/.m2/repository/org/liquibase/liquibase-core/3.5.3/liquibase-core-3.5.3.jar:/Users/jun/.m2/repository/org/yaml/snakeyaml/1.17/snakeyaml-1.17.jar:/Users/jun/.m2/repository/javax/mail/mail/1.4.7/mail-1.4.7.jar:/Users/jun/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/Users/jun/.m2/repository/org/jxls/jxls/2.3.0/jxls-2.3.0.jar:/Users/jun/.m2/repository/org/apache/commons/commons-jexl/2.1.1/commons-jexl-2.1.1.jar:/Users/jun/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/jun/.m2/repository/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar:/Users/jun/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.12/jcl-over-slf4j-1.7.12.jar:/Users/jun/.m2/repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar:/Users/jun/.m2/repository/org/jxls/jxls-poi/1.0.11/jxls-poi-1.0.11.jar:/Users/jun/.m2/repository/org/apache/poi/poi/3.14/poi-3.14.jar:/Users/jun/.m2/repository/org/apache/poi/poi-ooxml/3.14/poi-ooxml-3.14.jar:/Users/jun/.m2/repository/org/apache/poi/poi-ooxml-schemas/3.14/poi-ooxml-schemas-3.14.jar:/Users/jun/.m2/repository/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.jar:/Users/jun/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar:/Users/jun/.m2/repository/com/github/virtuald/curvesapi/1.03/curvesapi-1.03.jar:/Users/jun/.m2/repository/org/apache/velocity/velocity/1.7/velocity-1.7.jar:/Users/jun/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar:/Users/jun/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar:/Users/jun/.m2/repository/org/mnode/ical4j/ical4j/2.0.0/ical4j-2.0.0.jar:/Users/jun/.m2/repository/org/apache/commons/commons-collections4/4.0/commons-collections4-4.0.jar:/Users/jun/.m2/repository/org/codehaus/groovy/groovy-all/2.3.2/groovy-all-2.3.2.jar:/Users/jun/.m2/repository/biz/aQute/bnd/bndlib/2.3.0/bndlib-2.3.0.jar:/Users/jun/.m2/repository/org/osgi/org.osgi.core/4.3.1/org.osgi.core-4.3.1.jar:/Users/jun/.m2/repository/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar:/Users/jun/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/Users/jun/.m2/repository/org/evosuite/evosuite-standalone-runtime/1.2.0/evosuite-standalone-runtime-1.2.0.jar:
+[main] INFO org.evosuite.runtime.agent.AgentLoader - Going to attach agent to process 70867
+[Attach Listener] INFO org.evosuite.runtime.agent.InstrumentingAgent - Executing agentmain of JavaAgent
+Warning: the font "Times" is not available, so "Lucida Bright" has been substituted, but may have unexpected appearance or behavor. Re-enable the "Times" font to remove this warning.
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/local/DefaultLocalServerChannel
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/channel/local/DefaultLocalServerChannel
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/AbstractServerChannel
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/channel/AbstractServerChannel
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/AbstractChannel
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jboss/netty/channel/AbstractChannel
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/local/LocalAddress
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/channel/local/LocalAddress
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field EPHEMERAL
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/AbstractChannel$ChannelCloseFuture
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/channel/AbstractChannel$ChannelCloseFuture
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/DefaultChannelFuture
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jboss/netty/channel/DefaultChannelFuture
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/traccar/ExtendedObjectDecoder
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/traccar/ExtendedObjectDecoder
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/traccar/BaseProtocolDecoder
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/traccar/BaseProtocolDecoder
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/logging/JdkLoggerFactory
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/logging/JdkLoggerFactory
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/logging/InternalLoggerFactory
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jboss/netty/logging/InternalLoggerFactory
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/traccar/database/ActiveDevice
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/traccar/database/ActiveDevice
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/traccar/BaseProtocol
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/traccar/BaseProtocol
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/DefaultServerChannelConfig
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/channel/DefaultServerChannelConfig
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/CompleteChannelFuture
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jboss/netty/channel/CompleteChannelFuture
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/logging/JdkLogger
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/logging/JdkLogger
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/logging/AbstractInternalLogger
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/logging/AbstractInternalLogger
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/ChannelFutureListener$1
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/ChannelFutureListener$2
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/ChannelState
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jboss/netty/channel/ChannelState
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/Channels
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/channel/Channels
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/ChannelHandlerLifeCycleException
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/channel/ChannelHandlerLifeCycleException
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/group/DefaultChannelGroup$1
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/ChannelException
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/channel/ChannelException
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/SucceededChannelFuture
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/channel/SucceededChannelFuture
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/DefaultChannelPipeline
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jboss/netty/channel/DefaultChannelPipeline
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/DefaultChannelPipeline$DiscardingChannelSink
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/channel/DefaultChannelPipeline$DiscardingChannelSink
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/ChannelPipelineException
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/channel/ChannelPipelineException
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/buffer/AbstractChannelBufferFactory
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/buffer/AbstractChannelBufferFactory
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/traccar/DeviceSession
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/traccar/DeviceSession
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/group/DefaultChannelGroup
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jboss/netty/channel/group/DefaultChannelGroup
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/bootstrap/ServerBootstrap
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/bootstrap/ServerBootstrap
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/bootstrap/Bootstrap
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jboss/netty/bootstrap/Bootstrap
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/traccar/model/Message
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/traccar/model/Message
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/traccar/model/Extensible
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/traccar/model/Extensible
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/UpstreamChannelStateEvent$1
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/buffer/HeapChannelBufferFactory
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jboss/netty/buffer/HeapChannelBufferFactory
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/local/LocalServerChannelSink
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class org/jboss/netty/channel/local/LocalServerChannelSink
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/AbstractChannelSink
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/channel/AbstractChannelSink
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/traccar/model/Position
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/traccar/model/Position
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_ORIGINAL
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_INDEX
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_HDOP
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_SATELLITES
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_RSSI
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_GPS
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_EVENT
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_ALARM
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_STATUS
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_ODOMETER
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_TRIP_ODOMETER
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_HOURS
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_INPUT
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_OUTPUT
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_POWER
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_BATTERY
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_FUEL
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_FUEL_CONSUMPTION
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_RFID
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_VERSION
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_TYPE
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_IGNITION
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_FLAGS
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_CHARGE
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_IP
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_ARCHIVE
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_DISTANCE
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_TOTAL_DISTANCE
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_RPM
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_VIN
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_APPROXIMATE
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_THROTTLE
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_MOTION
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_ARMED
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_ACCURACY
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_GEOFENCE
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_DTCS
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_OBD_SPEED
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_OBD_ODOMETER
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_RESULT
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field PREFIX_TEMP
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field PREFIX_ADC
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field PREFIX_IO
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field PREFIX_COUNT
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field ALARM_GENERAL
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field ALARM_SOS
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field ALARM_VIBRATION
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field ALARM_MOVEMENT
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field ALARM_LOW_SPEED
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field ALARM_OVERSPEED
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field ALARM_FALL_DOWN
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field ALARM_LOW_BATTERY
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field ALARM_FAULT
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field ALARM_POWER_OFF
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field ALARM_POWER_ON
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field ALARM_DOOR
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field ALARM_GEOFENCE
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field ALARM_GEOFENCE_ENTER
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field ALARM_GEOFENCE_EXIT
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field ALARM_GPS_ANTENNA_CUT
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field ALARM_ACCIDENT
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field ALARM_TOW
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field ALARM_ACCELETATION
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field ALARM_BREAKING
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field ALARM_FATIGUE_DRIVING
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field ALARM_POWER_CUT
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field ALARM_JAMMING
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field ALARM_TEMPERATURE
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field ALARM_PARKING
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field ALARM_SHOCK
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field ALARM_BONNET
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field ALARM_FOOT_BRAKE
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field ALARM_OIL_LEAK
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/bootstrap/ConnectionlessBootstrap
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/bootstrap/ConnectionlessBootstrap
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/local/DefaultLocalServerChannelFactory
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/channel/local/DefaultLocalServerChannelFactory
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/traccar/protocol/TeltonikaProtocolDecoder
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/traccar/protocol/TeltonikaProtocolDecoder
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field CODEC_GH3000
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field CODEC_FM4X00
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field CODEC_12
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/traccar/model/Command
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/traccar/model/Command
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_CUSTOM
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_IDENTIFICATION
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_POSITION_SINGLE
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_POSITION_PERIODIC
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_POSITION_STOP
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_ENGINE_STOP
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_ENGINE_RESUME
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_ALARM_ARM
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_ALARM_DISARM
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_SET_TIMEZONE
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_REQUEST_PHOTO
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_REBOOT_DEVICE
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_SEND_SMS
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_SEND_USSD
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_SOS_NUMBER
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_SILENCE_TIME
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_SET_PHONEBOOK
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_VOICE_MESSAGE
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_OUTPUT_CONTROL
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_VOICE_MONITORING
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_SET_AGPS
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_SET_INDICATOR
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_MODE_POWER_SAVING
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_MODE_DEEP_SLEEP
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_ALARM_GEOFENCE
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_ALARM_BATTERY
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_ALARM_SOS
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_ALARM_REMOVE
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_ALARM_CLOCK
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_ALARM_SPEED
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_ALARM_FALL
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field TYPE_ALARM_VIBRATION
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_UNIQUE_ID
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_FREQUENCY
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_TIMEZONE
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_DEVICE_PASSWORD
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_RADIUS
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_MESSAGE
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_ENABLE
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_DATA
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_INDEX
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Adding bytecode for initializing field KEY_PHONE
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/UpstreamChannelStateEvent
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/channel/UpstreamChannelStateEvent
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/traccar/protocol/TeltonikaProtocol
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/traccar/protocol/TeltonikaProtocol
+Jun 05, 2024 4:39:52 AM org.jboss.netty.channel.DefaultChannelPipeline
+WARNING: The pipeline contains no upstream handlers; discarding: org.jboss.netty.channel.local.DefaultLocalServerChannel@0000000009 OPEN
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.097 sec
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  23.652 s
+[INFO] Finished at: 2024-06-05T12:39:52+08:00
+[INFO] ------------------------------------------------------------------------

@@ -1,0 +1,12 @@
+diff -x .* -x .git -x repairnator.maven.*.log -x target -ruw /Users/jun/Documents/TA/CS527/milestone_answer/subjects/Bears/Bears-202/Buggy-Version/src/main/java/io/github/classgraph/ClassGraph.java /Users/jun/Documents/TA/CS527/milestone_answer/subjects/Bears/Bears-202/Patched-Version/src/main/java/io/github/classgraph/ClassGraph.java
+--- /Users/jun/Documents/TA/CS527/milestone_answer/subjects/Bears/Bears-202/Buggy-Version/src/main/java/io/github/classgraph/ClassGraph.java	2024-05-24 23:55:49
++++ /Users/jun/Documents/TA/CS527/milestone_answer/subjects/Bears/Bears-202/Patched-Version/src/main/java/io/github/classgraph/ClassGraph.java	2024-05-24 23:55:58
+@@ -862,7 +862,7 @@
+         if (jarLeafNames.length == 0) {
+             // Blacklist all lib or ext jars
+             for (final String libOrExtJar : JarUtils.getJreLibOrExtJars()) {
+-                blacklistLibOrExtJars(libOrExtJar);
++                blacklistLibOrExtJars(JarUtils.leafName(libOrExtJar));
+             }
+         } else {
+             for (final String jarLeafName : jarLeafNames) {

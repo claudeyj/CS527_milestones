@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":102,"id":27619,"methods":[{"el":21,"sc":5,"sl":10},{"el":34,"sc":5,"sl":23},{"el":48,"sc":5,"sl":36},{"el":61,"sc":5,"sl":50},{"el":74,"sc":5,"sl":63},{"el":87,"sc":5,"sl":76},{"el":100,"sc":5,"sl":89}],"name":"Tk103ProtocolEncoderTest","sl":8}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_175":{"methods":[{"sl":50}],"name":"testEncodePositionStop","pass":true,"statements":[{"sl":53},{"sl":55},{"sl":56},{"sl":57},{"sl":59}]},"test_186":{"methods":[{"sl":63}],"name":"testEncodeGetVersion","pass":true,"statements":[{"sl":66},{"sl":68},{"sl":69},{"sl":70},{"sl":72}]},"test_24":{"methods":[{"sl":36}],"name":"testEncodePositionPeriodic","pass":true,"statements":[{"sl":39},{"sl":41},{"sl":42},{"sl":43},{"sl":44},{"sl":46}]},"test_240":{"methods":[{"sl":89}],"name":"testEncodeSetOdometer","pass":true,"statements":[{"sl":92},{"sl":94},{"sl":95},{"sl":96},{"sl":98}]},"test_34":{"methods":[{"sl":10}],"name":"testEncodeEngineStop","pass":true,"statements":[{"sl":13},{"sl":15},{"sl":16},{"sl":17},{"sl":19}]},"test_64":{"methods":[{"sl":76}],"name":"testEncodeRebootDevice","pass":true,"statements":[{"sl":79},{"sl":81},{"sl":82},{"sl":83},{"sl":85}]},"test_98":{"methods":[{"sl":23}],"name":"testEncodePositionSingle","pass":true,"statements":[{"sl":26},{"sl":28},{"sl":29},{"sl":30},{"sl":32}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [34], [], [], [34], [], [34], [34], [34], [], [34], [], [], [], [98], [], [], [98], [], [98], [98], [98], [], [98], [], [], [], [24], [], [], [24], [], [24], [24], [24], [24], [], [24], [], [], [], [175], [], [], [175], [], [175], [175], [175], [], [175], [], [], [], [186], [], [], [186], [], [186], [186], [186], [], [186], [], [], [], [64], [], [], [64], [], [64], [64], [64], [], [64], [], [], [], [240], [], [], [240], [], [240], [240], [240], [], [240], [], [], [], []]

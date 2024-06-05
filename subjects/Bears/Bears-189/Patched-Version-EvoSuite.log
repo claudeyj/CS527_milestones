@@ -1,0 +1,102 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< AutomatedCar:AutomatedCar >----------------------
+[INFO] Building AutomatedCar 1.0
+[INFO]   from pom_for_clover.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ AutomatedCar ---
+[INFO] Deleting /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-189/Patched-Version/target
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.8:prepare-agent (prepare-agent) @ AutomatedCar ---
+[INFO] argLine set to -javaagent:/Users/jun/.m2/repository/org/jacoco/org.jacoco.agent/0.7.8/org.jacoco.agent-0.7.8-runtime.jar=destfile=/Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-189/Patched-Version/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ AutomatedCar ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 44 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ AutomatedCar ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 57 source files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-189/Patched-Version/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ AutomatedCar ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-189/Patched-Version/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ AutomatedCar ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 24 source files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-189/Patched-Version/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ AutomatedCar ---
+[INFO] Surefire report directory: /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-189/Patched-Version/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running hu.oe.nik.szfmv.Main_ESTest
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Warning: the font "Times" is not available, so "Lucida Bright" has been substituted, but may have unexpected appearance or behavor. Re-enable the "Times" font to remove this warning.
+ERROR StatusLogger No log4j2 configuration file found. Using default configuration: logging only errors to the console.
+ERROR StatusLogger No log4j2 configuration file found. Using default configuration: logging only errors to the console.
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+00:00:00.000 [Time-limited test] ERROR hu.oe.nik.szfmv.environment.WorldObject - javax.imageio.IIOException: Can't read input file!
+ERROR StatusLogger No log4j2 configuration file found. Using default configuration: logging only errors to the console.
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.768 sec
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  19.612 s
+[INFO] Finished at: 2024-06-03T16:41:19+08:00
+[INFO] ------------------------------------------------------------------------

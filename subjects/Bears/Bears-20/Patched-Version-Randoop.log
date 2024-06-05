@@ -1,0 +1,67 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------< com.fasterxml.jackson.core:jackson-databind >-------------
+[INFO] Building jackson-databind 2.8.9-SNAPSHOT
+[INFO]   from pom_for_clover.xml
+[INFO] -------------------------------[ bundle ]-------------------------------
+[WARNING] The artifact javax.measure:jsr-275:jar:1.0.0 has been relocated to javax.measure:jsr-275:jar:0.9.1
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ jackson-databind ---
+[INFO] Deleting /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-20/Patched-Version/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-java) @ jackson-databind ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:add-source (add-generated-sources) @ jackson-databind ---
+[INFO] Source directory: /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-20/Patched-Version/target/generated-sources added.
+[INFO] 
+[INFO] --- replacer:1.5.2:replace (process-packageVersion) @ jackson-databind ---
+[INFO] Replacement run on 1 file.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ jackson-databind ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ jackson-databind ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 398 source files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-20/Patched-Version/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.7
+[INFO] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-20/Patched-Version/src/main/java/com/fasterxml/jackson/databind/node/ArrayNode.java: Some input files use unchecked or unsafe operations.
+[INFO] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-20/Patched-Version/src/main/java/com/fasterxml/jackson/databind/node/ArrayNode.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ jackson-databind ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ jackson-databind ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 400 source files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-20/Patched-Version/target/test-classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.7
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-20/Patched-Version/src/test/java/com/fasterxml/jackson/databind/jsonschema/TestReadJsonSchema.java:[6,49] com.fasterxml.jackson.databind.jsonschema.JsonSchema in com.fasterxml.jackson.databind.jsonschema has been deprecated
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-20/Patched-Version/src/test/java/com/fasterxml/jackson/databind/ser/TestCollectionSerialization.java:[243,57] WRITE_EMPTY_JSON_ARRAYS in com.fasterxml.jackson.databind.SerializationFeature has been deprecated
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-20/Patched-Version/src/test/java/com/fasterxml/jackson/databind/ser/TestCollectionSerialization.java:[249,41] WRITE_EMPTY_JSON_ARRAYS in com.fasterxml.jackson.databind.SerializationFeature has been deprecated
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-20/Patched-Version/src/test/java/com/fasterxml/jackson/databind/jsontype/TestDefaultForArrays.java:[78,73] WRITE_EMPTY_JSON_ARRAYS in com.fasterxml.jackson.databind.SerializationFeature has been deprecated
+[INFO] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-20/Patched-Version/src/test/java/com/fasterxml/jackson/databind/BaseMapTest.java: /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-20/Patched-Version/src/test/java/com/fasterxml/jackson/databind/BaseMapTest.java uses unchecked or unsafe operations.
+[INFO] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-20/Patched-Version/src/test/java/com/fasterxml/jackson/databind/BaseMapTest.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ jackson-databind ---
+[INFO] Surefire report directory: /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-20/Patched-Version/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running RegressionTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.136 sec - in RegressionTest
+Running RegressionTest0
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in RegressionTest0
+
+Results :
+
+Tests run: 32, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  24.940 s
+[INFO] Finished at: 2024-06-05T12:18:14+08:00
+[INFO] ------------------------------------------------------------------------

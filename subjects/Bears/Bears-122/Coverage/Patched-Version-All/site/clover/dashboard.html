@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="img/clover.ico" />
+
+    <link rel="stylesheet" href="aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('style.css');
+        @import url('tree.css');
+        
+    </style>
+
+    <script src="jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="package-nodes-tree.js" type="text/javascript"></script>
+    <script src="clover-tree.js" type="text/javascript"></script>
+    <script src="clover.js" type="text/javascript"></script>
+    <script src="clover-descriptions.js" type="text/javascript"></script>
+    <script src="cloud.js" type="text/javascript"></script>
+
+            <title>traccar 3.12-SNAPSHOT</title>
+    </head>
+
+<body onresize="processTreeMapDashJson(treeMapJson);" >
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="https://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="https://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                    <a href="https://www.traccar.org" target="_top">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+                    </a>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                            <a href="https://www.traccar.org" target="_top">
+                                        traccar 3.12-SNAPSHOT
+                                        </a>
+                    </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="aui-nav-selected">
+                    <a href="dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                  <div class="packages-tree-wrapper" data-root-relative="" data-package-name="">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="dashboard.html">Project Clover database Mon Jun 3 2024 11:09:55 CST</a></li>
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            Project overview
+    </h1>
+<div class="aui-tabs horizontal-tabs">
+        <ul class="tabs-menu">
+            <li class="menu-item active-tab">
+            <a href="dashboard.html">Dashboard</a>
+        </li>
+                <li class="menu-item ">
+            <a href="pkg-summary.html"><strong>Application code</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="testsrc-pkg-summary.html"><strong>Test code</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="test-pkg-summary.html"><strong>Test results</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="top-risks.html"><strong>Top risks</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="quick-wins.html"><strong>Quick wins</strong></a>
+        </li>
+                                                <li class="menu-item ">
+                <a href="treemap.html"><strong>Coverage tree map</strong></a>
+            </li>
+            </ul>
+    <div class="tabs-pane active-pane" id="tabs-first">
+
+        <div>&#160;</div>
+
+
+
+
+
+
+<div class="aui-group">
+    <div class="aui-item">
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                
+                <h3>
+                    Code coverage
+                    <small style="float:right; font-weight: normal">
+                        574 classes,
+                        13,917 /
+                        25,319 elements
+                    </small>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.5496663</span>55%</div><div style="display: table-cell">
+ <div title="55% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:55%"></div></div></div></div>
+                <p><a href="pkg-summary.html">See more</a></p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>
+                    Test results
+                    <small style="float:right; font-weight: normal">
+                        268 /
+                        271 tests
+                        2.31 secs
+                    </small>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                                    
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">0.98892987</span>98.9%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="98.9% of tests passed&lt;br/&gt;1.1% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 98.9%"></div></div>
+            </div>
+        </div>
+    </div>                                <p><a href="test-pkg-summary.html">See more</a></p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Code metrics</h3>
+            </header>
+                         
+
+<div id="$statsId" class="aui-item" style="display: ${display}">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this project">Branches:</label></div>
+        <div class="stats-box-value">5,308</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this project">Statements:</label></div>
+        <div class="stats-box-value">17,650</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this project">Methods:</label></div>
+        <div class="stats-box-value">2,361</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this project">Classes:</label></div>
+        <div class="stats-box-value">574</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of files in this project">Files:</label></div>
+            <div class="stats-box-value">553</div>
+        </div>
+                <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of packages in this project">Packages:</label></div>
+            <div class="stats-box-value">18</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this project">LOC:</label></div>
+        <div class="stats-box-value">55,838</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this project">NCLOC:</label></div>
+        <div class="stats-box-value">38,354</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this project">Total complexity:</label></div>
+        <div class="stats-box-value">6,310</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this project">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.36</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">7.48</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">4.11</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Number of classes per package.">Classes/Package:</label></div>
+            <div class="stats-box-value">31.89</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this project">Average method complexity:</label></div>
+        <div class="stats-box-value">2.67</div>
+    </div>
+</div>
+
+</div>        </div>
+
+                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Class Coverage Distribution</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div style="text-align: center">                     <img src="img/classDistrubutionChart.png" alt="img/classDistrubutionChart.png" usemap="#classDistrubutionChart.png"/>
+                </div>
+                <map id="classDistrubutionChart.png" name="classDistrubutionChart.png">
+<area shape="rect" coords="282,156,304,206" title="41 classes have 91-100% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="258,103,280,206" title="84 classes have 81-90% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="233,124,255,206" title="67 classes have 71-80% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="209,173,231,206" title="27 classes have 61-70% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="184,193,206,206" title="11 classes have 51-60% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="160,197,182,206" title="8 classes have 41-50% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="135,181,157,206" title="21 classes have 31-40% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="111,62,133,206" title="117 classes have 21-30% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="87,181,109,206" title="21 classes have 11-20% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="62,204,84,206" title="2 classes have 1-10% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="38,15,60,206" title="155 classes have 0% coverage" alt="" nohref="nohref"/>
+</map>
+            </div>
+        </div>
+        
+                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Class Complexity</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div style="text-align: center">
+                    <img src="img/classComplexityChart.png" alt="img/classComplexityChart.png" usemap="#classComplexityChart.png"/>
+                </div>
+                <map id="classComplexityChart.png" name="classComplexityChart.png">
+<area shape="poly" coords="54,184,51,186,49,184,51,181,54,184,54,184" title="Complexity: 17; Coverage: 0%; Class: WebServer" alt="" href="org/traccar/web/WebServer.html#WebServer"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 5; Coverage: 0%; Class: GpxBuilder" alt="" href="org/traccar/web/GpxBuilder.html#GpxBuilder"/>
+<area shape="poly" coords="54,163,51,166,49,163,51,161,54,163,54,163" title="Complexity: 31; Coverage: 0%; Class: CsvBuilder" alt="" href="org/traccar/web/CsvBuilder.html#CsvBuilder"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 2; Coverage: 0%; Class: ConsoleServlet" alt="" href="org/traccar/web/ConsoleServlet.html#ConsoleServlet"/>
+<area shape="poly" coords="181,191,178,194,176,191,178,189,181,191,181,191" title="Complexity: 12; Coverage: 52%; Class: UnitsConverter" alt="" href="org/traccar/helper/UnitsConverter.html#UnitsConverter"/>
+<area shape="poly" coords="298,205,296,207,293,205,296,202,298,205,298,205" title="Complexity: 3; Coverage: 100%; Class: StringFinder" alt="" href="org/traccar/helper/StringFinder.html#StringFinder"/>
+<area shape="poly" coords="115,203,112,206,110,203,112,201,115,203,115,203" title="Complexity: 4; Coverage: 25%; Class: PatternUtil.MatchResult" alt="" href="org/traccar/helper/PatternUtil.html#PatternUtil.MatchResult"/>
+<area shape="poly" coords="254,202,252,204,249,202,252,199,254,202,254,202" title="Complexity: 5; Coverage: 82%; Class: PatternUtil" alt="" href="org/traccar/helper/PatternUtil.html#PatternUtil"/>
+<area shape="poly" coords="298,190,296,192,293,190,296,187,298,190,298,190" title="Complexity: 13; Coverage: 100%; Class: PatternBuilder" alt="" href="org/traccar/helper/PatternBuilder.html#PatternBuilder"/>
+<area shape="poly" coords="245,113,242,116,240,113,242,111,245,113,245,113" title="Complexity: 65; Coverage: 78%; Class: Parser" alt="" href="org/traccar/helper/Parser.html#Parser"/>
+<area shape="poly" coords="254,171,252,173,249,171,252,168,254,171,254,171" title="Complexity: 26; Coverage: 82%; Class: ObdDecoder" alt="" href="org/traccar/helper/ObdDecoder.html#ObdDecoder"/>
+<area shape="poly" coords="54,191,51,194,49,191,51,189,54,191,54,191" title="Complexity: 12; Coverage: 0%; Class: Log.NettyInternalLogger" alt="" href="org/traccar/helper/Log.html#Log.NettyInternalLogger"/>
+<area shape="poly" coords="193,169,191,172,188,169,191,167,193,169,193,169" title="Complexity: 27; Coverage: 57%; Class: Log" alt="" href="org/traccar/helper/Log.html#Log"/>
+<area shape="poly" coords="298,200,296,203,293,200,296,198,298,200,298,200" title="Complexity: 6; Coverage: 100%; Class: LocationTree.Item" alt="" href="org/traccar/helper/LocationTree.html#LocationTree.Item"/>
+<area shape="poly" coords="286,190,284,192,281,190,284,187,286,190,286,190" title="Complexity: 13; Coverage: 95%; Class: LocationTree" alt="" href="org/traccar/helper/LocationTree.html#LocationTree"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 3; Coverage: 0%; Class: Hashing.HashingResult" alt="" href="org/traccar/helper/Hashing.html#Hashing.HashingResult"/>
+<area shape="poly" coords="54,194,51,197,49,194,51,192,54,194,54,194" title="Complexity: 10; Coverage: 0%; Class: Hashing" alt="" href="org/traccar/helper/Hashing.html#Hashing"/>
+<area shape="poly" coords="286,202,284,204,281,202,284,199,286,202,286,202" title="Complexity: 5; Coverage: 95%; Class: DistanceCalculator" alt="" href="org/traccar/helper/DistanceCalculator.html#DistanceCalculator"/>
+<area shape="poly" coords="264,194,262,197,259,194,262,192,264,194,264,194" title="Complexity: 10; Coverage: 86%; Class: DateUtil" alt="" href="org/traccar/helper/DateUtil.html#DateUtil"/>
+<area shape="poly" coords="298,177,296,179,293,177,296,174,298,177,298,177" title="Complexity: 22; Coverage: 100%; Class: DateBuilder" alt="" href="org/traccar/helper/DateBuilder.html#DateBuilder"/>
+<area shape="poly" coords="254,169,252,172,249,169,252,167,254,169,254,169" title="Complexity: 27; Coverage: 82%; Class: Checksum" alt="" href="org/traccar/helper/Checksum.html#Checksum"/>
+<area shape="poly" coords="281,197,279,200,276,197,279,195,281,197,281,197" title="Complexity: 8; Coverage: 93%; Class: BitUtil" alt="" href="org/traccar/helper/BitUtil.html#BitUtil"/>
+<area shape="poly" coords="298,191,296,194,293,191,296,189,298,191,298,191" title="Complexity: 12; Coverage: 100%; Class: BitBuffer" alt="" href="org/traccar/helper/BitBuffer.html#BitBuffer"/>
+<area shape="poly" coords="289,200,286,203,284,200,286,198,289,200,289,200" title="Complexity: 6; Coverage: 96%; Class: BcdUtil" alt="" href="org/traccar/helper/BcdUtil.html#BcdUtil"/>
+<area shape="poly" coords="54,197,51,200,49,197,51,195,54,197,54,197" title="Complexity: 8; Coverage: 0%; Class: Trips" alt="" href="org/traccar/reports/Trips.html#Trips"/>
+<area shape="poly" coords="54,191,51,194,49,191,51,189,54,191,54,191" title="Complexity: 12; Coverage: 0%; Class: Log.NettyInternalLogger" alt="" href="org/traccar/helper/Log.html#Log.NettyInternalLogger"/>
+<area shape="poly" coords="54,197,51,200,49,197,51,195,54,197,54,197" title="Complexity: 8; Coverage: 0%; Class: Trips" alt="" href="org/traccar/reports/Trips.html#Trips"/>
+<area shape="poly" coords="54,199,51,201,49,199,51,196,54,199,54,199" title="Complexity: 7; Coverage: 0%; Class: Route" alt="" href="org/traccar/reports/Route.html#Route"/>
+<area shape="poly" coords="232,103,230,105,227,103,230,100,232,103,232,103" title="Complexity: 72; Coverage: 73%; Class: ReportUtils" alt="" href="org/traccar/reports/ReportUtils.html#ReportUtils"/>
+<area shape="poly" coords="54,184,51,186,49,184,51,181,54,184,54,184" title="Complexity: 17; Coverage: 0%; Class: WebServer" alt="" href="org/traccar/web/WebServer.html#WebServer"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 5; Coverage: 0%; Class: GpxBuilder" alt="" href="org/traccar/web/GpxBuilder.html#GpxBuilder"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 3; Coverage: 0%; Class: Hashing.HashingResult" alt="" href="org/traccar/helper/Hashing.html#Hashing.HashingResult"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 2; Coverage: 0%; Class: ConsoleServlet" alt="" href="org/traccar/web/ConsoleServlet.html#ConsoleServlet"/>
+<area shape="poly" coords="54,188,51,191,49,188,51,186,54,188,54,188" title="Complexity: 14; Coverage: 0%; Class: SecurityRequestFilter" alt="" href="org/traccar/api/SecurityRequestFilter.html#SecurityRequestFilter"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 3; Coverage: 0%; Class: Hashing.HashingResult" alt="" href="org/traccar/helper/Hashing.html#Hashing.HashingResult"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: ObjectMapperProvider" alt="" href="org/traccar/api/ObjectMapperProvider.html#ObjectMapperProvider"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 5; Coverage: 0%; Class: GpxBuilder" alt="" href="org/traccar/web/GpxBuilder.html#GpxBuilder"/>
+<area shape="poly" coords="54,196,51,198,49,196,51,193,54,196,54,196" title="Complexity: 9; Coverage: 0%; Class: CorsResponseFilter" alt="" href="org/traccar/api/CorsResponseFilter.html#CorsResponseFilter"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 2; Coverage: 0%; Class: ConsoleServlet" alt="" href="org/traccar/web/ConsoleServlet.html#ConsoleServlet"/>
+<area shape="poly" coords="54,169,51,172,49,169,51,167,54,169,54,169" title="Complexity: 27; Coverage: 0%; Class: BaseObjectResource" alt="" href="org/traccar/api/BaseObjectResource.html#BaseObjectResource"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 3; Coverage: 0%; Class: Hashing.HashingResult" alt="" href="org/traccar/helper/Hashing.html#Hashing.HashingResult"/>
+<area shape="poly" coords="54,194,51,197,49,194,51,192,54,194,54,194" title="Complexity: 10; Coverage: 0%; Class: Hashing" alt="" href="org/traccar/helper/Hashing.html#Hashing"/>
+<area shape="poly" coords="54,188,51,191,49,188,51,186,54,188,54,188" title="Complexity: 14; Coverage: 0%; Class: SecurityRequestFilter" alt="" href="org/traccar/api/SecurityRequestFilter.html#SecurityRequestFilter"/>
+<area shape="poly" coords="54,182,51,185,49,182,51,180,54,182,54,182" title="Complexity: 18; Coverage: 0%; Class: NominatimGeocoder" alt="" href="org/traccar/geocoder/NominatimGeocoder.html#NominatimGeocoder"/>
+<area shape="poly" coords="54,194,51,197,49,194,51,192,54,194,54,194" title="Complexity: 10; Coverage: 0%; Class: Hashing" alt="" href="org/traccar/helper/Hashing.html#Hashing"/>
+<area shape="poly" coords="54,191,51,194,49,191,51,189,54,191,54,191" title="Complexity: 12; Coverage: 0%; Class: Log.NettyInternalLogger" alt="" href="org/traccar/helper/Log.html#Log.NettyInternalLogger"/>
+<area shape="poly" coords="54,190,51,192,49,190,51,187,54,190,54,190" title="Complexity: 13; Coverage: 0%; Class: GoogleGeocoder" alt="" href="org/traccar/geocoder/GoogleGeocoder.html#GoogleGeocoder"/>
+<area shape="poly" coords="54,199,51,201,49,199,51,196,54,199,54,199" title="Complexity: 7; Coverage: 0%; Class: Route" alt="" href="org/traccar/reports/Route.html#Route"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: ObjectMapperProvider" alt="" href="org/traccar/api/ObjectMapperProvider.html#ObjectMapperProvider"/>
+<area shape="poly" coords="54,194,51,197,49,194,51,192,54,194,54,194" title="Complexity: 10; Coverage: 0%; Class: Hashing" alt="" href="org/traccar/helper/Hashing.html#Hashing"/>
+<area shape="poly" coords="54,194,51,197,49,194,51,192,54,194,54,194" title="Complexity: 10; Coverage: 0%; Class: Hashing" alt="" href="org/traccar/helper/Hashing.html#Hashing"/>
+<area shape="poly" coords="54,194,51,197,49,194,51,192,54,194,54,194" title="Complexity: 10; Coverage: 0%; Class: Hashing" alt="" href="org/traccar/helper/Hashing.html#Hashing"/>
+<area shape="poly" coords="259,200,257,203,254,200,257,198,259,200,259,200" title="Complexity: 6; Coverage: 84%; Class: AddressFormat" alt="" href="org/traccar/geocoder/AddressFormat.html#AddressFormat"/>
+<area shape="poly" coords="237,185,235,188,232,185,235,183,237,185,237,185" title="Complexity: 16; Coverage: 75%; Class: Address" alt="" href="org/traccar/geocoder/Address.html#Address"/>
+<area shape="poly" coords="298,200,296,203,293,200,296,198,298,200,298,200" title="Complexity: 6; Coverage: 100%; Class: LocationTree.Item" alt="" href="org/traccar/helper/LocationTree.html#LocationTree.Item"/>
+<area shape="poly" coords="213,193,210,195,208,193,210,190,213,193,213,193" title="Complexity: 11; Coverage: 65%; Class: YwtProtocolDecoder" alt="" href="org/traccar/protocol/YwtProtocolDecoder.html#YwtProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="252,162,249,164,247,162,249,159,252,162,252,162" title="Complexity: 32; Coverage: 81%; Class: Xt2400ProtocolDecoder" alt="" href="org/traccar/protocol/Xt2400ProtocolDecoder.html#Xt2400ProtocolDecoder"/>
+<area shape="poly" coords="134,205,132,207,129,205,132,202,134,205,134,205" title="Complexity: 3; Coverage: 33%; Class: Xt2400Protocol" alt="" href="org/traccar/protocol/Xt2400Protocol.html#Xt2400Protocol"/>
+<area shape="poly" coords="262,203,259,206,257,203,259,201,262,203,262,203" title="Complexity: 4; Coverage: 85%; Class: Xt013ProtocolDecoder" alt="" href="org/traccar/protocol/Xt013ProtocolDecoder.html#Xt013ProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="276,191,274,194,271,191,274,189,276,191,276,191" title="Complexity: 12; Coverage: 91%; Class: XirgoProtocolDecoder" alt="" href="org/traccar/protocol/XirgoProtocolDecoder.html#XirgoProtocolDecoder"/>
+<area shape="poly" coords="88,203,85,206,83,203,85,201,88,203,88,203" title="Complexity: 4; Coverage: 14%; Class: XirgoProtocol" alt="" href="org/traccar/protocol/XirgoProtocol.html#XirgoProtocol"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 3; Coverage: 0%; Class: Hashing.HashingResult" alt="" href="org/traccar/helper/Hashing.html#Hashing.HashingResult"/>
+<area shape="poly" coords="257,185,254,188,252,185,254,183,257,185,257,185" title="Complexity: 16; Coverage: 83%; Class: XexunProtocolDecoder" alt="" href="org/traccar/protocol/XexunProtocolDecoder.html#XexunProtocolDecoder"/>
+<area shape="poly" coords="98,203,95,206,93,203,95,201,98,203,98,203" title="Complexity: 4; Coverage: 18%; Class: XexunProtocol" alt="" href="org/traccar/protocol/XexunProtocol.html#XexunProtocol"/>
+<area shape="poly" coords="183,200,181,203,178,200,181,198,183,200,183,200" title="Complexity: 6; Coverage: 53%; Class: XexunFrameDecoder" alt="" href="org/traccar/protocol/XexunFrameDecoder.html#XexunFrameDecoder"/>
+<area shape="poly" coords="117,199,115,201,112,199,115,196,117,199,117,199" title="Complexity: 7; Coverage: 26%; Class: WondexProtocolEncoder" alt="" href="org/traccar/protocol/WondexProtocolEncoder.html#WondexProtocolEncoder"/>
+<area shape="poly" coords="279,196,276,198,274,196,276,193,279,196,279,196" title="Complexity: 9; Coverage: 92%; Class: WondexProtocolDecoder" alt="" href="org/traccar/protocol/WondexProtocolDecoder.html#WondexProtocolDecoder"/>
+<area shape="poly" coords="115,203,112,206,110,203,112,201,115,203,115,203" title="Complexity: 4; Coverage: 25%; Class: PatternUtil.MatchResult" alt="" href="org/traccar/helper/PatternUtil.html#PatternUtil.MatchResult"/>
+<area shape="poly" coords="252,202,249,204,247,202,249,199,252,202,252,202" title="Complexity: 5; Coverage: 81%; Class: WondexFrameDecoder" alt="" href="org/traccar/protocol/WondexFrameDecoder.html#WondexFrameDecoder"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 5; Coverage: 0%; Class: GpxBuilder" alt="" href="org/traccar/web/GpxBuilder.html#GpxBuilder"/>
+<area shape="poly" coords="232,171,230,173,227,171,230,168,232,171,232,171" title="Complexity: 26; Coverage: 73%; Class: WialonProtocolDecoder" alt="" href="org/traccar/protocol/WialonProtocolDecoder.html#WialonProtocolDecoder"/>
+<area shape="poly" coords="98,203,95,206,93,203,95,201,98,203,98,203" title="Complexity: 4; Coverage: 18%; Class: XexunProtocol" alt="" href="org/traccar/protocol/XexunProtocol.html#XexunProtocol"/>
+<area shape="poly" coords="188,175,186,178,183,175,186,173,188,175,188,175" title="Complexity: 23; Coverage: 55%; Class: WatchProtocolEncoder" alt="" href="org/traccar/protocol/WatchProtocolEncoder.html#WatchProtocolEncoder"/>
+<area shape="poly" coords="240,147,237,150,235,147,237,145,240,147,240,147" title="Complexity: 42; Coverage: 76%; Class: WatchProtocolDecoder" alt="" href="org/traccar/protocol/WatchProtocolDecoder.html#WatchProtocolDecoder"/>
+<area shape="poly" coords="127,205,125,207,122,205,125,202,127,205,127,205" title="Complexity: 3; Coverage: 30%; Class: WatchProtocol" alt="" href="org/traccar/protocol/WatchProtocol.html#WatchProtocol"/>
+<area shape="poly" coords="164,194,161,197,159,194,161,192,164,194,164,194" title="Complexity: 10; Coverage: 45%; Class: WatchFrameDecoder" alt="" href="org/traccar/protocol/WatchFrameDecoder.html#WatchFrameDecoder"/>
+<area shape="poly" coords="245,188,242,191,240,188,242,186,245,188,245,188" title="Complexity: 14; Coverage: 78%; Class: VtfmsProtocolDecoder" alt="" href="org/traccar/protocol/VtfmsProtocolDecoder.html#VtfmsProtocolDecoder"/>
+<area shape="poly" coords="93,203,90,206,88,203,90,201,93,203,93,203" title="Complexity: 4; Coverage: 16%; Class: VtfmsProtocol" alt="" href="org/traccar/protocol/VtfmsProtocol.html#VtfmsProtocol"/>
+<area shape="poly" coords="230,205,227,207,225,205,227,202,230,205,230,205" title="Complexity: 3; Coverage: 72%; Class: VtfmsFrameDecoder" alt="" href="org/traccar/protocol/VtfmsFrameDecoder.html#VtfmsFrameDecoder"/>
+<area shape="poly" coords="267,196,264,198,262,196,264,193,267,196,267,196" title="Complexity: 9; Coverage: 87%; Class: Vt200ProtocolDecoder" alt="" href="org/traccar/protocol/Vt200ProtocolDecoder.html#Vt200ProtocolDecoder"/>
+<area shape="poly" coords="122,205,120,207,117,205,120,202,122,205,122,205" title="Complexity: 3; Coverage: 28%; Class: Vt200Protocol" alt="" href="org/traccar/protocol/Vt200Protocol.html#Vt200Protocol"/>
+<area shape="poly" coords="269,203,267,206,264,203,267,201,269,203,269,203" title="Complexity: 4; Coverage: 88%; Class: Vt200FrameDecoder" alt="" href="org/traccar/protocol/Vt200FrameDecoder.html#Vt200FrameDecoder"/>
+<area shape="poly" coords="289,197,286,200,284,197,286,195,289,197,289,197" title="Complexity: 8; Coverage: 96%; Class: VisiontekProtocolDecoder" alt="" href="org/traccar/protocol/VisiontekProtocolDecoder.html#VisiontekProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="281,191,279,194,276,191,279,189,281,191,281,191" title="Complexity: 12; Coverage: 93%; Class: V680ProtocolDecoder" alt="" href="org/traccar/protocol/V680ProtocolDecoder.html#V680ProtocolDecoder"/>
+<area shape="poly" coords="88,203,85,206,83,203,85,201,88,203,88,203" title="Complexity: 4; Coverage: 14%; Class: XirgoProtocol" alt="" href="org/traccar/protocol/XirgoProtocol.html#XirgoProtocol"/>
+<area shape="poly" coords="269,174,267,176,264,174,267,171,269,174,269,174" title="Complexity: 24; Coverage: 88%; Class: UproProtocolDecoder" alt="" href="org/traccar/protocol/UproProtocolDecoder.html#UproProtocolDecoder"/>
+<area shape="poly" coords="115,205,112,207,110,205,112,202,115,205,115,205" title="Complexity: 3; Coverage: 25%; Class: UproProtocol" alt="" href="org/traccar/protocol/UproProtocol.html#UproProtocol"/>
+<area shape="poly" coords="242,121,240,123,237,121,240,118,242,121,242,121" title="Complexity: 60; Coverage: 77%; Class: UlbotechProtocolDecoder" alt="" href="org/traccar/protocol/UlbotechProtocolDecoder.html#UlbotechProtocolDecoder"/>
+<area shape="poly" coords="122,205,120,207,117,205,120,202,122,205,122,205" title="Complexity: 3; Coverage: 28%; Class: Vt200Protocol" alt="" href="org/traccar/protocol/Vt200Protocol.html#Vt200Protocol"/>
+<area shape="poly" coords="230,196,227,198,225,196,227,193,230,196,230,196" title="Complexity: 9; Coverage: 72%; Class: UlbotechFrameDecoder" alt="" href="org/traccar/protocol/UlbotechFrameDecoder.html#UlbotechFrameDecoder"/>
+<area shape="poly" coords="257,160,254,163,252,160,254,158,257,160,257,160" title="Complexity: 33; Coverage: 83%; Class: TzoneProtocolDecoder" alt="" href="org/traccar/protocol/TzoneProtocolDecoder.html#TzoneProtocolDecoder"/>
+<area shape="poly" coords="122,205,120,207,117,205,120,202,122,205,122,205" title="Complexity: 3; Coverage: 28%; Class: Vt200Protocol" alt="" href="org/traccar/protocol/Vt200Protocol.html#Vt200Protocol"/>
+<area shape="poly" coords="227,165,225,167,222,165,225,162,227,165,227,165" title="Complexity: 30; Coverage: 71%; Class: TytanProtocolDecoder" alt="" href="org/traccar/protocol/TytanProtocolDecoder.html#TytanProtocolDecoder"/>
+<area shape="poly" coords="134,205,132,207,129,205,132,202,134,205,134,205" title="Complexity: 3; Coverage: 33%; Class: Xt2400Protocol" alt="" href="org/traccar/protocol/Xt2400Protocol.html#Xt2400Protocol"/>
+<area shape="poly" coords="281,202,279,204,276,202,279,199,281,202,281,202" title="Complexity: 5; Coverage: 93%; Class: Tt8850ProtocolDecoder" alt="" href="org/traccar/protocol/Tt8850ProtocolDecoder.html#Tt8850ProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="254,188,252,191,249,188,252,186,254,188,254,188" title="Complexity: 14; Coverage: 82%; Class: TrvProtocolDecoder" alt="" href="org/traccar/protocol/TrvProtocolDecoder.html#TrvProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="230,185,227,188,225,185,227,183,230,185,230,185" title="Complexity: 16; Coverage: 72%; Class: TramigoProtocolDecoder" alt="" href="org/traccar/protocol/TramigoProtocolDecoder.html#TramigoProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 5; Coverage: 0%; Class: GpxBuilder" alt="" href="org/traccar/web/GpxBuilder.html#GpxBuilder"/>
+<area shape="poly" coords="247,181,245,184,242,181,245,179,247,181,247,181" title="Complexity: 19; Coverage: 79%; Class: TrakMateProtocolDecoder" alt="" href="org/traccar/protocol/TrakMateProtocolDecoder.html#TrakMateProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="259,197,257,200,254,197,257,195,259,197,259,197" title="Complexity: 8; Coverage: 84%; Class: TrackboxProtocolDecoder" alt="" href="org/traccar/protocol/TrackboxProtocolDecoder.html#TrackboxProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="264,203,262,206,259,203,262,201,264,203,264,203" title="Complexity: 4; Coverage: 86%; Class: Tr900ProtocolDecoder" alt="" href="org/traccar/protocol/Tr900ProtocolDecoder.html#Tr900ProtocolDecoder"/>
+<area shape="poly" coords="88,203,85,206,83,203,85,201,88,203,88,203" title="Complexity: 4; Coverage: 14%; Class: XirgoProtocol" alt="" href="org/traccar/protocol/XirgoProtocol.html#XirgoProtocol"/>
+<area shape="poly" coords="252,200,249,203,247,200,249,198,252,200,252,200" title="Complexity: 6; Coverage: 81%; Class: Tr20ProtocolDecoder" alt="" href="org/traccar/protocol/Tr20ProtocolDecoder.html#Tr20ProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="164,205,161,207,159,205,161,202,164,205,164,205" title="Complexity: 3; Coverage: 45%; Class: TotemProtocolEncoder" alt="" href="org/traccar/protocol/TotemProtocolEncoder.html#TotemProtocolEncoder"/>
+<area shape="poly" coords="269,168,267,170,264,168,267,165,269,168,269,168" title="Complexity: 28; Coverage: 88%; Class: TotemProtocolDecoder" alt="" href="org/traccar/protocol/TotemProtocolDecoder.html#TotemProtocolDecoder"/>
+<area shape="poly" coords="120,205,117,207,115,205,117,202,120,205,120,205" title="Complexity: 3; Coverage: 27%; Class: TotemProtocol" alt="" href="org/traccar/protocol/TotemProtocol.html#TotemProtocol"/>
+<area shape="poly" coords="240,199,237,201,235,199,237,196,240,199,240,199" title="Complexity: 7; Coverage: 76%; Class: TotemFrameDecoder" alt="" href="org/traccar/protocol/TotemFrameDecoder.html#TotemFrameDecoder"/>
+<area shape="poly" coords="254,203,252,206,249,203,252,201,254,203,254,203" title="Complexity: 4; Coverage: 82%; Class: TopflytechProtocolDecoder" alt="" href="org/traccar/protocol/TopflytechProtocolDecoder.html#TopflytechProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="254,190,252,192,249,190,252,187,254,190,254,190" title="Complexity: 13; Coverage: 82%; Class: TmgProtocolDecoder" alt="" href="org/traccar/protocol/TmgProtocolDecoder.html#TmgProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="95,190,93,192,90,190,93,187,95,190,95,190" title="Complexity: 13; Coverage: 17%; Class: TlvProtocolDecoder" alt="" href="org/traccar/protocol/TlvProtocolDecoder.html#TlvProtocolDecoder"/>
+<area shape="poly" coords="122,205,120,207,117,205,120,202,122,205,122,205" title="Complexity: 3; Coverage: 28%; Class: Vt200Protocol" alt="" href="org/traccar/protocol/Vt200Protocol.html#Vt200Protocol"/>
+<area shape="poly" coords="279,202,276,204,274,202,276,199,279,202,279,202" title="Complexity: 5; Coverage: 92%; Class: Tlt2hProtocolDecoder" alt="" href="org/traccar/protocol/Tlt2hProtocolDecoder.html#Tlt2hProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="230,196,227,198,225,196,227,193,230,196,230,196" title="Complexity: 9; Coverage: 72%; Class: UlbotechFrameDecoder" alt="" href="org/traccar/protocol/UlbotechFrameDecoder.html#UlbotechFrameDecoder"/>
+<area shape="poly" coords="223,147,220,150,218,147,220,145,223,147,223,147" title="Complexity: 42; Coverage: 69%; Class: Tk103ProtocolDecoder" alt="" href="org/traccar/protocol/Tk103ProtocolDecoder.html#Tk103ProtocolDecoder"/>
+<area shape="poly" coords="95,203,93,206,90,203,93,201,95,203,95,203" title="Complexity: 4; Coverage: 17%; Class: Tk103Protocol" alt="" href="org/traccar/protocol/Tk103Protocol.html#Tk103Protocol"/>
+<area shape="poly" coords="249,193,247,195,244,193,247,190,249,193,249,193" title="Complexity: 11; Coverage: 80%; Class: Tk102ProtocolDecoder" alt="" href="org/traccar/protocol/Tk102ProtocolDecoder.html#Tk102ProtocolDecoder"/>
+<area shape="poly" coords="122,205,120,207,117,205,120,202,122,205,122,205" title="Complexity: 3; Coverage: 28%; Class: Vt200Protocol" alt="" href="org/traccar/protocol/Vt200Protocol.html#Vt200Protocol"/>
+<area shape="poly" coords="230,194,227,197,225,194,227,192,230,194,230,194" title="Complexity: 10; Coverage: 72%; Class: ThinkRaceProtocolDecoder" alt="" href="org/traccar/protocol/ThinkRaceProtocolDecoder.html#ThinkRaceProtocolDecoder"/>
+<area shape="poly" coords="122,205,120,207,117,205,120,202,122,205,122,205" title="Complexity: 3; Coverage: 28%; Class: Vt200Protocol" alt="" href="org/traccar/protocol/Vt200Protocol.html#Vt200Protocol"/>
+<area shape="poly" coords="252,205,249,207,247,205,249,202,252,205,252,205" title="Complexity: 3; Coverage: 81%; Class: TeltonikaProtocolEncoder" alt="" href="org/traccar/protocol/TeltonikaProtocolEncoder.html#TeltonikaProtocolEncoder"/>
+<area shape="poly" coords="254,119,252,122,249,119,252,117,254,119,254,119" title="Complexity: 61; Coverage: 82%; Class: TeltonikaProtocolDecoder" alt="" href="org/traccar/protocol/TeltonikaProtocolDecoder.html#TeltonikaProtocolDecoder"/>
+<area shape="poly" coords="110,203,107,206,105,203,107,201,110,203,110,203" title="Complexity: 4; Coverage: 23%; Class: TeltonikaProtocol" alt="" href="org/traccar/protocol/TeltonikaProtocol.html#TeltonikaProtocol"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 5; Coverage: 0%; Class: GpxBuilder" alt="" href="org/traccar/web/GpxBuilder.html#GpxBuilder"/>
+<area shape="poly" coords="237,184,235,186,232,184,235,181,237,184,237,184" title="Complexity: 17; Coverage: 75%; Class: TelicProtocolDecoder" alt="" href="org/traccar/protocol/TelicProtocolDecoder.html#TelicProtocolDecoder"/>
+<area shape="poly" coords="98,205,95,207,93,205,95,202,98,205,98,205" title="Complexity: 3; Coverage: 18%; Class: TelicProtocol" alt="" href="org/traccar/protocol/TelicProtocol.html#TelicProtocol"/>
+<area shape="poly" coords="259,200,257,203,254,200,257,198,259,200,259,200" title="Complexity: 6; Coverage: 84%; Class: AddressFormat" alt="" href="org/traccar/geocoder/AddressFormat.html#AddressFormat"/>
+<area shape="poly" coords="252,156,249,158,247,156,249,153,252,156,252,156" title="Complexity: 36; Coverage: 81%; Class: TaipProtocolDecoder" alt="" href="org/traccar/protocol/TaipProtocolDecoder.html#TaipProtocolDecoder"/>
+<area shape="poly" coords="88,203,85,206,83,203,85,201,88,203,88,203" title="Complexity: 4; Coverage: 14%; Class: XirgoProtocol" alt="" href="org/traccar/protocol/XirgoProtocol.html#XirgoProtocol"/>
+<area shape="poly" coords="245,205,242,207,240,205,242,202,245,205,245,205" title="Complexity: 3; Coverage: 78%; Class: T800xProtocolEncoder" alt="" href="org/traccar/protocol/T800xProtocolEncoder.html#T800xProtocolEncoder"/>
+<area shape="poly" coords="242,180,240,182,237,180,240,177,242,180,242,180" title="Complexity: 20; Coverage: 77%; Class: T800xProtocolDecoder" alt="" href="org/traccar/protocol/T800xProtocolDecoder.html#T800xProtocolDecoder"/>
+<area shape="poly" coords="134,205,132,207,129,205,132,202,134,205,134,205" title="Complexity: 3; Coverage: 33%; Class: Xt2400Protocol" alt="" href="org/traccar/protocol/Xt2400Protocol.html#Xt2400Protocol"/>
+<area shape="poly" coords="279,156,276,158,274,156,276,153,279,156,279,156" title="Complexity: 36; Coverage: 92%; Class: T55ProtocolDecoder" alt="" href="org/traccar/protocol/T55ProtocolDecoder.html#T55ProtocolDecoder"/>
+<area shape="poly" coords="88,203,85,206,83,203,85,201,88,203,88,203" title="Complexity: 4; Coverage: 14%; Class: XirgoProtocol" alt="" href="org/traccar/protocol/XirgoProtocol.html#XirgoProtocol"/>
+<area shape="poly" coords="232,199,230,201,227,199,230,196,232,199,232,199" title="Complexity: 7; Coverage: 73%; Class: SupermateProtocolDecoder" alt="" href="org/traccar/protocol/SupermateProtocolDecoder.html#SupermateProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="54,194,51,197,49,194,51,192,54,194,54,194" title="Complexity: 10; Coverage: 0%; Class: Hashing" alt="" href="org/traccar/helper/Hashing.html#Hashing"/>
+<area shape="poly" coords="264,168,262,170,259,168,262,165,264,168,264,168" title="Complexity: 28; Coverage: 86%; Class: SuntechProtocolDecoder" alt="" href="org/traccar/protocol/SuntechProtocolDecoder.html#SuntechProtocolDecoder"/>
+<area shape="poly" coords="120,205,117,207,115,205,117,202,120,205,120,205" title="Complexity: 3; Coverage: 27%; Class: TotemProtocol" alt="" href="org/traccar/protocol/TotemProtocol.html#TotemProtocol"/>
+<area shape="poly" coords="274,200,271,203,269,200,271,198,274,200,274,200" title="Complexity: 6; Coverage: 90%; Class: Stl060ProtocolDecoder" alt="" href="org/traccar/protocol/Stl060ProtocolDecoder.html#Stl060ProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="54,203,51,206,49,203,51,201,54,203,54,203" title="Complexity: 4; Coverage: 0%; Class: Stl060FrameDecoder" alt="" href="org/traccar/protocol/Stl060FrameDecoder.html#Stl060FrameDecoder"/>
+<area shape="poly" coords="279,152,276,154,274,152,276,149,279,152,279,152" title="Complexity: 39; Coverage: 92%; Class: StarLinkProtocolDecoder" alt="" href="org/traccar/protocol/StarLinkProtocolDecoder.html#StarLinkProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="203,188,200,191,198,188,200,186,203,188,203,188" title="Complexity: 14; Coverage: 61%; Class: SmokeyProtocolDecoder" alt="" href="org/traccar/protocol/SmokeyProtocolDecoder.html#SmokeyProtocolDecoder"/>
+<area shape="poly" coords="134,205,132,207,129,205,132,202,134,205,134,205" title="Complexity: 3; Coverage: 33%; Class: Xt2400Protocol" alt="" href="org/traccar/protocol/Xt2400Protocol.html#Xt2400Protocol"/>
+<area shape="poly" coords="240,159,237,161,235,159,237,156,240,159,240,159" title="Complexity: 34; Coverage: 76%; Class: SkypatrolProtocolDecoder" alt="" href="org/traccar/protocol/SkypatrolProtocolDecoder.html#SkypatrolProtocolDecoder"/>
+<area shape="poly" coords="134,205,132,207,129,205,132,202,134,205,134,205" title="Complexity: 3; Coverage: 33%; Class: Xt2400Protocol" alt="" href="org/traccar/protocol/Xt2400Protocol.html#Xt2400Protocol"/>
+<area shape="poly" coords="262,203,259,206,257,203,259,201,262,203,262,203" title="Complexity: 4; Coverage: 85%; Class: Xt013ProtocolDecoder" alt="" href="org/traccar/protocol/Xt013ProtocolDecoder.html#Xt013ProtocolDecoder"/>
+<area shape="poly" coords="115,205,112,207,110,205,112,202,115,205,115,205" title="Complexity: 3; Coverage: 25%; Class: UproProtocol" alt="" href="org/traccar/protocol/UproProtocol.html#UproProtocol"/>
+<area shape="poly" coords="259,203,257,206,254,203,257,201,259,203,259,203" title="Complexity: 4; Coverage: 84%; Class: SanavProtocolDecoder" alt="" href="org/traccar/protocol/SanavProtocolDecoder.html#SanavProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="142,196,139,198,137,196,139,193,142,196,142,196" title="Complexity: 9; Coverage: 36%; Class: RuptelaProtocolEncoder" alt="" href="org/traccar/protocol/RuptelaProtocolEncoder.html#RuptelaProtocolEncoder"/>
+<area shape="poly" coords="272,169,269,172,267,169,269,167,272,169,272,169" title="Complexity: 27; Coverage: 89%; Class: RuptelaProtocolDecoder" alt="" href="org/traccar/protocol/RuptelaProtocolDecoder.html#RuptelaProtocolDecoder"/>
+<area shape="poly" coords="134,205,132,207,129,205,132,202,134,205,134,205" title="Complexity: 3; Coverage: 33%; Class: Xt2400Protocol" alt="" href="org/traccar/protocol/Xt2400Protocol.html#Xt2400Protocol"/>
+<area shape="poly" coords="272,203,269,206,267,203,269,201,272,203,272,203" title="Complexity: 4; Coverage: 89%; Class: RitiProtocolDecoder" alt="" href="org/traccar/protocol/RitiProtocolDecoder.html#RitiProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="267,203,264,206,262,203,264,201,267,203,267,203" title="Complexity: 4; Coverage: 87%; Class: RaveonProtocolDecoder" alt="" href="org/traccar/protocol/RaveonProtocolDecoder.html#RaveonProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="193,202,191,204,188,202,191,199,193,202,193,202" title="Complexity: 5; Coverage: 57%; Class: Pt502ProtocolEncoder" alt="" href="org/traccar/protocol/Pt502ProtocolEncoder.html#Pt502ProtocolEncoder"/>
+<area shape="poly" coords="257,185,254,188,252,185,254,183,257,185,257,185" title="Complexity: 16; Coverage: 83%; Class: XexunProtocolDecoder" alt="" href="org/traccar/protocol/XexunProtocolDecoder.html#XexunProtocolDecoder"/>
+<area shape="poly" coords="110,205,107,207,105,205,107,202,110,205,110,205" title="Complexity: 3; Coverage: 23%; Class: Pt502Protocol" alt="" href="org/traccar/protocol/Pt502Protocol.html#Pt502Protocol"/>
+<area shape="poly" coords="240,202,237,204,235,202,237,199,240,202,240,202" title="Complexity: 5; Coverage: 76%; Class: Pt502FrameDecoder" alt="" href="org/traccar/protocol/Pt502FrameDecoder.html#Pt502FrameDecoder"/>
+<area shape="poly" coords="259,203,257,206,254,203,257,201,259,203,259,203" title="Complexity: 4; Coverage: 84%; Class: SanavProtocolDecoder" alt="" href="org/traccar/protocol/SanavProtocolDecoder.html#SanavProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="90,178,88,181,85,178,88,176,90,178,90,178" title="Complexity: 21; Coverage: 15%; Class: ProgressProtocolDecoder" alt="" href="org/traccar/protocol/ProgressProtocolDecoder.html#ProgressProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="264,199,262,201,259,199,262,196,264,199,264,199" title="Complexity: 7; Coverage: 86%; Class: PricolProtocolDecoder" alt="" href="org/traccar/protocol/PricolProtocolDecoder.html#PricolProtocolDecoder"/>
+<area shape="poly" coords="103,203,100,206,98,203,100,201,103,203,103,203" title="Complexity: 4; Coverage: 20%; Class: PricolProtocol" alt="" href="org/traccar/protocol/PricolProtocol.html#PricolProtocol"/>
+<area shape="poly" coords="262,203,259,206,257,203,259,201,262,203,262,203" title="Complexity: 4; Coverage: 85%; Class: Xt013ProtocolDecoder" alt="" href="org/traccar/protocol/Xt013ProtocolDecoder.html#Xt013ProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="242,185,240,188,237,185,240,183,242,185,242,185" title="Complexity: 16; Coverage: 77%; Class: PiligrimProtocolDecoder" alt="" href="org/traccar/protocol/PiligrimProtocolDecoder.html#PiligrimProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="242,202,240,204,237,202,240,199,242,202,242,202" title="Complexity: 5; Coverage: 77%; Class: PathAwayProtocolDecoder" alt="" href="org/traccar/protocol/PathAwayProtocolDecoder.html#PathAwayProtocolDecoder"/>
+<area shape="poly" coords="115,205,112,207,110,205,112,202,115,205,115,205" title="Complexity: 3; Coverage: 25%; Class: UproProtocol" alt="" href="org/traccar/protocol/UproProtocol.html#UproProtocol"/>
+<area shape="poly" coords="237,187,235,189,232,187,235,184,237,187,237,187" title="Complexity: 15; Coverage: 75%; Class: OwnTracksProtocolDecoder" alt="" href="org/traccar/protocol/OwnTracksProtocolDecoder.html#OwnTracksProtocolDecoder"/>
+<area shape="poly" coords="115,205,112,207,110,205,112,202,115,205,115,205" title="Complexity: 3; Coverage: 25%; Class: UproProtocol" alt="" href="org/traccar/protocol/UproProtocol.html#UproProtocol"/>
+<area shape="poly" coords="249,169,247,172,244,169,247,167,249,169,249,169" title="Complexity: 27; Coverage: 80%; Class: OsmAndProtocolDecoder" alt="" href="org/traccar/protocol/OsmAndProtocolDecoder.html#OsmAndProtocolDecoder"/>
+<area shape="poly" coords="115,205,112,207,110,205,112,202,115,205,115,205" title="Complexity: 3; Coverage: 25%; Class: UproProtocol" alt="" href="org/traccar/protocol/UproProtocol.html#UproProtocol"/>
+<area shape="poly" coords="252,196,249,198,247,196,249,193,252,196,252,196" title="Complexity: 9; Coverage: 81%; Class: OrionProtocolDecoder" alt="" href="org/traccar/protocol/OrionProtocolDecoder.html#OrionProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="54,194,51,197,49,194,51,192,54,194,54,194" title="Complexity: 10; Coverage: 0%; Class: Hashing" alt="" href="org/traccar/helper/Hashing.html#Hashing"/>
+<area shape="poly" coords="242,163,240,166,237,163,240,161,242,163,242,163" title="Complexity: 31; Coverage: 77%; Class: OigoProtocolDecoder" alt="" href="org/traccar/protocol/OigoProtocolDecoder.html#OigoProtocolDecoder"/>
+<area shape="poly" coords="134,205,132,207,129,205,132,202,134,205,134,205" title="Complexity: 3; Coverage: 33%; Class: Xt2400Protocol" alt="" href="org/traccar/protocol/Xt2400Protocol.html#Xt2400Protocol"/>
+<area shape="poly" coords="237,196,235,198,232,196,235,193,237,196,237,196" title="Complexity: 9; Coverage: 75%; Class: ObdDongleProtocolDecoder" alt="" href="org/traccar/protocol/ObdDongleProtocolDecoder.html#ObdDongleProtocolDecoder"/>
+<area shape="poly" coords="122,205,120,207,117,205,120,202,122,205,122,205" title="Complexity: 3; Coverage: 28%; Class: Vt200Protocol" alt="" href="org/traccar/protocol/Vt200Protocol.html#Vt200Protocol"/>
+<area shape="poly" coords="269,191,267,194,264,191,267,189,269,191,269,191" title="Complexity: 12; Coverage: 88%; Class: NvsProtocolDecoder" alt="" href="org/traccar/protocol/NvsProtocolDecoder.html#NvsProtocolDecoder"/>
+<area shape="poly" coords="122,205,120,207,117,205,120,202,122,205,122,205" title="Complexity: 3; Coverage: 28%; Class: Vt200Protocol" alt="" href="org/traccar/protocol/Vt200Protocol.html#Vt200Protocol"/>
+<area shape="poly" coords="237,203,235,206,232,203,235,201,237,203,237,203" title="Complexity: 4; Coverage: 75%; Class: NvsFrameDecoder" alt="" href="org/traccar/protocol/NvsFrameDecoder.html#NvsFrameDecoder"/>
+<area shape="poly" coords="188,199,186,201,183,199,186,196,188,199,188,199" title="Complexity: 7; Coverage: 55%; Class: NoranProtocolEncoder" alt="" href="org/traccar/protocol/NoranProtocolEncoder.html#NoranProtocolEncoder"/>
+<area shape="poly" coords="230,171,227,173,225,171,227,168,230,171,230,171" title="Complexity: 26; Coverage: 72%; Class: NoranProtocolDecoder" alt="" href="org/traccar/protocol/NoranProtocolDecoder.html#NoranProtocolDecoder"/>
+<area shape="poly" coords="127,205,125,207,122,205,125,202,127,205,127,205" title="Complexity: 3; Coverage: 30%; Class: WatchProtocol" alt="" href="org/traccar/protocol/WatchProtocol.html#WatchProtocol"/>
+<area shape="poly" coords="298,205,296,207,293,205,296,202,298,205,298,205" title="Complexity: 3; Coverage: 100%; Class: StringFinder" alt="" href="org/traccar/helper/StringFinder.html#StringFinder"/>
+<area shape="poly" coords="257,159,254,161,252,159,254,156,257,159,257,159" title="Complexity: 34; Coverage: 83%; Class: NavisProtocolDecoder" alt="" href="org/traccar/protocol/NavisProtocolDecoder.html#NavisProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="132,181,129,184,127,181,129,179,132,181,132,181" title="Complexity: 19; Coverage: 32%; Class: NavigilProtocolDecoder" alt="" href="org/traccar/protocol/NavigilProtocolDecoder.html#NavigilProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 5; Coverage: 0%; Class: GpxBuilder" alt="" href="org/traccar/web/GpxBuilder.html#GpxBuilder"/>
+<area shape="poly" coords="220,178,218,181,215,178,218,176,220,178,220,178" title="Complexity: 21; Coverage: 68%; Class: MxtProtocolDecoder" alt="" href="org/traccar/protocol/MxtProtocolDecoder.html#MxtProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 5; Coverage: 0%; Class: GpxBuilder" alt="" href="org/traccar/web/GpxBuilder.html#GpxBuilder"/>
+<area shape="poly" coords="252,202,249,204,247,202,249,199,252,202,252,202" title="Complexity: 5; Coverage: 81%; Class: WondexFrameDecoder" alt="" href="org/traccar/protocol/WondexFrameDecoder.html#WondexFrameDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 2; Coverage: 0%; Class: ConsoleServlet" alt="" href="org/traccar/web/ConsoleServlet.html#ConsoleServlet"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 5; Coverage: 0%; Class: GpxBuilder" alt="" href="org/traccar/web/GpxBuilder.html#GpxBuilder"/>
+<area shape="poly" coords="54,159,51,161,49,159,51,156,54,159,54,159" title="Complexity: 34; Coverage: 0%; Class: Mta6ProtocolDecoder" alt="" href="org/traccar/protocol/Mta6ProtocolDecoder.html#Mta6ProtocolDecoder"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 3; Coverage: 0%; Class: Hashing.HashingResult" alt="" href="org/traccar/helper/Hashing.html#Hashing.HashingResult"/>
+<area shape="poly" coords="152,180,149,182,147,180,149,177,152,180,152,180" title="Complexity: 20; Coverage: 40%; Class: MiniFinderProtocolEncoder" alt="" href="org/traccar/protocol/MiniFinderProtocolEncoder.html#MiniFinderProtocolEncoder"/>
+<area shape="poly" coords="237,169,235,172,232,169,235,167,237,169,237,169" title="Complexity: 27; Coverage: 75%; Class: MiniFinderProtocolDecoder" alt="" href="org/traccar/protocol/MiniFinderProtocolDecoder.html#MiniFinderProtocolDecoder"/>
+<area shape="poly" coords="120,205,117,207,115,205,117,202,120,205,120,205" title="Complexity: 3; Coverage: 27%; Class: TotemProtocol" alt="" href="org/traccar/protocol/TotemProtocol.html#TotemProtocol"/>
+<area shape="poly" coords="171,196,169,198,166,196,169,193,171,196,171,196" title="Complexity: 9; Coverage: 48%; Class: MeitrackProtocolEncoder" alt="" href="org/traccar/protocol/MeitrackProtocolEncoder.html#MeitrackProtocolEncoder"/>
+<area shape="poly" coords="210,141,208,144,205,141,208,139,210,141,210,141" title="Complexity: 46; Coverage: 64%; Class: MeitrackProtocolDecoder" alt="" href="org/traccar/protocol/MeitrackProtocolDecoder.html#MeitrackProtocolDecoder"/>
+<area shape="poly" coords="90,203,88,206,85,203,88,201,90,203,90,203" title="Complexity: 4; Coverage: 15%; Class: MeitrackProtocol" alt="" href="org/traccar/protocol/MeitrackProtocol.html#MeitrackProtocol"/>
+<area shape="poly" coords="215,203,213,206,210,203,213,201,215,203,215,203" title="Complexity: 4; Coverage: 66%; Class: MeitrackFrameDecoder" alt="" href="org/traccar/protocol/MeitrackFrameDecoder.html#MeitrackFrameDecoder"/>
+<area shape="poly" coords="235,196,232,198,230,196,232,193,235,196,235,196" title="Complexity: 9; Coverage: 74%; Class: MeiligaoProtocolEncoder" alt="" href="org/traccar/protocol/MeiligaoProtocolEncoder.html#MeiligaoProtocolEncoder"/>
+<area shape="poly" coords="213,132,210,135,208,132,210,130,213,132,213,132" title="Complexity: 52; Coverage: 65%; Class: MeiligaoProtocolDecoder" alt="" href="org/traccar/protocol/MeiligaoProtocolDecoder.html#MeiligaoProtocolDecoder"/>
+<area shape="poly" coords="110,203,107,206,105,203,107,201,110,203,110,203" title="Complexity: 4; Coverage: 23%; Class: TeltonikaProtocol" alt="" href="org/traccar/protocol/TeltonikaProtocol.html#TeltonikaProtocol"/>
+<area shape="poly" coords="279,202,276,204,274,202,276,199,279,202,279,202" title="Complexity: 5; Coverage: 92%; Class: Tlt2hProtocolDecoder" alt="" href="org/traccar/protocol/Tlt2hProtocolDecoder.html#Tlt2hProtocolDecoder"/>
+<area shape="poly" coords="257,143,254,145,252,143,254,140,257,143,257,143" title="Complexity: 45; Coverage: 83%; Class: MegastekProtocolDecoder" alt="" href="org/traccar/protocol/MegastekProtocolDecoder.html#MegastekProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="220,197,218,200,215,197,218,195,220,197,220,197" title="Complexity: 8; Coverage: 68%; Class: MegastekFrameDecoder" alt="" href="org/traccar/protocol/MegastekFrameDecoder.html#MegastekFrameDecoder"/>
+<area shape="poly" coords="254,203,252,206,249,203,252,201,254,203,254,203" title="Complexity: 4; Coverage: 82%; Class: TopflytechProtocolDecoder" alt="" href="org/traccar/protocol/TopflytechProtocolDecoder.html#TopflytechProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="269,202,267,204,264,202,267,199,269,202,269,202" title="Complexity: 5; Coverage: 88%; Class: MaestroProtocolDecoder" alt="" href="org/traccar/protocol/MaestroProtocolDecoder.html#MaestroProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="269,193,267,195,264,193,267,190,269,193,269,193" title="Complexity: 11; Coverage: 88%; Class: M2mProtocolDecoder" alt="" href="org/traccar/protocol/M2mProtocolDecoder.html#M2mProtocolDecoder"/>
+<area shape="poly" coords="122,205,120,207,117,205,120,202,122,205,122,205" title="Complexity: 3; Coverage: 28%; Class: Vt200Protocol" alt="" href="org/traccar/protocol/Vt200Protocol.html#Vt200Protocol"/>
+<area shape="poly" coords="191,190,188,192,186,190,188,187,191,190,191,190" title="Complexity: 13; Coverage: 56%; Class: LaipacProtocolDecoder" alt="" href="org/traccar/protocol/LaipacProtocolDecoder.html#LaipacProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="269,203,267,206,264,203,267,201,269,203,269,203" title="Complexity: 4; Coverage: 88%; Class: Vt200FrameDecoder" alt="" href="org/traccar/protocol/Vt200FrameDecoder.html#Vt200FrameDecoder"/>
+<area shape="poly" coords="122,205,120,207,117,205,120,202,122,205,122,205" title="Complexity: 3; Coverage: 28%; Class: Vt200Protocol" alt="" href="org/traccar/protocol/Vt200Protocol.html#Vt200Protocol"/>
+<area shape="poly" coords="225,202,222,204,220,202,222,199,225,202,225,202" title="Complexity: 5; Coverage: 70%; Class: L100FrameDecoder" alt="" href="org/traccar/protocol/L100FrameDecoder.html#L100FrameDecoder"/>
+<area shape="poly" coords="225,203,222,206,220,203,222,201,225,203,225,203" title="Complexity: 4; Coverage: 70%; Class: KhdProtocolEncoder" alt="" href="org/traccar/protocol/KhdProtocolEncoder.html#KhdProtocolEncoder"/>
+<area shape="poly" coords="235,182,232,185,230,182,232,180,235,182,235,182" title="Complexity: 18; Coverage: 74%; Class: KhdProtocolDecoder" alt="" href="org/traccar/protocol/KhdProtocolDecoder.html#KhdProtocolDecoder"/>
+<area shape="poly" coords="134,205,132,207,129,205,132,202,134,205,134,205" title="Complexity: 3; Coverage: 33%; Class: Xt2400Protocol" alt="" href="org/traccar/protocol/Xt2400Protocol.html#Xt2400Protocol"/>
+<area shape="poly" coords="203,193,200,195,198,193,200,190,203,193,203,193" title="Complexity: 11; Coverage: 61%; Class: KenjiProtocolDecoder" alt="" href="org/traccar/protocol/KenjiProtocolDecoder.html#KenjiProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="232,202,230,204,227,202,230,199,232,202,232,202" title="Complexity: 5; Coverage: 73%; Class: Jt600ProtocolEncoder" alt="" href="org/traccar/protocol/Jt600ProtocolEncoder.html#Jt600ProtocolEncoder"/>
+<area shape="poly" coords="269,166,267,169,264,166,267,164,269,166,269,166" title="Complexity: 29; Coverage: 88%; Class: Jt600ProtocolDecoder" alt="" href="org/traccar/protocol/Jt600ProtocolDecoder.html#Jt600ProtocolDecoder"/>
+<area shape="poly" coords="127,205,125,207,122,205,125,202,127,205,127,205" title="Complexity: 3; Coverage: 30%; Class: WatchProtocol" alt="" href="org/traccar/protocol/WatchProtocol.html#WatchProtocol"/>
+<area shape="poly" coords="235,199,232,201,230,199,232,196,235,199,235,199" title="Complexity: 7; Coverage: 74%; Class: Jt600FrameDecoder" alt="" href="org/traccar/protocol/Jt600FrameDecoder.html#Jt600FrameDecoder"/>
+<area shape="poly" coords="259,203,257,206,254,203,257,201,259,203,259,203" title="Complexity: 4; Coverage: 84%; Class: SanavProtocolDecoder" alt="" href="org/traccar/protocol/SanavProtocolDecoder.html#SanavProtocolDecoder"/>
+<area shape="poly" coords="115,205,112,207,110,205,112,202,115,205,115,205" title="Complexity: 3; Coverage: 25%; Class: UproProtocol" alt="" href="org/traccar/protocol/UproProtocol.html#UproProtocol"/>
+<area shape="poly" coords="54,203,51,206,49,203,51,201,54,203,54,203" title="Complexity: 4; Coverage: 0%; Class: Stl060FrameDecoder" alt="" href="org/traccar/protocol/Stl060FrameDecoder.html#Stl060FrameDecoder"/>
+<area shape="poly" coords="286,203,284,206,281,203,284,201,286,203,286,203" title="Complexity: 4; Coverage: 95%; Class: IntellitracProtocolDecoder" alt="" href="org/traccar/protocol/IntellitracProtocolDecoder.html#IntellitracProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 5; Coverage: 0%; Class: GpxBuilder" alt="" href="org/traccar/web/GpxBuilder.html#GpxBuilder"/>
+<area shape="poly" coords="262,202,259,204,257,202,259,199,262,202,262,202" title="Complexity: 5; Coverage: 85%; Class: IdplProtocolDecoder" alt="" href="org/traccar/protocol/IdplProtocolDecoder.html#IdplProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="259,203,257,206,254,203,257,201,259,203,259,203" title="Complexity: 4; Coverage: 84%; Class: SanavProtocolDecoder" alt="" href="org/traccar/protocol/SanavProtocolDecoder.html#SanavProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 3; Coverage: 0%; Class: Hashing.HashingResult" alt="" href="org/traccar/helper/Hashing.html#Hashing.HashingResult"/>
+<area shape="poly" coords="210,175,208,178,205,175,208,173,210,175,210,175" title="Complexity: 23; Coverage: 64%; Class: HuabaoProtocolDecoder" alt="" href="org/traccar/protocol/HuabaoProtocolDecoder.html#HuabaoProtocolDecoder"/>
+<area shape="poly" coords="134,205,132,207,129,205,132,202,134,205,134,205" title="Complexity: 3; Coverage: 33%; Class: Xt2400Protocol" alt="" href="org/traccar/protocol/Xt2400Protocol.html#Xt2400Protocol"/>
+<area shape="poly" coords="254,199,252,201,249,199,252,196,254,199,254,199" title="Complexity: 7; Coverage: 82%; Class: HuabaoFrameDecoder" alt="" href="org/traccar/protocol/HuabaoFrameDecoder.html#HuabaoFrameDecoder"/>
+<area shape="poly" coords="245,191,242,194,240,191,242,189,245,191,245,191" title="Complexity: 12; Coverage: 78%; Class: HuaShengProtocolDecoder" alt="" href="org/traccar/protocol/HuaShengProtocolDecoder.html#HuaShengProtocolDecoder"/>
+<area shape="poly" coords="122,205,120,207,117,205,120,202,122,205,122,205" title="Complexity: 3; Coverage: 28%; Class: Vt200Protocol" alt="" href="org/traccar/protocol/Vt200Protocol.html#Vt200Protocol"/>
+<area shape="poly" coords="220,199,218,201,215,199,218,196,220,199,220,199" title="Complexity: 7; Coverage: 68%; Class: HuaShengFrameDecoder" alt="" href="org/traccar/protocol/HuaShengFrameDecoder.html#HuaShengFrameDecoder"/>
+<area shape="poly" coords="279,203,276,206,274,203,276,201,279,203,279,203" title="Complexity: 4; Coverage: 92%; Class: HomtecsProtocolDecoder" alt="" href="org/traccar/protocol/HomtecsProtocolDecoder.html#HomtecsProtocolDecoder"/>
+<area shape="poly" coords="115,205,112,207,110,205,112,202,115,205,115,205" title="Complexity: 3; Coverage: 25%; Class: UproProtocol" alt="" href="org/traccar/protocol/UproProtocol.html#UproProtocol"/>
+<area shape="poly" coords="262,200,259,203,257,200,259,198,262,200,262,200" title="Complexity: 6; Coverage: 85%; Class: HaicomProtocolDecoder" alt="" href="org/traccar/protocol/HaicomProtocolDecoder.html#HaicomProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="240,197,237,200,235,197,237,195,240,197,240,197" title="Complexity: 8; Coverage: 76%; Class: H02ProtocolEncoder" alt="" href="org/traccar/protocol/H02ProtocolEncoder.html#H02ProtocolEncoder"/>
+<area shape="poly" coords="269,140,267,142,264,140,267,137,269,140,269,140" title="Complexity: 47; Coverage: 88%; Class: H02ProtocolDecoder" alt="" href="org/traccar/protocol/H02ProtocolDecoder.html#H02ProtocolDecoder"/>
+<area shape="poly" coords="120,205,117,207,115,205,117,202,120,205,120,205" title="Complexity: 3; Coverage: 27%; Class: TotemProtocol" alt="" href="org/traccar/protocol/TotemProtocol.html#TotemProtocol"/>
+<area shape="poly" coords="220,182,218,185,215,182,218,180,220,182,220,182" title="Complexity: 18; Coverage: 68%; Class: H02FrameDecoder" alt="" href="org/traccar/protocol/H02FrameDecoder.html#H02FrameDecoder"/>
+<area shape="poly" coords="232,191,230,194,227,191,230,189,232,191,232,191" title="Complexity: 12; Coverage: 73%; Class: Gt30ProtocolDecoder" alt="" href="org/traccar/protocol/Gt30ProtocolDecoder.html#Gt30ProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="210,199,208,201,205,199,208,196,210,199,210,199" title="Complexity: 7; Coverage: 64%; Class: Gt06ProtocolEncoder" alt="" href="org/traccar/protocol/Gt06ProtocolEncoder.html#Gt06ProtocolEncoder"/>
+<area shape="poly" coords="242,71,240,73,237,71,240,68,242,71,242,71" title="Complexity: 94; Coverage: 77%; Class: Gt06ProtocolDecoder" alt="" href="org/traccar/protocol/Gt06ProtocolDecoder.html#Gt06ProtocolDecoder"/>
+<area shape="poly" coords="134,205,132,207,129,205,132,202,134,205,134,205" title="Complexity: 3; Coverage: 33%; Class: Xt2400Protocol" alt="" href="org/traccar/protocol/Xt2400Protocol.html#Xt2400Protocol"/>
+<area shape="poly" coords="227,200,225,203,222,200,225,198,227,200,227,200" title="Complexity: 6; Coverage: 71%; Class: Gt06FrameDecoder" alt="" href="org/traccar/protocol/Gt06FrameDecoder.html#Gt06FrameDecoder"/>
+<area shape="poly" coords="264,196,262,198,259,196,262,193,264,196,264,196" title="Complexity: 9; Coverage: 86%; Class: Gt02ProtocolDecoder" alt="" href="org/traccar/protocol/Gt02ProtocolDecoder.html#Gt02ProtocolDecoder"/>
+<area shape="poly" coords="122,205,120,207,117,205,120,202,122,205,122,205" title="Complexity: 3; Coverage: 28%; Class: Vt200Protocol" alt="" href="org/traccar/protocol/Vt200Protocol.html#Vt200Protocol"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 3; Coverage: 0%; Class: Hashing.HashingResult" alt="" href="org/traccar/helper/Hashing.html#Hashing.HashingResult"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 5; Coverage: 0%; Class: GpxBuilder" alt="" href="org/traccar/web/GpxBuilder.html#GpxBuilder"/>
+<area shape="poly" coords="242,172,240,175,237,172,240,170,242,172,242,172" title="Complexity: 25; Coverage: 77%; Class: GranitProtocolDecoder" alt="" href="org/traccar/protocol/GranitProtocolDecoder.html#GranitProtocolDecoder"/>
+<area shape="poly" coords="147,205,144,207,142,205,144,202,147,205,147,205" title="Complexity: 3; Coverage: 38%; Class: GranitProtocol" alt="" href="org/traccar/protocol/GranitProtocol.html#GranitProtocol"/>
+<area shape="poly" coords="245,202,242,204,240,202,242,199,245,202,245,202" title="Complexity: 5; Coverage: 78%; Class: GranitFrameDecoder" alt="" href="org/traccar/protocol/GranitFrameDecoder.html#GranitFrameDecoder"/>
+<area shape="poly" coords="252,202,249,204,247,202,249,199,252,202,252,202" title="Complexity: 5; Coverage: 81%; Class: WondexFrameDecoder" alt="" href="org/traccar/protocol/WondexFrameDecoder.html#WondexFrameDecoder"/>
+<area shape="poly" coords="115,205,112,207,110,205,112,202,115,205,115,205" title="Complexity: 3; Coverage: 25%; Class: UproProtocol" alt="" href="org/traccar/protocol/UproProtocol.html#UproProtocol"/>
+<area shape="poly" coords="279,203,276,206,274,203,276,201,279,203,279,203" title="Complexity: 4; Coverage: 92%; Class: HomtecsProtocolDecoder" alt="" href="org/traccar/protocol/HomtecsProtocolDecoder.html#HomtecsProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="235,185,232,188,230,185,232,183,235,185,235,185" title="Complexity: 16; Coverage: 74%; Class: GpsGateProtocolDecoder" alt="" href="org/traccar/protocol/GpsGateProtocolDecoder.html#GpsGateProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="147,188,144,191,142,188,144,186,147,188,147,188" title="Complexity: 14; Coverage: 38%; Class: Gps103ProtocolEncoder" alt="" href="org/traccar/protocol/Gps103ProtocolEncoder.html#Gps103ProtocolEncoder"/>
+<area shape="poly" coords="262,140,259,142,257,140,259,137,262,140,262,140" title="Complexity: 47; Coverage: 85%; Class: Gps103ProtocolDecoder" alt="" href="org/traccar/protocol/Gps103ProtocolDecoder.html#Gps103ProtocolDecoder"/>
+<area shape="poly" coords="95,203,93,206,90,203,93,201,95,203,95,203" title="Complexity: 4; Coverage: 17%; Class: Tk103Protocol" alt="" href="org/traccar/protocol/Tk103Protocol.html#Tk103Protocol"/>
+<area shape="poly" coords="247,190,245,192,242,190,245,187,247,190,247,190" title="Complexity: 13; Coverage: 79%; Class: Gps056ProtocolDecoder" alt="" href="org/traccar/protocol/Gps056ProtocolDecoder.html#Gps056ProtocolDecoder"/>
+<area shape="poly" coords="122,205,120,207,117,205,120,202,122,205,122,205" title="Complexity: 3; Coverage: 28%; Class: Vt200Protocol" alt="" href="org/traccar/protocol/Vt200Protocol.html#Vt200Protocol"/>
+<area shape="poly" coords="249,202,247,204,244,202,247,199,249,202,249,202" title="Complexity: 5; Coverage: 80%; Class: Gps056FrameDecoder" alt="" href="org/traccar/protocol/Gps056FrameDecoder.html#Gps056FrameDecoder"/>
+<area shape="poly" coords="276,203,274,206,271,203,274,201,276,203,276,203" title="Complexity: 4; Coverage: 91%; Class: GotopProtocolDecoder" alt="" href="org/traccar/protocol/GotopProtocolDecoder.html#GotopProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="274,184,271,186,269,184,271,181,274,184,274,184" title="Complexity: 17; Coverage: 90%; Class: GoSafeProtocolDecoder" alt="" href="org/traccar/protocol/GoSafeProtocolDecoder.html#GoSafeProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="284,199,281,201,279,199,281,196,284,199,284,199" title="Complexity: 7; Coverage: 94%; Class: GnxProtocolDecoder" alt="" href="org/traccar/protocol/GnxProtocolDecoder.html#GnxProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="223,140,220,142,218,140,220,137,223,140,223,140" title="Complexity: 47; Coverage: 69%; Class: GlobalSatProtocolDecoder" alt="" href="org/traccar/protocol/GlobalSatProtocolDecoder.html#GlobalSatProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="274,79,271,82,269,79,271,77,274,79,274,79" title="Complexity: 88; Coverage: 90%; Class: Gl200TextProtocolDecoder" alt="" href="org/traccar/protocol/Gl200TextProtocolDecoder.html#Gl200TextProtocolDecoder"/>
+<area shape="poly" coords="54,200,51,203,49,200,51,198,54,200,54,200" title="Complexity: 6; Coverage: 0%; Class: Gl200ProtocolEncoder" alt="" href="org/traccar/protocol/Gl200ProtocolEncoder.html#Gl200ProtocolEncoder"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 3; Coverage: 0%; Class: Hashing.HashingResult" alt="" href="org/traccar/helper/Hashing.html#Hashing.HashingResult"/>
+<area shape="poly" coords="103,203,100,206,98,203,100,201,103,203,103,203" title="Complexity: 4; Coverage: 20%; Class: PricolProtocol" alt="" href="org/traccar/protocol/PricolProtocol.html#PricolProtocol"/>
+<area shape="poly" coords="210,188,208,191,205,188,208,186,210,188,210,188" title="Complexity: 14; Coverage: 64%; Class: Gl200FrameDecoder" alt="" href="org/traccar/protocol/Gl200FrameDecoder.html#Gl200FrameDecoder"/>
+<area shape="poly" coords="235,150,232,153,230,150,232,148,235,150,235,150" title="Complexity: 40; Coverage: 74%; Class: Gl200BinaryProtocolDecoder" alt="" href="org/traccar/protocol/Gl200BinaryProtocolDecoder.html#Gl200BinaryProtocolDecoder"/>
+<area shape="poly" coords="245,200,242,203,240,200,242,198,245,200,245,200" title="Complexity: 6; Coverage: 78%; Class: Gl100ProtocolDecoder" alt="" href="org/traccar/protocol/Gl100ProtocolDecoder.html#Gl100ProtocolDecoder"/>
+<area shape="poly" coords="88,203,85,206,83,203,85,201,88,203,88,203" title="Complexity: 4; Coverage: 14%; Class: XirgoProtocol" alt="" href="org/traccar/protocol/XirgoProtocol.html#XirgoProtocol"/>
+<area shape="poly" coords="237,194,235,197,232,194,235,192,237,194,237,194" title="Complexity: 10; Coverage: 75%; Class: GatorProtocolDecoder" alt="" href="org/traccar/protocol/GatorProtocolDecoder.html#GatorProtocolDecoder"/>
+<area shape="poly" coords="103,203,100,206,98,203,100,201,103,203,103,203" title="Complexity: 4; Coverage: 20%; Class: PricolProtocol" alt="" href="org/traccar/protocol/PricolProtocol.html#PricolProtocol"/>
+<area shape="poly" coords="240,203,237,206,235,203,237,201,240,203,240,203" title="Complexity: 4; Coverage: 76%; Class: GalileoProtocolEncoder" alt="" href="org/traccar/protocol/GalileoProtocolEncoder.html#GalileoProtocolEncoder"/>
+<area shape="poly" coords="269,84,267,86,264,84,267,81,269,84,269,84" title="Complexity: 85; Coverage: 88%; Class: GalileoProtocolDecoder" alt="" href="org/traccar/protocol/GalileoProtocolDecoder.html#GalileoProtocolDecoder"/>
+<area shape="poly" coords="120,205,117,207,115,205,117,202,120,205,120,205" title="Complexity: 3; Coverage: 27%; Class: TotemProtocol" alt="" href="org/traccar/protocol/TotemProtocol.html#TotemProtocol"/>
+<area shape="poly" coords="208,205,205,207,203,205,205,202,208,205,208,205" title="Complexity: 3; Coverage: 63%; Class: GalileoFrameDecoder" alt="" href="org/traccar/protocol/GalileoFrameDecoder.html#GalileoFrameDecoder"/>
+<area shape="poly" coords="252,203,249,206,247,203,249,201,252,203,252,203" title="Complexity: 4; Coverage: 81%; Class: FreedomProtocolDecoder" alt="" href="org/traccar/protocol/FreedomProtocolDecoder.html#FreedomProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="257,196,254,198,252,196,254,193,257,196,257,196" title="Complexity: 9; Coverage: 83%; Class: FoxProtocolDecoder" alt="" href="org/traccar/protocol/FoxProtocolDecoder.html#FoxProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="257,196,254,198,252,196,254,193,257,196,257,196" title="Complexity: 9; Coverage: 83%; Class: FoxProtocolDecoder" alt="" href="org/traccar/protocol/FoxProtocolDecoder.html#FoxProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="264,196,262,198,259,196,262,193,264,196,264,196" title="Complexity: 9; Coverage: 86%; Class: Gt02ProtocolDecoder" alt="" href="org/traccar/protocol/Gt02ProtocolDecoder.html#Gt02ProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="274,196,271,198,269,196,271,193,274,196,274,196" title="Complexity: 9; Coverage: 90%; Class: FifotrackProtocolDecoder" alt="" href="org/traccar/protocol/FifotrackProtocolDecoder.html#FifotrackProtocolDecoder"/>
+<area shape="poly" coords="115,205,112,207,110,205,112,202,115,205,115,205" title="Complexity: 3; Coverage: 25%; Class: UproProtocol" alt="" href="org/traccar/protocol/UproProtocol.html#UproProtocol"/>
+<area shape="poly" coords="279,203,276,206,274,203,276,201,279,203,279,203" title="Complexity: 4; Coverage: 92%; Class: HomtecsProtocolDecoder" alt="" href="org/traccar/protocol/HomtecsProtocolDecoder.html#HomtecsProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 5; Coverage: 0%; Class: GpxBuilder" alt="" href="org/traccar/web/GpxBuilder.html#GpxBuilder"/>
+<area shape="poly" coords="259,194,257,197,254,194,257,192,259,194,259,194" title="Complexity: 10; Coverage: 84%; Class: EnforaProtocolDecoder" alt="" href="org/traccar/protocol/EnforaProtocolDecoder.html#EnforaProtocolDecoder"/>
+<area shape="poly" coords="134,205,132,207,129,205,132,202,134,205,134,205" title="Complexity: 3; Coverage: 33%; Class: Xt2400Protocol" alt="" href="org/traccar/protocol/Xt2400Protocol.html#Xt2400Protocol"/>
+<area shape="poly" coords="200,200,198,203,195,200,198,198,200,200,200,200" title="Complexity: 6; Coverage: 60%; Class: EelinkProtocolEncoder" alt="" href="org/traccar/protocol/EelinkProtocolEncoder.html#EelinkProtocolEncoder"/>
+<area shape="poly" coords="235,141,232,144,230,141,232,139,235,141,235,141" title="Complexity: 46; Coverage: 74%; Class: EelinkProtocolDecoder" alt="" href="org/traccar/protocol/EelinkProtocolDecoder.html#EelinkProtocolDecoder"/>
+<area shape="poly" coords="134,205,132,207,129,205,132,202,134,205,134,205" title="Complexity: 3; Coverage: 33%; Class: Xt2400Protocol" alt="" href="org/traccar/protocol/Xt2400Protocol.html#Xt2400Protocol"/>
+<area shape="poly" coords="284,200,281,203,279,200,281,198,284,200,284,200" title="Complexity: 6; Coverage: 94%; Class: EasyTrackProtocolDecoder" alt="" href="org/traccar/protocol/EasyTrackProtocolDecoder.html#EasyTrackProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="242,177,240,179,237,177,240,174,242,177,242,177" title="Complexity: 22; Coverage: 77%; Class: DmtProtocolDecoder" alt="" href="org/traccar/protocol/DmtProtocolDecoder.html#DmtProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="259,187,257,189,254,187,257,184,259,187,259,187" title="Complexity: 15; Coverage: 84%; Class: DmtHttpProtocolDecoder" alt="" href="org/traccar/protocol/DmtHttpProtocolDecoder.html#DmtHttpProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="267,203,264,206,262,203,264,201,267,203,267,203" title="Complexity: 4; Coverage: 87%; Class: RaveonProtocolDecoder" alt="" href="org/traccar/protocol/RaveonProtocolDecoder.html#RaveonProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="259,203,257,206,254,203,257,201,259,203,259,203" title="Complexity: 4; Coverage: 84%; Class: SanavProtocolDecoder" alt="" href="org/traccar/protocol/SanavProtocolDecoder.html#SanavProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="203,199,200,201,198,199,200,196,203,199,203,199" title="Complexity: 7; Coverage: 61%; Class: CityeasyProtocolEncoder" alt="" href="org/traccar/protocol/CityeasyProtocolEncoder.html#CityeasyProtocolEncoder"/>
+<area shape="poly" coords="274,199,271,201,269,199,271,196,274,199,274,199" title="Complexity: 7; Coverage: 90%; Class: CityeasyProtocolDecoder" alt="" href="org/traccar/protocol/CityeasyProtocolDecoder.html#CityeasyProtocolDecoder"/>
+<area shape="poly" coords="134,205,132,207,129,205,132,202,134,205,134,205" title="Complexity: 3; Coverage: 33%; Class: Xt2400Protocol" alt="" href="org/traccar/protocol/Xt2400Protocol.html#Xt2400Protocol"/>
+<area shape="poly" coords="276,185,274,188,271,185,274,183,276,185,276,185" title="Complexity: 16; Coverage: 91%; Class: CguardProtocolDecoder" alt="" href="org/traccar/protocol/CguardProtocolDecoder.html#CguardProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="54,203,51,206,49,203,51,201,54,203,54,203" title="Complexity: 4; Coverage: 0%; Class: Stl060FrameDecoder" alt="" href="org/traccar/protocol/Stl060FrameDecoder.html#Stl060FrameDecoder"/>
+<area shape="poly" coords="267,191,264,194,262,191,264,189,267,191,267,191" title="Complexity: 12; Coverage: 87%; Class: CellocatorProtocolDecoder" alt="" href="org/traccar/protocol/CellocatorProtocolDecoder.html#CellocatorProtocolDecoder"/>
+<area shape="poly" coords="95,203,93,206,90,203,93,201,95,203,95,203" title="Complexity: 4; Coverage: 17%; Class: Tk103Protocol" alt="" href="org/traccar/protocol/Tk103Protocol.html#Tk103Protocol"/>
+<area shape="poly" coords="54,194,51,197,49,194,51,192,54,194,54,194" title="Complexity: 10; Coverage: 0%; Class: Hashing" alt="" href="org/traccar/helper/Hashing.html#Hashing"/>
+<area shape="poly" coords="254,134,252,136,249,134,252,131,254,134,254,134" title="Complexity: 51; Coverage: 82%; Class: CastelProtocolDecoder" alt="" href="org/traccar/protocol/CastelProtocolDecoder.html#CastelProtocolDecoder"/>
+<area shape="poly" coords="88,203,85,206,83,203,85,201,88,203,88,203" title="Complexity: 4; Coverage: 14%; Class: XirgoProtocol" alt="" href="org/traccar/protocol/XirgoProtocol.html#XirgoProtocol"/>
+<area shape="poly" coords="284,202,281,204,279,202,281,199,284,202,284,202" title="Complexity: 5; Coverage: 94%; Class: CarscopProtocolDecoder" alt="" href="org/traccar/protocol/CarscopProtocolDecoder.html#CarscopProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 3; Coverage: 0%; Class: Hashing.HashingResult" alt="" href="org/traccar/helper/Hashing.html#Hashing.HashingResult"/>
+<area shape="poly" coords="54,193,51,195,49,193,51,190,54,193,54,193" title="Complexity: 11; Coverage: 0%; Class: CarcellProtocolDecoder" alt="" href="org/traccar/protocol/CarcellProtocolDecoder.html#CarcellProtocolDecoder"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 3; Coverage: 0%; Class: Hashing.HashingResult" alt="" href="org/traccar/helper/Hashing.html#Hashing.HashingResult"/>
+<area shape="poly" coords="284,203,281,206,279,203,281,201,284,203,284,203" title="Complexity: 4; Coverage: 94%; Class: CarTrackProtocolDecoder" alt="" href="org/traccar/protocol/CarTrackProtocolDecoder.html#CarTrackProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="252,163,249,166,247,163,249,161,252,163,252,163" title="Complexity: 31; Coverage: 81%; Class: CalAmpProtocolDecoder" alt="" href="org/traccar/protocol/CalAmpProtocolDecoder.html#CalAmpProtocolDecoder"/>
+<area shape="poly" coords="134,205,132,207,129,205,132,202,134,205,134,205" title="Complexity: 3; Coverage: 33%; Class: Xt2400Protocol" alt="" href="org/traccar/protocol/Xt2400Protocol.html#Xt2400Protocol"/>
+<area shape="poly" coords="269,197,267,200,264,197,267,195,269,197,269,197" title="Complexity: 8; Coverage: 88%; Class: BoxProtocolDecoder" alt="" href="org/traccar/protocol/BoxProtocolDecoder.html#BoxProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="240,165,237,167,235,165,237,162,240,165,240,165" title="Complexity: 30; Coverage: 76%; Class: BlackKiteProtocolDecoder" alt="" href="org/traccar/protocol/BlackKiteProtocolDecoder.html#BlackKiteProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="235,180,232,182,230,180,232,177,235,180,235,180" title="Complexity: 20; Coverage: 74%; Class: BceProtocolDecoder" alt="" href="org/traccar/protocol/BceProtocolDecoder.html#BceProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="54,197,51,200,49,197,51,195,54,197,54,197" title="Complexity: 8; Coverage: 0%; Class: Trips" alt="" href="org/traccar/reports/Trips.html#Trips"/>
+<area shape="poly" coords="242,188,240,191,237,188,240,186,242,188,242,188" title="Complexity: 14; Coverage: 77%; Class: Avl301ProtocolDecoder" alt="" href="org/traccar/protocol/Avl301ProtocolDecoder.html#Avl301ProtocolDecoder"/>
+<area shape="poly" coords="122,205,120,207,117,205,120,202,122,205,122,205" title="Complexity: 3; Coverage: 28%; Class: Vt200Protocol" alt="" href="org/traccar/protocol/Vt200Protocol.html#Vt200Protocol"/>
+<area shape="poly" coords="269,200,267,203,264,200,267,198,269,200,269,200" title="Complexity: 6; Coverage: 88%; Class: AutoGradeProtocolDecoder" alt="" href="org/traccar/protocol/AutoGradeProtocolDecoder.html#AutoGradeProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="249,178,247,181,244,178,247,176,249,178,249,178" title="Complexity: 21; Coverage: 80%; Class: AutoFonProtocolDecoder" alt="" href="org/traccar/protocol/AutoFonProtocolDecoder.html#AutoFonProtocolDecoder"/>
+<area shape="poly" coords="122,205,120,207,117,205,120,202,122,205,122,205" title="Complexity: 3; Coverage: 28%; Class: Vt200Protocol" alt="" href="org/traccar/protocol/Vt200Protocol.html#Vt200Protocol"/>
+<area shape="poly" coords="54,196,51,198,49,196,51,193,54,196,54,196" title="Complexity: 9; Coverage: 0%; Class: CorsResponseFilter" alt="" href="org/traccar/api/CorsResponseFilter.html#CorsResponseFilter"/>
+<area shape="poly" coords="259,203,257,206,254,203,257,201,259,203,259,203" title="Complexity: 4; Coverage: 84%; Class: SanavProtocolDecoder" alt="" href="org/traccar/protocol/SanavProtocolDecoder.html#SanavProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 2; Coverage: 0%; Class: ConsoleServlet" alt="" href="org/traccar/web/ConsoleServlet.html#ConsoleServlet"/>
+<area shape="poly" coords="200,128,198,131,195,128,198,126,200,128,200,128" title="Complexity: 55; Coverage: 60%; Class: AtrackProtocolDecoder" alt="" href="org/traccar/protocol/AtrackProtocolDecoder.html#AtrackProtocolDecoder"/>
+<area shape="poly" coords="110,203,107,206,105,203,107,201,110,203,110,203" title="Complexity: 4; Coverage: 23%; Class: TeltonikaProtocol" alt="" href="org/traccar/protocol/TeltonikaProtocol.html#TeltonikaProtocol"/>
+<area shape="poly" coords="245,197,242,200,240,197,242,195,245,197,245,197" title="Complexity: 8; Coverage: 78%; Class: AtrackFrameDecoder" alt="" href="org/traccar/protocol/AtrackFrameDecoder.html#AtrackFrameDecoder"/>
+<area shape="poly" coords="54,191,51,194,49,191,51,189,54,191,54,191" title="Complexity: 12; Coverage: 0%; Class: Log.NettyInternalLogger" alt="" href="org/traccar/helper/Log.html#Log.NettyInternalLogger"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 3; Coverage: 0%; Class: Hashing.HashingResult" alt="" href="org/traccar/helper/Hashing.html#Hashing.HashingResult"/>
+<area shape="poly" coords="213,193,210,195,208,193,210,190,213,193,213,193" title="Complexity: 11; Coverage: 65%; Class: YwtProtocolDecoder" alt="" href="org/traccar/protocol/YwtProtocolDecoder.html#YwtProtocolDecoder"/>
+<area shape="poly" coords="269,199,267,201,264,199,267,196,269,199,269,199" title="Complexity: 7; Coverage: 88%; Class: AstraProtocolDecoder" alt="" href="org/traccar/protocol/AstraProtocolDecoder.html#AstraProtocolDecoder"/>
+<area shape="poly" coords="103,203,100,206,98,203,100,201,103,203,103,203" title="Complexity: 4; Coverage: 20%; Class: PricolProtocol" alt="" href="org/traccar/protocol/PricolProtocol.html#PricolProtocol"/>
+<area shape="poly" coords="267,203,264,206,262,203,264,201,267,203,267,203" title="Complexity: 4; Coverage: 87%; Class: RaveonProtocolDecoder" alt="" href="org/traccar/protocol/RaveonProtocolDecoder.html#RaveonProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="281,202,279,204,276,202,279,199,281,202,281,202" title="Complexity: 5; Coverage: 93%; Class: Tt8850ProtocolDecoder" alt="" href="org/traccar/protocol/Tt8850ProtocolDecoder.html#Tt8850ProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="257,203,254,206,252,203,254,201,257,203,257,203" title="Complexity: 4; Coverage: 83%; Class: ArknavProtocolDecoder" alt="" href="org/traccar/protocol/ArknavProtocolDecoder.html#ArknavProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="264,203,262,206,259,203,262,201,264,203,264,203" title="Complexity: 4; Coverage: 86%; Class: Tr900ProtocolDecoder" alt="" href="org/traccar/protocol/Tr900ProtocolDecoder.html#Tr900ProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="289,197,286,200,284,197,286,195,289,197,289,197" title="Complexity: 8; Coverage: 96%; Class: VisiontekProtocolDecoder" alt="" href="org/traccar/protocol/VisiontekProtocolDecoder.html#VisiontekProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="264,202,262,204,259,202,262,199,264,202,264,202" title="Complexity: 5; Coverage: 86%; Class: AppelloProtocolDecoder" alt="" href="org/traccar/protocol/AppelloProtocolDecoder.html#AppelloProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="230,18,227,20,225,18,227,15,230,18,230,18" title="Complexity: 130; Coverage: 72%; Class: AplicomProtocolDecoder" alt="" href="org/traccar/protocol/AplicomProtocolDecoder.html#AplicomProtocolDecoder"/>
+<area shape="poly" coords="122,205,120,207,117,205,120,202,122,205,122,205" title="Complexity: 3; Coverage: 28%; Class: Vt200Protocol" alt="" href="org/traccar/protocol/Vt200Protocol.html#Vt200Protocol"/>
+<area shape="poly" coords="242,199,240,201,237,199,240,196,242,199,242,199" title="Complexity: 7; Coverage: 77%; Class: AplicomFrameDecoder" alt="" href="org/traccar/protocol/AplicomFrameDecoder.html#AplicomFrameDecoder"/>
+<area shape="poly" coords="56,174,53,176,51,174,53,171,56,174,56,174" title="Complexity: 24; Coverage: 1%; Class: ApelProtocolDecoder" alt="" href="org/traccar/protocol/ApelProtocolDecoder.html#ApelProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="242,188,240,191,237,188,240,186,242,188,242,188" title="Complexity: 14; Coverage: 77%; Class: Avl301ProtocolDecoder" alt="" href="org/traccar/protocol/Avl301ProtocolDecoder.html#Avl301ProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 5; Coverage: 0%; Class: GpxBuilder" alt="" href="org/traccar/web/GpxBuilder.html#GpxBuilder"/>
+<area shape="poly" coords="284,187,281,189,279,187,281,184,284,187,284,187" title="Complexity: 15; Coverage: 94%; Class: AisProtocolDecoder" alt="" href="org/traccar/protocol/AisProtocolDecoder.html#AisProtocolDecoder"/>
+<area shape="poly" coords="122,205,120,207,117,205,120,202,122,205,122,205" title="Complexity: 3; Coverage: 28%; Class: Vt200Protocol" alt="" href="org/traccar/protocol/Vt200Protocol.html#Vt200Protocol"/>
+<area shape="poly" coords="252,193,249,195,247,193,249,190,252,193,252,193" title="Complexity: 11; Coverage: 81%; Class: AdmProtocolDecoder" alt="" href="org/traccar/protocol/AdmProtocolDecoder.html#AdmProtocolDecoder"/>
+<area shape="poly" coords="107,205,105,207,102,205,105,202,107,205,107,205" title="Complexity: 3; Coverage: 22%; Class: YwtProtocol" alt="" href="org/traccar/protocol/YwtProtocol.html#YwtProtocol"/>
+<area shape="poly" coords="294,140,291,142,289,140,291,137,294,140,294,140" title="Complexity: 47; Coverage: 98%; Class: ProtocolTest" alt="" href="org/traccar/ProtocolTest.html#ProtocolTest"/>
+<area shape="poly" coords="237,194,235,197,232,194,235,192,237,194,237,194" title="Complexity: 10; Coverage: 75%; Class: GatorProtocolDecoder" alt="" href="org/traccar/protocol/GatorProtocolDecoder.html#GatorProtocolDecoder"/>
+<area shape="poly" coords="213,185,210,188,208,185,210,183,213,185,213,185" title="Complexity: 16; Coverage: 65%; Class: WebDataHandler" alt="" href="org/traccar/WebDataHandler.html#WebDataHandler"/>
+<area shape="poly" coords="54,180,51,182,49,180,51,177,54,180,54,180" title="Complexity: 20; Coverage: 0%; Class: TrackerServer" alt="" href="org/traccar/TrackerServer.html#TrackerServer"/>
+<area shape="poly" coords="298,203,296,206,293,203,296,201,298,203,298,203" title="Complexity: 4; Coverage: 100%; Class: StringProtocolEncoder" alt="" href="org/traccar/StringProtocolEncoder.html#StringProtocolEncoder"/>
+<area shape="poly" coords="54,188,51,191,49,188,51,186,54,188,54,188" title="Complexity: 14; Coverage: 0%; Class: SecurityRequestFilter" alt="" href="org/traccar/api/SecurityRequestFilter.html#SecurityRequestFilter"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 2; Coverage: 0%; Class: ConsoleServlet" alt="" href="org/traccar/web/ConsoleServlet.html#ConsoleServlet"/>
+<area shape="poly" coords="267,205,264,207,262,205,264,202,267,205,267,205" title="Complexity: 3; Coverage: 87%; Class: MotionHandler" alt="" href="org/traccar/MotionHandler.html#MotionHandler"/>
+<area shape="poly" coords="54,185,51,188,49,185,51,183,54,185,54,185" title="Complexity: 16; Coverage: 0%; Class: MainEventHandler" alt="" href="org/traccar/MainEventHandler.html#MainEventHandler"/>
+<area shape="poly" coords="54,199,51,201,49,199,51,196,54,199,54,199" title="Complexity: 7; Coverage: 0%; Class: Route" alt="" href="org/traccar/reports/Route.html#Route"/>
+<area shape="poly" coords="54,193,51,195,49,193,51,190,54,193,54,193" title="Complexity: 11; Coverage: 0%; Class: CarcellProtocolDecoder" alt="" href="org/traccar/protocol/CarcellProtocolDecoder.html#CarcellProtocolDecoder"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 5; Coverage: 0%; Class: GpxBuilder" alt="" href="org/traccar/web/GpxBuilder.html#GpxBuilder"/>
+<area shape="poly" coords="54,197,51,200,49,197,51,195,54,197,54,197" title="Complexity: 8; Coverage: 0%; Class: Trips" alt="" href="org/traccar/reports/Trips.html#Trips"/>
+<area shape="poly" coords="54,194,51,197,49,194,51,192,54,194,54,194" title="Complexity: 10; Coverage: 0%; Class: Hashing" alt="" href="org/traccar/helper/Hashing.html#Hashing"/>
+<area shape="poly" coords="54,190,51,192,49,190,51,187,54,190,54,190" title="Complexity: 13; Coverage: 0%; Class: GoogleGeocoder" alt="" href="org/traccar/geocoder/GoogleGeocoder.html#GoogleGeocoder"/>
+<area shape="poly" coords="242,144,240,147,237,144,240,142,242,144,242,144" title="Complexity: 44; Coverage: 77%; Class: FilterHandler" alt="" href="org/traccar/FilterHandler.html#FilterHandler"/>
+<area shape="poly" coords="54,190,51,192,49,190,51,187,54,190,54,190" title="Complexity: 13; Coverage: 0%; Class: GoogleGeocoder" alt="" href="org/traccar/geocoder/GoogleGeocoder.html#GoogleGeocoder"/>
+<area shape="poly" coords="181,190,178,192,176,190,178,187,181,190,181,190" title="Complexity: 13; Coverage: 52%; Class: DistanceHandler" alt="" href="org/traccar/DistanceHandler.html#DistanceHandler"/>
+<area shape="poly" coords="298,206,296,209,293,206,296,204,298,206,298,206" title="Complexity: 2; Coverage: 100%; Class: DeviceSession" alt="" href="org/traccar/DeviceSession.html#DeviceSession"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 2; Coverage: 0%; Class: ConsoleServlet" alt="" href="org/traccar/web/ConsoleServlet.html#ConsoleServlet"/>
+<area shape="poly" coords="63,122,61,125,58,122,61,120,63,122,63,122" title="Complexity: 59; Coverage: 4%; Class: Context" alt="" href="org/traccar/Context.html#Context"/>
+<area shape="poly" coords="171,172,169,175,166,172,169,170,171,172,171,172" title="Complexity: 25; Coverage: 48%; Class: Config" alt="" href="org/traccar/Config.html#Config"/>
+<area shape="poly" coords="54,197,51,200,49,197,51,195,54,197,54,197" title="Complexity: 8; Coverage: 0%; Class: Trips" alt="" href="org/traccar/reports/Trips.html#Trips"/>
+<area shape="poly" coords="139,199,137,201,134,199,137,196,139,199,139,199" title="Complexity: 7; Coverage: 35%; Class: BaseProtocolEncoder" alt="" href="org/traccar/BaseProtocolEncoder.html#BaseProtocolEncoder"/>
+<area shape="poly" coords="127,144,125,147,122,144,125,142,127,144,127,144" title="Complexity: 44; Coverage: 30%; Class: BaseProtocolDecoder" alt="" href="org/traccar/BaseProtocolDecoder.html#BaseProtocolDecoder"/>
+<area shape="poly" coords="117,184,115,186,112,184,115,181,117,184,117,184" title="Complexity: 17; Coverage: 26%; Class: BaseProtocol" alt="" href="org/traccar/BaseProtocol.html#BaseProtocol"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 5; Coverage: 0%; Class: GpxBuilder" alt="" href="org/traccar/web/GpxBuilder.html#GpxBuilder"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 2; Coverage: 0%; Class: ConsoleServlet" alt="" href="org/traccar/web/ConsoleServlet.html#ConsoleServlet"/>
+<area shape="poly" coords="54,153,51,156,49,153,51,151,54,153,54,153" title="Complexity: 38; Coverage: 0%; Class: BasePipelineFactory" alt="" href="org/traccar/BasePipelineFactory.html#BasePipelineFactory"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 3; Coverage: 0%; Class: Hashing.HashingResult" alt="" href="org/traccar/helper/Hashing.html#Hashing.HashingResult"/>
+<area shape="poly" coords="215,206,213,209,210,206,213,204,215,206,215,206" title="Complexity: 2; Coverage: 66%; Class: BaseDataHandler" alt="" href="org/traccar/BaseDataHandler.html#BaseDataHandler"/>
+<area shape="poly" coords="54,188,51,191,49,188,51,186,54,188,54,188" title="Complexity: 14; Coverage: 0%; Class: SecurityRequestFilter" alt="" href="org/traccar/api/SecurityRequestFilter.html#SecurityRequestFilter"/>
+<area shape="poly" coords="54,190,51,192,49,190,51,187,54,190,54,190" title="Complexity: 13; Coverage: 0%; Class: GoogleGeocoder" alt="" href="org/traccar/geocoder/GoogleGeocoder.html#GoogleGeocoder"/>
+<area shape="poly" coords="54,193,51,195,49,193,51,190,54,193,54,193" title="Complexity: 11; Coverage: 0%; Class: CarcellProtocolDecoder" alt="" href="org/traccar/protocol/CarcellProtocolDecoder.html#CarcellProtocolDecoder"/>
+<area shape="poly" coords="54,51,51,54,49,51,51,49,54,51,54,51" title="Complexity: 107; Coverage: 0%; Class: QueryBuilder" alt="" href="org/traccar/database/QueryBuilder.html#QueryBuilder"/>
+<area shape="poly" coords="54,37,51,39,49,37,51,34,54,37,54,37" title="Complexity: 117; Coverage: 0%; Class: PermissionsManager" alt="" href="org/traccar/database/PermissionsManager.html#PermissionsManager"/>
+<area shape="poly" coords="54,152,51,154,49,152,51,149,54,152,54,152" title="Complexity: 39; Coverage: 0%; Class: NotificationManager" alt="" href="org/traccar/database/NotificationManager.html#NotificationManager"/>
+<area shape="poly" coords="54,194,51,197,49,194,51,192,54,194,54,194" title="Complexity: 10; Coverage: 0%; Class: Hashing" alt="" href="org/traccar/helper/Hashing.html#Hashing"/>
+<area shape="poly" coords="54,185,51,188,49,185,51,183,54,185,54,185" title="Complexity: 16; Coverage: 0%; Class: MainEventHandler" alt="" href="org/traccar/MainEventHandler.html#MainEventHandler"/>
+<area shape="poly" coords="242,185,240,188,237,185,240,183,242,185,242,185" title="Complexity: 16; Coverage: 77%; Class: PiligrimProtocolDecoder" alt="" href="org/traccar/protocol/PiligrimProtocolDecoder.html#PiligrimProtocolDecoder"/>
+<area shape="poly" coords="286,196,284,198,281,196,284,193,286,196,286,196" title="Complexity: 9; Coverage: 95%; Class: GroupTree" alt="" href="org/traccar/database/GroupTree.html#GroupTree"/>
+<area shape="poly" coords="54,196,51,198,49,196,51,193,54,196,54,196" title="Complexity: 9; Coverage: 0%; Class: CorsResponseFilter" alt="" href="org/traccar/api/CorsResponseFilter.html#CorsResponseFilter"/>
+<area shape="poly" coords="54,190,51,192,49,190,51,187,54,190,54,190" title="Complexity: 13; Coverage: 0%; Class: GoogleGeocoder" alt="" href="org/traccar/geocoder/GoogleGeocoder.html#GoogleGeocoder"/>
+<area shape="poly" coords="54,194,51,197,49,194,51,192,54,194,54,194" title="Complexity: 10; Coverage: 0%; Class: Hashing" alt="" href="org/traccar/helper/Hashing.html#Hashing"/>
+<area shape="poly" coords="54,91,51,94,49,91,51,89,54,91,54,91" title="Complexity: 80; Coverage: 0%; Class: DeviceManager" alt="" href="org/traccar/database/DeviceManager.html#DeviceManager"/>
+<area shape="poly" coords="120,90,117,92,115,90,117,87,120,90,120,90" title="Complexity: 81; Coverage: 27%; Class: DataManager" alt="" href="org/traccar/database/DataManager.html#DataManager"/>
+<area shape="poly" coords="54,153,51,156,49,153,51,151,54,153,54,153" title="Complexity: 38; Coverage: 0%; Class: BasePipelineFactory" alt="" href="org/traccar/BasePipelineFactory.html#BasePipelineFactory"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: ObjectMapperProvider" alt="" href="org/traccar/api/ObjectMapperProvider.html#ObjectMapperProvider"/>
+<area shape="poly" coords="54,181,51,184,49,181,51,179,54,181,54,181" title="Complexity: 19; Coverage: 0%; Class: BaseObjectManager" alt="" href="org/traccar/database/BaseObjectManager.html#BaseObjectManager"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 2; Coverage: 0%; Class: ConsoleServlet" alt="" href="org/traccar/web/ConsoleServlet.html#ConsoleServlet"/>
+<area shape="poly" coords="54,188,51,191,49,188,51,186,54,188,54,188" title="Complexity: 14; Coverage: 0%; Class: SecurityRequestFilter" alt="" href="org/traccar/api/SecurityRequestFilter.html#SecurityRequestFilter"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 5; Coverage: 0%; Class: GpxBuilder" alt="" href="org/traccar/web/GpxBuilder.html#GpxBuilder"/>
+<area shape="poly" coords="54,193,51,195,49,193,51,190,54,193,54,193" title="Complexity: 11; Coverage: 0%; Class: CarcellProtocolDecoder" alt="" href="org/traccar/protocol/CarcellProtocolDecoder.html#CarcellProtocolDecoder"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: ObjectMapperProvider" alt="" href="org/traccar/api/ObjectMapperProvider.html#ObjectMapperProvider"/>
+<area shape="poly" coords="54,187,51,189,49,187,51,184,54,187,54,187" title="Complexity: 15; Coverage: 0%; Class: SessionResource" alt="" href="org/traccar/api/resource/SessionResource.html#SessionResource"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 2; Coverage: 0%; Class: ConsoleServlet" alt="" href="org/traccar/web/ConsoleServlet.html#ConsoleServlet"/>
+<area shape="poly" coords="54,194,51,197,49,194,51,192,54,194,54,194" title="Complexity: 10; Coverage: 0%; Class: Hashing" alt="" href="org/traccar/helper/Hashing.html#Hashing"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 5; Coverage: 0%; Class: GpxBuilder" alt="" href="org/traccar/web/GpxBuilder.html#GpxBuilder"/>
+<area shape="poly" coords="54,199,51,201,49,199,51,196,54,199,54,199" title="Complexity: 7; Coverage: 0%; Class: Route" alt="" href="org/traccar/reports/Route.html#Route"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 5; Coverage: 0%; Class: GpxBuilder" alt="" href="org/traccar/web/GpxBuilder.html#GpxBuilder"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: ObjectMapperProvider" alt="" href="org/traccar/api/ObjectMapperProvider.html#ObjectMapperProvider"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: ObjectMapperProvider" alt="" href="org/traccar/api/ObjectMapperProvider.html#ObjectMapperProvider"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 2; Coverage: 0%; Class: ConsoleServlet" alt="" href="org/traccar/web/ConsoleServlet.html#ConsoleServlet"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: ObjectMapperProvider" alt="" href="org/traccar/api/ObjectMapperProvider.html#ObjectMapperProvider"/>
+<area shape="poly" coords="54,197,51,200,49,197,51,195,54,197,54,197" title="Complexity: 8; Coverage: 0%; Class: Trips" alt="" href="org/traccar/reports/Trips.html#Trips"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: ObjectMapperProvider" alt="" href="org/traccar/api/ObjectMapperProvider.html#ObjectMapperProvider"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: ObjectMapperProvider" alt="" href="org/traccar/api/ObjectMapperProvider.html#ObjectMapperProvider"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: ObjectMapperProvider" alt="" href="org/traccar/api/ObjectMapperProvider.html#ObjectMapperProvider"/>
+<area shape="poly" coords="54,200,51,203,49,200,51,198,54,200,54,200" title="Complexity: 6; Coverage: 0%; Class: Gl200ProtocolEncoder" alt="" href="org/traccar/protocol/Gl200ProtocolEncoder.html#Gl200ProtocolEncoder"/>
+<area shape="poly" coords="54,196,51,198,49,196,51,193,54,196,54,196" title="Complexity: 9; Coverage: 0%; Class: CorsResponseFilter" alt="" href="org/traccar/api/CorsResponseFilter.html#CorsResponseFilter"/>
+<area shape="poly" coords="54,199,51,201,49,199,51,196,54,199,54,199" title="Complexity: 7; Coverage: 0%; Class: Route" alt="" href="org/traccar/reports/Route.html#Route"/>
+<area shape="poly" coords="161,184,159,186,156,184,159,181,161,184,161,184" title="Complexity: 17; Coverage: 44%; Class: ComputedAttributesHandler" alt="" href="org/traccar/processing/ComputedAttributesHandler.html#ComputedAttributesHandler"/>
+<area shape="poly" coords="156,197,154,200,151,197,154,195,156,197,156,197" title="Complexity: 8; Coverage: 42%; Class: WifiAccessPoint" alt="" href="org/traccar/model/WifiAccessPoint.html#WifiAccessPoint"/>
+<area shape="poly" coords="54,128,51,131,49,128,51,126,54,128,54,128" title="Complexity: 55; Coverage: 0%; Class: User" alt="" href="org/traccar/model/User.html#User"/>
+<area shape="poly" coords="54,177,51,179,49,177,51,174,54,177,54,177" title="Complexity: 22; Coverage: 0%; Class: Statistics" alt="" href="org/traccar/model/Statistics.html#Statistics"/>
+<area shape="poly" coords="54,160,51,163,49,160,51,158,54,160,54,160" title="Complexity: 33; Coverage: 0%; Class: Server" alt="" href="org/traccar/model/Server.html#Server"/>
+<area shape="poly" coords="252,156,249,158,247,156,249,153,252,156,252,156" title="Complexity: 36; Coverage: 81%; Class: TaipProtocolDecoder" alt="" href="org/traccar/protocol/TaipProtocolDecoder.html#TaipProtocolDecoder"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 5; Coverage: 0%; Class: GpxBuilder" alt="" href="org/traccar/web/GpxBuilder.html#GpxBuilder"/>
+<area shape="poly" coords="54,194,51,197,49,194,51,192,54,194,54,194" title="Complexity: 10; Coverage: 0%; Class: Hashing" alt="" href="org/traccar/helper/Hashing.html#Hashing"/>
+<area shape="poly" coords="161,180,159,182,156,180,159,177,161,180,161,180" title="Complexity: 20; Coverage: 44%; Class: Network" alt="" href="org/traccar/model/Network.html#Network"/>
+<area shape="poly" coords="252,202,249,204,247,202,249,199,252,202,252,202" title="Complexity: 5; Coverage: 81%; Class: WondexFrameDecoder" alt="" href="org/traccar/protocol/WondexFrameDecoder.html#WondexFrameDecoder"/>
+<area shape="poly" coords="298,203,296,206,293,203,296,201,298,203,298,203" title="Complexity: 4; Coverage: 100%; Class: StringProtocolEncoder" alt="" href="org/traccar/StringProtocolEncoder.html#StringProtocolEncoder"/>
+<area shape="poly" coords="237,203,235,206,232,203,235,201,237,203,237,203" title="Complexity: 4; Coverage: 75%; Class: NvsFrameDecoder" alt="" href="org/traccar/protocol/NvsFrameDecoder.html#NvsFrameDecoder"/>
+<area shape="poly" coords="54,190,51,192,49,190,51,187,54,190,54,190" title="Complexity: 13; Coverage: 0%; Class: GoogleGeocoder" alt="" href="org/traccar/geocoder/GoogleGeocoder.html#GoogleGeocoder"/>
+<area shape="poly" coords="252,163,249,166,247,163,249,161,252,163,252,163" title="Complexity: 31; Coverage: 81%; Class: CalAmpProtocolDecoder" alt="" href="org/traccar/protocol/CalAmpProtocolDecoder.html#CalAmpProtocolDecoder"/>
+<area shape="poly" coords="110,193,107,195,105,193,107,190,110,193,110,193" title="Complexity: 11; Coverage: 23%; Class: Event" alt="" href="org/traccar/model/Event.html#Event"/>
+<area shape="poly" coords="54,203,51,206,49,203,51,201,54,203,54,203" title="Complexity: 4; Coverage: 0%; Class: Stl060FrameDecoder" alt="" href="org/traccar/protocol/Stl060FrameDecoder.html#Stl060FrameDecoder"/>
+<area shape="poly" coords="54,203,51,206,49,203,51,201,54,203,54,203" title="Complexity: 4; Coverage: 0%; Class: Stl060FrameDecoder" alt="" href="org/traccar/protocol/Stl060FrameDecoder.html#Stl060FrameDecoder"/>
+<area shape="poly" coords="298,203,296,206,293,203,296,201,298,203,298,203" title="Complexity: 4; Coverage: 100%; Class: StringProtocolEncoder" alt="" href="org/traccar/StringProtocolEncoder.html#StringProtocolEncoder"/>
+<area shape="poly" coords="115,172,112,175,110,172,112,170,115,172,115,172" title="Complexity: 25; Coverage: 25%; Class: Device" alt="" href="org/traccar/model/Device.html#Device"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 3; Coverage: 0%; Class: Hashing.HashingResult" alt="" href="org/traccar/helper/Hashing.html#Hashing.HashingResult"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 2; Coverage: 0%; Class: ConsoleServlet" alt="" href="org/traccar/web/ConsoleServlet.html#ConsoleServlet"/>
+<area shape="poly" coords="272,185,269,188,267,185,269,183,272,185,272,185" title="Complexity: 16; Coverage: 89%; Class: CellTower" alt="" href="org/traccar/model/CellTower.html#CellTower"/>
+<area shape="poly" coords="210,196,208,198,205,196,208,193,210,196,210,196" title="Complexity: 9; Coverage: 64%; Class: Calendar" alt="" href="org/traccar/model/Calendar.html#Calendar"/>
+<area shape="poly" coords="298,206,296,209,293,206,296,204,298,206,298,206" title="Complexity: 2; Coverage: 100%; Class: DeviceSession" alt="" href="org/traccar/DeviceSession.html#DeviceSession"/>
+<area shape="poly" coords="54,200,51,203,49,200,51,198,54,200,54,200" title="Complexity: 6; Coverage: 0%; Class: Gl200ProtocolEncoder" alt="" href="org/traccar/protocol/Gl200ProtocolEncoder.html#Gl200ProtocolEncoder"/>
+<area shape="poly" coords="115,197,112,200,110,197,112,195,115,197,115,197" title="Complexity: 8; Coverage: 25%; Class: Attribute" alt="" href="org/traccar/model/Attribute.html#Attribute"/>
+<area shape="poly" coords="54,165,51,167,49,165,51,162,54,165,54,165" title="Complexity: 30; Coverage: 0%; Class: SmppClient" alt="" href="org/traccar/smpp/SmppClient.html#SmppClient"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 2; Coverage: 0%; Class: ConsoleServlet" alt="" href="org/traccar/web/ConsoleServlet.html#ConsoleServlet"/>
+<area shape="poly" coords="54,200,51,203,49,200,51,198,54,200,54,200" title="Complexity: 6; Coverage: 0%; Class: Gl200ProtocolEncoder" alt="" href="org/traccar/protocol/Gl200ProtocolEncoder.html#Gl200ProtocolEncoder"/>
+<area shape="poly" coords="54,199,51,201,49,199,51,196,54,199,54,199" title="Complexity: 7; Coverage: 0%; Class: Route" alt="" href="org/traccar/reports/Route.html#Route"/>
+<area shape="poly" coords="215,191,213,194,210,191,213,189,215,191,215,191" title="Complexity: 12; Coverage: 66%; Class: TripsConfig" alt="" href="org/traccar/reports/model/TripsConfig.html#TripsConfig"/>
+<area shape="poly" coords="203,165,200,167,198,165,200,162,203,165,203,165" title="Complexity: 30; Coverage: 61%; Class: TripReport" alt="" href="org/traccar/reports/model/TripReport.html#TripReport"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 3; Coverage: 0%; Class: Hashing.HashingResult" alt="" href="org/traccar/helper/Hashing.html#Hashing.HashingResult"/>
+<area shape="poly" coords="200,178,198,181,195,178,198,176,200,178,200,178" title="Complexity: 21; Coverage: 60%; Class: StopReport" alt="" href="org/traccar/reports/model/StopReport.html#StopReport"/>
+<area shape="poly" coords="54,200,51,203,49,200,51,198,54,200,54,200" title="Complexity: 6; Coverage: 0%; Class: Gl200ProtocolEncoder" alt="" href="org/traccar/protocol/Gl200ProtocolEncoder.html#Gl200ProtocolEncoder"/>
+<area shape="poly" coords="220,188,218,191,215,188,218,186,220,188,220,188" title="Complexity: 14; Coverage: 68%; Class: BaseReport" alt="" href="org/traccar/reports/model/BaseReport.html#BaseReport"/>
+<area shape="poly" coords="54,197,51,200,49,197,51,195,54,197,54,197" title="Complexity: 8; Coverage: 0%; Class: Trips" alt="" href="org/traccar/reports/Trips.html#Trips"/>
+<area shape="poly" coords="54,197,51,200,49,197,51,195,54,197,54,197" title="Complexity: 8; Coverage: 0%; Class: Trips" alt="" href="org/traccar/reports/Trips.html#Trips"/>
+<area shape="poly" coords="54,193,51,195,49,193,51,190,54,193,54,193" title="Complexity: 11; Coverage: 0%; Class: CarcellProtocolDecoder" alt="" href="org/traccar/protocol/CarcellProtocolDecoder.html#CarcellProtocolDecoder"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 2; Coverage: 0%; Class: ConsoleServlet" alt="" href="org/traccar/web/ConsoleServlet.html#ConsoleServlet"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: ObjectMapperProvider" alt="" href="org/traccar/api/ObjectMapperProvider.html#ObjectMapperProvider"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: ObjectMapperProvider" alt="" href="org/traccar/api/ObjectMapperProvider.html#ObjectMapperProvider"/>
+<area shape="poly" coords="247,187,245,189,242,187,245,184,247,187,247,187" title="Complexity: 15; Coverage: 79%; Class: GeofencePolyline" alt="" href="org/traccar/geofence/GeofencePolyline.html#GeofencePolyline"/>
+<area shape="poly" coords="245,166,242,169,240,166,242,164,245,166,245,166" title="Complexity: 29; Coverage: 78%; Class: GeofencePolygon" alt="" href="org/traccar/geofence/GeofencePolygon.html#GeofencePolygon"/>
+<area shape="poly" coords="298,203,296,206,293,203,296,201,298,203,298,203" title="Complexity: 4; Coverage: 100%; Class: StringProtocolEncoder" alt="" href="org/traccar/StringProtocolEncoder.html#StringProtocolEncoder"/>
+<area shape="poly" coords="213,188,210,191,208,188,210,186,213,188,213,188" title="Complexity: 14; Coverage: 65%; Class: GeofenceCircle" alt="" href="org/traccar/geofence/GeofenceCircle.html#GeofenceCircle"/>
+<area shape="poly" coords="54,200,51,203,49,200,51,198,54,200,54,200" title="Complexity: 6; Coverage: 0%; Class: Gl200ProtocolEncoder" alt="" href="org/traccar/protocol/Gl200ProtocolEncoder.html#Gl200ProtocolEncoder"/>
+<area shape="poly" coords="54,199,51,201,49,199,51,196,54,199,54,199" title="Complexity: 7; Coverage: 0%; Class: Route" alt="" href="org/traccar/reports/Route.html#Route"/>
+<area shape="poly" coords="54,182,51,185,49,182,51,180,54,182,54,182" title="Complexity: 18; Coverage: 0%; Class: NominatimGeocoder" alt="" href="org/traccar/geocoder/NominatimGeocoder.html#NominatimGeocoder"/>
+<area shape="poly" coords="54,196,51,198,49,196,51,193,54,196,54,196" title="Complexity: 9; Coverage: 0%; Class: CorsResponseFilter" alt="" href="org/traccar/api/CorsResponseFilter.html#CorsResponseFilter"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 3; Coverage: 0%; Class: Hashing.HashingResult" alt="" href="org/traccar/helper/Hashing.html#Hashing.HashingResult"/>
+<area shape="poly" coords="54,193,51,195,49,193,51,190,54,193,54,193" title="Complexity: 11; Coverage: 0%; Class: CarcellProtocolDecoder" alt="" href="org/traccar/protocol/CarcellProtocolDecoder.html#CarcellProtocolDecoder"/>
+<area shape="poly" coords="54,203,51,206,49,203,51,201,54,203,54,203" title="Complexity: 4; Coverage: 0%; Class: Stl060FrameDecoder" alt="" href="org/traccar/protocol/Stl060FrameDecoder.html#Stl060FrameDecoder"/>
+<area shape="poly" coords="54,194,51,197,49,194,51,192,54,194,54,194" title="Complexity: 10; Coverage: 0%; Class: Hashing" alt="" href="org/traccar/helper/Hashing.html#Hashing"/>
+<area shape="poly" coords="137,185,134,188,132,185,134,183,137,185,137,185" title="Complexity: 16; Coverage: 34%; Class: MotionEventHandler" alt="" href="org/traccar/events/MotionEventHandler.html#MotionEventHandler"/>
+<area shape="poly" coords="54,200,51,203,49,200,51,198,54,200,54,200" title="Complexity: 6; Coverage: 0%; Class: Gl200ProtocolEncoder" alt="" href="org/traccar/protocol/Gl200ProtocolEncoder.html#Gl200ProtocolEncoder"/>
+<area shape="poly" coords="171,194,169,197,166,194,169,192,171,194,171,194" title="Complexity: 10; Coverage: 48%; Class: IgnitionEventHandler" alt="" href="org/traccar/events/IgnitionEventHandler.html#IgnitionEventHandler"/>
+<area shape="poly" coords="54,191,51,194,49,191,51,189,54,191,54,191" title="Complexity: 12; Coverage: 0%; Class: Log.NettyInternalLogger" alt="" href="org/traccar/helper/Log.html#Log.NettyInternalLogger"/>
+<area shape="poly" coords="54,196,51,198,49,196,51,193,54,196,54,196" title="Complexity: 9; Coverage: 0%; Class: CorsResponseFilter" alt="" href="org/traccar/api/CorsResponseFilter.html#CorsResponseFilter"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 5; Coverage: 0%; Class: GpxBuilder" alt="" href="org/traccar/web/GpxBuilder.html#GpxBuilder"/>
+<area shape="poly" coords="242,206,240,209,237,206,240,204,242,206,242,206" title="Complexity: 2; Coverage: 77%; Class: CommandResultEventHandler" alt="" href="org/traccar/events/CommandResultEventHandler.html#CommandResultEventHandler"/>
+<area shape="poly" coords="242,206,240,209,237,206,240,204,242,206,242,206" title="Complexity: 2; Coverage: 77%; Class: CommandResultEventHandler" alt="" href="org/traccar/events/CommandResultEventHandler.html#CommandResultEventHandler"/>
+</map>
+            </div>
+        </div>
+        
+                    <div class="dashboard-widget">
+                <header class="dashboard-widget-header">
+                    <h3>Coverage tree map</h3>
+                </header>
+                <div class="dashboard-widget-content">
+                    <div id="infovis" style="width:100%; height:250px;">
+                        <div id="treemap-loader" style="position:relative;top:50px;">
+                            <p>
+                                Generating Coverage Tree Map. Please wait...
+                            </p>
+                            <p>
+                                <img src="img/ajax-loader.gif" alt="Loading Treemap"/>
+                            </p>
+                        </div>
+                    </div>
+                    <p><a href="treemap.html">See more</a></p>
+                </div>
+
+            </div>
+            </div>
+
+
+    <div class="aui-item">
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Top 20 project risks</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                
+                                                                <a class="tag" href="org/traccar/protocol/StarLinkProtocolDecoder.html"
+                            style="font-size: 25px;color:#14892c"
+                            title="Average Method Complexity - 13 , Coverage - 92.2% ">StarLinkProtocolDecoder</a>
+                                    
+                                                                <a class="tag" href="org/traccar/protocol/GalileoProtocolDecoder.html"
+                            style="font-size: 26px;color:#14892c"
+                            title="Average Method Complexity - 14.167 , Coverage - 88.3% ">GalileoProtocolDecoder</a>
+                                    
+                                                                <a class="tag" href="org/traccar/protocol/RuptelaProtocolDecoder.html"
+                            style="font-size: 21px;color:#14892c"
+                            title="Average Method Complexity - 9 , Coverage - 89.8% ">RuptelaProtocolDecoder</a>
+                                    
+                                                                <a class="tag" href="org/traccar/protocol/TotemProtocolDecoder.html"
+                            style="font-size: 21px;color:#14892c"
+                            title="Average Method Complexity - 9.333 , Coverage - 89% ">TotemProtocolDecoder</a>
+                                    
+                                                                <a class="tag" href="org/traccar/protocol/Gps103ProtocolDecoder.html"
+                            style="font-size: 28px;color:#14892c"
+                            title="Average Method Complexity - 15.667 , Coverage - 85.6% ">Gps103ProtocolDecoder</a>
+                                    
+                                                                <a class="tag" href="org/traccar/protocol/UproProtocolDecoder.html"
+                            style="font-size: 20px;color:#14892c"
+                            title="Average Method Complexity - 8 , Coverage - 88.3% ">UproProtocolDecoder</a>
+                                    
+                                                                <a class="tag" href="org/traccar/protocol/V680ProtocolDecoder.html"
+                            style="font-size: 18px;color:#89c495"
+                            title="Average Method Complexity - 6 , Coverage - 93.8% ">V680ProtocolDecoder</a>
+                                    
+                                                                <a class="tag" href="org/traccar/protocol/T55ProtocolDecoder.html"
+                            style="font-size: 18px;color:#14892c"
+                            title="Average Method Complexity - 6 , Coverage - 92.1% ">T55ProtocolDecoder</a>
+                                    
+                                                                <a class="tag" href="org/traccar/protocol/XirgoProtocolDecoder.html"
+                            style="font-size: 18px;color:#14892c"
+                            title="Average Method Complexity - 6 , Coverage - 91.9% ">XirgoProtocolDecoder</a>
+                                    
+                                                                <a class="tag" href="org/traccar/protocol/GoSafeProtocolDecoder.html"
+                            style="font-size: 17px;color:#14892c"
+                            title="Average Method Complexity - 5.667 , Coverage - 90.2% ">GoSafeProtocolDecoder</a>
+                                    
+                                                                <a class="tag" href="org/traccar/protocol/AisProtocolDecoder.html"
+                            style="font-size: 17px;color:#89c495"
+                            title="Average Method Complexity - 5 , Coverage - 94.4% ">AisProtocolDecoder</a>
+                                    
+                                                                <a class="tag" href="org/traccar/protocol/MegastekProtocolDecoder.html"
+                            style="font-size: 19px;color:#14892c"
+                            title="Average Method Complexity - 7.5 , Coverage - 83.7% ">MegastekProtocolDecoder</a>
+                                    
+                                                                <a class="tag" href="org/traccar/protocol/MeiligaoFrameDecoder.html"
+                            style="font-size: 17px;color:#14892c"
+                            title="Average Method Complexity - 5 , Coverage - 92.9% ">MeiligaoFrameDecoder</a>
+                                    
+                                                                <a class="tag" href="org/traccar/protocol/M2mProtocolDecoder.html"
+                            style="font-size: 17px;color:#14892c"
+                            title="Average Method Complexity - 5.5 , Coverage - 88.6% ">M2mProtocolDecoder</a>
+                                    
+                                                                <a class="tag" href="org/traccar/protocol/TrvProtocolDecoder.html"
+                            style="font-size: 19px;color:#14892c"
+                            title="Average Method Complexity - 7 , Coverage - 82.9% ">TrvProtocolDecoder</a>
+                                    
+                                                                <a class="tag" href="org/traccar/protocol/HuabaoFrameDecoder.html"
+                            style="font-size: 19px;color:#14892c"
+                            title="Average Method Complexity - 7 , Coverage - 82.8% ">HuabaoFrameDecoder</a>
+                                    
+                                                                <a class="tag" href="org/traccar/protocol/SuntechProtocolDecoder.html"
+                            style="font-size: 17px;color:#14892c"
+                            title="Average Method Complexity - 5.6 , Coverage - 86.1% ">SuntechProtocolDecoder</a>
+                                    
+                                                                <a class="tag" href="org/traccar/protocol/CalAmpProtocolDecoder.html"
+                            style="font-size: 19px;color:#fae1a0"
+                            title="Average Method Complexity - 7.75 , Coverage - 81.5% ">CalAmpProtocolDecoder</a>
+                                    
+                                                                <a class="tag" href="org/traccar/protocol/H02ProtocolDecoder.html"
+                            style="font-size: 17px;color:#14892c"
+                            title="Average Method Complexity - 5.222 , Coverage - 88.1% ">H02ProtocolDecoder</a>
+                                    
+                                                                <a class="tag" href="org/traccar/protocol/TelicFrameDecoder.html"
+                            style="font-size: 18px;color:#14892c"
+                            title="Average Method Complexity - 6 , Coverage - 84% ">TelicFrameDecoder</a>
+                                                    <p><a href="top-risks.html">See more</a></p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Most complex packages</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                
+                <table class="aui">
+                                            
+                                                <tr>
+                            <td>1. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.68892556</span>68.9%</div><div style="display: table-cell">
+ <div title="68.9% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:68.9%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/traccar/protocol/pkg-summary.html">org.traccar.protocol</a>
+                                <span class="aui-badge" title="Package complexity">3732</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>2. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0691334</span>6.9%</div><div style="display: table-cell">
+ <div title="6.9% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:6.9%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/traccar/database/pkg-summary.html">org.traccar.database</a>
+                                <span class="aui-badge" title="Package complexity">624</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>3. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.3158224</span>31.6%</div><div style="display: table-cell">
+ <div title="31.6% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:31.6%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/traccar/pkg-summary.html">org.traccar</a>
+                                <span class="aui-badge" title="Package complexity">470</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>4. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.35538262</span>35.5%</div><div style="display: table-cell">
+ <div title="35.5% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:35.5%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/traccar/model/pkg-summary.html">org.traccar.model</a>
+                                <span class="aui-badge" title="Package complexity">340</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>5. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.7777778</span>77.8%</div><div style="display: table-cell">
+ <div title="77.8% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:77.8%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/traccar/helper/pkg-summary.html">org.traccar.helper</a>
+                                <span class="aui-badge" title="Package complexity">289</span>
+                            </td>
+                        </tr>
+                                    </table>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Most complex classes</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <table class="aui">
+                                            
+                                                <tr>
+                            <td>1. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.72113675</span>72.1%</div><div style="display: table-cell">
+ <div title="72.1% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:72.1%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/traccar/protocol/AplicomProtocolDecoder.html"  title="org.traccar.protocol.AplicomProtocolDecoder">AplicomProtocolDecoder</a>
+                                <span class="aui-badge" title="Class complexity">130</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>2. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/traccar/database/PermissionsManager.html"  title="org.traccar.database.PermissionsManager">PermissionsManager</a>
+                                <span class="aui-badge" title="Class complexity">117</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>3. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/traccar/database/QueryBuilder.html"  title="org.traccar.database.QueryBuilder">QueryBuilder</a>
+                                <span class="aui-badge" title="Class complexity">107</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>4. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.77163464</span>77.2%</div><div style="display: table-cell">
+ <div title="77.2% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:77.2%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/traccar/protocol/Gt06ProtocolDecoder.html"  title="org.traccar.protocol.Gt06ProtocolDecoder">Gt06ProtocolDecoder</a>
+                                <span class="aui-badge" title="Class complexity">94</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>5. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.90444446</span>90.4%</div><div style="display: table-cell">
+ <div title="90.4% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:90.4%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/traccar/protocol/Gl200TextProtocolDecoder.html"  title="org.traccar.protocol.Gl200TextProtocolDecoder">Gl200TextProtocolDecoder</a>
+                                <span class="aui-badge" title="Class complexity">88</span>
+                            </td>
+                        </tr>
+                                    </table>
+            </div>
+        </div>
+
+                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Least tested methods</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <table class="aui">
+                                            
+
+                    <tr>
+                        <td align="right">1.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="Context.init(String[])&#160;:&#160;void" href="org/traccar/Context.html?line=232#src-232">Context.init(String[])&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">23</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">2.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="ApelProtocolDecoder.decode(Channel,SocketAddress,Object)&#160;:&#160;Object" href="org/traccar/protocol/ApelProtocolDecoder.html?line=90#src-90">ApelProtocolDecoder.decode(Channel,SocketAddress,Object)&#160;:&#160;Object</a>
+                            <span class="aui-badge" title="Method complexity">19</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">3.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="BasePipelineFactory.getPipeline()&#160;:&#160;ChannelPipeline" href="org/traccar/BasePipelineFactory.html?line=181#src-181">BasePipelineFactory.getPipeline()&#160;:&#160;ChannelPipeline</a>
+                            <span class="aui-badge" title="Method complexity">23</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">4.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="Mta6ProtocolDecoder.parseFormatA(DeviceSession,ChannelBuffer)&#160;:&#160;List&lt;Position&gt;" href="org/traccar/protocol/Mta6ProtocolDecoder.html?line=114#src-114">Mta6ProtocolDecoder.parseFormatA(DeviceSession,ChannelBuffer)&#160;:&#160;List&lt;Position&gt;</a>
+                            <span class="aui-badge" title="Method complexity">14</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">5.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="At2000ProtocolDecoder.decode(Channel,SocketAddress,Object)&#160;:&#160;Object" href="org/traccar/protocol/At2000ProtocolDecoder.html?line=63#src-63">At2000ProtocolDecoder.decode(Channel,SocketAddress,Object)&#160;:&#160;Object</a>
+                            <span class="aui-badge" title="Method complexity">9</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">6.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="AplicomProtocolDecoder.decodeCanData(ChannelBuffer,Position)&#160;:&#160;void" href="org/traccar/protocol/AplicomProtocolDecoder.html?line=120#src-120">AplicomProtocolDecoder.decodeCanData(ChannelBuffer,Position)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">17</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">7.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="CarcellProtocolDecoder.decode(Channel,SocketAddress,Object)&#160;:&#160;Object" href="org/traccar/protocol/CarcellProtocolDecoder.html?line=79#src-79">CarcellProtocolDecoder.decode(Channel,SocketAddress,Object)&#160;:&#160;Object</a>
+                            <span class="aui-badge" title="Method complexity">10</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">8.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="Mta6ProtocolDecoder.parseFormatA1(DeviceSession,ChannelBuffer)&#160;:&#160;Position" href="org/traccar/protocol/Mta6ProtocolDecoder.html?line=202#src-202">Mta6ProtocolDecoder.parseFormatA1(DeviceSession,ChannelBuffer)&#160;:&#160;Position</a>
+                            <span class="aui-badge" title="Method complexity">10</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">9.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="ConnectionManager.updateDevice(long,String,Date)&#160;:&#160;void" href="org/traccar/database/ConnectionManager.html?line=79#src-79">ConnectionManager.updateDevice(long,String,Date)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">13</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">10.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="QueryBuilder.parse(String,Map&lt;String,&#160;List&lt;Integer&gt;&gt;)&#160;:&#160;String" href="org/traccar/database/QueryBuilder.html?line=71#src-71">QueryBuilder.parse(String,Map&lt;String,&#160;List&lt;Integer&gt;&gt;)&#160;:&#160;String</a>
+                            <span class="aui-badge" title="Method complexity">14</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">11.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="CsvBuilder.addLine(Object)&#160;:&#160;void" href="org/traccar/web/CsvBuilder.html?line=70#src-70">CsvBuilder.addLine(Object)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">13</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">12.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="Events.getExcel(OutputStream,long,Collection&lt;Long&gt;,Collection&lt;Long&gt;,Collection&lt;String&gt;,Date,Date)&#160;:&#160;void" href="org/traccar/reports/Events.html?line=63#src-63">Events.getExcel(OutputStream,long,Collection&lt;Long&gt;,Collection&lt;Long&gt;,Collection&lt;String&gt;,Date,Date)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">11</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">13.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="NominatimGeocoder.parseAddress(JsonObject)&#160;:&#160;Address" href="org/traccar/geocoder/NominatimGeocoder.html?line=40#src-40">NominatimGeocoder.parseAddress(JsonObject)&#160;:&#160;Address</a>
+                            <span class="aui-badge" title="Method complexity">13</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">14.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="OpenCageGeocoder.parseAddress(JsonObject)&#160;:&#160;Address" href="org/traccar/geocoder/OpenCageGeocoder.html?line=28#src-28">OpenCageGeocoder.parseAddress(JsonObject)&#160;:&#160;Address</a>
+                            <span class="aui-badge" title="Method complexity">13</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">15.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="NotificationMail.getProperties(PropertiesProvider)&#160;:&#160;Properties" href="org/traccar/notification/NotificationMail.html?line=40#src-40">NotificationMail.getProperties(PropertiesProvider)&#160;:&#160;Properties</a>
+                            <span class="aui-badge" title="Method complexity">10</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">16.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="BasePipelineFactory.BasePipelineFactory(TrackerServer,String)" href="org/traccar/BasePipelineFactory.html?line=119#src-119">BasePipelineFactory.BasePipelineFactory(TrackerServer,String)</a>
+                            <span class="aui-badge" title="Method complexity">11</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">17.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="SessionResource.get(String)&#160;:&#160;User" href="org/traccar/api/resource/SessionResource.html?line=55#src-55">SessionResource.get(String)&#160;:&#160;User</a>
+                            <span class="aui-badge" title="Method complexity">12</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">18.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="SecurityRequestFilter.filter(ContainerRequestContext)&#160;:&#160;void" href="org/traccar/api/SecurityRequestFilter.html?line=59#src-59">SecurityRequestFilter.filter(ContainerRequestContext)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">11</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">19.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="PermissionsManager.refreshPermissions(Permission)&#160;:&#160;void" href="org/traccar/database/PermissionsManager.html?line=339#src-339">PermissionsManager.refreshPermissions(Permission)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">16</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">20.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="GeofenceEventHandler.analyzePosition(Position)&#160;:&#160;Collection&lt;Event&gt;" href="org/traccar/events/GeofenceEventHandler.html?line=38#src-38">GeofenceEventHandler.analyzePosition(Position)&#160;:&#160;Collection&lt;Event&gt;</a>
+                            <span class="aui-badge" title="Method complexity">11</span>
+
+                        </td>
+                    </tr>
+                                    </table>
+            </div>
+        </div>
+        
+    </div>
+</div>
+                            </div> <!-- tabs-pane active-pane -->
+                        </div>
+
+    <script type="text/javascript" src="jit.js" ></script>
+    <script type="text/javascript" src="treemap-dash-json.js" ></script>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="https://openclover.org">OpenClover</a> v 4.5.2
+                on Mon Jun 3 2024 11:10:31 CST using coverage data from Mon Jun 3 2024 11:10:27 CST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

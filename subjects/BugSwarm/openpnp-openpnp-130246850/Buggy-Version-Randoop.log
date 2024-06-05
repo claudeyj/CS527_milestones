@@ -1,0 +1,66 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< org.openpnp:openpnp-gui >-----------------------
+[INFO] Building openpnp-gui 0.0.1-alpha-SNAPSHOT
+[INFO]   from pom_for_clover.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ openpnp-gui ---
+[INFO] Deleting /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/openpnp-openpnp-130246850/Buggy-Version/target
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.3:create (default) @ openpnp-gui ---
+[INFO] ShortRevision tag detected. The value is '6'.
+[INFO] Executing: /bin/sh -c cd /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/openpnp-openpnp-130246850/Buggy-Version && git rev-parse --verify --short=6 HEAD
+[INFO] Working directory: /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/openpnp-openpnp-130246850/Buggy-Version
+[INFO] Storing buildNumber: 3ac9b4 at timestamp: 1717569945948
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] ShortRevision tag detected. The value is '6'.
+[INFO] Executing: /bin/sh -c cd /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/openpnp-openpnp-130246850/Buggy-Version && git rev-parse --verify --short=6 HEAD
+[INFO] Working directory: /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/openpnp-openpnp-130246850/Buggy-Version
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ openpnp-gui ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 52 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ openpnp-gui ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 344 source files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/openpnp-openpnp-130246850/Buggy-Version/target/classes
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/camera/wizards/LtiCivilCameraConfigurationWizard.java: Some input files use or override a deprecated API.
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/camera/wizards/LtiCivilCameraConfigurationWizard.java: Recompile with -Xlint:deprecation for details.
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/support/AbstractConfigurationWizard.java: Some input files use unchecked or unsafe operations.
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/support/AbstractConfigurationWizard.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ openpnp-gui ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ openpnp-gui ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 11 source files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/openpnp-openpnp-130246850/Buggy-Version/target/test-classes
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/openpnp-openpnp-130246850/Buggy-Version/src/test/java/Utils2DTest.java: /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/openpnp-openpnp-130246850/Buggy-Version/src/test/java/Utils2DTest.java uses or overrides a deprecated API.
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/openpnp-openpnp-130246850/Buggy-Version/src/test/java/Utils2DTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ openpnp-gui ---
+[INFO] Surefire report directory: /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/openpnp-openpnp-130246850/Buggy-Version/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running RegressionTest
+Tests run: 67, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.291 sec
+Running RegressionTest0
+Tests run: 67, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
+
+Results :
+
+Tests run: 134, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  18.145 s
+[INFO] Finished at: 2024-06-05T14:46:02+08:00
+[INFO] ------------------------------------------------------------------------

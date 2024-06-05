@@ -1,0 +1,808 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< org.traccar:traccar >-------------------------
+[INFO] Building traccar 3.12-SNAPSHOT
+[INFO]   from pom_for_clover.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ traccar ---
+[INFO] Deleting /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Buggy-Version/target
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (checkstyle) @ traccar ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bytecode-version) @ traccar ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ traccar ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ traccar ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 549 source files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Buggy-Version/target/classes
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Buggy-Version/src/org/traccar/geocoder/JsonGeocoder.java:[62,25] unchecked method invocation: method execute in class com.ning.http.client.AsyncHttpClient.BoundRequestBuilder is applied to given types
+  required: com.ning.http.client.AsyncHandler<T>
+  found: <anonymous com.ning.http.client.AsyncCompletionHandler>
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Buggy-Version/src/org/traccar/geocoder/JsonGeocoder.java:[62,26] unchecked conversion
+  required: com.ning.http.client.AsyncHandler<T>
+  found:    <anonymous com.ning.http.client.AsyncCompletionHandler>
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Buggy-Version/src/org/traccar/geolocation/UniversalGeolocationProvider.java:[45,46] unchecked method invocation: method execute in class com.ning.http.client.AsyncHttpClient.BoundRequestBuilder is applied to given types
+  required: com.ning.http.client.AsyncHandler<T>
+  found: <anonymous com.ning.http.client.AsyncCompletionHandler>
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Buggy-Version/src/org/traccar/geolocation/UniversalGeolocationProvider.java:[45,47] unchecked conversion
+  required: com.ning.http.client.AsyncHandler<T>
+  found:    <anonymous com.ning.http.client.AsyncCompletionHandler>
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Buggy-Version/src/org/traccar/geolocation/OpenCellIdGeolocationProvider.java:[48,69] unchecked method invocation: method execute in class com.ning.http.client.AsyncHttpClient.BoundRequestBuilder is applied to given types
+  required: com.ning.http.client.AsyncHandler<T>
+  found: <anonymous com.ning.http.client.AsyncCompletionHandler>
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Buggy-Version/src/org/traccar/geolocation/OpenCellIdGeolocationProvider.java:[48,70] unchecked conversion
+  required: com.ning.http.client.AsyncHandler<T>
+  found:    <anonymous com.ning.http.client.AsyncCompletionHandler>
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Buggy-Version/src/org/traccar/model/Calendar.java:[73,48] unchecked method invocation: constructor <init> in class net.fortuna.ical4j.filter.Filter is applied to given types
+  required: net.fortuna.ical4j.filter.Rule<T>[],int
+  found: net.fortuna.ical4j.filter.Rule[],int
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Buggy-Version/src/org/traccar/model/Calendar.java:[73,61] unchecked conversion
+  required: net.fortuna.ical4j.filter.Rule<T>[]
+  found:    net.fortuna.ical4j.filter.Rule[]
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Buggy-Version/src/org/traccar/model/Calendar.java:[73,48] unchecked conversion
+  required: net.fortuna.ical4j.filter.Filter<net.fortuna.ical4j.model.component.CalendarComponent>
+  found:    net.fortuna.ical4j.filter.Filter
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Buggy-Version/src/org/traccar/Context.java:[383,43] unchecked cast
+  required: org.traccar.database.BaseObjectManager<T>
+  found:    org.traccar.database.DeviceManager
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Buggy-Version/src/org/traccar/Context.java:[385,43] unchecked cast
+  required: org.traccar.database.BaseObjectManager<T>
+  found:    org.traccar.database.GroupsManager
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Buggy-Version/src/org/traccar/Context.java:[387,43] unchecked cast
+  required: org.traccar.database.BaseObjectManager<T>
+  found:    org.traccar.database.UsersManager
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Buggy-Version/src/org/traccar/Context.java:[389,43] unchecked cast
+  required: org.traccar.database.BaseObjectManager<T>
+  found:    org.traccar.database.CalendarManager
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Buggy-Version/src/org/traccar/Context.java:[391,43] unchecked cast
+  required: org.traccar.database.BaseObjectManager<T>
+  found:    org.traccar.database.AttributesManager
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Buggy-Version/src/org/traccar/Context.java:[393,43] unchecked cast
+  required: org.traccar.database.BaseObjectManager<T>
+  found:    org.traccar.database.GeofenceManager
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Buggy-Version/src/org/traccar/Context.java:[395,43] unchecked cast
+  required: org.traccar.database.BaseObjectManager<T>
+  found:    org.traccar.database.DriversManager
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Buggy-Version/src/org/traccar/database/QueryBuilder.java:[286,70] unchecked method invocation: method toXmlString in class org.traccar.model.MiscFormatter is applied to given types
+  required: java.util.Map<java.lang.String,java.lang.Object>
+  found: java.util.Map
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Buggy-Version/src/org/traccar/database/QueryBuilder.java:[286,71] unchecked conversion
+  required: java.util.Map<java.lang.String,java.lang.Object>
+  found:    java.util.Map
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Buggy-Version/src/org/traccar/reports/Trips.java:[54,41] unchecked cast
+  required: java.util.Collection<org.traccar.reports.model.TripReport>
+  found:    java.util.Collection<capture#1 of ? extends org.traccar.reports.model.BaseReport>
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Buggy-Version/src/org/traccar/reports/Stops.java:[55,41] unchecked cast
+  required: java.util.Collection<org.traccar.reports.model.StopReport>
+  found:    java.util.Collection<capture#2 of ? extends org.traccar.reports.model.BaseReport>
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Buggy-Version/src/org/traccar/protocol/Gl200TextProtocolDecoder.java:[876,56] unchecked cast
+  required: java.util.List<org.traccar.model.Position>
+  found:    java.lang.Object
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Buggy-Version/src/org/traccar/geolocation/UnwiredGeolocationProvider.java:[100,46] unchecked method invocation: method execute in class com.ning.http.client.AsyncHttpClient.BoundRequestBuilder is applied to given types
+  required: com.ning.http.client.AsyncHandler<T>
+  found: <anonymous com.ning.http.client.AsyncCompletionHandler>
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Buggy-Version/src/org/traccar/geolocation/UnwiredGeolocationProvider.java:[100,47] unchecked conversion
+  required: com.ning.http.client.AsyncHandler<T>
+  found:    <anonymous com.ning.http.client.AsyncCompletionHandler>
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ traccar ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Buggy-Version/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ traccar ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 235 source files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Buggy-Version/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ traccar ---
+[INFO] Surefire report directory: /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Buggy-Version/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.traccar.FilterHandlerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.438 sec
+Running org.traccar.WebDataHandlerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.database.GroupTreeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.database.DataManagerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec
+Running org.traccar.DistanceHandlerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.calendar.CalendarTest
+[main] INFO net.fortuna.ical4j.util.Configurator - ical4j.properties not found.
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.182 sec
+Running org.traccar.processing.ComputedAttributesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec
+Running org.traccar.web.WebServerTest
+[main] INFO org.eclipse.jetty.util.log - Logging initialized @1476ms
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec
+Running org.traccar.protocol.Jt600ProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec
+Running org.traccar.protocol.Gps103ProtocolEncoderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.protocol.Stl060ProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.traccar.protocol.Ardi01ProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running org.traccar.protocol.ObdDongleProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.traccar.protocol.TeltonikaProtocolEncoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.protocol.Gl200TextProtocolDecoderTest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.134 sec <<< FAILURE!
+testDecode(org.traccar.protocol.Gl200TextProtocolDecoderTest)  Time elapsed: 0.133 sec  <<< FAILURE!
+java.lang.AssertionError: position is null
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertNotNull(Assert.java:712)
+	at org.traccar.ProtocolTest.verifyDecodedPosition(ProtocolTest.java:131)
+	at org.traccar.ProtocolTest.verifyAttributes(ProtocolTest.java:94)
+	at org.traccar.protocol.Gl200TextProtocolDecoderTest.testDecode(Gl200TextProtocolDecoderTest.java:13)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Running org.traccar.protocol.ManPowerProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.traccar.protocol.KhdProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.protocol.NvsProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.traccar.protocol.AlematicsProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.traccar.protocol.Xt013ProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.traccar.protocol.H02FrameDecoderTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.traccar.protocol.NavisProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.traccar.protocol.WondexFrameDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.traccar.protocol.CarTrackProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+Running org.traccar.protocol.MiniFinderProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Running org.traccar.protocol.T55ProtocolDecoderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.traccar.protocol.Pt502FrameDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.traccar.protocol.OwnTracksProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec
+Running org.traccar.protocol.Pt502ProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.traccar.protocol.HuaShengProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.traccar.protocol.TeltonikaProtocolDecoderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.011 sec
+Running org.traccar.protocol.BceProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.traccar.protocol.AppelloProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.traccar.protocol.Gps103ProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
+Running org.traccar.protocol.SmokeyProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.traccar.protocol.AplicomProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.traccar.protocol.Jt600ProtocolEncoderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.traccar.protocol.Gl100ProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.traccar.protocol.KhdProtocolEncoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.protocol.SanavProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.traccar.protocol.AisProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.traccar.protocol.DmtHttpProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.traccar.protocol.NavigilProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.traccar.protocol.CarscopProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.traccar.protocol.Pt502ProtocolEncoderTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.protocol.MiniFinderProtocolEncoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.protocol.HunterProProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.traccar.protocol.RitiProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.traccar.protocol.MtxProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.traccar.protocol.L100FrameDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.traccar.protocol.XirgoProtocolDecoderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.traccar.protocol.UlbotechFrameDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.protocol.AtrackProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Running org.traccar.protocol.MeitrackFrameDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.protocol.Xt2400ProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.traccar.protocol.WatchProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Running org.traccar.protocol.TmgProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Running org.traccar.protocol.At2000FrameDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.traccar.protocol.ArnaviProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.traccar.protocol.UproProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.traccar.protocol.GotopProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.traccar.protocol.TelicFrameDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.traccar.protocol.CguardProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.protocol.FlexCommProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.protocol.AuroProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Running org.traccar.protocol.YwtProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.traccar.protocol.GoSafeProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.traccar.protocol.ArknavX8ProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.traccar.protocol.T800xProtocolEncoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.traccar.protocol.Gl200BinaryProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running org.traccar.protocol.Gps056ProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.traccar.protocol.HuabaoProtocolEncoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec
+Running org.traccar.protocol.XexunProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running org.traccar.protocol.EnforaProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+Running org.traccar.protocol.MegastekProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.traccar.protocol.Tr20ProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running org.traccar.protocol.GalileoFrameDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.traccar.protocol.TopflytechProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.traccar.protocol.SkypatrolProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.traccar.protocol.WatchProtocolEncoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.traccar.protocol.PiligrimProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.traccar.protocol.L100ProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.traccar.protocol.XexunFrameDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.traccar.protocol.HuabaoFrameDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.traccar.protocol.SuntechProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.traccar.protocol.VtfmsFrameDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.protocol.GranitProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+Running org.traccar.protocol.At2000ProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.006 sec
+Running org.traccar.protocol.FoxProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.protocol.TelicProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.traccar.protocol.GlobalSatProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.traccar.protocol.IdplProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.traccar.protocol.ProgressProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.traccar.protocol.MegastekFrameDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.traccar.protocol.T800xProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.protocol.HuabaoProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.traccar.protocol.TotemFrameDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.protocol.MeiligaoProtocolEncoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.traccar.protocol.CastelProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.traccar.protocol.SupermateProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.traccar.protocol.PricolProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.traccar.protocol.WondexProtocolEncoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.protocol.ApelProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.protocol.AutoGradeProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.traccar.protocol.HuaShengFrameDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.protocol.GpsmtaProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.protocol.MeiligaoFrameDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.protocol.TrvProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.traccar.protocol.Tr900ProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.traccar.protocol.EelinkProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.traccar.protocol.Vt200ProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.traccar.protocol.AtrackFrameDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.traccar.protocol.TrackboxProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.traccar.protocol.RuptelaProtocolEncoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.protocol.Tlt2hProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.traccar.protocol.CityeasyProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.traccar.protocol.GalileoProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.protocol.CellocatorProtocolEncoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec
+Running org.traccar.protocol.NoranProtocolEncoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.protocol.TotemProtocolEncoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.protocol.IntellitracProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.traccar.protocol.Gt30ProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec
+Running org.traccar.protocol.TramigoProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 sec
+Running org.traccar.protocol.JpKorjarProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.traccar.protocol.AdmProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.traccar.protocol.MeiligaoProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+Running org.traccar.protocol.MaestroProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.traccar.protocol.Jt600FrameDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.protocol.WatchFrameDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.traccar.protocol.Vt200FrameDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.protocol.FreedomProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.protocol.LaipacProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.traccar.protocol.AutoFonProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.traccar.protocol.WondexProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.traccar.protocol.Tk102ProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.traccar.protocol.NvsFrameDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.protocol.Avl301ProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.protocol.EelinkProtocolEncoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.traccar.protocol.OrionProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.traccar.protocol.Pt3000ProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.traccar.protocol.VtfmsProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.traccar.protocol.TzoneProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.traccar.protocol.TotemProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running org.traccar.protocol.NoranProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.traccar.protocol.CellocatorProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.traccar.protocol.ExtremTracProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.protocol.GalileoProtocolEncoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.traccar.protocol.CityeasyProtocolEncoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.traccar.protocol.GpsGateProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.traccar.protocol.RuptelaProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.traccar.protocol.Tk103ProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Running org.traccar.protocol.Gl200FrameDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.traccar.protocol.AquilaProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.traccar.protocol.OigoProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.traccar.protocol.TaipProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.traccar.protocol.TytanProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.traccar.protocol.OsmAndProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec
+Running org.traccar.protocol.Gt02ProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.traccar.protocol.CradlepointProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.traccar.protocol.FifotrackProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.traccar.protocol.PretraceProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.protocol.RaveonProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.protocol.HomtecsProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.protocol.Gt06ProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.traccar.protocol.PathAwayProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.traccar.protocol.MeitrackProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.traccar.protocol.Gt06FrameDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.protocol.WialonProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Running org.traccar.protocol.V680ProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running org.traccar.protocol.SiwiProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.traccar.protocol.MxtProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.traccar.protocol.DishaProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.traccar.protocol.H02ProtocolEncoderTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+Running org.traccar.protocol.AplicomFrameDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.traccar.protocol.ThinkRaceProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.protocol.AstraProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.traccar.protocol.KenjiProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.traccar.protocol.ArknavProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.traccar.protocol.Tt8850ProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running org.traccar.protocol.Tk103ProtocolEncoderTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.traccar.protocol.Gt06ProtocolEncoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.protocol.StarLinkProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.traccar.protocol.HaicomProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.traccar.protocol.M2mProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.protocol.Gl200TextProtocolDecoder_ESTest
+[main] INFO org.evosuite.runtime.agent.AgentLoader - dynamically loading javaagent
+[main] INFO org.evosuite.runtime.agent.AgentLoader - Using JavaAgent in /Users/jun/.m2/repository/org/evosuite/evosuite-standalone-runtime/1.2.0/evosuite-standalone-runtime-1.2.0.jar
+[main] INFO org.evosuite.runtime.agent.AgentLoader - Classpath: /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Buggy-Version/target/test-classes:/Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Buggy-Version/target/classes:/Users/jun/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/jun/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/jun/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/Users/jun/.m2/repository/joda-time/joda-time/2.9.9/joda-time-2.9.9.jar:/Users/jun/.m2/repository/com/h2database/h2/1.4.196/h2-1.4.196.jar:/Users/jun/.m2/repository/mysql/mysql-connector-java/5.1.42/mysql-connector-java-5.1.42.jar:/Users/jun/.m2/repository/org/postgresql/postgresql/42.1.1.jre7/postgresql-42.1.1.jre7.jar:/Users/jun/.m2/repository/com/microsoft/sqlserver/mssql-jdbc/6.2.0.jre7/mssql-jdbc-6.2.0.jre7.jar:/Users/jun/.m2/repository/com/zaxxer/HikariCP-java7/2.4.12/HikariCP-java7-2.4.12.jar:/Users/jun/.m2/repository/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar:/Users/jun/.m2/repository/io/netty/netty/3.10.6.Final/netty-3.10.6.Final.jar:/Users/jun/.m2/repository/com/ning/async-http-client/1.9.40/async-http-client-1.9.40.jar:/Users/jun/.m2/repository/org/slf4j/slf4j-simple/1.7.25/slf4j-simple-1.7.25.jar:/Users/jun/.m2/repository/org/glassfish/javax.json/1.0.4/javax.json-1.0.4.jar:/Users/jun/.m2/repository/org/eclipse/jetty/jetty-server/9.2.22.v20170606/jetty-server-9.2.22.v20170606.jar:/Users/jun/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/jun/.m2/repository/org/eclipse/jetty/jetty-http/9.2.22.v20170606/jetty-http-9.2.22.v20170606.jar:/Users/jun/.m2/repository/org/eclipse/jetty/jetty-io/9.2.22.v20170606/jetty-io-9.2.22.v20170606.jar:/Users/jun/.m2/repository/org/eclipse/jetty/jetty-servlet/9.2.22.v20170606/jetty-servlet-9.2.22.v20170606.jar:/Users/jun/.m2/repository/org/eclipse/jetty/jetty-security/9.2.22.v20170606/jetty-security-9.2.22.v20170606.jar:/Users/jun/.m2/repository/org/eclipse/jetty/jetty-webapp/9.2.22.v20170606/jetty-webapp-9.2.22.v20170606.jar:/Users/jun/.m2/repository/org/eclipse/jetty/jetty-xml/9.2.22.v20170606/jetty-xml-9.2.22.v20170606.jar:/Users/jun/.m2/repository/org/eclipse/jetty/jetty-jndi/9.2.22.v20170606/jetty-jndi-9.2.22.v20170606.jar:/Users/jun/.m2/repository/org/eclipse/jetty/jetty-util/9.2.22.v20170606/jetty-util-9.2.22.v20170606.jar:/Users/jun/.m2/repository/org/eclipse/jetty/websocket/websocket-server/9.2.22.v20170606/websocket-server-9.2.22.v20170606.jar:/Users/jun/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.2.22.v20170606/websocket-common-9.2.22.v20170606.jar:/Users/jun/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.2.22.v20170606/websocket-api-9.2.22.v20170606.jar:/Users/jun/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.2.22.v20170606/websocket-client-9.2.22.v20170606.jar:/Users/jun/.m2/repository/org/eclipse/jetty/websocket/websocket-servlet/9.2.22.v20170606/websocket-servlet-9.2.22.v20170606.jar:/Users/jun/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet/2.25.1/jersey-container-servlet-2.25.1.jar:/Users/jun/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet-core/2.25.1/jersey-container-servlet-core-2.25.1.jar:/Users/jun/.m2/repository/org/glassfish/hk2/external/javax.inject/2.5.0-b32/javax.inject-2.5.0-b32.jar:/Users/jun/.m2/repository/org/glassfish/jersey/core/jersey-common/2.25.1/jersey-common-2.25.1.jar:/Users/jun/.m2/repository/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2.jar:/Users/jun/.m2/repository/org/glassfish/jersey/bundles/repackaged/jersey-guava/2.25.1/jersey-guava-2.25.1.jar:/Users/jun/.m2/repository/org/glassfish/hk2/hk2-api/2.5.0-b32/hk2-api-2.5.0-b32.jar:/Users/jun/.m2/repository/org/glassfish/hk2/hk2-utils/2.5.0-b32/hk2-utils-2.5.0-b32.jar:/Users/jun/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.5.0-b32/aopalliance-repackaged-2.5.0-b32.jar:/Users/jun/.m2/repository/org/glassfish/hk2/hk2-locator/2.5.0-b32/hk2-locator-2.5.0-b32.jar:/Users/jun/.m2/repository/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar:/Users/jun/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.1/osgi-resource-locator-1.0.1.jar:/Users/jun/.m2/repository/org/glassfish/jersey/core/jersey-server/2.25.1/jersey-server-2.25.1.jar:/Users/jun/.m2/repository/org/glassfish/jersey/core/jersey-client/2.25.1/jersey-client-2.25.1.jar:/Users/jun/.m2/repository/org/glassfish/jersey/media/jersey-media-jaxb/2.25.1/jersey-media-jaxb-2.25.1.jar:/Users/jun/.m2/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar:/Users/jun/.m2/repository/javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1.jar:/Users/jun/.m2/repository/org/glassfish/jersey/media/jersey-media-json-jackson/2.25.1/jersey-media-json-jackson-2.25.1.jar:/Users/jun/.m2/repository/org/glassfish/jersey/ext/jersey-entity-filtering/2.25.1/jersey-entity-filtering-2.25.1.jar:/Users/jun/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-base/2.8.4/jackson-jaxrs-base-2.8.4.jar:/Users/jun/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.8.4/jackson-core-2.8.4.jar:/Users/jun/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.8.4/jackson-databind-2.8.4.jar:/Users/jun/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-json-provider/2.8.4/jackson-jaxrs-json-provider-2.8.4.jar:/Users/jun/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.8.4/jackson-module-jaxb-annotations-2.8.4.jar:/Users/jun/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.8.4/jackson-annotations-2.8.4.jar:/Users/jun/.m2/repository/org/liquibase/liquibase-core/3.5.3/liquibase-core-3.5.3.jar:/Users/jun/.m2/repository/org/yaml/snakeyaml/1.17/snakeyaml-1.17.jar:/Users/jun/.m2/repository/javax/mail/mail/1.4.7/mail-1.4.7.jar:/Users/jun/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/Users/jun/.m2/repository/org/jxls/jxls/2.4.0/jxls-2.4.0.jar:/Users/jun/.m2/repository/org/apache/commons/commons-jexl/2.1.1/commons-jexl-2.1.1.jar:/Users/jun/.m2/repository/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar:/Users/jun/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.12/jcl-over-slf4j-1.7.12.jar:/Users/jun/.m2/repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar:/Users/jun/.m2/repository/org/jxls/jxls-poi/1.0.12/jxls-poi-1.0.12.jar:/Users/jun/.m2/repository/org/apache/poi/poi/3.14/poi-3.14.jar:/Users/jun/.m2/repository/org/apache/poi/poi-ooxml/3.14/poi-ooxml-3.14.jar:/Users/jun/.m2/repository/org/apache/poi/poi-ooxml-schemas/3.14/poi-ooxml-schemas-3.14.jar:/Users/jun/.m2/repository/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.jar:/Users/jun/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar:/Users/jun/.m2/repository/com/github/virtuald/curvesapi/1.03/curvesapi-1.03.jar:/Users/jun/.m2/repository/org/apache/velocity/velocity/1.7/velocity-1.7.jar:/Users/jun/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar:/Users/jun/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar:/Users/jun/.m2/repository/org/apache/velocity/velocity-tools/2.0/velocity-tools-2.0.jar:/Users/jun/.m2/repository/commons-digester/commons-digester/1.8/commons-digester-1.8.jar:/Users/jun/.m2/repository/commons-chain/commons-chain/1.1/commons-chain-1.1.jar:/Users/jun/.m2/repository/commons-logging/commons-logging/1.1/commons-logging-1.1.jar:/Users/jun/.m2/repository/javax/servlet/servlet-api/2.3/servlet-api-2.3.jar:/Users/jun/.m2/repository/commons-validator/commons-validator/1.3.1/commons-validator-1.3.1.jar:/Users/jun/.m2/repository/dom4j/dom4j/1.1/dom4j-1.1.jar:/Users/jun/.m2/repository/oro/oro/2.0.8/oro-2.0.8.jar:/Users/jun/.m2/repository/sslext/sslext/1.2-0/sslext-1.2-0.jar:/Users/jun/.m2/repository/org/apache/struts/struts-core/1.3.8/struts-core-1.3.8.jar:/Users/jun/.m2/repository/antlr/antlr/2.7.2/antlr-2.7.2.jar:/Users/jun/.m2/repository/org/apache/struts/struts-taglib/1.3.8/struts-taglib-1.3.8.jar:/Users/jun/.m2/repository/org/apache/struts/struts-tiles/1.3.8/struts-tiles-1.3.8.jar:/Users/jun/.m2/repository/org/mnode/ical4j/ical4j/2.0.0/ical4j-2.0.0.jar:/Users/jun/.m2/repository/org/apache/commons/commons-collections4/4.0/commons-collections4-4.0.jar:/Users/jun/.m2/repository/org/codehaus/groovy/groovy-all/2.3.2/groovy-all-2.3.2.jar:/Users/jun/.m2/repository/biz/aQute/bnd/bndlib/2.3.0/bndlib-2.3.0.jar:/Users/jun/.m2/repository/org/osgi/org.osgi.core/4.3.1/org.osgi.core-4.3.1.jar:/Users/jun/.m2/repository/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar:/Users/jun/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/Users/jun/.m2/repository/com/fizzed/ch-smpp/5.0.9/ch-smpp-5.0.9.jar:/Users/jun/.m2/repository/com/cloudhopper/ch-commons-util/6.0.2/ch-commons-util-6.0.2.jar:/Users/jun/.m2/repository/com/cloudhopper/ch-commons-charset/3.0.2/ch-commons-charset-3.0.2.jar:/Users/jun/.m2/repository/org/evosuite/evosuite-standalone-runtime/1.2.0/evosuite-standalone-runtime-1.2.0.jar:
+[main] INFO org.evosuite.runtime.agent.AgentLoader - Going to attach agent to process 11007
+[Attach Listener] INFO org.evosuite.runtime.agent.InstrumentingAgent - Executing agentmain of JavaAgent
+Warning: the font "Times" is not available, so "Lucida Bright" has been substituted, but may have unexpected appearance or behavor. Re-enable the "Times" font to remove this warning.
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/ChannelFutureListener$1
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/ChannelFutureListener$2
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/listenable/AbstractListenableFuture
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/ning/http/client/listenable/AbstractListenableFuture
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/AbstractChannel$ChannelCloseFuture
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/channel/AbstractChannel$ChannelCloseFuture
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/providers/jdk/JDKAsyncHttpProvider$1
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/traccar/database/ActiveDevice
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/traccar/database/ActiveDevice
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/providers/jdk/JDKFuture
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class com/ning/http/client/providers/jdk/JDKFuture
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/providers/jdk/JDKAsyncHttpProvider
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Found static initializer in class com/ning/http/client/providers/jdk/JDKAsyncHttpProvider
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class com/ning/http/client/providers/jdk/JDKDelegateFuture
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class com/ning/http/client/providers/jdk/JDKDelegateFuture
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.traccar.ExtendedObjectDecoder was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.traccar.BaseProtocolDecoder was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.logging.JdkLoggerFactory was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.channel.socket.nio.AbstractNioSelector was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.traccar.BaseProtocol was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.providers.netty.chmv8.ConcurrentHashMapV8$TreeNode was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.providers.netty.channel.ChannelManager$7 was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.providers.netty.channel.ChannelManager$8 was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.channel.socket.nio.NioClientBoss$1 was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.providers.netty.channel.CleanupChannelGroup was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.traccar.database.BaseObjectManager was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.traccar.StringProtocolEncoder was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.providers.netty.channel.pool.DefaultChannelPool$1 was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.AsyncHttpClientConfig$Builder$1 was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.traccar.database.UsersManager was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.providers.netty.NettyAsyncHttpProviderConfig was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.providers.netty.request.NettyRequestFactory was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.traccar.Config was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.traccar.model.BaseModel was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.traccar.model.Device was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.channel.ChannelHandlerLifeCycleException was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.providers.netty.chmv8.ConcurrentHashMapV8$Segment was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.util.internal.DeadLockProofWorker was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.channel.group.DefaultChannelGroup$1 was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.channel.ChannelException was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.channel.SimpleChannelUpstreamHandler was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.providers.netty.channel.pool.DefaultChannelPool$IdleChannelDetector was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.channel.socket.nio.NioClientBoss was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.util.ThreadRenamingRunnable was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.traccar.database.AttributesManager was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.logging.AbstractInternalLogger was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.channel.socket.nio.NioClientBossPool was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.providers.netty.NettyAsyncHttpProvider was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.traccar.database.GroupsManager was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.channel.group.DefaultChannelGroup was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.util.internal.SharedResourceMisuseDetector was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.bootstrap.ServerBootstrap was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.traccar.protocol.Gl200Protocol was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.channel.socket.nio.SocketReceiveBufferAllocator was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.providers.netty.NettyAsyncHttpProviderConfig$DefaultNettyWebSocketFactory was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.traccar.database.CalendarManager was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.providers.netty.chmv8.ConcurrentHashMapV8$ValuesView was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.traccar.Context was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.providers.netty.chmv8.ConcurrentHashMapV8$1 was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.providers.netty.handler.DefaultConnectionStrategy was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.channel.socket.nio.AbstractNioWorkerPool was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.channel.socket.nio.NioWorker was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.channel.socket.nio.AbstractNioChannelSink was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.AsyncHttpClientConfigDefaults was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.traccar.database.ExtendedObjectManager was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.ProxyServerSelector$1 was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.channel.socket.nio.SocketSendBufferPool$Preallocation was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.util.HashedWheelTimer was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.channel.AbstractChannel was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.filter.FilterException was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.handler.codec.http.HttpResponseStatus was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.logging.JdkLogger was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.providers.netty.request.NettyRequestSender was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.channel.socket.nio.NioClientSocketChannel was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.channel.socket.nio.NioWorkerPool was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.channel.AbstractChannelSink was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.util.HashedWheelTimer$HashedWheelBucket was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.channel.socket.nio.NioSocketChannel was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.bootstrap.ClientBootstrap was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.util.ThreadNameDeterminer$2 was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.util.ThreadNameDeterminer$1 was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.traccar.helper.PatternBuilder was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.providers.netty.handler.Protocol was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.providers.netty.chmv8.ConcurrentHashMapV8$CollectionView was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.traccar.database.DeviceManager was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.providers.netty.chmv8.ConcurrentHashMapV8$TreeBin was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.channel.socket.nio.NioClientSocketChannelFactory was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.traccar.model.ExtendedModel was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.channel.ConnectTimeoutException was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.channel.socket.nio.AbstractNioBossPool was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.util.MiscUtils was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.logging.InternalLoggerFactory was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.channel.Channels was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.AsyncHttpClientConfig was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.util.internal.DetectionUtil was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.HttpResponseBodyPart was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.util.internal.SystemPropertyUtil was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.traccar.database.GeofenceManager was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.util.internal.DetectionUtil$1 was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.util.HashedWheelTimer$HashedWheelTimeout was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.AsyncHttpClientConfig$Builder was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.handler.codec.http.HttpContentDecompressor was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.providers.netty.chmv8.ConcurrentHashMapV8 was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.providers.netty.response.NettyResponseHeaders was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.traccar.protocol.Gl200TextProtocolDecoder was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.channel.DefaultChannelPipeline was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.providers.netty.chmv8.ConcurrentHashMapV8$ForwardingNode was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.providers.netty.handler.HttpProtocol was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.traccar.BaseProtocolEncoder was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.traccar.database.DriversManager was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.providers.netty.chmv8.ConcurrentHashMapV8$CounterCell was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.channel.socket.nio.AbstractNioChannel was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.providers.netty.chmv8.ConcurrentHashMapV8$ReservationNode was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.providers.netty.response.NettyResponseStatus was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.providers.netty.Callback was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.providers.netty.response.NettyResponseBodyPart was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.traccar.model.Message was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.HttpResponseHeaders was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.util.internal.DeadLockProofWorker$1 was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.bootstrap.Bootstrap was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.providers.netty.chmv8.ConcurrentHashMapV8$Node was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.channel.DefaultChannelPipeline$DiscardingChannelSink was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.handler.codec.http.HttpContentDecoder was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.channel.Channels$1 was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.AsyncHttpClient was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.channel.socket.nio.SocketSendBufferPool was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.MaxRedirectException was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.bootstrap.ConnectionlessBootstrap was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.providers.netty.handler.WebSocketProtocol was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.providers.netty.chmv8.ConcurrentHashMapV8$KeySetView was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.providers.netty.channel.pool.DefaultChannelPool was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.HttpResponseStatus was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.channel.socket.nio.SocketSendBufferPool$EmptySendBuffer was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.handler.codec.oneone.OneToOneEncoder was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.util.HashedWheelTimer$Worker was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.channel.socket.nio.AbstractNioWorker was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.traccar.model.Command was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.channel.ChannelPipelineException was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.traccar.database.SimpleObjectManager was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.providers.netty.chmv8.ConcurrentHashMapV8$EntrySetView was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.SSLEngineFactory$DefaultSSLEngineFactory was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.channel.socket.nio.SelectorUtil was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class com.ning.http.client.providers.netty.channel.ChannelManager was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] ERROR org.evosuite.runtime.classhandling.ClassStateSupport - Class org.jboss.netty.channel.DefaultChannelFuture was not instrumented by EvoSuite. This could happen if you are running JUnit tests in a way that is not handled by EvoSuite, in which some classes are loaded be reflection before the tests are run. Consult the EvoSuite documentation for possible workarounds for this issue.
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/util/HashedWheelTimer$1
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/socket/nio/SocketSendBufferPool$FileSendBuffer
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/channel/socket/nio/SocketSendBufferPool$FileSendBuffer
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/socket/nio/SocketSendBufferPool$GatheringSendBuffer
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/channel/socket/nio/SocketSendBufferPool$GatheringSendBuffer
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/socket/nio/SocketSendBufferPool$PooledSendBuffer
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/channel/socket/nio/SocketSendBufferPool$PooledSendBuffer
+[main] INFO org.evosuite.runtime.instrumentation.MethodCallReplacementClassAdapter - Adding mock interface to class org/jboss/netty/channel/socket/nio/SocketSendBufferPool$UnpooledSendBuffer
+[main] INFO org.evosuite.runtime.instrumentation.CreateClassResetClassAdapter - Creating brand-new static initializer in class org/jboss/netty/channel/socket/nio/SocketSendBufferPool$UnpooledSendBuffer
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.977 sec <<< FAILURE!
+test0(org.traccar.protocol.Gl200TextProtocolDecoder_ESTest)  Time elapsed: 0.088 sec  <<< FAILURE!
+java.lang.AssertionError: Expecting exception: NullPointerException
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.traccar.protocol.Gl200TextProtocolDecoder_ESTest.test0(Gl200TextProtocolDecoder_ESTest.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:748)
+
+Running org.traccar.protocol.UlbotechProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec
+Running org.traccar.protocol.EasyTrackProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec
+Running org.traccar.protocol.GranitFrameDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running org.traccar.protocol.CalAmpProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
+Running org.traccar.protocol.GnxProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Running org.traccar.protocol.BlackKiteProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Running org.traccar.protocol.Gps056FrameDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.protocol.MeitrackProtocolEncoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.traccar.protocol.GatorProtocolDecoderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec
+Running org.traccar.protocol.VisiontekProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
+Running org.traccar.protocol.TrakMateProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
+Running org.traccar.protocol.DmtProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Running org.traccar.protocol.BoxProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
+Running org.traccar.protocol.TlvProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.traccar.protocol.FlextrackProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running org.traccar.protocol.GpsMarkerProtocolDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.traccar.protocol.H02ProtocolDecoderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec
+Running org.traccar.ConfigTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.traccar.geofence.GeofenceCircleTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.traccar.geofence.GeofencePolylineTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.traccar.geofence.GeofencePolygonTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.traccar.geolocation.GeolocationProviderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec
+Running org.traccar.model.MiscFormatterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.traccar.MotionHandlerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.events.CommandResultEventHandlerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.traccar.events.MotionEventHandlerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Running org.traccar.events.AlertEventHandlerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.traccar.events.IgnitionEventHandlerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.helper.BitBufferTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.helper.DateUtilTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.traccar.helper.PatternBuilderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.helper.BcdUtilTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.helper.ChecksumTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.helper.ObdDecoderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.helper.LocationTreeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.traccar.helper.DistanceCalculatorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.helper.DateBuilderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.helper.StringFinderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.traccar.helper.LogTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.helper.BitUtilTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.helper.PatternUtilTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.geocoder.AddressFormatTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.traccar.geocoder.GeocoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec
+Running org.traccar.reports.ReportUtilsTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
+Running RegressionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+
+Results :
+
+Failed tests:   testDecode(org.traccar.protocol.Gl200TextProtocolDecoderTest): position is null
+  test0(org.traccar.protocol.Gl200TextProtocolDecoder_ESTest): Expecting exception: NullPointerException
+
+Tests run: 276, Failures: 2, Errors: 0, Skipped: 6
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  23.161 s
+[INFO] Finished at: 2024-06-03T16:37:25+08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project traccar: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-122/Buggy-Version/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[INFO] Build failures were ignored.

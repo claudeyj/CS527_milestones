@@ -1,0 +1,2041 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../style.css');
+        @import url('../../../tree.css');
+        
+    </style>
+
+    <script src="../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../clover.js" type="text/javascript"></script>
+    <script src="../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../cloud.js" type="text/javascript"></script>
+
+            <title>traccar 3.0-SNAPSHOT</title>
+    </head>
+
+<body  onload="onLoad('traccar 3.0-SNAPSHOT: org.traccar.helper.TestDataManager.java')">
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="https://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="https://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                    <a href="https://www.traccar.org" target="_top">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+                    </a>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                            <a href="https://www.traccar.org" target="_top">
+                                        traccar 3.0-SNAPSHOT
+                                        </a>
+                    </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../" data-package-name="org.traccar.helper">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="../../../dashboard.html">Project Clover database Wed Jun 5 2024 13:16:18 CST</a></li> 
+        <li><a href="pkg-summary.html">        Package org.traccar.helper</a></li> 
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            File TestDataManager.java
+    </h1>
+
+
+
+
+
+
+
+
+    
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+            <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-source">
+        <div>&#160;</div>
+
+        
+                <div style="display: table; width: 100%">
+                            <div class="clover-histogram-table-cell">
+                                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Coverage histogram</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div class="aui-item clover-aui-item-histogram">
+                    <img src="../../../img/srcFileCovDistChart10.png" alt="../../../img/srcFileCovDistChart10.png"
+                         usemap="#srcFileCovDistChart10.png" class="clover-histogram-img"/>
+                    <map id="srcFileCovDistChart10.png" name="srcFileCovDistChart10.png">
+<area shape="rect" coords="100,65,107,66" title="6 files have 91-100% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="91,66,98,67" title="3 files have 81-90% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="82,65,89,66" title="5 files have 71-80% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="73,66,80,67" title="1 file has 61-70% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="64,65,71,66" title="5 files have 51-60% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="56,66,63,67" title="3 files have 41-50% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="47,66,54,67" title="2 files have 31-40% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="38,63,45,65" title="11 files have 21-30% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="29,66,36,67" title="1 file has 11-20% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="20,66,27,67" title="2 files have 1-10% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="11,8,18,65" title="220 files have 0% coverage" alt="" nohref="nohref"/>
+</map><br />
+                    <span class="subtle"><strong>0% </strong>of files have more coverage</span>
+                </div>
+            </div>
+        </div>
+                    </div>
+                        <div style="display: table-cell; width: 67%;">
+                    <div class="dashboard-widget">
+        <header class="dashboard-widget-header">
+            <h3>Code metrics</h3>
+        </header>
+        <div class="dashboard-widget-content">
+                        
+
+<div id="td-header-stats" class="aui-item" style="display: ">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">0</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">5</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">2</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">23</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">18</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">2</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.4</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">2.5</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">2</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+</div>
+
+</div>
+                        
+
+<div id="td-filtered-header-stats" class="aui-item" style="display: none">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">0</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">5</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">2</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">23</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">18</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">2</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.4</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">2.5</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">2</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+</div>
+
+</div>        </div>
+    </div>
+            </div>
+        </div>
+
+        
+        
+
+
+    <h2>Classes</h2>
+
+        <table class="aui aui-table-sortable">
+        <thead>
+                        <tr>     <th>Class</th>
+    <th>Line #</th>
+
+            
+        <th class="">
+            <label  title="The total number of statements.">Total Statements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The percentage of elements that have been filtered from this report.">% Filtered</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label>
+        </th>
+        
+    
+            <th>Actions</th>
+    </tr>         </thead>
+        <tbody>
+                              <tr> <td id="TestDataManager">
+        <span><a href="#9" title="TestDataManager" onclick="closeDialogAndScrollTo('dialog-TestDataManager', '9');">TestDataManager</a></span>
+</td>
+<td>9<a name="sl-9"></a></td>
+    <td class="">5</td>
+    <td class="">0%</td>
+    <td class="">2</td>
+    <td class="">0</td>
+    <td class=""><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+    <td><button data-dialog-id="dialog-TestDataManager" class="aui-button aui-button-link dialog-show-button">Show methods</button></td>
+</tr>                      </tbody>
+    </table>
+
+    
+     
+        <section role="dialog" id="dialog-TestDataManager" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+            
+            <header class="aui-dialog2-header">
+                <h1 class="aui-dialog2-header-main">Class TestDataManager</h1>
+                <div class="aui-dialog2-header-secondary">
+                    <input id="dialog-TestDataManager-method-filter" class="test-filter text" type="text" name="method-filter"
+                           placeholder="Type to filter methods..." autocomplete="off"
+                           onkeyup="filterMethods('dialog-TestDataManager-methods-body', 'dialog-TestDataManager-method-filter');"/>
+                </div>
+            </header>
+
+            
+            <div class="aui-dialog2-content">
+
+                
+
+                <table class="aui aui-table-sortable">
+                                                                                                                                                                                
+                    <thead>
+                                                 <tr> <th id="TestDataManager">
+    Class<br/>    <span><a href="#9" title="TestDataManager" onclick="closeDialogAndScrollTo('dialog-TestDataManager', '9');">TestDataManager</a></span>
+</th>
+<th>Line #<br/>9<a name="sl-9"></a></th>
+    <th class=""><label  title="The total number of statements.">Total Statements</label><br/>5</th>
+    <th class=""><label  title="The percentage of elements that have been filtered from this report.">% Filtered</label><br/>0%</th>
+    <th class=""><label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label><br/>2</th>
+    <th class=""><label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label><br/>0</th>
+    <th class=""><label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label><br/><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></th>
+</tr>                     </thead>
+                    <tbody id="dialog-TestDataManager-methods-body">
+                                                                                                            <tr id="TestDataManager-1">
+<td id="summary-11-5">
+ <span class="sortValue">TestDataManager()</span>
+&#160;&#160;<a href="?line=29#11" title="TestDataManager()" name="sl-11" onclick="closeDialogAndScrollTo('dialog-TestDataManager', '11');">TestDataManager()</a>
+</td>
+<td align="right"><span class="sortValue">11</span>11</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="TestDataManager-2">
+<td id="summary-15-5">
+ <span class="sortValue">getDeviceByUniqueId(String)&#160;:&#160;Device</span>
+&#160;&#160;<a href="?line=29#15" title="getDeviceByUniqueId(String)&#160;:&#160;Device" name="sl-15" onclick="closeDialogAndScrollTo('dialog-TestDataManager', '15');">getDeviceByUniqueId(String)&#160;:&#160;Device</a>
+</td>
+<td align="right"><span class="sortValue">15</span>15</td>
+<td class="" align="right"><span class="sortValue">4.0</span>4</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                         </tbody>
+                </table>
+
+                <div>&#160;</div>
+                
+
+            </div>
+
+            
+            <footer class="aui-dialog2-footer">
+                <div class="aui-dialog2-footer-actions">
+                    <button class="aui-button aui-button-primary dialog-close-button"
+                            data-dialog-id="dialog-TestDataManager">Close</button>
+                </div>
+                <div class="aui-dialog2-footer-hint">Click on a class or a method name to jump to source.</div>
+            </footer>
+        </section>
+
+     
+ 
+        
+        <div>&#160;</div>
+
+<h2>Contributing tests</h2>
+
+    <div>
+                This file is covered by 82 tests.
+        <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-link dialog-show-button">
+            Select tests to highlight the test coverage
+        </button>.
+    </div>
+
+<section role="dialog" id="contr-tests-dialog" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+    
+    <header class="aui-dialog2-header">
+        <h1 class="aui-dialog2-header-main">Contributing tests</h1>
+        <div class="aui-dialog2-header-secondary">
+            <input id="test-filter" class="test-filter text" type="text" name="test-filter"
+                   placeholder="Type to filter tests..." autocomplete="off"
+                   onkeyup="filterTests('tests-body', 'test-filter', 3);"/>
+        </div>
+    </header>
+
+    
+    <div class="aui-dialog2-content">
+    
+
+        <p class="aui-buttons">
+            <button title="Selects all tests for this file, highlighting their coverage."
+                    class="aui-button" id="selectalltests">Select all</button>
+        </p>
+
+        <table class="aui aui-table-sortable">
+            <thead id="tests-head">
+            <tr id="testHeaderRow">
+                <th class="aui-table-column-unsortable"></th>
+                <th>
+                    <label title="The percentage of coverage contributed by each single test.">Test contribution</label>
+                </th>
+                <th>
+                    <label title="The test (or test iteration) which was executed.">Test</label>
+                </th>
+                <th>
+                    <label>Result</label>
+                </th>
+                <th class="aui-table-column-unsortable">
+                    <label>Actions</label>
+                </th>
+            </tr>
+            </thead>
+            <tbody id="tests-body">
+
+<tr id="test-52">
+<td><a name="testA-52"></a><input type="checkbox" id="cb-52" value="52" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/V680ProtocolDecoderTest_testDecode_1g.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-52">  <span class="sortValue">org.traccar.protocol.V680ProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/V680ProtocolDecoderTest_testDecode_1g.html" title="View Test Summary Page">org.traccar.protocol.V680ProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/V680ProtocolDecoderTest.html?line=10#src-10" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/V680ProtocolDecoderTest_testDecode_1g.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-15">
+<td><a name="testA-15"></a><input type="checkbox" id="cb-15" value="15" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/GoSafeProtocolDecoderTest_testDecode_f.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-15">  <span class="sortValue">org.traccar.protocol.GoSafeProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/GoSafeProtocolDecoderTest_testDecode_f.html" title="View Test Summary Page">org.traccar.protocol.GoSafeProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/GoSafeProtocolDecoderTest.html?line=10#src-10" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/GoSafeProtocolDecoderTest_testDecode_f.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-24">
+<td><a name="testA-24"></a><input type="checkbox" id="cb-24" value="24" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/EasyTrackProtocolDecoderTest_testDecode_o.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-24">  <span class="sortValue">org.traccar.protocol.EasyTrackProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/EasyTrackProtocolDecoderTest_testDecode_o.html" title="View Test Summary Page">org.traccar.protocol.EasyTrackProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/EasyTrackProtocolDecoderTest.html?line=10#src-10" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/EasyTrackProtocolDecoderTest_testDecode_o.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-44">
+<td><a name="testA-44"></a><input type="checkbox" id="cb-44" value="44" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/XirgoProtocolDecoderTest_testDecode_18.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-44">  <span class="sortValue">org.traccar.protocol.XirgoProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/XirgoProtocolDecoderTest_testDecode_18.html" title="View Test Summary Page">org.traccar.protocol.XirgoProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/XirgoProtocolDecoderTest.html?line=9#src-9" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/XirgoProtocolDecoderTest_testDecode_18.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-35">
+<td><a name="testA-35"></a><input type="checkbox" id="cb-35" value="35" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/Gl200ProtocolDecoderTest_testDecode_z.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-35">  <span class="sortValue">org.traccar.protocol.Gl200ProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/Gl200ProtocolDecoderTest_testDecode_z.html" title="View Test Summary Page">org.traccar.protocol.Gl200ProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/Gl200ProtocolDecoderTest.html?line=9#src-9" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/Gl200ProtocolDecoderTest_testDecode_z.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-5">
+<td><a name="testA-5"></a><input type="checkbox" id="cb-5" value="5" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/AutoFon45ProtocolDecoderTest_testDecode_5.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-5">  <span class="sortValue">org.traccar.protocol.AutoFon45ProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/AutoFon45ProtocolDecoderTest_testDecode_5.html" title="View Test Summary Page">org.traccar.protocol.AutoFon45ProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/AutoFon45ProtocolDecoderTest.html?line=12#src-12" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/AutoFon45ProtocolDecoderTest_testDecode_5.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-28">
+<td><a name="testA-28"></a><input type="checkbox" id="cb-28" value="28" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/Jt600ProtocolDecoderTest_testDecode_s.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-28">  <span class="sortValue">org.traccar.protocol.Jt600ProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/Jt600ProtocolDecoderTest_testDecode_s.html" title="View Test Summary Page">org.traccar.protocol.Jt600ProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/Jt600ProtocolDecoderTest.html?line=12#src-12" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/Jt600ProtocolDecoderTest_testDecode_s.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-55">
+<td><a name="testA-55"></a><input type="checkbox" id="cb-55" value="55" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/SkypatrolProtocolDecoderTest_testDecode_1j.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-55">  <span class="sortValue">org.traccar.protocol.SkypatrolProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/SkypatrolProtocolDecoderTest_testDecode_1j.html" title="View Test Summary Page">org.traccar.protocol.SkypatrolProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/SkypatrolProtocolDecoderTest.html?line=11#src-11" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/SkypatrolProtocolDecoderTest_testDecode_1j.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-7">
+<td><a name="testA-7"></a><input type="checkbox" id="cb-7" value="7" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/CalAmpProtocolDecoderTest_testDecode_7.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-7">  <span class="sortValue">org.traccar.protocol.CalAmpProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/CalAmpProtocolDecoderTest_testDecode_7.html" title="View Test Summary Page">org.traccar.protocol.CalAmpProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/CalAmpProtocolDecoderTest.html?line=13#src-13" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/CalAmpProtocolDecoderTest_testDecode_7.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-112">
+<td><a name="testA-112"></a><input type="checkbox" id="cb-112" value="112" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/Tk103ProtocolDecoderTest_testDecode_34.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-112">  <span class="sortValue">org.traccar.protocol.Tk103ProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/Tk103ProtocolDecoderTest_testDecode_34.html" title="View Test Summary Page">org.traccar.protocol.Tk103ProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/Tk103ProtocolDecoderTest.html?line=10#src-10" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/Tk103ProtocolDecoderTest_testDecode_34.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-0">
+<td><a name="testA-0"></a><input type="checkbox" id="cb-0" value="0" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/CarscopProtocolDecoderTest_testDecode_0.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-0">  <span class="sortValue">org.traccar.protocol.CarscopProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/CarscopProtocolDecoderTest_testDecode_0.html" title="View Test Summary Page">org.traccar.protocol.CarscopProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/CarscopProtocolDecoderTest.html?line=10#src-10" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/CarscopProtocolDecoderTest_testDecode_0.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-101">
+<td><a name="testA-101"></a><input type="checkbox" id="cb-101" value="101" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/AutoFonProtocolDecoderTest_testDecode_2t.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-101">  <span class="sortValue">org.traccar.protocol.AutoFonProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/AutoFonProtocolDecoderTest_testDecode_2t.html" title="View Test Summary Page">org.traccar.protocol.AutoFonProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/AutoFonProtocolDecoderTest.html?line=13#src-13" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/AutoFonProtocolDecoderTest_testDecode_2t.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-21">
+<td><a name="testA-21"></a><input type="checkbox" id="cb-21" value="21" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/Pt3000ProtocolDecoderTest_testDecode_l.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-21">  <span class="sortValue">org.traccar.protocol.Pt3000ProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/Pt3000ProtocolDecoderTest_testDecode_l.html" title="View Test Summary Page">org.traccar.protocol.Pt3000ProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/Pt3000ProtocolDecoderTest.html?line=9#src-9" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/Pt3000ProtocolDecoderTest_testDecode_l.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-84">
+<td><a name="testA-84"></a><input type="checkbox" id="cb-84" value="84" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/Tk102ProtocolDecoderTest_testDecode_2c.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-84">  <span class="sortValue">org.traccar.protocol.Tk102ProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/Tk102ProtocolDecoderTest_testDecode_2c.html" title="View Test Summary Page">org.traccar.protocol.Tk102ProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/Tk102ProtocolDecoderTest.html?line=10#src-10" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/Tk102ProtocolDecoderTest_testDecode_2c.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-68">
+<td><a name="testA-68"></a><input type="checkbox" id="cb-68" value="68" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/OrionProtocolDecoderTest_testDecode_1w.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-68">  <span class="sortValue">org.traccar.protocol.OrionProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/OrionProtocolDecoderTest_testDecode_1w.html" title="View Test Summary Page">org.traccar.protocol.OrionProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/OrionProtocolDecoderTest.html?line=13#src-13" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/OrionProtocolDecoderTest_testDecode_1w.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-31">
+<td><a name="testA-31"></a><input type="checkbox" id="cb-31" value="31" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/NavisProtocolDecoderTest_testDecode_v.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-31">  <span class="sortValue">org.traccar.protocol.NavisProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/NavisProtocolDecoderTest_testDecode_v.html" title="View Test Summary Page">org.traccar.protocol.NavisProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/NavisProtocolDecoderTest.html?line=13#src-13" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/NavisProtocolDecoderTest_testDecode_v.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-11">
+<td><a name="testA-11"></a><input type="checkbox" id="cb-11" value="11" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/NavigilProtocolDecoderTest_testDecode_b.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-11">  <span class="sortValue">org.traccar.protocol.NavigilProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/NavigilProtocolDecoderTest_testDecode_b.html" title="View Test Summary Page">org.traccar.protocol.NavigilProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/NavigilProtocolDecoderTest.html?line=13#src-13" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/NavigilProtocolDecoderTest_testDecode_b.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-81">
+<td><a name="testA-81"></a><input type="checkbox" id="cb-81" value="81" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/PiligrimProtocolDecoderTest_testDecode_29.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-81">  <span class="sortValue">org.traccar.protocol.PiligrimProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/PiligrimProtocolDecoderTest_testDecode_29.html" title="View Test Summary Page">org.traccar.protocol.PiligrimProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/PiligrimProtocolDecoderTest.html?line=16#src-16" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/PiligrimProtocolDecoderTest_testDecode_29.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-70">
+<td><a name="testA-70"></a><input type="checkbox" id="cb-70" value="70" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/IntellitracProtocolDecoderTest_testDecode_1y.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-70">  <span class="sortValue">org.traccar.protocol.IntellitracProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/IntellitracProtocolDecoderTest_testDecode_1y.html" title="View Test Summary Page">org.traccar.protocol.IntellitracProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/IntellitracProtocolDecoderTest.html?line=10#src-10" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/IntellitracProtocolDecoderTest_testDecode_1y.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-45">
+<td><a name="testA-45"></a><input type="checkbox" id="cb-45" value="45" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/Pt502ProtocolDecoderTest_testDecode_19.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-45">  <span class="sortValue">org.traccar.protocol.Pt502ProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/Pt502ProtocolDecoderTest_testDecode_19.html" title="View Test Summary Page">org.traccar.protocol.Pt502ProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/Pt502ProtocolDecoderTest.html?line=9#src-9" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/Pt502ProtocolDecoderTest_testDecode_19.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-92">
+<td><a name="testA-92"></a><input type="checkbox" id="cb-92" value="92" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/GpsGateProtocolDecoderTest_testDecode_2k.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-92">  <span class="sortValue">org.traccar.protocol.GpsGateProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/GpsGateProtocolDecoderTest_testDecode_2k.html" title="View Test Summary Page">org.traccar.protocol.GpsGateProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/GpsGateProtocolDecoderTest.html?line=10#src-10" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/GpsGateProtocolDecoderTest_testDecode_2k.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-103">
+<td><a name="testA-103"></a><input type="checkbox" id="cb-103" value="103" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/NoranProtocolDecoderTest_testDecode_2v.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-103">  <span class="sortValue">org.traccar.protocol.NoranProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/NoranProtocolDecoderTest_testDecode_2v.html" title="View Test Summary Page">org.traccar.protocol.NoranProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/NoranProtocolDecoderTest.html?line=12#src-12" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/NoranProtocolDecoderTest_testDecode_2v.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-108">
+<td><a name="testA-108"></a><input type="checkbox" id="cb-108" value="108" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/SanavProtocolDecoderTest_testDecode_30.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-108">  <span class="sortValue">org.traccar.protocol.SanavProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/SanavProtocolDecoderTest_testDecode_30.html" title="View Test Summary Page">org.traccar.protocol.SanavProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/SanavProtocolDecoderTest.html?line=9#src-9" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/SanavProtocolDecoderTest_testDecode_30.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-75">
+<td><a name="testA-75"></a><input type="checkbox" id="cb-75" value="75" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/CellocatorProtocolDecoderTest_testDecode_23.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-75">  <span class="sortValue">org.traccar.protocol.CellocatorProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/CellocatorProtocolDecoderTest_testDecode_23.html" title="View Test Summary Page">org.traccar.protocol.CellocatorProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/CellocatorProtocolDecoderTest.html?line=12#src-12" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/CellocatorProtocolDecoderTest_testDecode_23.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-54">
+<td><a name="testA-54"></a><input type="checkbox" id="cb-54" value="54" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/MegastekProtocolDecoderTest_testDecode_1i.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-54">  <span class="sortValue">org.traccar.protocol.MegastekProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/MegastekProtocolDecoderTest_testDecode_1i.html" title="View Test Summary Page">org.traccar.protocol.MegastekProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/MegastekProtocolDecoderTest.html?line=9#src-9" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/MegastekProtocolDecoderTest_testDecode_1i.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-41">
+<td><a name="testA-41"></a><input type="checkbox" id="cb-41" value="41" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/XexunProtocolDecoderTest_testDecode_15.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-41">  <span class="sortValue">org.traccar.protocol.XexunProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/XexunProtocolDecoderTest_testDecode_15.html" title="View Test Summary Page">org.traccar.protocol.XexunProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/XexunProtocolDecoderTest.html?line=9#src-9" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/XexunProtocolDecoderTest_testDecode_15.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-94">
+<td><a name="testA-94"></a><input type="checkbox" id="cb-94" value="94" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/BoxProtocolDecoderTest_testDecode_2m.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-94">  <span class="sortValue">org.traccar.protocol.BoxProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/BoxProtocolDecoderTest_testDecode_2m.html" title="View Test Summary Page">org.traccar.protocol.BoxProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/BoxProtocolDecoderTest.html?line=10#src-10" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/BoxProtocolDecoderTest_testDecode_2m.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1">
+<td><a name="testA-1"></a><input type="checkbox" id="cb-1" value="1" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/T55ProtocolDecoderTest_testDecode_1.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-1">  <span class="sortValue">org.traccar.protocol.T55ProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/T55ProtocolDecoderTest_testDecode_1.html" title="View Test Summary Page">org.traccar.protocol.T55ProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/T55ProtocolDecoderTest.html?line=10#src-10" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/T55ProtocolDecoderTest_testDecode_1.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-76">
+<td><a name="testA-76"></a><input type="checkbox" id="cb-76" value="76" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/HaicomProtocolDecoderTest_testDecode_24.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-76">  <span class="sortValue">org.traccar.protocol.HaicomProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/HaicomProtocolDecoderTest_testDecode_24.html" title="View Test Summary Page">org.traccar.protocol.HaicomProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/HaicomProtocolDecoderTest.html?line=9#src-9" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/HaicomProtocolDecoderTest_testDecode_24.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-10">
+<td><a name="testA-10"></a><input type="checkbox" id="cb-10" value="10" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/Xt013ProtocolDecoderTest_testDecode_a.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-10">  <span class="sortValue">org.traccar.protocol.Xt013ProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/Xt013ProtocolDecoderTest_testDecode_a.html" title="View Test Summary Page">org.traccar.protocol.Xt013ProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/Xt013ProtocolDecoderTest.html?line=10#src-10" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/Xt013ProtocolDecoderTest_testDecode_a.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-29">
+<td><a name="testA-29"></a><input type="checkbox" id="cb-29" value="29" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/UlbotechProtocolDecoderTest_testDecode_t.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-29">  <span class="sortValue">org.traccar.protocol.UlbotechProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/UlbotechProtocolDecoderTest_testDecode_t.html" title="View Test Summary Page">org.traccar.protocol.UlbotechProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/UlbotechProtocolDecoderTest.html?line=13#src-13" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/UlbotechProtocolDecoderTest_testDecode_t.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-85">
+<td><a name="testA-85"></a><input type="checkbox" id="cb-85" value="85" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/Tr900ProtocolDecoderTest_testDecode_2d.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-85">  <span class="sortValue">org.traccar.protocol.Tr900ProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/Tr900ProtocolDecoderTest_testDecode_2d.html" title="View Test Summary Page">org.traccar.protocol.Tr900ProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/Tr900ProtocolDecoderTest.html?line=8#src-8" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/Tr900ProtocolDecoderTest_testDecode_2d.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-109">
+<td><a name="testA-109"></a><input type="checkbox" id="cb-109" value="109" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/LaipacProtocolDecoderTest_testDecode_31.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-109">  <span class="sortValue">org.traccar.protocol.LaipacProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/LaipacProtocolDecoderTest_testDecode_31.html" title="View Test Summary Page">org.traccar.protocol.LaipacProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/LaipacProtocolDecoderTest.html?line=10#src-10" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/LaipacProtocolDecoderTest_testDecode_31.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-63">
+<td><a name="testA-63"></a><input type="checkbox" id="cb-63" value="63" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/RitiProtocolDecoderTest_testDecode_1r.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-63">  <span class="sortValue">org.traccar.protocol.RitiProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/RitiProtocolDecoderTest_testDecode_1r.html" title="View Test Summary Page">org.traccar.protocol.RitiProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/RitiProtocolDecoderTest.html?line=13#src-13" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/RitiProtocolDecoderTest_testDecode_1r.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-78">
+<td><a name="testA-78"></a><input type="checkbox" id="cb-78" value="78" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/MiniFinderProtocolDecoderTest_testDecode_26.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-78">  <span class="sortValue">org.traccar.protocol.MiniFinderProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/MiniFinderProtocolDecoderTest_testDecode_26.html" title="View Test Summary Page">org.traccar.protocol.MiniFinderProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/MiniFinderProtocolDecoderTest.html?line=10#src-10" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/MiniFinderProtocolDecoderTest_testDecode_26.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-82">
+<td><a name="testA-82"></a><input type="checkbox" id="cb-82" value="82" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/TeltonikaProtocolDecoderTest_testDecode_2a.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-82">  <span class="sortValue">org.traccar.protocol.TeltonikaProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/TeltonikaProtocolDecoderTest_testDecode_2a.html" title="View Test Summary Page">org.traccar.protocol.TeltonikaProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/TeltonikaProtocolDecoderTest.html?line=12#src-12" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/TeltonikaProtocolDecoderTest_testDecode_2a.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-9">
+<td><a name="testA-9"></a><input type="checkbox" id="cb-9" value="9" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/Gt02ProtocolDecoderTest_testDecode_9.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-9">  <span class="sortValue">org.traccar.protocol.Gt02ProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/Gt02ProtocolDecoderTest_testDecode_9.html" title="View Test Summary Page">org.traccar.protocol.Gt02ProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/Gt02ProtocolDecoderTest.html?line=12#src-12" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/Gt02ProtocolDecoderTest_testDecode_9.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-46">
+<td><a name="testA-46"></a><input type="checkbox" id="cb-46" value="46" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/MeitrackProtocolDecoderTest_testDecode_1a.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-46">  <span class="sortValue">org.traccar.protocol.MeitrackProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/MeitrackProtocolDecoderTest_testDecode_1a.html" title="View Test Summary Page">org.traccar.protocol.MeitrackProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/MeitrackProtocolDecoderTest.html?line=12#src-12" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/MeitrackProtocolDecoderTest_testDecode_1a.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-20">
+<td><a name="testA-20"></a><input type="checkbox" id="cb-20" value="20" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/Gt06ProtocolDecoderTest_testDecode_k.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-20">  <span class="sortValue">org.traccar.protocol.Gt06ProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/Gt06ProtocolDecoderTest_testDecode_k.html" title="View Test Summary Page">org.traccar.protocol.Gt06ProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/Gt06ProtocolDecoderTest.html?line=12#src-12" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/Gt06ProtocolDecoderTest_testDecode_k.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-104">
+<td><a name="testA-104"></a><input type="checkbox" id="cb-104" value="104" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/TotemProtocolDecoderTest_testDecode_2w.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-104">  <span class="sortValue">org.traccar.protocol.TotemProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/TotemProtocolDecoderTest_testDecode_2w.html" title="View Test Summary Page">org.traccar.protocol.TotemProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/TotemProtocolDecoderTest.html?line=10#src-10" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/TotemProtocolDecoderTest_testDecode_2w.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-83">
+<td><a name="testA-83"></a><input type="checkbox" id="cb-83" value="83" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/ProgressProtocolDecoderTest_testDecode_2b.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-83">  <span class="sortValue">org.traccar.protocol.ProgressProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/ProgressProtocolDecoderTest_testDecode_2b.html" title="View Test Summary Page">org.traccar.protocol.ProgressProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/ProgressProtocolDecoderTest.html?line=15#src-15" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/ProgressProtocolDecoderTest_testDecode_2b.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-62">
+<td><a name="testA-62"></a><input type="checkbox" id="cb-62" value="62" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/Stl060ProtocolDecoderTest_testDecode_1q.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-62">  <span class="sortValue">org.traccar.protocol.Stl060ProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/Stl060ProtocolDecoderTest_testDecode_1q.html" title="View Test Summary Page">org.traccar.protocol.Stl060ProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/Stl060ProtocolDecoderTest.html?line=8#src-8" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/Stl060ProtocolDecoderTest_testDecode_1q.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-48">
+<td><a name="testA-48"></a><input type="checkbox" id="cb-48" value="48" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/Gps103ProtocolDecoderTest_testDecode_1c.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-48">  <span class="sortValue">org.traccar.protocol.Gps103ProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/Gps103ProtocolDecoderTest_testDecode_1c.html" title="View Test Summary Page">org.traccar.protocol.Gps103ProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/Gps103ProtocolDecoderTest.html?line=9#src-9" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/Gps103ProtocolDecoderTest_testDecode_1c.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-2">
+<td><a name="testA-2"></a><input type="checkbox" id="cb-2" value="2" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/EelinkProtocolDecoderTest_testDecode_2.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-2">  <span class="sortValue">org.traccar.protocol.EelinkProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/EelinkProtocolDecoderTest_testDecode_2.html" title="View Test Summary Page">org.traccar.protocol.EelinkProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/EelinkProtocolDecoderTest.html?line=12#src-12" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/EelinkProtocolDecoderTest_testDecode_2.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-89">
+<td><a name="testA-89"></a><input type="checkbox" id="cb-89" value="89" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/BceProtocolDecoderTest_testDecode_2h.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-89">  <span class="sortValue">org.traccar.protocol.BceProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/BceProtocolDecoderTest_testDecode_2h.html" title="View Test Summary Page">org.traccar.protocol.BceProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/BceProtocolDecoderTest.html?line=14#src-14" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/BceProtocolDecoderTest_testDecode_2h.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-67">
+<td><a name="testA-67"></a><input type="checkbox" id="cb-67" value="67" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/VisiontekProtocolDecoderTest_testDecode_1v.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-67">  <span class="sortValue">org.traccar.protocol.VisiontekProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/VisiontekProtocolDecoderTest_testDecode_1v.html" title="View Test Summary Page">org.traccar.protocol.VisiontekProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/VisiontekProtocolDecoderTest.html?line=9#src-9" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/VisiontekProtocolDecoderTest_testDecode_1v.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-100">
+<td><a name="testA-100"></a><input type="checkbox" id="cb-100" value="100" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/MxtProtocolDecoderTest_testDecode_2s.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-100">  <span class="sortValue">org.traccar.protocol.MxtProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/MxtProtocolDecoderTest_testDecode_2s.html" title="View Test Summary Page">org.traccar.protocol.MxtProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/MxtProtocolDecoderTest.html?line=11#src-11" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/MxtProtocolDecoderTest_testDecode_2s.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-23">
+<td><a name="testA-23"></a><input type="checkbox" id="cb-23" value="23" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/M2mProtocolDecoderTest_testDecode_n.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-23">  <span class="sortValue">org.traccar.protocol.M2mProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/M2mProtocolDecoderTest_testDecode_n.html" title="View Test Summary Page">org.traccar.protocol.M2mProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/M2mProtocolDecoderTest.html?line=12#src-12" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/M2mProtocolDecoderTest_testDecode_n.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-80">
+<td><a name="testA-80"></a><input type="checkbox" id="cb-80" value="80" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/WondexProtocolDecoderTest_testDecode_28.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-80">  <span class="sortValue">org.traccar.protocol.WondexProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/WondexProtocolDecoderTest_testDecode_28.html" title="View Test Summary Page">org.traccar.protocol.WondexProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/WondexProtocolDecoderTest.html?line=9#src-9" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/WondexProtocolDecoderTest_testDecode_28.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-13">
+<td><a name="testA-13"></a><input type="checkbox" id="cb-13" value="13" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/WialonProtocolDecoderTest_testDecode_d.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-13">  <span class="sortValue">org.traccar.protocol.WialonProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/WialonProtocolDecoderTest_testDecode_d.html" title="View Test Summary Page">org.traccar.protocol.WialonProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/WialonProtocolDecoderTest.html?line=10#src-10" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/WialonProtocolDecoderTest_testDecode_d.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-26">
+<td><a name="testA-26"></a><input type="checkbox" id="cb-26" value="26" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/YwtProtocolDecoderTest_testDecode_q.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-26">  <span class="sortValue">org.traccar.protocol.YwtProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/YwtProtocolDecoderTest_testDecode_q.html" title="View Test Summary Page">org.traccar.protocol.YwtProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/YwtProtocolDecoderTest.html?line=10#src-10" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/YwtProtocolDecoderTest_testDecode_q.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-105">
+<td><a name="testA-105"></a><input type="checkbox" id="cb-105" value="105" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/CarTrackProtocolDecoderTest_testDecode_2x.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-105">  <span class="sortValue">org.traccar.protocol.CarTrackProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/CarTrackProtocolDecoderTest_testDecode_2x.html" title="View Test Summary Page">org.traccar.protocol.CarTrackProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/CarTrackProtocolDecoderTest.html?line=9#src-9" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/CarTrackProtocolDecoderTest_testDecode_2x.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-95">
+<td><a name="testA-95"></a><input type="checkbox" id="cb-95" value="95" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/Tlt2hProtocolDecoderTest_testDecode_2n.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-95">  <span class="sortValue">org.traccar.protocol.Tlt2hProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/Tlt2hProtocolDecoderTest_testDecode_2n.html" title="View Test Summary Page">org.traccar.protocol.Tlt2hProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/Tlt2hProtocolDecoderTest.html?line=9#src-9" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/Tlt2hProtocolDecoderTest_testDecode_2n.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-58">
+<td><a name="testA-58"></a><input type="checkbox" id="cb-58" value="58" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/CastelProtocolDecoderTest_testDecode_1m.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-58">  <span class="sortValue">org.traccar.protocol.CastelProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/CastelProtocolDecoderTest_testDecode_1m.html" title="View Test Summary Page">org.traccar.protocol.CastelProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/CastelProtocolDecoderTest.html?line=12#src-12" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/CastelProtocolDecoderTest_testDecode_1m.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-97">
+<td><a name="testA-97"></a><input type="checkbox" id="cb-97" value="97" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/EnforaProtocolDecoderTest_testDecode_2p.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-97">  <span class="sortValue">org.traccar.protocol.EnforaProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/EnforaProtocolDecoderTest_testDecode_2p.html" title="View Test Summary Page">org.traccar.protocol.EnforaProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/EnforaProtocolDecoderTest.html?line=14#src-14" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/EnforaProtocolDecoderTest_testDecode_2p.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-3">
+<td><a name="testA-3"></a><input type="checkbox" id="cb-3" value="3" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/GlobalSatProtocolDecoderTest_testDecode_3.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-3">  <span class="sortValue">org.traccar.protocol.GlobalSatProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/GlobalSatProtocolDecoderTest_testDecode_3.html" title="View Test Summary Page">org.traccar.protocol.GlobalSatProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/GlobalSatProtocolDecoderTest.html?line=9#src-9" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/GlobalSatProtocolDecoderTest_testDecode_3.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-38">
+<td><a name="testA-38"></a><input type="checkbox" id="cb-38" value="38" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/Gl100ProtocolDecoderTest_testDecode_12.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-38">  <span class="sortValue">org.traccar.protocol.Gl100ProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/Gl100ProtocolDecoderTest_testDecode_12.html" title="View Test Summary Page">org.traccar.protocol.Gl100ProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/Gl100ProtocolDecoderTest.html?line=10#src-10" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/Gl100ProtocolDecoderTest_testDecode_12.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-106">
+<td><a name="testA-106"></a><input type="checkbox" id="cb-106" value="106" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/AplicomProtocolDecoderTest_testDecode_2y.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-106">  <span class="sortValue">org.traccar.protocol.AplicomProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/AplicomProtocolDecoderTest_testDecode_2y.html" title="View Test Summary Page">org.traccar.protocol.AplicomProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/AplicomProtocolDecoderTest.html?line=10#src-10" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/AplicomProtocolDecoderTest_testDecode_2y.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-87">
+<td><a name="testA-87"></a><input type="checkbox" id="cb-87" value="87" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/GalileoProtocolDecoderTest_testDecode_2f.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-87">  <span class="sortValue">org.traccar.protocol.GalileoProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/GalileoProtocolDecoderTest_testDecode_2f.html" title="View Test Summary Page">org.traccar.protocol.GalileoProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/GalileoProtocolDecoderTest.html?line=13#src-13" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/GalileoProtocolDecoderTest_testDecode_2f.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-27">
+<td><a name="testA-27"></a><input type="checkbox" id="cb-27" value="27" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/GatorProtocolDecoderTest_testDecode_r.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-27">  <span class="sortValue">org.traccar.protocol.GatorProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/GatorProtocolDecoderTest_testDecode_r.html" title="View Test Summary Page">org.traccar.protocol.GatorProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/GatorProtocolDecoderTest.html?line=11#src-11" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/GatorProtocolDecoderTest_testDecode_r.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-111">
+<td><a name="testA-111"></a><input type="checkbox" id="cb-111" value="111" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/RuptelaProtocolDecoderTest_testDecode_33.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-111">  <span class="sortValue">org.traccar.protocol.RuptelaProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/RuptelaProtocolDecoderTest_testDecode_33.html" title="View Test Summary Page">org.traccar.protocol.RuptelaProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/RuptelaProtocolDecoderTest.html?line=10#src-10" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/RuptelaProtocolDecoderTest_testDecode_33.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-32">
+<td><a name="testA-32"></a><input type="checkbox" id="cb-32" value="32" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/AtrackProtocolDecoderTest_testDecode_w.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-32">  <span class="sortValue">org.traccar.protocol.AtrackProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/AtrackProtocolDecoderTest_testDecode_w.html" title="View Test Summary Page">org.traccar.protocol.AtrackProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/AtrackProtocolDecoderTest.html?line=12#src-12" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/AtrackProtocolDecoderTest_testDecode_w.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-51">
+<td><a name="testA-51"></a><input type="checkbox" id="cb-51" value="51" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/Tr20ProtocolDecoderTest_testDecode_1f.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-51">  <span class="sortValue">org.traccar.protocol.Tr20ProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/Tr20ProtocolDecoderTest_testDecode_1f.html" title="View Test Summary Page">org.traccar.protocol.Tr20ProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/Tr20ProtocolDecoderTest.html?line=10#src-10" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/Tr20ProtocolDecoderTest_testDecode_1f.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-99">
+<td><a name="testA-99"></a><input type="checkbox" id="cb-99" value="99" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/Ev603ProtocolDecoderTest_testDecode_2r.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-99">  <span class="sortValue">org.traccar.protocol.Ev603ProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/Ev603ProtocolDecoderTest_testDecode_2r.html" title="View Test Summary Page">org.traccar.protocol.Ev603ProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/Ev603ProtocolDecoderTest.html?line=10#src-10" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/Ev603ProtocolDecoderTest_testDecode_2r.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-14">
+<td><a name="testA-14"></a><input type="checkbox" id="cb-14" value="14" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/TelikProtocolDecoderTest_testDecode_e.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-14">  <span class="sortValue">org.traccar.protocol.TelikProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/TelikProtocolDecoderTest_testDecode_e.html" title="View Test Summary Page">org.traccar.protocol.TelikProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/TelikProtocolDecoderTest.html?line=10#src-10" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/TelikProtocolDecoderTest_testDecode_e.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-96">
+<td><a name="testA-96"></a><input type="checkbox" id="cb-96" value="96" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/KhdProtocolDecoderTest_testDecode_2o.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-96">  <span class="sortValue">org.traccar.protocol.KhdProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/KhdProtocolDecoderTest_testDecode_2o.html" title="View Test Summary Page">org.traccar.protocol.KhdProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/KhdProtocolDecoderTest.html?line=12#src-12" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/KhdProtocolDecoderTest_testDecode_2o.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-72">
+<td><a name="testA-72"></a><input type="checkbox" id="cb-72" value="72" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/TrackboxProtocolDecoderTest_testDecode_20.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-72">  <span class="sortValue">org.traccar.protocol.TrackboxProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/TrackboxProtocolDecoderTest_testDecode_20.html" title="View Test Summary Page">org.traccar.protocol.TrackboxProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/TrackboxProtocolDecoderTest.html?line=10#src-10" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/TrackboxProtocolDecoderTest_testDecode_20.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-42">
+<td><a name="testA-42"></a><input type="checkbox" id="cb-42" value="42" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/GotopProtocolDecoderTest_testDecode_16.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-42">  <span class="sortValue">org.traccar.protocol.GotopProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/GotopProtocolDecoderTest_testDecode_16.html" title="View Test Summary Page">org.traccar.protocol.GotopProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/GotopProtocolDecoderTest.html?line=10#src-10" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/GotopProtocolDecoderTest_testDecode_16.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-25">
+<td><a name="testA-25"></a><input type="checkbox" id="cb-25" value="25" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/Ardi01ProtocolDecoderTest_testDecode_p.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-25">  <span class="sortValue">org.traccar.protocol.Ardi01ProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/Ardi01ProtocolDecoderTest_testDecode_p.html" title="View Test Summary Page">org.traccar.protocol.Ardi01ProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/Ardi01ProtocolDecoderTest.html?line=11#src-11" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/Ardi01ProtocolDecoderTest_testDecode_p.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-102">
+<td><a name="testA-102"></a><input type="checkbox" id="cb-102" value="102" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/FreedomProtocolDecoderTest_testDecode_2u.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-102">  <span class="sortValue">org.traccar.protocol.FreedomProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/FreedomProtocolDecoderTest_testDecode_2u.html" title="View Test Summary Page">org.traccar.protocol.FreedomProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/FreedomProtocolDecoderTest.html?line=10#src-10" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/FreedomProtocolDecoderTest_testDecode_2u.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-57">
+<td><a name="testA-57"></a><input type="checkbox" id="cb-57" value="57" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/OsmAndProtocolDecoderTest_testDecode_1l.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-57">  <span class="sortValue">org.traccar.protocol.OsmAndProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/OsmAndProtocolDecoderTest_testDecode_1l.html" title="View Test Summary Page">org.traccar.protocol.OsmAndProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/OsmAndProtocolDecoderTest.html?line=12#src-12" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/OsmAndProtocolDecoderTest_testDecode_1l.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-19">
+<td><a name="testA-19"></a><input type="checkbox" id="cb-19" value="19" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/Xt7ProtocolDecoderTest_testDecode_j.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-19">  <span class="sortValue">org.traccar.protocol.Xt7ProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/Xt7ProtocolDecoderTest_testDecode_j.html" title="View Test Summary Page">org.traccar.protocol.Xt7ProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/Xt7ProtocolDecoderTest.html?line=13#src-13" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/Xt7ProtocolDecoderTest_testDecode_j.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-74">
+<td><a name="testA-74"></a><input type="checkbox" id="cb-74" value="74" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/TaipProtocolDecoderTest_testDecode_22.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-74">  <span class="sortValue">org.traccar.protocol.TaipProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/TaipProtocolDecoderTest_testDecode_22.html" title="View Test Summary Page">org.traccar.protocol.TaipProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/TaipProtocolDecoderTest.html?line=9#src-9" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/TaipProtocolDecoderTest_testDecode_22.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-22">
+<td><a name="testA-22"></a><input type="checkbox" id="cb-22" value="22" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/Avl301ProtocolDecoderTest_testDecode_m.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-22">  <span class="sortValue">org.traccar.protocol.Avl301ProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/Avl301ProtocolDecoderTest_testDecode_m.html" title="View Test Summary Page">org.traccar.protocol.Avl301ProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/Avl301ProtocolDecoderTest.html?line=12#src-12" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/Avl301ProtocolDecoderTest_testDecode_m.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-86">
+<td><a name="testA-86"></a><input type="checkbox" id="cb-86" value="86" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/ManPowerProtocolDecoderTest_testDecode_2e.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-86">  <span class="sortValue">org.traccar.protocol.ManPowerProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/ManPowerProtocolDecoderTest_testDecode_2e.html" title="View Test Summary Page">org.traccar.protocol.ManPowerProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/ManPowerProtocolDecoderTest.html?line=9#src-9" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/ManPowerProtocolDecoderTest_testDecode_2e.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-79">
+<td><a name="testA-79"></a><input type="checkbox" id="cb-79" value="79" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/SuntechProtocolDecoderTest_testDecode_27.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-79">  <span class="sortValue">org.traccar.protocol.SuntechProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/SuntechProtocolDecoderTest_testDecode_27.html" title="View Test Summary Page">org.traccar.protocol.SuntechProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/SuntechProtocolDecoderTest.html?line=10#src-10" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/SuntechProtocolDecoderTest_testDecode_27.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-17">
+<td><a name="testA-17"></a><input type="checkbox" id="cb-17" value="17" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/MtxProtocolDecoderTest_testDecode_h.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-17">  <span class="sortValue">org.traccar.protocol.MtxProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/MtxProtocolDecoderTest_testDecode_h.html" title="View Test Summary Page">org.traccar.protocol.MtxProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/MtxProtocolDecoderTest.html?line=10#src-10" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/MtxProtocolDecoderTest_testDecode_h.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-30">
+<td><a name="testA-30"></a><input type="checkbox" id="cb-30" value="30" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/TramigoProtocolDecoderTest_testDecode_u.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-30">  <span class="sortValue">org.traccar.protocol.TramigoProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/TramigoProtocolDecoderTest_testDecode_u.html" title="View Test Summary Page">org.traccar.protocol.TramigoProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/TramigoProtocolDecoderTest.html?line=15#src-15" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/TramigoProtocolDecoderTest_testDecode_u.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-18">
+<td><a name="testA-18"></a><input type="checkbox" id="cb-18" value="18" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/MeiligaoProtocolDecoderTest_testDecode_i.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-18">  <span class="sortValue">org.traccar.protocol.MeiligaoProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/MeiligaoProtocolDecoderTest_testDecode_i.html" title="View Test Summary Page">org.traccar.protocol.MeiligaoProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/MeiligaoProtocolDecoderTest.html?line=11#src-11" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/MeiligaoProtocolDecoderTest_testDecode_i.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-50">
+<td><a name="testA-50"></a><input type="checkbox" id="cb-50" value="50" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/TopflytechProtocolDecoderTest_testDecode_1e.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-50">  <span class="sortValue">org.traccar.protocol.TopflytechProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/TopflytechProtocolDecoderTest_testDecode_1e.html" title="View Test Summary Page">org.traccar.protocol.TopflytechProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/TopflytechProtocolDecoderTest.html?line=10#src-10" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/TopflytechProtocolDecoderTest_testDecode_1e.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-71">
+<td><a name="testA-71"></a><input type="checkbox" id="cb-71" value="71" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/TytanProtocolDecoderTest_testDecode_1z.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-71">  <span class="sortValue">org.traccar.protocol.TytanProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/TytanProtocolDecoderTest_testDecode_1z.html" title="View Test Summary Page">org.traccar.protocol.TytanProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/TytanProtocolDecoderTest.html?line=10#src-10" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/TytanProtocolDecoderTest_testDecode_1z.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-36">
+<td><a name="testA-36"></a><input type="checkbox" id="cb-36" value="36" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/H02ProtocolDecoderTest_testDecode_10.html';">
+<span class="sortValue">0.71428573</span>
+<div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71.4%"></div></div></div></td>
+<td id="tc-36">  <span class="sortValue">org.traccar.protocol.H02ProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/H02ProtocolDecoderTest_testDecode_10.html" title="View Test Summary Page">org.traccar.protocol.H02ProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">3</span><span class="aui-lozenge aui-lozenge-error">FAIL</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/H02ProtocolDecoderTest.html?line=13#src-13" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/H02ProtocolDecoderTest_testDecode_10.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+
+            </tbody>
+        </table>
+
+        
+        <div>&#160;</div>
+
+    
+    </div>
+
+    
+    <footer class="aui-dialog2-footer">
+        <div class="aui-dialog2-footer-actions">
+            <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-primary dialog-close-button">Apply</button>
+        </div>
+        <div class="aui-dialog2-footer-hint">Select tests to highlight code covered by them in the source view.</div>
+    </footer>
+</section>
+
+ 
+        
+        
+
+
+
+
+
+<h2>Source view</h2>
+
+
+<div style="display: table; width: 100%;">
+    <div style="display: table-cell">
+        <button class="aui-button aui-button-link"
+                title="Toggles all methods in the source to be either expanded or collapsed."
+                onclick="toggleAllInlineMethods(this); return false;" id="method-expander">
+            Collapse all methods
+        </button>
+    </div>
+    <div style="display: table-cell">
+        <div style="text-align: right; margin-bottom: 10px">
+            <button class="aui-button aui-button-subtle" id="popupHelp">
+    <span class="aui-icon aui-icon-small aui-iconfont-help"></span>&#160;Show legend
+</button>
+<script>
+    AJS.InlineDialog(AJS.$("#popupHelp"), "helpDialog",
+            function(content, trigger, showPopup) {
+                content.css({"padding":"20px"}).html(SRC_FILE_LEGEND_TEXT);
+                showPopup();
+                return false;
+            },
+            {
+                width: 700, hideDelay: 60000
+            }
+    );
+</script>        </div>
+    </div>
+</div>
+
+<table cellspacing="0" cellpadding="0" class="srcView" width="100%">
+
+    
+<tbody> <tr id="l1">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=1#src-1">1</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-1" class="srcLine"><span class="keyword">package</span> org.<a href="../../traccar/pkg-summary.html">traccar</a>.<a href="../helper/pkg-summary.html">helper</a>;</span></td>
+</tr>
+ <tr id="l2">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=2#src-2">2</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-2" class="srcLine"></span></td>
+</tr>
+ <tr id="l3">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=3#src-3">3</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-3" class="srcLine"><span class="keyword">import</span> java.util.List;</span></td>
+</tr>
+ <tr id="l4">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=4#src-4">4</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-4" class="srcLine"><span class="keyword">import</span> org.<a href="../../traccar/pkg-summary.html">traccar</a>.<a href="../database/pkg-summary.html">database</a>.<a href="../../../org/traccar/database/DataManager.html#DataManager">DataManager</a>;</span></td>
+</tr>
+ <tr id="l5">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=5#src-5">5</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-5" class="srcLine"><span class="keyword">import</span> org.<a href="../../traccar/pkg-summary.html">traccar</a>.<a href="../model/pkg-summary.html">model</a>.<a href="../../../org/traccar/model/Device.html#Device">Device</a>;</span></td>
+</tr>
+ <tr id="l6">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=6#src-6">6</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-6" class="srcLine"><span class="keyword">import</span> org.<a href="../../traccar/pkg-summary.html">traccar</a>.<a href="../model/pkg-summary.html">model</a>.<a href="../../../org/traccar/model/Event.html#Event">Event</a>;</span></td>
+</tr>
+ <tr id="l7">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=7#src-7">7</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-7" class="srcLine"><span class="keyword">import</span> org.<a href="../../traccar/pkg-summary.html">traccar</a>.<a href="../model/pkg-summary.html">model</a>.<a href="../../../org/traccar/model/Position.html#Position">Position</a>;</span></td>
+</tr>
+ <tr id="l8">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=8#src-8">8</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-8" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="9" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-9' onclick="toggleInlineStats(this, 'inlinestats-9');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-9" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-9'), 'inlinestats-9');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (7)</td>
+                <td class="inlineStat">Complexity: 2</td>
+                <td class="inlineStat">Complexity Density: 0.4</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l9">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=9#src-9">9</a></td>
+<td align="right" class="coverageCount NoHilight "   onclick="return showTestsForLine(this, 9, 'Tests that hit TestDataManager');" >&#160;&#160;</td>
+<td class=" srcCell" id="id-9"><span class="spacer"></span><span id="src-9" class="srcLine"><span class="keyword">public</span> <span class="keyword">class</span> <a href="../../../org/traccar/helper/TestDataManager.html#TestDataManager">TestDataManager</a> <span class="keyword">extends</span> <a href="../../../org/traccar/database/DataManager.html#DataManager">DataManager</a> {</span></td>
+</tr>
+ <tr id="l10">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=10#src-10">10</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-10" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="11" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-11' onclick="toggleInlineStats(this, 'inlinestats-11');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-11" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-11'), 'inlinestats-11');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l11">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=11#src-11">11</a></td>
+<td align="right" class="coverageCount Good missedByTest"   ><span title="Line 11, Col 5: method entered 1 time." class="nolink">&#160;1</span></td>
+<td class=" methodStart  srcCell" id="id-11"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 11,13);" id="img-11" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-11" class="srcLine"><span class="nolink" title="Line 11, Col 5: method entered 1 time.">    <span class="keyword">public</span> <a href="../../../org/traccar/helper/TestDataManager.html#TestDataManager">TestDataManager</a>() <span class="keyword">throws</span> Exception {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-11'), 11,13);" id="e11" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l12">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=12#src-12">12</a></td>
+<td align="right" class="coverageCount Good missedByTest"   ><span title="Line 12, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-12" class="srcLine"><span class="nolink" title="Line 12, Col 9: statement executed 1 time.">        <span class="keyword">super</span>(<span class="keyword">null</span>);</span></span></td>
+</tr>
+ <tr id="l13">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=13#src-13">13</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-13" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l14">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=14#src-14">14</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-14" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="15" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-15' onclick="toggleInlineStats(this, 'inlinestats-15');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-15" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-15'), 'inlinestats-15');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (4)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.25</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l15">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=15#src-15">15</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 15, 'Tests that hit getDeviceByUniqueId(String)&#160;:&#160;Device');" ><span title="Line 15, Col 5: method entered 96 times." class="nolink">&#160;96</span></td>
+<td class=" methodStart  srcCell" id="id-15"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 15,21);" id="img-15" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-15" class="srcLine"><span class="nolink" title="Line 15, Col 5: method entered 96 times.">    @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-15'), 15,21);" id="e15" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l16">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=16#src-16">16</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-16" class="srcLine">    <span class="keyword">public</span> <a href="../../../org/traccar/model/Device.html#Device">Device</a> getDeviceByUniqueId(String imei) {</span></td>
+</tr>
+ <tr id="l17">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=17#src-17">17</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 17, 'Tests that hit line # 17');" ><span title="Line 17, Col 9: statement executed 96 times." class="nolink">&#160;96</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-17" class="srcLine"><span class="nolink" title="Line 17, Col 9: statement executed 96 times.">        <a href="../../../org/traccar/model/Device.html#Device">Device</a> device = <span class="keyword">new</span> <a href="../../../org/traccar/model/Device.html#Device">Device</a>();</span></span></td>
+</tr>
+ <tr id="l18">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=18#src-18">18</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 18, 'Tests that hit line # 18');" ><span title="Line 18, Col 9: statement executed 96 times." class="nolink">&#160;96</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-18" class="srcLine"><span class="nolink" title="Line 18, Col 9: statement executed 96 times.">        device.setId(<span class="keyword">new</span> Long(1));</span></span></td>
+</tr>
+ <tr id="l19">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=19#src-19">19</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 19, 'Tests that hit line # 19');" ><span title="Line 19, Col 9: statement executed 96 times." class="nolink">&#160;96</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-19" class="srcLine"><span class="nolink" title="Line 19, Col 9: statement executed 96 times.">        device.setUniqueId(<span class="string">&quot;123456789012345&quot;</span>);</span></span></td>
+</tr>
+ <tr id="l20">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=20#src-20">20</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 20, 'Tests that hit line # 20');" ><span title="Line 20, Col 9: statement executed 96 times." class="nolink">&#160;96</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-20" class="srcLine"><span class="nolink" title="Line 20, Col 9: statement executed 96 times.">        <span class="keyword">return</span> device;</span></span></td>
+</tr>
+ <tr id="l21">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=21#src-21">21</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-21" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l22">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=22#src-22">22</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-22" class="srcLine"></span></td>
+</tr>
+ <tr id="l23">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=23#src-23">23</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-23" class="srcLine">}</span></td>
+</tr>
+ 
+    </tbody></table>    </div>
+</div><!-- .aui-tabs -->
+
+<script type="text/javascript"> 
+    var ol_bgclass = "overBG";
+    var ol_fgclass = "overFG";
+    var ol_cgclass = "overCaption";
+    var ol_captionfontclass= "overCaption";
+    var ol_closefontclass = "closeFont";
+    var ol_closeclick = 1;
+    var ol_close = 'X';
+    var ol_wrap = 1;
+    var rootRelPath = '../../../';
+    var testsPerFile = -1;
+</script>
+<script src="TestDataManager.js" type="text/javascript"></script>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="https://openclover.org">OpenClover</a> v 4.5.2
+                on Wed Jun 5 2024 13:17:46 CST using coverage data from Wed Jun 5 2024 13:17:42 CST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

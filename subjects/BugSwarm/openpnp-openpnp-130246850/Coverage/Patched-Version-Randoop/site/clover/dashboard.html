@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="img/clover.ico" />
+
+    <link rel="stylesheet" href="aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('style.css');
+        @import url('tree.css');
+        
+    </style>
+
+    <script src="jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="package-nodes-tree.js" type="text/javascript"></script>
+    <script src="clover-tree.js" type="text/javascript"></script>
+    <script src="clover.js" type="text/javascript"></script>
+    <script src="clover-descriptions.js" type="text/javascript"></script>
+    <script src="cloud.js" type="text/javascript"></script>
+
+            <title>openpnp-gui 0.0.1-alpha-SNAPSHOT</title>
+    </head>
+
+<body onresize="processTreeMapDashJson(treeMapJson);" >
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="https://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="https://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                    <a href="http://openpnp.org" target="_top">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+                    </a>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                            <a href="http://openpnp.org" target="_top">
+                                        openpnp-gui 0.0.1-alpha-SNAPSHOT
+                                        </a>
+                    </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="aui-nav-selected">
+                    <a href="dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                  <div class="packages-tree-wrapper" data-root-relative="" data-package-name="">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="dashboard.html">Project Clover database Wed Jun 5 2024 14:57:02 CST</a></li>
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            Project overview
+    </h1>
+<div class="aui-tabs horizontal-tabs">
+        <ul class="tabs-menu">
+            <li class="menu-item active-tab">
+            <a href="dashboard.html">Dashboard</a>
+        </li>
+                <li class="menu-item ">
+            <a href="pkg-summary.html"><strong>Application code</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="testsrc-pkg-summary.html"><strong>Test code</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="test-pkg-summary.html"><strong>Test results</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="top-risks.html"><strong>Top risks</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="quick-wins.html"><strong>Quick wins</strong></a>
+        </li>
+                                                <li class="menu-item ">
+                <a href="treemap.html"><strong>Coverage tree map</strong></a>
+            </li>
+            </ul>
+    <div class="tabs-pane active-pane" id="tabs-first">
+
+        <div>&#160;</div>
+
+
+
+
+
+
+<div class="aui-group">
+    <div class="aui-item">
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                
+                <h3>
+                    Code coverage
+                    <small style="float:right; font-weight: normal">
+                        451 classes,
+                        19 /
+                        21,795 elements
+                    </small>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">8.717596E-4</span>0.1%</div><div style="display: table-cell">
+ <div title="0.1% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0.1%"></div></div></div></div>
+                <p><a href="pkg-summary.html">See more</a></p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>
+                    Test results
+                    <small style="float:right; font-weight: normal">
+                        132 /
+                        132 tests
+                        0.23 secs
+                    </small>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                                    
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>                                <p><a href="test-pkg-summary.html">See more</a></p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Code metrics</h3>
+            </header>
+                         
+
+<div id="$statsId" class="aui-item" style="display: ${display}">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this project">Branches:</label></div>
+        <div class="stats-box-value">3,416</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this project">Statements:</label></div>
+        <div class="stats-box-value">14,943</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this project">Methods:</label></div>
+        <div class="stats-box-value">3,436</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this project">Classes:</label></div>
+        <div class="stats-box-value">451</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of files in this project">Files:</label></div>
+            <div class="stats-box-value">344</div>
+        </div>
+                <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of packages in this project">Packages:</label></div>
+            <div class="stats-box-value">35</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this project">LOC:</label></div>
+        <div class="stats-box-value">56,902</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this project">NCLOC:</label></div>
+        <div class="stats-box-value">36,369</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this project">Total complexity:</label></div>
+        <div class="stats-box-value">5,734</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this project">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.38</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">4.35</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">7.62</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Number of classes per package.">Classes/Package:</label></div>
+            <div class="stats-box-value">12.89</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this project">Average method complexity:</label></div>
+        <div class="stats-box-value">1.67</div>
+    </div>
+</div>
+
+</div>        </div>
+
+                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Class Coverage Distribution</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div style="text-align: center">                     <img src="img/classDistrubutionChart.png" alt="img/classDistrubutionChart.png" usemap="#classDistrubutionChart.png"/>
+                </div>
+                <map id="classDistrubutionChart.png" name="classDistrubutionChart.png">
+<area shape="rect" coords="282,206,304,207" title="1 class has 91-100% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="87,206,109,207" title="1 class has 11-20% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="62,206,84,207" title="2 classes have 1-10% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="38,15,60,206" title="384 classes have 0% coverage" alt="" nohref="nohref"/>
+</map>
+            </div>
+        </div>
+        
+                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Class Complexity</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div style="text-align: center">
+                    <img src="img/classComplexityChart.png" alt="img/classComplexityChart.png" usemap="#classComplexityChart.png"/>
+                </div>
+                <map id="classComplexityChart.png" name="classComplexityChart.png">
+<area shape="poly" coords="54,184,51,187,49,184,51,182,54,184,54,184" title="Complexity: 24; Coverage: 0%; Class: TwoPlacementBoardLocationProcess" alt="" href="org/openpnp/gui/processes/TwoPlacementBoardLocationProcess.html#TwoPlacementBoardLocationProcess"/>
+<area shape="poly" coords="54,198,51,200,49,198,51,195,54,198,54,198" title="Complexity: 11; Coverage: 0%; Class: ReferenceSolderPasteJobProcessor" alt="" href="org/openpnp/machine/reference/ReferenceSolderPasteJobProcessor.html#ReferenceSolderPasteJobProcessor"/>
+<area shape="poly" coords="54,190,51,193,49,190,51,188,54,190,54,190" title="Complexity: 18; Coverage: 0%; Class: ReferencePasteDispenser" alt="" href="org/openpnp/machine/reference/ReferencePasteDispenser.html#ReferencePasteDispenser"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,195,51,197,49,195,51,192,54,195,54,195" title="Complexity: 14; Coverage: 0%; Class: ReferenceNozzleTip.Calibration" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration"/>
+<area shape="poly" coords="54,181,51,184,49,181,51,179,54,181,54,181" title="Complexity: 27; Coverage: 0%; Class: ReferenceNozzleTip" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip"/>
+<area shape="poly" coords="54,165,51,167,49,165,51,162,54,165,54,165" title="Complexity: 43; Coverage: 0%; Class: ReferenceNozzle" alt="" href="org/openpnp/machine/reference/ReferenceNozzle.html#ReferenceNozzle"/>
+<area shape="poly" coords="54,187,51,190,49,187,51,185,54,187,54,187" title="Complexity: 21; Coverage: 0%; Class: ReferenceMachine" alt="" href="org/openpnp/machine/reference/ReferenceMachine.html#ReferenceMachine"/>
+<area shape="poly" coords="54,134,51,136,49,134,51,131,54,134,54,134" title="Complexity: 73; Coverage: 0%; Class: ReferenceJobProcessor" alt="" href="org/openpnp/machine/reference/ReferenceJobProcessor.html#ReferenceJobProcessor"/>
+<area shape="poly" coords="54,199,51,201,49,199,51,196,54,199,54,199" title="Complexity: 10; Coverage: 0%; Class: ReferenceHead" alt="" href="org/openpnp/machine/reference/ReferenceHead.html#ReferenceHead"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,201,51,203,49,201,51,198,54,201,54,201" title="Complexity: 8; Coverage: 0%; Class: ReferenceCamera.LensCalibrationParams" alt="" href="org/openpnp/machine/reference/ReferenceCamera.html#ReferenceCamera.LensCalibrationParams"/>
+<area shape="poly" coords="54,153,51,156,49,153,51,151,54,153,54,153" title="Complexity: 54; Coverage: 0%; Class: ReferenceCamera" alt="" href="org/openpnp/machine/reference/ReferenceCamera.html#ReferenceCamera"/>
+<area shape="poly" coords="54,189,51,192,49,189,51,187,54,189,54,189" title="Complexity: 19; Coverage: 0%; Class: ReferenceActuator" alt="" href="org/openpnp/machine/reference/ReferenceActuator.html#ReferenceActuator"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,190,51,193,49,190,51,188,54,190,54,190" title="Complexity: 18; Coverage: 0%; Class: ReferencePasteDispenser" alt="" href="org/openpnp/machine/reference/ReferencePasteDispenser.html#ReferencePasteDispenser"/>
+<area shape="poly" coords="54,201,51,203,49,201,51,198,54,201,54,201" title="Complexity: 8; Coverage: 0%; Class: ReferenceCamera.LensCalibrationParams" alt="" href="org/openpnp/machine/reference/ReferenceCamera.html#ReferenceCamera.LensCalibrationParams"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: ReferenceMachineConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceMachineConfigurationWizard.html#ReferenceMachineConfigurationWizard"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,200,51,202,49,200,51,197,54,200,54,200" title="Complexity: 9; Coverage: 0%; Class: ReferenceHeadConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceHeadConfigurationWizard.html#ReferenceHeadConfigurationWizard"/>
+<area shape="poly" coords="54,201,51,203,49,201,51,198,54,201,54,201" title="Complexity: 8; Coverage: 0%; Class: ReferenceCamera.LensCalibrationParams" alt="" href="org/openpnp/machine/reference/ReferenceCamera.html#ReferenceCamera.LensCalibrationParams"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: ReferenceActuatorConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceActuatorConfigurationWizard.html#ReferenceActuatorConfigurationWizard"/>
+<area shape="poly" coords="54,201,51,203,49,201,51,198,54,201,54,201" title="Complexity: 8; Coverage: 0%; Class: ReferenceCamera.LensCalibrationParams" alt="" href="org/openpnp/machine/reference/ReferenceCamera.html#ReferenceCamera.LensCalibrationParams"/>
+<area shape="poly" coords="54,201,51,203,49,201,51,198,54,201,54,201" title="Complexity: 8; Coverage: 0%; Class: ReferenceCamera.LensCalibrationParams" alt="" href="org/openpnp/machine/reference/ReferenceCamera.html#ReferenceCamera.LensCalibrationParams"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 7; Coverage: 0%; Class: OutlineReticle" alt="" href="org/openpnp/gui/components/reticle/OutlineReticle.html#OutlineReticle"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: ReferenceActuatorConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceActuatorConfigurationWizard.html#ReferenceActuatorConfigurationWizard"/>
+<area shape="poly" coords="54,195,51,197,49,195,51,192,54,195,54,195" title="Complexity: 14; Coverage: 0%; Class: ReferenceNozzleTip.Calibration" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: CrosshairReticle" alt="" href="org/openpnp/gui/components/reticle/CrosshairReticle.html#CrosshairReticle"/>
+<area shape="poly" coords="54,200,51,202,49,200,51,197,54,200,54,200" title="Complexity: 9; Coverage: 0%; Class: ReferenceHeadConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceHeadConfigurationWizard.html#ReferenceHeadConfigurationWizard"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: ReferenceActuatorConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceActuatorConfigurationWizard.html#ReferenceActuatorConfigurationWizard"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 7; Coverage: 0%; Class: OutlineReticle" alt="" href="org/openpnp/gui/components/reticle/OutlineReticle.html#OutlineReticle"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: Normalize" alt="" href="org/openpnp/vision/pipeline/stages/Normalize.html#Normalize"/>
+<area shape="poly" coords="54,200,51,202,49,200,51,197,54,200,54,200" title="Complexity: 9; Coverage: 0%; Class: ReferenceHeadConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceHeadConfigurationWizard.html#ReferenceHeadConfigurationWizard"/>
+<area shape="poly" coords="54,164,51,166,49,164,51,161,54,164,54,164" title="Complexity: 44; Coverage: 0%; Class: MatchTemplate" alt="" href="org/openpnp/vision/pipeline/stages/MatchTemplate.html#MatchTemplate"/>
+<area shape="poly" coords="54,196,51,198,49,196,51,193,54,196,54,196" title="Complexity: 13; Coverage: 0%; Class: MaskHsv" alt="" href="org/openpnp/vision/pipeline/stages/MaskHsv.html#MaskHsv"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: ReferenceActuatorConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceActuatorConfigurationWizard.html#ReferenceActuatorConfigurationWizard"/>
+<area shape="poly" coords="54,203,51,205,49,203,51,200,54,203,54,203" title="Complexity: 6; Coverage: 0%; Class: ImageWriteDebug" alt="" href="org/openpnp/vision/pipeline/stages/ImageWriteDebug.html#ImageWriteDebug"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: ReferenceActuatorConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceActuatorConfigurationWizard.html#ReferenceActuatorConfigurationWizard"/>
+<area shape="poly" coords="54,203,51,205,49,203,51,200,54,203,54,203" title="Complexity: 6; Coverage: 0%; Class: ImageWriteDebug" alt="" href="org/openpnp/vision/pipeline/stages/ImageWriteDebug.html#ImageWriteDebug"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: CrosshairReticle" alt="" href="org/openpnp/gui/components/reticle/CrosshairReticle.html#CrosshairReticle"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: ReferenceMachineConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceMachineConfigurationWizard.html#ReferenceMachineConfigurationWizard"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: ReferenceMachineConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceMachineConfigurationWizard.html#ReferenceMachineConfigurationWizard"/>
+<area shape="poly" coords="54,195,51,197,49,195,51,192,54,195,54,195" title="Complexity: 14; Coverage: 0%; Class: ReferenceNozzleTip.Calibration" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration"/>
+<area shape="poly" coords="54,199,51,201,49,199,51,196,54,199,54,199" title="Complexity: 10; Coverage: 0%; Class: ReferenceHead" alt="" href="org/openpnp/machine/reference/ReferenceHead.html#ReferenceHead"/>
+<area shape="poly" coords="54,194,51,196,49,194,51,191,54,194,54,194" title="Complexity: 15; Coverage: 0%; Class: DrawRotatedRects" alt="" href="org/openpnp/vision/pipeline/stages/DrawRotatedRects.html#DrawRotatedRects"/>
+<area shape="poly" coords="54,200,51,202,49,200,51,197,54,200,54,200" title="Complexity: 9; Coverage: 0%; Class: ReferenceHeadConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceHeadConfigurationWizard.html#ReferenceHeadConfigurationWizard"/>
+<area shape="poly" coords="54,193,51,195,49,193,51,190,54,193,54,193" title="Complexity: 16; Coverage: 0%; Class: DrawContours" alt="" href="org/openpnp/vision/pipeline/stages/DrawContours.html#DrawContours"/>
+<area shape="poly" coords="54,196,51,198,49,196,51,193,54,196,54,196" title="Complexity: 13; Coverage: 0%; Class: MaskHsv" alt="" href="org/openpnp/vision/pipeline/stages/MaskHsv.html#MaskHsv"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: Normalize" alt="" href="org/openpnp/vision/pipeline/stages/Normalize.html#Normalize"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: ReferenceMachineConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceMachineConfigurationWizard.html#ReferenceMachineConfigurationWizard"/>
+<area shape="poly" coords="54,195,51,197,49,195,51,192,54,195,54,195" title="Complexity: 14; Coverage: 0%; Class: ReferenceNozzleTip.Calibration" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: ReferenceActuatorConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceActuatorConfigurationWizard.html#ReferenceActuatorConfigurationWizard"/>
+<area shape="poly" coords="54,199,51,201,49,199,51,196,54,199,54,199" title="Complexity: 10; Coverage: 0%; Class: ReferenceHead" alt="" href="org/openpnp/machine/reference/ReferenceHead.html#ReferenceHead"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: ReferenceActuatorConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceActuatorConfigurationWizard.html#ReferenceActuatorConfigurationWizard"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: ReferenceActuatorConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceActuatorConfigurationWizard.html#ReferenceActuatorConfigurationWizard"/>
+<area shape="poly" coords="54,142,51,145,49,142,51,140,54,142,54,142" title="Complexity: 65; Coverage: 0%; Class: TinygDriver" alt="" href="org/openpnp/machine/reference/driver/TinygDriver.html#TinygDriver"/>
+<area shape="poly" coords="54,136,51,138,49,136,51,133,54,136,54,136" title="Complexity: 71; Coverage: 0%; Class: SprinterDriver" alt="" href="org/openpnp/machine/reference/driver/SprinterDriver.html#SprinterDriver"/>
+<area shape="poly" coords="54,165,51,167,49,165,51,162,54,165,54,165" title="Complexity: 43; Coverage: 0%; Class: ReferenceNozzle" alt="" href="org/openpnp/machine/reference/ReferenceNozzle.html#ReferenceNozzle"/>
+<area shape="poly" coords="54,162,51,164,49,162,51,159,54,162,54,162" title="Complexity: 46; Coverage: 0%; Class: NullDriver" alt="" href="org/openpnp/machine/reference/driver/NullDriver.html#NullDriver"/>
+<area shape="poly" coords="54,148,51,151,49,148,51,146,54,148,54,148" title="Complexity: 59; Coverage: 0%; Class: MarlinDriver" alt="" href="org/openpnp/machine/reference/driver/MarlinDriver.html#MarlinDriver"/>
+<area shape="poly" coords="54,143,51,146,49,143,51,141,54,143,54,143" title="Complexity: 64; Coverage: 0%; Class: LinuxCNC" alt="" href="org/openpnp/machine/reference/driver/LinuxCNC.html#LinuxCNC"/>
+<area shape="poly" coords="54,149,51,152,49,149,51,147,54,149,54,149" title="Complexity: 58; Coverage: 0%; Class: GrblDriver" alt="" href="org/openpnp/machine/reference/driver/GrblDriver.html#GrblDriver"/>
+<area shape="poly" coords="54,142,51,145,49,142,51,140,54,142,54,142" title="Complexity: 65; Coverage: 0%; Class: TinygDriver" alt="" href="org/openpnp/machine/reference/driver/TinygDriver.html#TinygDriver"/>
+<area shape="poly" coords="54,203,51,205,49,203,51,200,54,203,54,203" title="Complexity: 6; Coverage: 0%; Class: ImageWriteDebug" alt="" href="org/openpnp/vision/pipeline/stages/ImageWriteDebug.html#ImageWriteDebug"/>
+<area shape="poly" coords="54,187,51,190,49,187,51,185,54,187,54,187" title="Complexity: 21; Coverage: 0%; Class: ReferenceMachine" alt="" href="org/openpnp/machine/reference/ReferenceMachine.html#ReferenceMachine"/>
+<area shape="poly" coords="54,183,51,186,49,183,51,181,54,183,54,183" title="Complexity: 25; Coverage: 0%; Class: AbstractSerialPortDriver" alt="" href="org/openpnp/machine/reference/driver/AbstractSerialPortDriver.html#AbstractSerialPortDriver"/>
+<area shape="poly" coords="54,199,51,201,49,199,51,196,54,199,54,199" title="Complexity: 10; Coverage: 0%; Class: ReferenceHead" alt="" href="org/openpnp/machine/reference/ReferenceHead.html#ReferenceHead"/>
+<area shape="poly" coords="54,194,51,196,49,194,51,191,54,194,54,194" title="Complexity: 15; Coverage: 0%; Class: DrawRotatedRects" alt="" href="org/openpnp/vision/pipeline/stages/DrawRotatedRects.html#DrawRotatedRects"/>
+<area shape="poly" coords="54,189,51,192,49,189,51,187,54,189,54,189" title="Complexity: 19; Coverage: 0%; Class: ReferenceActuator" alt="" href="org/openpnp/machine/reference/ReferenceActuator.html#ReferenceActuator"/>
+<area shape="poly" coords="54,192,51,194,49,192,51,189,54,192,54,192" title="Complexity: 17; Coverage: 0%; Class: Part" alt="" href="org/openpnp/model/Part.html#Part"/>
+<area shape="poly" coords="54,201,51,203,49,201,51,198,54,201,54,201" title="Complexity: 8; Coverage: 0%; Class: ReferenceCamera.LensCalibrationParams" alt="" href="org/openpnp/machine/reference/ReferenceCamera.html#ReferenceCamera.LensCalibrationParams"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: CrosshairReticle" alt="" href="org/openpnp/gui/components/reticle/CrosshairReticle.html#CrosshairReticle"/>
+<area shape="poly" coords="54,203,51,205,49,203,51,200,54,203,54,203" title="Complexity: 6; Coverage: 0%; Class: ImageWriteDebug" alt="" href="org/openpnp/vision/pipeline/stages/ImageWriteDebug.html#ImageWriteDebug"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,198,51,200,49,198,51,195,54,198,54,198" title="Complexity: 11; Coverage: 0%; Class: ReferenceSolderPasteJobProcessor" alt="" href="org/openpnp/machine/reference/ReferenceSolderPasteJobProcessor.html#ReferenceSolderPasteJobProcessor"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: Normalize" alt="" href="org/openpnp/vision/pipeline/stages/Normalize.html#Normalize"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: Normalize" alt="" href="org/openpnp/vision/pipeline/stages/Normalize.html#Normalize"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: Normalize" alt="" href="org/openpnp/vision/pipeline/stages/Normalize.html#Normalize"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: CrosshairReticle" alt="" href="org/openpnp/gui/components/reticle/CrosshairReticle.html#CrosshairReticle"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: ReferenceActuatorConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceActuatorConfigurationWizard.html#ReferenceActuatorConfigurationWizard"/>
+<area shape="poly" coords="54,165,51,167,49,165,51,162,54,165,54,165" title="Complexity: 43; Coverage: 0%; Class: ReferenceNozzle" alt="" href="org/openpnp/machine/reference/ReferenceNozzle.html#ReferenceNozzle"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: ReferenceActuatorConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceActuatorConfigurationWizard.html#ReferenceActuatorConfigurationWizard"/>
+<area shape="poly" coords="54,147,51,150,49,147,51,145,54,147,54,147" title="Complexity: 60; Coverage: 0%; Class: Length" alt="" href="org/openpnp/model/Length.html#Length"/>
+<area shape="poly" coords="54,197,51,199,49,197,51,194,54,197,54,197" title="Complexity: 12; Coverage: 0%; Class: Job" alt="" href="org/openpnp/model/Job.html#Job"/>
+<area shape="poly" coords="54,194,51,196,49,194,51,191,54,194,54,194" title="Complexity: 15; Coverage: 0%; Class: DrawRotatedRects" alt="" href="org/openpnp/vision/pipeline/stages/DrawRotatedRects.html#DrawRotatedRects"/>
+<area shape="poly" coords="54,199,51,201,49,199,51,196,54,199,54,199" title="Complexity: 10; Coverage: 0%; Class: ReferenceHead" alt="" href="org/openpnp/machine/reference/ReferenceHead.html#ReferenceHead"/>
+<area shape="poly" coords="58,132,56,134,53,132,56,129,58,132,58,132" title="Complexity: 75; Coverage: 2%; Class: Configuration" alt="" href="org/openpnp/model/Configuration.html#Configuration"/>
+<area shape="poly" coords="54,197,51,199,49,197,51,194,54,197,54,197" title="Complexity: 12; Coverage: 0%; Class: Job" alt="" href="org/openpnp/model/Job.html#Job"/>
+<area shape="poly" coords="54,193,51,195,49,193,51,190,54,193,54,193" title="Complexity: 16; Coverage: 0%; Class: DrawContours" alt="" href="org/openpnp/vision/pipeline/stages/DrawContours.html#DrawContours"/>
+<area shape="poly" coords="54,179,51,182,49,179,51,177,54,179,54,179" title="Complexity: 29; Coverage: 0%; Class: Board" alt="" href="org/openpnp/model/Board.html#Board"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: ReferenceMachineConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceMachineConfigurationWizard.html#ReferenceMachineConfigurationWizard"/>
+<area shape="poly" coords="54,193,51,195,49,193,51,190,54,193,54,193" title="Complexity: 16; Coverage: 0%; Class: DrawContours" alt="" href="org/openpnp/vision/pipeline/stages/DrawContours.html#DrawContours"/>
+<area shape="poly" coords="54,193,51,195,49,193,51,190,54,193,54,193" title="Complexity: 16; Coverage: 0%; Class: DrawContours" alt="" href="org/openpnp/vision/pipeline/stages/DrawContours.html#DrawContours"/>
+<area shape="poly" coords="54,192,51,194,49,192,51,189,54,192,54,192" title="Complexity: 17; Coverage: 0%; Class: Part" alt="" href="org/openpnp/model/Part.html#Part"/>
+<area shape="poly" coords="54,182,51,185,49,182,51,180,54,182,54,182" title="Complexity: 26; Coverage: 0%; Class: ResultsPanel" alt="" href="org/openpnp/vision/pipeline/ui/ResultsPanel.html#ResultsPanel"/>
+<area shape="poly" coords="54,178,51,181,49,178,51,176,54,178,54,178" title="Complexity: 30; Coverage: 0%; Class: PipelinePanel" alt="" href="org/openpnp/vision/pipeline/ui/PipelinePanel.html#PipelinePanel"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 7; Coverage: 0%; Class: OutlineReticle" alt="" href="org/openpnp/gui/components/reticle/OutlineReticle.html#OutlineReticle"/>
+<area shape="poly" coords="54,201,51,203,49,201,51,198,54,201,54,201" title="Complexity: 8; Coverage: 0%; Class: ReferenceCamera.LensCalibrationParams" alt="" href="org/openpnp/machine/reference/ReferenceCamera.html#ReferenceCamera.LensCalibrationParams"/>
+<area shape="poly" coords="54,178,51,181,49,178,51,176,54,178,54,178" title="Complexity: 30; Coverage: 0%; Class: PipelinePanel" alt="" href="org/openpnp/vision/pipeline/ui/PipelinePanel.html#PipelinePanel"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 7; Coverage: 0%; Class: OutlineReticle" alt="" href="org/openpnp/gui/components/reticle/OutlineReticle.html#OutlineReticle"/>
+<area shape="poly" coords="54,186,51,189,49,186,51,184,54,186,54,186" title="Complexity: 22; Coverage: 0%; Class: ReferenceBottomVision" alt="" href="org/openpnp/machine/reference/vision/ReferenceBottomVision.html#ReferenceBottomVision"/>
+<area shape="poly" coords="54,158,51,160,49,158,51,155,54,158,54,158" title="Complexity: 50; Coverage: 0%; Class: OpenCvVisionProvider" alt="" href="org/openpnp/machine/reference/vision/OpenCvVisionProvider.html#OpenCvVisionProvider"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: ReferenceMachineConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceMachineConfigurationWizard.html#ReferenceMachineConfigurationWizard"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: Normalize" alt="" href="org/openpnp/vision/pipeline/stages/Normalize.html#Normalize"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 7; Coverage: 0%; Class: OutlineReticle" alt="" href="org/openpnp/gui/components/reticle/OutlineReticle.html#OutlineReticle"/>
+<area shape="poly" coords="54,185,51,188,49,185,51,183,54,185,54,185" title="Complexity: 23; Coverage: 0%; Class: ReferenceStripFeederConfigurationWizard" alt="" href="org/openpnp/machine/reference/feeder/wizards/ReferenceStripFeederConfigurationWizard.html#ReferenceStripFeederConfigurationWizard"/>
+<area shape="poly" coords="54,193,51,195,49,193,51,190,54,193,54,193" title="Complexity: 16; Coverage: 0%; Class: DrawContours" alt="" href="org/openpnp/vision/pipeline/stages/DrawContours.html#DrawContours"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: Normalize" alt="" href="org/openpnp/vision/pipeline/stages/Normalize.html#Normalize"/>
+<area shape="poly" coords="54,203,51,205,49,203,51,200,54,203,54,203" title="Complexity: 6; Coverage: 0%; Class: ImageWriteDebug" alt="" href="org/openpnp/vision/pipeline/stages/ImageWriteDebug.html#ImageWriteDebug"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: ReferenceActuatorConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceActuatorConfigurationWizard.html#ReferenceActuatorConfigurationWizard"/>
+<area shape="poly" coords="54,198,51,200,49,198,51,195,54,198,54,198" title="Complexity: 11; Coverage: 0%; Class: ReferenceSolderPasteJobProcessor" alt="" href="org/openpnp/machine/reference/ReferenceSolderPasteJobProcessor.html#ReferenceSolderPasteJobProcessor"/>
+<area shape="poly" coords="54,198,51,200,49,198,51,195,54,198,54,198" title="Complexity: 11; Coverage: 0%; Class: ReferenceSolderPasteJobProcessor" alt="" href="org/openpnp/machine/reference/ReferenceSolderPasteJobProcessor.html#ReferenceSolderPasteJobProcessor"/>
+<area shape="poly" coords="54,168,51,170,49,168,51,165,54,168,54,168" title="Complexity: 40; Coverage: 0%; Class: CvPipeline" alt="" href="org/openpnp/vision/pipeline/CvPipeline.html#CvPipeline"/>
+<area shape="poly" coords="54,180,51,183,49,180,51,178,54,180,54,180" title="Complexity: 28; Coverage: 0%; Class: PartsPanel" alt="" href="org/openpnp/gui/PartsPanel.html#PartsPanel"/>
+<area shape="poly" coords="54,177,51,180,49,177,51,175,54,177,54,177" title="Complexity: 31; Coverage: 0%; Class: PackagesPanel" alt="" href="org/openpnp/gui/PackagesPanel.html#PackagesPanel"/>
+<area shape="poly" coords="54,162,51,164,49,162,51,159,54,162,54,162" title="Complexity: 46; Coverage: 0%; Class: NullDriver" alt="" href="org/openpnp/machine/reference/driver/NullDriver.html#NullDriver"/>
+<area shape="poly" coords="54,198,51,200,49,198,51,195,54,198,54,198" title="Complexity: 11; Coverage: 0%; Class: ReferenceSolderPasteJobProcessor" alt="" href="org/openpnp/machine/reference/ReferenceSolderPasteJobProcessor.html#ReferenceSolderPasteJobProcessor"/>
+<area shape="poly" coords="54,188,51,191,49,188,51,186,54,188,54,188" title="Complexity: 20; Coverage: 0%; Class: MachineSetupPanel" alt="" href="org/openpnp/gui/MachineSetupPanel.html#MachineSetupPanel"/>
+<area shape="poly" coords="54,152,51,155,49,152,51,150,54,152,54,152" title="Complexity: 55; Coverage: 0%; Class: MachineControlsPanel" alt="" href="org/openpnp/gui/MachineControlsPanel.html#MachineControlsPanel"/>
+<area shape="poly" coords="54,158,51,160,49,158,51,155,54,158,54,158" title="Complexity: 50; Coverage: 0%; Class: OpenCvVisionProvider" alt="" href="org/openpnp/machine/reference/vision/OpenCvVisionProvider.html#OpenCvVisionProvider"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: ReferenceMachineConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceMachineConfigurationWizard.html#ReferenceMachineConfigurationWizard"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: CrosshairReticle" alt="" href="org/openpnp/gui/components/reticle/CrosshairReticle.html#CrosshairReticle"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,172,51,174,49,172,51,169,54,172,54,172" title="Complexity: 36; Coverage: 0%; Class: JobPlacementsPanel" alt="" href="org/openpnp/gui/JobPlacementsPanel.html#JobPlacementsPanel"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: ReferenceActuatorConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceActuatorConfigurationWizard.html#ReferenceActuatorConfigurationWizard"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,181,51,184,49,181,51,179,54,181,54,181" title="Complexity: 27; Coverage: 0%; Class: ReferenceNozzleTip" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: CrosshairReticle" alt="" href="org/openpnp/gui/components/reticle/CrosshairReticle.html#CrosshairReticle"/>
+<area shape="poly" coords="54,81,51,84,49,81,51,79,54,81,54,81" title="Complexity: 124; Coverage: 0%; Class: JobPanel" alt="" href="org/openpnp/gui/JobPanel.html#JobPanel"/>
+<area shape="poly" coords="54,194,51,196,49,194,51,191,54,194,54,194" title="Complexity: 15; Coverage: 0%; Class: DrawRotatedRects" alt="" href="org/openpnp/vision/pipeline/stages/DrawRotatedRects.html#DrawRotatedRects"/>
+<area shape="poly" coords="54,161,51,163,49,161,51,158,54,161,54,161" title="Complexity: 47; Coverage: 0%; Class: FeedersPanel" alt="" href="org/openpnp/gui/FeedersPanel.html#FeedersPanel"/>
+<area shape="poly" coords="54,179,51,182,49,179,51,177,54,179,54,179" title="Complexity: 29; Coverage: 0%; Class: Board" alt="" href="org/openpnp/model/Board.html#Board"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,201,51,203,49,201,51,198,54,201,54,201" title="Complexity: 8; Coverage: 0%; Class: ReferenceCamera.LensCalibrationParams" alt="" href="org/openpnp/machine/reference/ReferenceCamera.html#ReferenceCamera.LensCalibrationParams"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 7; Coverage: 0%; Class: OutlineReticle" alt="" href="org/openpnp/gui/components/reticle/OutlineReticle.html#OutlineReticle"/>
+<area shape="poly" coords="54,203,51,205,49,203,51,200,54,203,54,203" title="Complexity: 6; Coverage: 0%; Class: ImageWriteDebug" alt="" href="org/openpnp/vision/pipeline/stages/ImageWriteDebug.html#ImageWriteDebug"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: Normalize" alt="" href="org/openpnp/vision/pipeline/stages/Normalize.html#Normalize"/>
+<area shape="poly" coords="54,190,51,193,49,190,51,188,54,190,54,190" title="Complexity: 18; Coverage: 0%; Class: ReferencePasteDispenser" alt="" href="org/openpnp/machine/reference/ReferencePasteDispenser.html#ReferencePasteDispenser"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: Normalize" alt="" href="org/openpnp/vision/pipeline/stages/Normalize.html#Normalize"/>
+<area shape="poly" coords="54,170,51,172,49,170,51,167,54,170,54,170" title="Complexity: 38; Coverage: 0%; Class: Webcams" alt="" href="org/openpnp/machine/reference/camera/Webcams.html#Webcams"/>
+<area shape="poly" coords="54,178,51,181,49,178,51,176,54,178,54,178" title="Complexity: 30; Coverage: 0%; Class: PipelinePanel" alt="" href="org/openpnp/vision/pipeline/ui/PipelinePanel.html#PipelinePanel"/>
+<area shape="poly" coords="54,182,51,185,49,182,51,180,54,182,54,182" title="Complexity: 26; Coverage: 0%; Class: ResultsPanel" alt="" href="org/openpnp/vision/pipeline/ui/ResultsPanel.html#ResultsPanel"/>
+<area shape="poly" coords="54,171,51,173,49,171,51,168,54,171,54,171" title="Complexity: 37; Coverage: 0%; Class: OpenCvCamera" alt="" href="org/openpnp/machine/reference/camera/OpenCvCamera.html#OpenCvCamera"/>
+<area shape="poly" coords="54,188,51,191,49,188,51,186,54,188,54,188" title="Complexity: 20; Coverage: 0%; Class: MachineSetupPanel" alt="" href="org/openpnp/gui/MachineSetupPanel.html#MachineSetupPanel"/>
+<area shape="poly" coords="54,183,51,186,49,183,51,181,54,183,54,183" title="Complexity: 25; Coverage: 0%; Class: AbstractSerialPortDriver" alt="" href="org/openpnp/machine/reference/driver/AbstractSerialPortDriver.html#AbstractSerialPortDriver"/>
+<area shape="poly" coords="54,183,51,186,49,183,51,181,54,183,54,183" title="Complexity: 25; Coverage: 0%; Class: AbstractSerialPortDriver" alt="" href="org/openpnp/machine/reference/driver/AbstractSerialPortDriver.html#AbstractSerialPortDriver"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: CrosshairReticle" alt="" href="org/openpnp/gui/components/reticle/CrosshairReticle.html#CrosshairReticle"/>
+<area shape="poly" coords="54,198,51,200,49,198,51,195,54,198,54,198" title="Complexity: 11; Coverage: 0%; Class: ReferenceSolderPasteJobProcessor" alt="" href="org/openpnp/machine/reference/ReferenceSolderPasteJobProcessor.html#ReferenceSolderPasteJobProcessor"/>
+<area shape="poly" coords="54,200,51,202,49,200,51,197,54,200,54,200" title="Complexity: 9; Coverage: 0%; Class: ReferenceHeadConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceHeadConfigurationWizard.html#ReferenceHeadConfigurationWizard"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: ReferenceActuatorConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceActuatorConfigurationWizard.html#ReferenceActuatorConfigurationWizard"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: ReferenceActuatorConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceActuatorConfigurationWizard.html#ReferenceActuatorConfigurationWizard"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: ReferenceMachineConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceMachineConfigurationWizard.html#ReferenceMachineConfigurationWizard"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: ReferenceActuatorConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceActuatorConfigurationWizard.html#ReferenceActuatorConfigurationWizard"/>
+<area shape="poly" coords="54,184,51,187,49,184,51,182,54,184,54,184" title="Complexity: 24; Coverage: 0%; Class: TwoPlacementBoardLocationProcess" alt="" href="org/openpnp/gui/processes/TwoPlacementBoardLocationProcess.html#TwoPlacementBoardLocationProcess"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: CrosshairReticle" alt="" href="org/openpnp/gui/components/reticle/CrosshairReticle.html#CrosshairReticle"/>
+<area shape="poly" coords="54,196,51,198,49,196,51,193,54,196,54,196" title="Complexity: 13; Coverage: 0%; Class: MaskHsv" alt="" href="org/openpnp/vision/pipeline/stages/MaskHsv.html#MaskHsv"/>
+<area shape="poly" coords="54,201,51,203,49,201,51,198,54,201,54,201" title="Complexity: 8; Coverage: 0%; Class: ReferenceCamera.LensCalibrationParams" alt="" href="org/openpnp/machine/reference/ReferenceCamera.html#ReferenceCamera.LensCalibrationParams"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: CrosshairReticle" alt="" href="org/openpnp/gui/components/reticle/CrosshairReticle.html#CrosshairReticle"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: CrosshairReticle" alt="" href="org/openpnp/gui/components/reticle/CrosshairReticle.html#CrosshairReticle"/>
+<area shape="poly" coords="54,196,51,198,49,196,51,193,54,196,54,196" title="Complexity: 13; Coverage: 0%; Class: MaskHsv" alt="" href="org/openpnp/vision/pipeline/stages/MaskHsv.html#MaskHsv"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: ReferenceActuatorConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceActuatorConfigurationWizard.html#ReferenceActuatorConfigurationWizard"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: ReferenceActuatorConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceActuatorConfigurationWizard.html#ReferenceActuatorConfigurationWizard"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 7; Coverage: 0%; Class: OutlineReticle" alt="" href="org/openpnp/gui/components/reticle/OutlineReticle.html#OutlineReticle"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: CrosshairReticle" alt="" href="org/openpnp/gui/components/reticle/CrosshairReticle.html#CrosshairReticle"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: CrosshairReticle" alt="" href="org/openpnp/gui/components/reticle/CrosshairReticle.html#CrosshairReticle"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: Normalize" alt="" href="org/openpnp/vision/pipeline/stages/Normalize.html#Normalize"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: ReferenceActuatorConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceActuatorConfigurationWizard.html#ReferenceActuatorConfigurationWizard"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: Normalize" alt="" href="org/openpnp/vision/pipeline/stages/Normalize.html#Normalize"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: ReferenceActuatorConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceActuatorConfigurationWizard.html#ReferenceActuatorConfigurationWizard"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: ReferenceActuatorConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceActuatorConfigurationWizard.html#ReferenceActuatorConfigurationWizard"/>
+<area shape="poly" coords="54,198,51,200,49,198,51,195,54,198,54,198" title="Complexity: 11; Coverage: 0%; Class: ReferenceSolderPasteJobProcessor" alt="" href="org/openpnp/machine/reference/ReferenceSolderPasteJobProcessor.html#ReferenceSolderPasteJobProcessor"/>
+<area shape="poly" coords="54,197,51,199,49,197,51,194,54,197,54,197" title="Complexity: 12; Coverage: 0%; Class: Job" alt="" href="org/openpnp/model/Job.html#Job"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: ReferenceActuatorConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceActuatorConfigurationWizard.html#ReferenceActuatorConfigurationWizard"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: ReferenceActuatorConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceActuatorConfigurationWizard.html#ReferenceActuatorConfigurationWizard"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: CrosshairReticle" alt="" href="org/openpnp/gui/components/reticle/CrosshairReticle.html#CrosshairReticle"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: CrosshairReticle" alt="" href="org/openpnp/gui/components/reticle/CrosshairReticle.html#CrosshairReticle"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: ReferenceActuatorConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceActuatorConfigurationWizard.html#ReferenceActuatorConfigurationWizard"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: ReferenceActuatorConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceActuatorConfigurationWizard.html#ReferenceActuatorConfigurationWizard"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: ReferenceActuatorConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceActuatorConfigurationWizard.html#ReferenceActuatorConfigurationWizard"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: CrosshairReticle" alt="" href="org/openpnp/gui/components/reticle/CrosshairReticle.html#CrosshairReticle"/>
+<area shape="poly" coords="54,192,51,194,49,192,51,189,54,192,54,192" title="Complexity: 17; Coverage: 0%; Class: Part" alt="" href="org/openpnp/model/Part.html#Part"/>
+<area shape="poly" coords="54,185,51,188,49,185,51,183,54,185,54,185" title="Complexity: 23; Coverage: 0%; Class: ReferenceStripFeederConfigurationWizard" alt="" href="org/openpnp/machine/reference/feeder/wizards/ReferenceStripFeederConfigurationWizard.html#ReferenceStripFeederConfigurationWizard"/>
+<area shape="poly" coords="54,192,51,194,49,192,51,189,54,192,54,192" title="Complexity: 17; Coverage: 0%; Class: Part" alt="" href="org/openpnp/model/Part.html#Part"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 7; Coverage: 0%; Class: OutlineReticle" alt="" href="org/openpnp/gui/components/reticle/OutlineReticle.html#OutlineReticle"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: ReferenceMachineConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceMachineConfigurationWizard.html#ReferenceMachineConfigurationWizard"/>
+<area shape="poly" coords="54,200,51,202,49,200,51,197,54,200,54,200" title="Complexity: 9; Coverage: 0%; Class: ReferenceHeadConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceHeadConfigurationWizard.html#ReferenceHeadConfigurationWizard"/>
+<area shape="poly" coords="54,183,51,186,49,183,51,181,54,183,54,183" title="Complexity: 25; Coverage: 0%; Class: AbstractSerialPortDriver" alt="" href="org/openpnp/machine/reference/driver/AbstractSerialPortDriver.html#AbstractSerialPortDriver"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: CrosshairReticle" alt="" href="org/openpnp/gui/components/reticle/CrosshairReticle.html#CrosshairReticle"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,203,51,205,49,203,51,200,54,203,54,203" title="Complexity: 6; Coverage: 0%; Class: ImageWriteDebug" alt="" href="org/openpnp/vision/pipeline/stages/ImageWriteDebug.html#ImageWriteDebug"/>
+<area shape="poly" coords="54,181,51,184,49,181,51,179,54,181,54,181" title="Complexity: 27; Coverage: 0%; Class: ReferenceNozzleTip" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,199,51,201,49,199,51,196,54,199,54,199" title="Complexity: 10; Coverage: 0%; Class: ReferenceHead" alt="" href="org/openpnp/machine/reference/ReferenceHead.html#ReferenceHead"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,197,51,199,49,197,51,194,54,197,54,197" title="Complexity: 12; Coverage: 0%; Class: Job" alt="" href="org/openpnp/model/Job.html#Job"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: ReferenceMachineConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceMachineConfigurationWizard.html#ReferenceMachineConfigurationWizard"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,186,51,189,49,186,51,184,54,186,54,186" title="Complexity: 22; Coverage: 0%; Class: ReferenceBottomVision" alt="" href="org/openpnp/machine/reference/vision/ReferenceBottomVision.html#ReferenceBottomVision"/>
+<area shape="poly" coords="54,196,51,198,49,196,51,193,54,196,54,196" title="Complexity: 13; Coverage: 0%; Class: MaskHsv" alt="" href="org/openpnp/vision/pipeline/stages/MaskHsv.html#MaskHsv"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: CrosshairReticle" alt="" href="org/openpnp/gui/components/reticle/CrosshairReticle.html#CrosshairReticle"/>
+<area shape="poly" coords="54,200,51,202,49,200,51,197,54,200,54,200" title="Complexity: 9; Coverage: 0%; Class: ReferenceHeadConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceHeadConfigurationWizard.html#ReferenceHeadConfigurationWizard"/>
+<area shape="poly" coords="54,186,51,189,49,186,51,184,54,186,54,186" title="Complexity: 22; Coverage: 0%; Class: ReferenceBottomVision" alt="" href="org/openpnp/machine/reference/vision/ReferenceBottomVision.html#ReferenceBottomVision"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,203,51,205,49,203,51,200,54,203,54,203" title="Complexity: 6; Coverage: 0%; Class: ImageWriteDebug" alt="" href="org/openpnp/vision/pipeline/stages/ImageWriteDebug.html#ImageWriteDebug"/>
+<area shape="poly" coords="54,184,51,187,49,184,51,182,54,184,54,184" title="Complexity: 24; Coverage: 0%; Class: TwoPlacementBoardLocationProcess" alt="" href="org/openpnp/gui/processes/TwoPlacementBoardLocationProcess.html#TwoPlacementBoardLocationProcess"/>
+<area shape="poly" coords="54,200,51,202,49,200,51,197,54,200,54,200" title="Complexity: 9; Coverage: 0%; Class: ReferenceHeadConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceHeadConfigurationWizard.html#ReferenceHeadConfigurationWizard"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,192,51,194,49,192,51,189,54,192,54,192" title="Complexity: 17; Coverage: 0%; Class: Part" alt="" href="org/openpnp/model/Part.html#Part"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: CrosshairReticle" alt="" href="org/openpnp/gui/components/reticle/CrosshairReticle.html#CrosshairReticle"/>
+<area shape="poly" coords="54,182,51,185,49,182,51,180,54,182,54,182" title="Complexity: 26; Coverage: 0%; Class: ResultsPanel" alt="" href="org/openpnp/vision/pipeline/ui/ResultsPanel.html#ResultsPanel"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,203,51,205,49,203,51,200,54,203,54,203" title="Complexity: 6; Coverage: 0%; Class: ImageWriteDebug" alt="" href="org/openpnp/vision/pipeline/stages/ImageWriteDebug.html#ImageWriteDebug"/>
+<area shape="poly" coords="54,124,51,126,49,124,51,121,54,124,54,124" title="Complexity: 83; Coverage: 0%; Class: ObjectFactory" alt="" href="org/openpnp/model/eagle/xml/ObjectFactory.html#ObjectFactory"/>
+<area shape="poly" coords="54,203,51,205,49,203,51,200,54,203,54,203" title="Complexity: 6; Coverage: 0%; Class: ImageWriteDebug" alt="" href="org/openpnp/vision/pipeline/stages/ImageWriteDebug.html#ImageWriteDebug"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 7; Coverage: 0%; Class: OutlineReticle" alt="" href="org/openpnp/gui/components/reticle/OutlineReticle.html#OutlineReticle"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,186,51,189,49,186,51,184,54,186,54,186" title="Complexity: 22; Coverage: 0%; Class: ReferenceBottomVision" alt="" href="org/openpnp/machine/reference/vision/ReferenceBottomVision.html#ReferenceBottomVision"/>
+<area shape="poly" coords="54,189,51,192,49,189,51,187,54,189,54,189" title="Complexity: 19; Coverage: 0%; Class: ReferenceActuator" alt="" href="org/openpnp/machine/reference/ReferenceActuator.html#ReferenceActuator"/>
+<area shape="poly" coords="54,199,51,201,49,199,51,196,54,199,54,199" title="Complexity: 10; Coverage: 0%; Class: ReferenceHead" alt="" href="org/openpnp/machine/reference/ReferenceHead.html#ReferenceHead"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,195,51,197,49,195,51,192,54,195,54,195" title="Complexity: 14; Coverage: 0%; Class: ReferenceNozzleTip.Calibration" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration"/>
+<area shape="poly" coords="54,188,51,191,49,188,51,186,54,188,54,188" title="Complexity: 20; Coverage: 0%; Class: MachineSetupPanel" alt="" href="org/openpnp/gui/MachineSetupPanel.html#MachineSetupPanel"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: CrosshairReticle" alt="" href="org/openpnp/gui/components/reticle/CrosshairReticle.html#CrosshairReticle"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,193,51,195,49,193,51,190,54,193,54,193" title="Complexity: 16; Coverage: 0%; Class: DrawContours" alt="" href="org/openpnp/vision/pipeline/stages/DrawContours.html#DrawContours"/>
+<area shape="poly" coords="54,203,51,205,49,203,51,200,54,203,54,203" title="Complexity: 6; Coverage: 0%; Class: ImageWriteDebug" alt="" href="org/openpnp/vision/pipeline/stages/ImageWriteDebug.html#ImageWriteDebug"/>
+<area shape="poly" coords="54,187,51,190,49,187,51,185,54,187,54,187" title="Complexity: 21; Coverage: 0%; Class: ReferenceMachine" alt="" href="org/openpnp/machine/reference/ReferenceMachine.html#ReferenceMachine"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,195,51,197,49,195,51,192,54,195,54,195" title="Complexity: 14; Coverage: 0%; Class: ReferenceNozzleTip.Calibration" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration"/>
+<area shape="poly" coords="54,182,51,185,49,182,51,180,54,182,54,182" title="Complexity: 26; Coverage: 0%; Class: ResultsPanel" alt="" href="org/openpnp/vision/pipeline/ui/ResultsPanel.html#ResultsPanel"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,180,51,183,49,180,51,178,54,180,54,180" title="Complexity: 28; Coverage: 0%; Class: PartsPanel" alt="" href="org/openpnp/gui/PartsPanel.html#PartsPanel"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: CrosshairReticle" alt="" href="org/openpnp/gui/components/reticle/CrosshairReticle.html#CrosshairReticle"/>
+<area shape="poly" coords="54,201,51,203,49,201,51,198,54,201,54,201" title="Complexity: 8; Coverage: 0%; Class: ReferenceCamera.LensCalibrationParams" alt="" href="org/openpnp/machine/reference/ReferenceCamera.html#ReferenceCamera.LensCalibrationParams"/>
+<area shape="poly" coords="54,166,51,168,49,166,51,163,54,166,54,166" title="Complexity: 42; Coverage: 0%; Class: Dimension" alt="" href="org/openpnp/model/eagle/xml/Dimension.html#Dimension"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,195,51,197,49,195,51,192,54,195,54,195" title="Complexity: 14; Coverage: 0%; Class: ReferenceNozzleTip.Calibration" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,200,51,202,49,200,51,197,54,200,54,200" title="Complexity: 9; Coverage: 0%; Class: ReferenceHeadConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceHeadConfigurationWizard.html#ReferenceHeadConfigurationWizard"/>
+<area shape="poly" coords="54,203,51,205,49,203,51,200,54,203,54,203" title="Complexity: 6; Coverage: 0%; Class: ImageWriteDebug" alt="" href="org/openpnp/vision/pipeline/stages/ImageWriteDebug.html#ImageWriteDebug"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: ReferenceMachineConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceMachineConfigurationWizard.html#ReferenceMachineConfigurationWizard"/>
+<area shape="poly" coords="54,199,51,201,49,199,51,196,54,199,54,199" title="Complexity: 10; Coverage: 0%; Class: ReferenceHead" alt="" href="org/openpnp/machine/reference/ReferenceHead.html#ReferenceHead"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,200,51,202,49,200,51,197,54,200,54,200" title="Complexity: 9; Coverage: 0%; Class: ReferenceHeadConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceHeadConfigurationWizard.html#ReferenceHeadConfigurationWizard"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: ReferenceMachineConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceMachineConfigurationWizard.html#ReferenceMachineConfigurationWizard"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,197,51,199,49,197,51,194,54,197,54,197" title="Complexity: 12; Coverage: 0%; Class: Job" alt="" href="org/openpnp/model/Job.html#Job"/>
+<area shape="poly" coords="54,199,51,201,49,199,51,196,54,199,54,199" title="Complexity: 10; Coverage: 0%; Class: ReferenceHead" alt="" href="org/openpnp/machine/reference/ReferenceHead.html#ReferenceHead"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: CrosshairReticle" alt="" href="org/openpnp/gui/components/reticle/CrosshairReticle.html#CrosshairReticle"/>
+<area shape="poly" coords="54,186,51,189,49,186,51,184,54,186,54,186" title="Complexity: 22; Coverage: 0%; Class: ReferenceBottomVision" alt="" href="org/openpnp/machine/reference/vision/ReferenceBottomVision.html#ReferenceBottomVision"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,183,51,186,49,183,51,181,54,183,54,183" title="Complexity: 25; Coverage: 0%; Class: AbstractSerialPortDriver" alt="" href="org/openpnp/machine/reference/driver/AbstractSerialPortDriver.html#AbstractSerialPortDriver"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 7; Coverage: 0%; Class: OutlineReticle" alt="" href="org/openpnp/gui/components/reticle/OutlineReticle.html#OutlineReticle"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 7; Coverage: 0%; Class: OutlineReticle" alt="" href="org/openpnp/gui/components/reticle/OutlineReticle.html#OutlineReticle"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: ReferenceMachineConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceMachineConfigurationWizard.html#ReferenceMachineConfigurationWizard"/>
+<area shape="poly" coords="54,200,51,202,49,200,51,197,54,200,54,200" title="Complexity: 9; Coverage: 0%; Class: ReferenceHeadConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceHeadConfigurationWizard.html#ReferenceHeadConfigurationWizard"/>
+<area shape="poly" coords="54,153,51,156,49,153,51,151,54,153,54,153" title="Complexity: 54; Coverage: 0%; Class: ReferenceCamera" alt="" href="org/openpnp/machine/reference/ReferenceCamera.html#ReferenceCamera"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: Normalize" alt="" href="org/openpnp/vision/pipeline/stages/Normalize.html#Normalize"/>
+<area shape="poly" coords="54,173,51,175,49,173,51,170,54,173,54,173" title="Complexity: 35; Coverage: 0%; Class: AbstractJobProcessor" alt="" href="org/openpnp/spi/base/AbstractJobProcessor.html#AbstractJobProcessor"/>
+<area shape="poly" coords="54,177,51,180,49,177,51,175,54,177,54,177" title="Complexity: 31; Coverage: 0%; Class: PackagesPanel" alt="" href="org/openpnp/gui/PackagesPanel.html#PackagesPanel"/>
+<area shape="poly" coords="95,199,93,201,90,199,93,196,95,199,95,199" title="Complexity: 10; Coverage: 17%; Class: AbstractFeeder" alt="" href="org/openpnp/spi/base/AbstractFeeder.html#AbstractFeeder"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: ReferenceActuatorConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceActuatorConfigurationWizard.html#ReferenceActuatorConfigurationWizard"/>
+<area shape="poly" coords="54,179,51,182,49,179,51,177,54,179,54,179" title="Complexity: 29; Coverage: 0%; Class: Board" alt="" href="org/openpnp/model/Board.html#Board"/>
+<area shape="poly" coords="54,200,51,202,49,200,51,197,54,200,54,200" title="Complexity: 9; Coverage: 0%; Class: ReferenceHeadConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceHeadConfigurationWizard.html#ReferenceHeadConfigurationWizard"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: ReferenceMachineConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceMachineConfigurationWizard.html#ReferenceMachineConfigurationWizard"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: ReferenceActuatorConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceActuatorConfigurationWizard.html#ReferenceActuatorConfigurationWizard"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: ReferenceActuatorConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceActuatorConfigurationWizard.html#ReferenceActuatorConfigurationWizard"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: Normalize" alt="" href="org/openpnp/vision/pipeline/stages/Normalize.html#Normalize"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,28,51,30,49,28,51,25,54,28,54,28" title="Complexity: 176; Coverage: 0%; Class: Rs274xParser" alt="" href="org/openpnp/gui/importer/rs274x/Rs274xParser.html#Rs274xParser"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: Normalize" alt="" href="org/openpnp/vision/pipeline/stages/Normalize.html#Normalize"/>
+<area shape="poly" coords="54,203,51,205,49,203,51,200,54,203,54,203" title="Complexity: 6; Coverage: 0%; Class: ImageWriteDebug" alt="" href="org/openpnp/vision/pipeline/stages/ImageWriteDebug.html#ImageWriteDebug"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: Normalize" alt="" href="org/openpnp/vision/pipeline/stages/Normalize.html#Normalize"/>
+<area shape="poly" coords="54,194,51,196,49,194,51,191,54,194,54,194" title="Complexity: 15; Coverage: 0%; Class: DrawRotatedRects" alt="" href="org/openpnp/vision/pipeline/stages/DrawRotatedRects.html#DrawRotatedRects"/>
+<area shape="poly" coords="54,200,51,202,49,200,51,197,54,200,54,200" title="Complexity: 9; Coverage: 0%; Class: ReferenceHeadConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceHeadConfigurationWizard.html#ReferenceHeadConfigurationWizard"/>
+<area shape="poly" coords="54,175,51,178,49,175,51,173,54,175,54,175" title="Complexity: 33; Coverage: 0%; Class: LensCalibration" alt="" href="org/openpnp/vision/LensCalibration.html#LensCalibration"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,106,51,109,49,106,51,104,54,106,54,106" title="Complexity: 100; Coverage: 0%; Class: FluentCv" alt="" href="org/openpnp/vision/FluentCv.html#FluentCv"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: Normalize" alt="" href="org/openpnp/vision/pipeline/stages/Normalize.html#Normalize"/>
+<area shape="poly" coords="54,114,51,117,49,114,51,112,54,114,54,114" title="Complexity: 92; Coverage: 0%; Class: OpenBuildsDriver" alt="" href="org/openpnp/machine/openbuilds/OpenBuildsDriver.html#OpenBuildsDriver"/>
+<area shape="poly" coords="54,198,51,200,49,198,51,195,54,198,54,198" title="Complexity: 11; Coverage: 0%; Class: ReferenceSolderPasteJobProcessor" alt="" href="org/openpnp/machine/reference/ReferenceSolderPasteJobProcessor.html#ReferenceSolderPasteJobProcessor"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: ReferenceActuatorConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceActuatorConfigurationWizard.html#ReferenceActuatorConfigurationWizard"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: ReferenceMachineConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceMachineConfigurationWizard.html#ReferenceMachineConfigurationWizard"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: ReferenceActuatorConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceActuatorConfigurationWizard.html#ReferenceActuatorConfigurationWizard"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 7; Coverage: 0%; Class: OutlineReticle" alt="" href="org/openpnp/gui/components/reticle/OutlineReticle.html#OutlineReticle"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 7; Coverage: 0%; Class: OutlineReticle" alt="" href="org/openpnp/gui/components/reticle/OutlineReticle.html#OutlineReticle"/>
+<area shape="poly" coords="54,194,51,196,49,194,51,191,54,194,54,194" title="Complexity: 15; Coverage: 0%; Class: DrawRotatedRects" alt="" href="org/openpnp/vision/pipeline/stages/DrawRotatedRects.html#DrawRotatedRects"/>
+<area shape="poly" coords="54,200,51,202,49,200,51,197,54,200,54,200" title="Complexity: 9; Coverage: 0%; Class: ReferenceHeadConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceHeadConfigurationWizard.html#ReferenceHeadConfigurationWizard"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: Normalize" alt="" href="org/openpnp/vision/pipeline/stages/Normalize.html#Normalize"/>
+<area shape="poly" coords="54,197,51,199,49,197,51,194,54,197,54,197" title="Complexity: 12; Coverage: 0%; Class: Job" alt="" href="org/openpnp/model/Job.html#Job"/>
+<area shape="poly" coords="54,183,51,186,49,183,51,181,54,183,54,183" title="Complexity: 25; Coverage: 0%; Class: AbstractSerialPortDriver" alt="" href="org/openpnp/machine/reference/driver/AbstractSerialPortDriver.html#AbstractSerialPortDriver"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,166,51,168,49,166,51,163,54,166,54,166" title="Complexity: 42; Coverage: 0%; Class: Dimension" alt="" href="org/openpnp/model/eagle/xml/Dimension.html#Dimension"/>
+<area shape="poly" coords="54,194,51,196,49,194,51,191,54,194,54,194" title="Complexity: 15; Coverage: 0%; Class: DrawRotatedRects" alt="" href="org/openpnp/vision/pipeline/stages/DrawRotatedRects.html#DrawRotatedRects"/>
+<area shape="poly" coords="54,202,51,204,49,202,51,199,54,202,54,202" title="Complexity: 7; Coverage: 0%; Class: OutlineReticle" alt="" href="org/openpnp/gui/components/reticle/OutlineReticle.html#OutlineReticle"/>
+<area shape="poly" coords="54,189,51,192,49,189,51,187,54,189,54,189" title="Complexity: 19; Coverage: 0%; Class: ReferenceActuator" alt="" href="org/openpnp/machine/reference/ReferenceActuator.html#ReferenceActuator"/>
+<area shape="poly" coords="298,207,296,209,293,207,296,204,298,207,298,207" title="Complexity: 2; Coverage: 100%; Class: ReferenceStripFeeder.TapeType" alt="" href="org/openpnp/machine/reference/feeder/ReferenceStripFeeder.html#ReferenceStripFeeder.TapeType"/>
+<area shape="poly" coords="61,154,58,157,56,154,58,152,61,154,61,154" title="Complexity: 53; Coverage: 3%; Class: ReferenceStripFeeder" alt="" href="org/openpnp/machine/reference/feeder/ReferenceStripFeeder.html#ReferenceStripFeeder"/>
+<area shape="poly" coords="54,192,51,194,49,192,51,189,54,192,54,192" title="Complexity: 17; Coverage: 0%; Class: Part" alt="" href="org/openpnp/model/Part.html#Part"/>
+<area shape="poly" coords="54,176,51,179,49,176,51,174,54,176,54,176" title="Complexity: 32; Coverage: 0%; Class: ReferenceDragFeeder" alt="" href="org/openpnp/machine/reference/feeder/ReferenceDragFeeder.html#ReferenceDragFeeder"/>
+<area shape="poly" coords="54,201,51,203,49,201,51,198,54,201,54,201" title="Complexity: 8; Coverage: 0%; Class: ReferenceCamera.LensCalibrationParams" alt="" href="org/openpnp/machine/reference/ReferenceCamera.html#ReferenceCamera.LensCalibrationParams"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: ReferenceActuatorConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceActuatorConfigurationWizard.html#ReferenceActuatorConfigurationWizard"/>
+<area shape="poly" coords="54,193,51,195,49,193,51,190,54,193,54,193" title="Complexity: 16; Coverage: 0%; Class: DrawContours" alt="" href="org/openpnp/vision/pipeline/stages/DrawContours.html#DrawContours"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,158,51,160,49,158,51,155,54,158,54,158" title="Complexity: 50; Coverage: 0%; Class: OpenCvVisionProvider" alt="" href="org/openpnp/machine/reference/vision/OpenCvVisionProvider.html#OpenCvVisionProvider"/>
+<area shape="poly" coords="54,176,51,179,49,176,51,174,54,176,54,176" title="Complexity: 32; Coverage: 0%; Class: ReferenceDragFeeder" alt="" href="org/openpnp/machine/reference/feeder/ReferenceDragFeeder.html#ReferenceDragFeeder"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: CrosshairReticle" alt="" href="org/openpnp/gui/components/reticle/CrosshairReticle.html#CrosshairReticle"/>
+<area shape="poly" coords="54,190,51,193,49,190,51,188,54,190,54,190" title="Complexity: 18; Coverage: 0%; Class: ReferencePasteDispenser" alt="" href="org/openpnp/machine/reference/ReferencePasteDispenser.html#ReferencePasteDispenser"/>
+<area shape="poly" coords="54,199,51,201,49,199,51,196,54,199,54,199" title="Complexity: 10; Coverage: 0%; Class: ReferenceHead" alt="" href="org/openpnp/machine/reference/ReferenceHead.html#ReferenceHead"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: ReferenceActuatorConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceActuatorConfigurationWizard.html#ReferenceActuatorConfigurationWizard"/>
+<area shape="poly" coords="54,201,51,203,49,201,51,198,54,201,54,201" title="Complexity: 8; Coverage: 0%; Class: ReferenceCamera.LensCalibrationParams" alt="" href="org/openpnp/machine/reference/ReferenceCamera.html#ReferenceCamera.LensCalibrationParams"/>
+<area shape="poly" coords="54,122,51,124,49,122,51,119,54,122,54,122" title="Complexity: 85; Coverage: 0%; Class: CameraViewPopupMenu" alt="" href="org/openpnp/gui/components/CameraViewPopupMenu.html#CameraViewPopupMenu"/>
+<area shape="poly" coords="54,198,51,200,49,198,51,195,54,198,54,198" title="Complexity: 11; Coverage: 0%; Class: ReferenceSolderPasteJobProcessor" alt="" href="org/openpnp/machine/reference/ReferenceSolderPasteJobProcessor.html#ReferenceSolderPasteJobProcessor"/>
+<area shape="poly" coords="54,18,51,20,49,18,51,15,54,18,54,18" title="Complexity: 186; Coverage: 0%; Class: CameraView" alt="" href="org/openpnp/gui/components/CameraView.html#CameraView"/>
+<area shape="poly" coords="54,182,51,185,49,182,51,180,54,182,54,182" title="Complexity: 26; Coverage: 0%; Class: ResultsPanel" alt="" href="org/openpnp/vision/pipeline/ui/ResultsPanel.html#ResultsPanel"/>
+<area shape="poly" coords="54,179,51,182,49,179,51,177,54,179,54,179" title="Complexity: 29; Coverage: 0%; Class: Board" alt="" href="org/openpnp/model/Board.html#Board"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: ReferenceMachineConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceMachineConfigurationWizard.html#ReferenceMachineConfigurationWizard"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: ReferenceActuatorConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceActuatorConfigurationWizard.html#ReferenceActuatorConfigurationWizard"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: ReferenceActuatorConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceActuatorConfigurationWizard.html#ReferenceActuatorConfigurationWizard"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: Normalize" alt="" href="org/openpnp/vision/pipeline/stages/Normalize.html#Normalize"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 3; Coverage: 0%; Class: ReferenceActuatorConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceActuatorConfigurationWizard.html#ReferenceActuatorConfigurationWizard"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: CrosshairReticle" alt="" href="org/openpnp/gui/components/reticle/CrosshairReticle.html#CrosshairReticle"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: CrosshairReticle" alt="" href="org/openpnp/gui/components/reticle/CrosshairReticle.html#CrosshairReticle"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: Normalize" alt="" href="org/openpnp/vision/pipeline/stages/Normalize.html#Normalize"/>
+<area shape="poly" coords="54,137,51,139,49,137,51,134,54,137,54,137" title="Complexity: 70; Coverage: 0%; Class: NamedCSVImporter" alt="" href="org/openpnp/gui/importer/NamedCSVImporter.html#NamedCSVImporter"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: ReferenceMachineConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceMachineConfigurationWizard.html#ReferenceMachineConfigurationWizard"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: CrosshairReticle" alt="" href="org/openpnp/gui/components/reticle/CrosshairReticle.html#CrosshairReticle"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: CrosshairReticle" alt="" href="org/openpnp/gui/components/reticle/CrosshairReticle.html#CrosshairReticle"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: Normalize" alt="" href="org/openpnp/vision/pipeline/stages/Normalize.html#Normalize"/>
+<area shape="poly" coords="54,198,51,200,49,198,51,195,54,198,54,198" title="Complexity: 11; Coverage: 0%; Class: ReferenceSolderPasteJobProcessor" alt="" href="org/openpnp/machine/reference/ReferenceSolderPasteJobProcessor.html#ReferenceSolderPasteJobProcessor"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 5; Coverage: 0%; Class: ReferenceMachineConfigurationWizard" alt="" href="org/openpnp/machine/reference/wizards/ReferenceMachineConfigurationWizard.html#ReferenceMachineConfigurationWizard"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: CrosshairReticle" alt="" href="org/openpnp/gui/components/reticle/CrosshairReticle.html#CrosshairReticle"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: CrosshairReticle" alt="" href="org/openpnp/gui/components/reticle/CrosshairReticle.html#CrosshairReticle"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: Normalize" alt="" href="org/openpnp/vision/pipeline/stages/Normalize.html#Normalize"/>
+<area shape="poly" coords="54,198,51,200,49,198,51,195,54,198,54,198" title="Complexity: 11; Coverage: 0%; Class: ReferenceSolderPasteJobProcessor" alt="" href="org/openpnp/machine/reference/ReferenceSolderPasteJobProcessor.html#ReferenceSolderPasteJobProcessor"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,201,51,203,49,201,51,198,54,201,54,201" title="Complexity: 8; Coverage: 0%; Class: ReferenceCamera.LensCalibrationParams" alt="" href="org/openpnp/machine/reference/ReferenceCamera.html#ReferenceCamera.LensCalibrationParams"/>
+<area shape="poly" coords="54,205,51,207,49,205,51,202,54,205,54,205" title="Complexity: 4; Coverage: 0%; Class: CrosshairReticle" alt="" href="org/openpnp/gui/components/reticle/CrosshairReticle.html#CrosshairReticle"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: Normalize" alt="" href="org/openpnp/vision/pipeline/stages/Normalize.html#Normalize"/>
+<area shape="poly" coords="54,152,51,155,49,152,51,150,54,152,54,152" title="Complexity: 55; Coverage: 0%; Class: MachineControlsPanel" alt="" href="org/openpnp/gui/MachineControlsPanel.html#MachineControlsPanel"/>
+<area shape="poly" coords="54,199,51,201,49,199,51,196,54,199,54,199" title="Complexity: 10; Coverage: 0%; Class: ReferenceHead" alt="" href="org/openpnp/machine/reference/ReferenceHead.html#ReferenceHead"/>
+<area shape="poly" coords="54,201,51,203,49,201,51,198,54,201,54,201" title="Complexity: 8; Coverage: 0%; Class: ReferenceCamera.LensCalibrationParams" alt="" href="org/openpnp/machine/reference/ReferenceCamera.html#ReferenceCamera.LensCalibrationParams"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 1; Coverage: 0%; Class: Normalize" alt="" href="org/openpnp/vision/pipeline/stages/Normalize.html#Normalize"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,176,51,179,49,176,51,174,54,176,54,176" title="Complexity: 32; Coverage: 0%; Class: ReferenceDragFeeder" alt="" href="org/openpnp/machine/reference/feeder/ReferenceDragFeeder.html#ReferenceDragFeeder"/>
+<area shape="poly" coords="54,184,51,187,49,184,51,182,54,184,54,184" title="Complexity: 24; Coverage: 0%; Class: TwoPlacementBoardLocationProcess" alt="" href="org/openpnp/gui/processes/TwoPlacementBoardLocationProcess.html#TwoPlacementBoardLocationProcess"/>
+<area shape="poly" coords="54,185,51,188,49,185,51,183,54,185,54,185" title="Complexity: 23; Coverage: 0%; Class: ReferenceStripFeederConfigurationWizard" alt="" href="org/openpnp/machine/reference/feeder/wizards/ReferenceStripFeederConfigurationWizard.html#ReferenceStripFeederConfigurationWizard"/>
+<area shape="poly" coords="54,194,51,196,49,194,51,191,54,194,54,194" title="Complexity: 15; Coverage: 0%; Class: DrawRotatedRects" alt="" href="org/openpnp/vision/pipeline/stages/DrawRotatedRects.html#DrawRotatedRects"/>
+<area shape="poly" coords="54,198,51,200,49,198,51,195,54,198,54,198" title="Complexity: 11; Coverage: 0%; Class: ReferenceSolderPasteJobProcessor" alt="" href="org/openpnp/machine/reference/ReferenceSolderPasteJobProcessor.html#ReferenceSolderPasteJobProcessor"/>
+<area shape="poly" coords="54,179,51,182,49,179,51,177,54,179,54,179" title="Complexity: 29; Coverage: 0%; Class: Board" alt="" href="org/openpnp/model/Board.html#Board"/>
+<area shape="poly" coords="54,187,51,190,49,187,51,185,54,187,54,187" title="Complexity: 21; Coverage: 0%; Class: ReferenceMachine" alt="" href="org/openpnp/machine/reference/ReferenceMachine.html#ReferenceMachine"/>
+<area shape="poly" coords="54,185,51,188,49,185,51,183,54,185,54,185" title="Complexity: 23; Coverage: 0%; Class: ReferenceStripFeederConfigurationWizard" alt="" href="org/openpnp/machine/reference/feeder/wizards/ReferenceStripFeederConfigurationWizard.html#ReferenceStripFeederConfigurationWizard"/>
+<area shape="poly" coords="54,176,51,179,49,176,51,174,54,176,54,176" title="Complexity: 32; Coverage: 0%; Class: ReferenceDragFeeder" alt="" href="org/openpnp/machine/reference/feeder/ReferenceDragFeeder.html#ReferenceDragFeeder"/>
+<area shape="poly" coords="54,157,51,159,49,157,51,154,54,157,54,157" title="Complexity: 51; Coverage: 0%; Class: TinygDriverConfigurationWizard.ConfigProxy" alt="" href="org/openpnp/machine/reference/driver/wizards/TinygDriverConfigurationWizard.html#TinygDriverConfigurationWizard.ConfigProxy"/>
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 2; Coverage: 0%; Class: ReferenceNozzleTip.Calibration.CalibrationOffset" alt="" href="org/openpnp/machine/reference/ReferenceNozzleTip.html#ReferenceNozzleTip.Calibration.CalibrationOffset"/>
+<area shape="poly" coords="54,199,51,201,49,199,51,196,54,199,54,199" title="Complexity: 10; Coverage: 0%; Class: ReferenceHead" alt="" href="org/openpnp/machine/reference/ReferenceHead.html#ReferenceHead"/>
+</map>
+            </div>
+        </div>
+        
+                    <div class="dashboard-widget">
+                <header class="dashboard-widget-header">
+                    <h3>Coverage tree map</h3>
+                </header>
+                <div class="dashboard-widget-content">
+                    <div id="infovis" style="width:100%; height:250px;">
+                        <div id="treemap-loader" style="position:relative;top:50px;">
+                            <p>
+                                Generating Coverage Tree Map. Please wait...
+                            </p>
+                            <p>
+                                <img src="img/ajax-loader.gif" alt="Loading Treemap"/>
+                            </p>
+                        </div>
+                    </div>
+                    <p><a href="treemap.html">See more</a></p>
+                </div>
+
+            </div>
+            </div>
+
+
+    <div class="aui-item">
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Top 20 project risks</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                
+                                                                <a class="tag" href="org/openpnp/gui/importer/EagleBoardImporter.html"
+                            style="font-size: 28px;color:#d04437"
+                            title="Average Method Complexity - 13.75 , Coverage - 0% ">EagleBoardImporter</a>
+                                    
+                                                                <a class="tag" href="org/openpnp/util/ResourceUtils.html"
+                            style="font-size: 25px;color:#d04437"
+                            title="Average Method Complexity - 12 , Coverage - 0% ">ResourceUtils</a>
+                                    
+                                                                <a class="tag" href="org/openpnp/gui/importer/NamedCSVImporter.html"
+                            style="font-size: 23px;color:#d04437"
+                            title="Average Method Complexity - 10 , Coverage - 0% ">NamedCSVImporter</a>
+                                    
+                                                                <a class="tag" href="org/openpnp/machine/reference/ReferenceJobProcessor.html"
+                            style="font-size: 19px;color:#d04437"
+                            title="Average Method Complexity - 6.083 , Coverage - 0% ">ReferenceJobProcessor</a>
+                                    
+                                                                <a class="tag" href="org/openpnp/machine/reference/vision/OpenCvVisionProvider.html"
+                            style="font-size: 17px;color:#d04437"
+                            title="Average Method Complexity - 5 , Coverage - 0% ">OpenCvVisionProvider</a>
+                                    
+                                                                <a class="tag" href="org/openpnp/gui/JobPlacementsPanel.html"
+                            style="font-size: 17px;color:#d04437"
+                            title="Average Method Complexity - 5 , Coverage - 0% ">JobPlacementsPanel.StatusRenderer</a>
+                                    
+                                                                <a class="tag" href="org/openpnp/vision/pipeline/stages/MatchTemplate.html"
+                            style="font-size: 17px;color:#d04437"
+                            title="Average Method Complexity - 4.889 , Coverage - 0% ">MatchTemplate</a>
+                                    
+                                                                <a class="tag" href="org/openpnp/gui/importer/rs274x/Rs274xParser.html"
+                            style="font-size: 16px;color:#d04437"
+                            title="Average Method Complexity - 4.293 , Coverage - 0% ">Rs274xParser</a>
+                                    
+                                                                <a class="tag" href="org/openpnp/experiments/FiducialTest.html"
+                            style="font-size: 16px;color:#d04437"
+                            title="Average Method Complexity - 4.167 , Coverage - 0% ">FiducialTest</a>
+                                    
+                                                                <a class="tag" href="org/openpnp/gui/importer/EagleBoardImporter.html"
+                            style="font-size: 16px;color:#d04437"
+                            title="Average Method Complexity - 4 , Coverage - 0% ">EagleBoardImporter.Dlg.SwingAction_2</a>
+                                    
+                                                                <a class="tag" href="org/openpnp/gui/JobPlacementsPanel.html"
+                            style="font-size: 16px;color:#d04437"
+                            title="Average Method Complexity - 4 , Coverage - 0% ">JobPlacementsPanel.TypeRenderer</a>
+                                    
+                                                                <a class="tag" href="org/openpnp/vision/Ransac.html"
+                            style="font-size: 16px;color:#d04437"
+                            title="Average Method Complexity - 3.75 , Coverage - 0% ">Ransac.RansacLine</a>
+                                    
+                                                                <a class="tag" href="org/openpnp/machine/reference/ReferenceSolderPasteJobProcessor.html"
+                            style="font-size: 16px;color:#d04437"
+                            title="Average Method Complexity - 3.667 , Coverage - 0% ">ReferenceSolderPasteJobProcessor</a>
+                                    
+                                                                <a class="tag" href="org/openpnp/machine/reference/driver/GcodeDriver.html"
+                            style="font-size: 16px;color:#d04437"
+                            title="Average Method Complexity - 3.611 , Coverage - 0% ">GcodeDriver</a>
+                                    
+                                                                <a class="tag" href="org/openpnp/machine/openbuilds/OpenBuildsDriver.html"
+                            style="font-size: 15px;color:#d04437"
+                            title="Average Method Complexity - 3.407 , Coverage - 0% ">OpenBuildsDriver</a>
+                                    
+                                                                <a class="tag" href="org/openpnp/Main.html"
+                            style="font-size: 15px;color:#d04437"
+                            title="Average Method Complexity - 3.333 , Coverage - 0% ">Main</a>
+                                    
+                                                                <a class="tag" href="org/openpnp/gui/components/CameraPanel.html"
+                            style="font-size: 15px;color:#d04437"
+                            title="Average Method Complexity - 3.25 , Coverage - 0% ">CameraPanel</a>
+                                    
+                                                                <a class="tag" href="org/openpnp/machine/reference/driver/SprinterDriver.html"
+                            style="font-size: 15px;color:#d04437"
+                            title="Average Method Complexity - 3.227 , Coverage - 0% ">SprinterDriver</a>
+                                    
+                                                                <a class="tag" href="org/openpnp/gui/tablemodel/FootprintTableModel.html"
+                            style="font-size: 15px;color:#d04437"
+                            title="Average Method Complexity - 3.222 , Coverage - 0% ">FootprintTableModel</a>
+                                    
+                                                                <a class="tag" href="org/openpnp/gui/tablemodel/BoardLocationsTableModel.html"
+                            style="font-size: 15px;color:#d04437"
+                            title="Average Method Complexity - 3.2 , Coverage - 0% ">BoardLocationsTableModel</a>
+                                                    <p><a href="top-risks.html">See more</a></p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Most complex packages</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                
+                <table class="aui">
+                                            
+                                                <tr>
+                            <td>1. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/openpnp/model/eagle/xml/pkg-summary.html">org.openpnp.model.eagle.xml</a>
+                                <span class="aui-badge" title="Package complexity">851</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>2. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/openpnp/gui/pkg-summary.html">org.openpnp.gui</a>
+                                <span class="aui-badge" title="Package complexity">545</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>3. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/openpnp/machine/reference/driver/pkg-summary.html">org.openpnp.machine.reference.driver</a>
+                                <span class="aui-badge" title="Package complexity">523</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>4. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/openpnp/gui/components/pkg-summary.html">org.openpnp.gui.components</a>
+                                <span class="aui-badge" title="Package complexity">483</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>5. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.005097706</span>0.5%</div><div style="display: table-cell">
+ <div title="0.5% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0.5%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/openpnp/model/pkg-summary.html">org.openpnp.model</a>
+                                <span class="aui-badge" title="Package complexity">382</span>
+                            </td>
+                        </tr>
+                                    </table>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Most complex classes</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <table class="aui">
+                                            
+                                                <tr>
+                            <td>1. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/openpnp/gui/components/CameraView.html"  title="org.openpnp.gui.components.CameraView">CameraView</a>
+                                <span class="aui-badge" title="Class complexity">186</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>2. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/openpnp/gui/importer/rs274x/Rs274xParser.html"  title="org.openpnp.gui.importer.rs274x.Rs274xParser">Rs274xParser</a>
+                                <span class="aui-badge" title="Class complexity">176</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>3. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/openpnp/gui/JobPanel.html"  title="org.openpnp.gui.JobPanel">JobPanel</a>
+                                <span class="aui-badge" title="Class complexity">124</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>4. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/openpnp/vision/FluentCv.html"  title="org.openpnp.vision.FluentCv">FluentCv</a>
+                                <span class="aui-badge" title="Class complexity">100</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>5. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/openpnp/machine/openbuilds/OpenBuildsDriver.html"  title="org.openpnp.machine.openbuilds.OpenBuildsDriver">OpenBuildsDriver</a>
+                                <span class="aui-badge" title="Class complexity">92</span>
+                            </td>
+                        </tr>
+                                    </table>
+            </div>
+        </div>
+
+                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Least tested methods</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <table class="aui">
+                                            
+
+                    <tr>
+                        <td align="right">1.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="EagleBoardImporter.parseFile(File,Side,boolean)&#160;:&#160;List&lt;Placement&gt;" href="org/openpnp/gui/importer/EagleBoardImporter.html?line=104#src-104">EagleBoardImporter.parseFile(File,Side,boolean)&#160;:&#160;List&lt;Placement&gt;</a>
+                            <span class="aui-badge" title="Method complexity">52</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">2.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="MainFrame.MainFrame(Configuration)" href="org/openpnp/gui/MainFrame.html?line=132#src-132">MainFrame.MainFrame(Configuration)</a>
+                            <span class="aui-badge" title="Method complexity">9</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">3.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="TinygDriverConfigurationWizard.TinygDriverConfigurationWizard(TinygDriver)" href="org/openpnp/machine/reference/driver/wizards/TinygDriverConfigurationWizard.html?line=64#src-64">TinygDriverConfigurationWizard.TinygDriverConfigurationWizard(TinygDriver)</a>
+                            <span class="aui-badge" title="Method complexity">1</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">4.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="ReferenceHeadConfigurationWizard.ReferenceHeadConfigurationWizard(ReferenceHead)" href="org/openpnp/machine/reference/wizards/ReferenceHeadConfigurationWizard.html?line=115#src-115">ReferenceHeadConfigurationWizard.ReferenceHeadConfigurationWizard(ReferenceHead)</a>
+                            <span class="aui-badge" title="Method complexity">1</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">5.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="CameraViewPopupMenu.createRulerReticleOptionsMenu(RulerReticle)&#160;:&#160;JMenu" href="org/openpnp/gui/components/CameraViewPopupMenu.html?line=237#src-237">CameraViewPopupMenu.createRulerReticleOptionsMenu(RulerReticle)&#160;:&#160;JMenu</a>
+                            <span class="aui-badge" title="Method complexity">15</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">6.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="ReferenceDragFeederConfigurationWizard.ReferenceDragFeederConfigurationWizard(ReferenceDragFeeder)" href="org/openpnp/machine/reference/feeder/wizards/ReferenceDragFeederConfigurationWizard.html?line=110#src-110">ReferenceDragFeederConfigurationWizard.ReferenceDragFeederConfigurationWizard(ReferenceDragFeeder)</a>
+                            <span class="aui-badge" title="Method complexity">1</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">7.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="ReferenceCameraConfigurationWizard.ReferenceCameraConfigurationWizard(ReferenceCamera)" href="org/openpnp/machine/reference/wizards/ReferenceCameraConfigurationWizard.html?line=69#src-69">ReferenceCameraConfigurationWizard.ReferenceCameraConfigurationWizard(ReferenceCamera)</a>
+                            <span class="aui-badge" title="Method complexity">3</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">8.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="JogControlsPanel.createUi()&#160;:&#160;void" href="org/openpnp/gui/JogControlsPanel.html?line=209#src-209">JogControlsPanel.createUi()&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">1</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">9.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="CameraViewPopupMenu.createFiducialReticleOptionsMenu(FiducialReticle)&#160;:&#160;JMenu" href="org/openpnp/gui/components/CameraViewPopupMenu.html?line=441#src-441">CameraViewPopupMenu.createFiducialReticleOptionsMenu(FiducialReticle)&#160;:&#160;JMenu</a>
+                            <span class="aui-badge" title="Method complexity">10</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">10.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="MachineControlsPanel.createUi()&#160;:&#160;void" href="org/openpnp/gui/MachineControlsPanel.html?line=213#src-213">MachineControlsPanel.createUi()&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">1</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">11.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="ReferenceStripFeederConfigurationWizard.ReferenceStripFeederConfigurationWizard(ReferenceStripFeeder)" href="org/openpnp/machine/reference/feeder/wizards/ReferenceStripFeederConfigurationWizard.html?line=111#src-111">ReferenceStripFeederConfigurationWizard.ReferenceStripFeederConfigurationWizard(ReferenceStripFeeder)</a>
+                            <span class="aui-badge" title="Method complexity">2</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">12.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="ReferenceJobProcessor.run()&#160;:&#160;void" href="org/openpnp/machine/reference/ReferenceJobProcessor.html?line=83#src-83">ReferenceJobProcessor.run()&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">13</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">13.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="NamedCSVImporter.parseFile(File,boolean)&#160;:&#160;List&lt;Placement&gt;" href="org/openpnp/gui/importer/NamedCSVImporter.html?line=233#src-233">NamedCSVImporter.parseFile(File,boolean)&#160;:&#160;List&lt;Placement&gt;</a>
+                            <span class="aui-badge" title="Method complexity">18</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">14.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="JobPanel.JobPanel(Configuration,MainFrame,MachineControlsPanel)" href="org/openpnp/gui/JobPanel.html?line=127#src-127">JobPanel.JobPanel(Configuration,MainFrame,MachineControlsPanel)</a>
+                            <span class="aui-badge" title="Method complexity">1</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">15.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="ReferenceJobProcessor.pick(Nozzle,Feeder,BoardLocation,Placement)&#160;:&#160;boolean" href="org/openpnp/machine/reference/ReferenceJobProcessor.html?line=400#src-400">ReferenceJobProcessor.pick(Nozzle,Feeder,BoardLocation,Placement)&#160;:&#160;boolean</a>
+                            <span class="aui-badge" title="Method complexity">17</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">16.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="CameraView.getOpposingHandle(Rectangle,HandlePosition)&#160;:&#160;HandlePosition" href="org/openpnp/gui/components/CameraView.html?line=858#src-858">CameraView.getOpposingHandle(Rectangle,HandlePosition)&#160;:&#160;HandlePosition</a>
+                            <span class="aui-badge" title="Method complexity">21</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">17.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="FiducialTest.fiducial(Mat,int,int)&#160;:&#160;Point" href="org/openpnp/experiments/FiducialTest.html?line=78#src-78">FiducialTest.fiducial(Mat,int,int)&#160;:&#160;Point</a>
+                            <span class="aui-badge" title="Method complexity">16</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">18.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="Rs274xParser.readExtendedCodeCommand()&#160;:&#160;void" href="org/openpnp/gui/importer/rs274x/Rs274xParser.html?line=435#src-435">Rs274xParser.readExtendedCodeCommand()&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">19</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">19.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="ReferenceNozzleTipConfigurationWizard.ReferenceNozzleTipConfigurationWizard(ReferenceNozzleTip)" href="org/openpnp/machine/reference/wizards/ReferenceNozzleTipConfigurationWizard.html?line=93#src-93">ReferenceNozzleTipConfigurationWizard.ReferenceNozzleTipConfigurationWizard(ReferenceNozzleTip)</a>
+                            <span class="aui-badge" title="Method complexity">1</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">20.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="ReferenceJobProcessor.runDemo()&#160;:&#160;void" href="org/openpnp/machine/reference/ReferenceJobProcessor.html?line=228#src-228">ReferenceJobProcessor.runDemo()&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">12</span>
+
+                        </td>
+                    </tr>
+                                    </table>
+            </div>
+        </div>
+        
+    </div>
+</div>
+                            </div> <!-- tabs-pane active-pane -->
+                        </div>
+
+    <script type="text/javascript" src="jit.js" ></script>
+    <script type="text/javascript" src="treemap-dash-json.js" ></script>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="https://openclover.org">OpenClover</a> v 4.5.2
+                on Wed Jun 5 2024 14:57:33 CST using coverage data from Wed Jun 5 2024 14:57:30 CST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

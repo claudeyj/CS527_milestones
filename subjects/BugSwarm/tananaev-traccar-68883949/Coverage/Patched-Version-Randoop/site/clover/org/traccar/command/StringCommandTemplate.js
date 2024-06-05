@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":54,"id":660,"methods":[{"el":15,"sc":5,"sl":13},{"el":29,"sc":5,"sl":17},{"el":34,"sc":5,"sl":31},{"el":38,"sc":5,"sl":36},{"el":45,"sc":13,"sl":42},{"el":47,"sc":5,"sl":40},{"el":52,"sc":5,"sl":49}],"name":"StringCommandTemplate","sl":8}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]

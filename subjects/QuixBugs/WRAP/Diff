@@ -1,0 +1,17 @@
+--- /Users/jun/Documents/TA/CS527/milestone_answer/subjects/QuixBugs/WRAP/Buggy-Version/java_programs/WRAP.java	2024-06-05 11:20:13
++++ /Users/jun/Documents/TA/CS527/milestone_answer/subjects/QuixBugs/WRAP/Patched-Version/correct_java_programs/WRAP.java	2024-06-05 11:20:13
+@@ -1,4 +1,4 @@
+-package java_programs;
++package correct_java_programs;
+ import java.util.*;
+ 
+ /*
+@@ -28,7 +28,7 @@
+             text = text.substring(end);
+             lines.add(line);
+         }
+-
++        lines.add(text);
+         return lines;
+     }
+ }

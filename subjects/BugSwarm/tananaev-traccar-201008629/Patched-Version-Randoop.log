@@ -1,0 +1,87 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< org.traccar:traccar >-------------------------
+[INFO] Building traccar 3.10-SNAPSHOT
+[INFO]   from pom_for_clover.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ traccar ---
+[INFO] Deleting /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-201008629/Patched-Version/target
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (checkstyle) @ traccar ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ traccar ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ traccar ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 489 source files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-201008629/Patched-Version/target/classes
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-201008629/Patched-Version/src/org/traccar/geolocation/UniversalGeolocationProvider.java:[45,46] unchecked method invocation: method execute in class com.ning.http.client.AsyncHttpClient.BoundRequestBuilder is applied to given types
+  required: com.ning.http.client.AsyncHandler<T>
+  found: <anonymous com.ning.http.client.AsyncCompletionHandler>
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-201008629/Patched-Version/src/org/traccar/geolocation/UniversalGeolocationProvider.java:[45,47] unchecked conversion
+  required: com.ning.http.client.AsyncHandler<T>
+  found:    <anonymous com.ning.http.client.AsyncCompletionHandler>
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-201008629/Patched-Version/src/org/traccar/geocoder/JsonGeocoder.java:[62,25] unchecked method invocation: method execute in class com.ning.http.client.AsyncHttpClient.BoundRequestBuilder is applied to given types
+  required: com.ning.http.client.AsyncHandler<T>
+  found: <anonymous com.ning.http.client.AsyncCompletionHandler>
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-201008629/Patched-Version/src/org/traccar/geocoder/JsonGeocoder.java:[62,26] unchecked conversion
+  required: com.ning.http.client.AsyncHandler<T>
+  found:    <anonymous com.ning.http.client.AsyncCompletionHandler>
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-201008629/Patched-Version/src/org/traccar/model/Calendar.java:[71,48] unchecked method invocation: constructor <init> in class net.fortuna.ical4j.filter.Filter is applied to given types
+  required: net.fortuna.ical4j.filter.Rule<T>[],int
+  found: net.fortuna.ical4j.filter.Rule[],int
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-201008629/Patched-Version/src/org/traccar/model/Calendar.java:[71,61] unchecked conversion
+  required: net.fortuna.ical4j.filter.Rule<T>[]
+  found:    net.fortuna.ical4j.filter.Rule[]
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-201008629/Patched-Version/src/org/traccar/model/Calendar.java:[71,48] unchecked conversion
+  required: net.fortuna.ical4j.filter.Filter<net.fortuna.ical4j.model.component.CalendarComponent>
+  found:    net.fortuna.ical4j.filter.Filter
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-201008629/Patched-Version/src/org/traccar/geolocation/OpenCellIdGeolocationProvider.java:[48,69] unchecked method invocation: method execute in class com.ning.http.client.AsyncHttpClient.BoundRequestBuilder is applied to given types
+  required: com.ning.http.client.AsyncHandler<T>
+  found: <anonymous com.ning.http.client.AsyncCompletionHandler>
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-201008629/Patched-Version/src/org/traccar/geolocation/OpenCellIdGeolocationProvider.java:[48,70] unchecked conversion
+  required: com.ning.http.client.AsyncHandler<T>
+  found:    <anonymous com.ning.http.client.AsyncCompletionHandler>
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-201008629/Patched-Version/src/org/traccar/protocol/Gl200ProtocolDecoder.java:[809,56] unchecked cast
+  required: java.util.List<org.traccar.model.Position>
+  found:    java.lang.Object
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-201008629/Patched-Version/src/org/traccar/database/QueryBuilder.java:[283,70] unchecked method invocation: method toXmlString in class org.traccar.model.MiscFormatter is applied to given types
+  required: java.util.Map<java.lang.String,java.lang.Object>
+  found: java.util.Map
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-201008629/Patched-Version/src/org/traccar/database/QueryBuilder.java:[283,71] unchecked conversion
+  required: java.util.Map<java.lang.String,java.lang.Object>
+  found:    java.util.Map
+[INFO] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-201008629/Patched-Version/src/org/traccar/model/Network.java: Some input files use or override a deprecated API.
+[INFO] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-201008629/Patched-Version/src/org/traccar/model/Network.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ traccar ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-201008629/Patched-Version/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ traccar ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 209 source files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-201008629/Patched-Version/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ traccar ---
+[INFO] Surefire report directory: /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-201008629/Patched-Version/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running RegressionTest
+Tests run: 138, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.366 sec
+Running RegressionTest0
+Tests run: 138, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec
+
+Results :
+
+Tests run: 276, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  15.956 s
+[INFO] Finished at: 2024-06-05T12:43:13+08:00
+[INFO] ------------------------------------------------------------------------

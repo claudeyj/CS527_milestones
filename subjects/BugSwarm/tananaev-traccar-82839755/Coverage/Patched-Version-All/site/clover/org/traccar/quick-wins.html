@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../style.css');
+        @import url('../../tree.css');
+        
+    </style>
+
+    <script src="../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../clover.js" type="text/javascript"></script>
+    <script src="../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../cloud.js" type="text/javascript"></script>
+
+            <title>traccar 3.1-SNAPSHOT</title>
+    </head>
+
+<body  >
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="https://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="https://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                    <a href="https://www.traccar.org" target="_top">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+                    </a>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                            <a href="https://www.traccar.org" target="_top">
+                                        traccar 3.1-SNAPSHOT
+                                        </a>
+                    </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../" data-package-name="org.traccar">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="../../dashboard.html">Project Clover database Wed Jun 5 2024 13:33:39 CST</a></li> 
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            Package org.traccar
+    </h1>
+<div class="aui-tabs horizontal-tabs">
+            <ul class="tabs-menu">
+                <li class="menu-item ">
+            <a href="pkg-summary.html"><strong>Application code</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="testsrc-pkg-summary.html"><strong>Test code</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="test-pkg-summary.html"><strong>Test results</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="top-risks.html"><strong>Top risks</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="quick-wins.html"><strong>Quick wins</strong></a>
+        </li>
+                            </ul>
+    <div class="tabs-pane active-pane" id="tabs-first">
+
+        <div>&#160;</div>
+
+        
+
+
+                        <div style="text-align: right; margin-bottom: 10px">
+            
+                            <button id="cloudDepthCheckbox" class="aui-button active"
+                        onclick="showDeepPackageCloud(this)">Include classes from sub-packages</button>
+            
+                                    <button class="aui-button aui-button-subtle" id="popupHelp">
+    <span class="aui-icon aui-icon-small aui-iconfont-help"></span>&#160;How to read this chart
+</button>
+<script>
+    AJS.InlineDialog(AJS.$("#popupHelp"), "helpDialog",
+            function (content, trigger, showPopup) {
+                var description = quickWinsDescription();
+                var title = 'Quick Wins';
+                content.css({"padding": "20px"}).html(
+                        '<h2>' + title + '</h2>' + description);
+                showPopup();
+                return false;
+            },
+            {
+                width: 600
+            }
+    );
+</script>
+        </div>
+
+        
+
+<div style="padding: 20px; border: 1px solid #cccccc; background-color: #f5f5f5; border-radius: 3px">
+          <div id="deepPackageCloud"  >
+                          
+    
+        
+    
+            <a href="../traccar/database/ActiveDevice.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 5 ">ActiveDevice</a>
+            
+    
+            <a href="../traccar/geocode/Address.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 28 , # Elements Covered - 22 ">Address</a>
+            
+    
+            <a href="../traccar/geocode/AddressFormat.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 25 , # Elements Covered - 21 ">AddressFormat</a>
+            
+    
+            <a href="../traccar/protocol/ApelProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">ApelProtocol</a>
+            
+    
+            <a href="../traccar/protocol/ApelProtocolDecoder.html" class="tag"
+            style="font-size: 31px;color:#d04437"
+            title="# Elements - 127 , # Elements Covered - 2 ">ApelProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/AplicomProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 2 ">AplicomProtocol</a>
+            
+    
+            <a href="../traccar/protocol/AplicomProtocolDecoder.html" class="tag"
+            style="font-size: 48px;color:#f6c342"
+            title="# Elements - 235 , # Elements Covered - 128 ">AplicomProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/AquilaProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 2 ">AquilaProtocol</a>
+            
+    
+            <a href="../traccar/protocol/AquilaProtocolDecoder.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="# Elements - 45 , # Elements Covered - 43 ">AquilaProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/AquilaProtocolDecoder_ESTest_scaffolding.html" class="tag"
+            style="font-size: 17px;color:#d9695f"
+            title="# Elements - 34 , # Elements Covered - 34 ">AquilaProtocolDecoder_ESTest_scaffolding</a>
+            
+    
+            <a href="../traccar/protocol/Ardi01Protocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 2 ">Ardi01Protocol</a>
+            
+    
+            <a href="../traccar/protocol/Ardi01ProtocolDecoder.html" class="tag"
+            style="font-size: 17px;color:#d9695f"
+            title="# Elements - 38 , # Elements Covered - 34 ">Ardi01ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/AtrackProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 2 ">AtrackProtocol</a>
+            
+    
+            <a href="../traccar/protocol/AtrackProtocolDecoder.html" class="tag"
+            style="font-size: 23px;color:#de7b72"
+            title="# Elements - 72 , # Elements Covered - 57 ">AtrackProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/AutoFon45Protocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 2 ">AutoFon45Protocol</a>
+            
+    
+            <a href="../traccar/protocol/AutoFon45ProtocolDecoder.html" class="tag"
+            style="font-size: 23px;color:#de7b72"
+            title="# Elements - 74 , # Elements Covered - 55 ">AutoFon45ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/AutoFonProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 2 ">AutoFonProtocol</a>
+            
+    
+            <a href="../traccar/protocol/AutoFonProtocolDecoder.html" class="tag"
+            style="font-size: 25px;color:#de7b72"
+            title="# Elements - 91 , # Elements Covered - 72 ">AutoFonProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/Avl301Protocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 2 ">Avl301Protocol</a>
+            
+    
+            <a href="../traccar/protocol/Avl301ProtocolDecoder.html" class="tag"
+            style="font-size: 25px;color:#de7b72"
+            title="# Elements - 88 , # Elements Covered - 72 ">Avl301ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/BaseDataHandler.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 4 ">BaseDataHandler</a>
+            
+    
+            <a href="../traccar/BaseProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 12 , # Elements Covered - 6 ">BaseProtocol</a>
+            
+    
+            <a href="../traccar/BaseProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 30 , # Elements Covered - 20 ">BaseProtocolDecoder</a>
+            
+    
+            <a href="../traccar/BaseProtocolEncoder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 2 ">BaseProtocolEncoder</a>
+            
+    
+            <a href="../traccar/protocol/BceProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">BceProtocol</a>
+            
+    
+            <a href="../traccar/protocol/BceProtocolDecoder.html" class="tag"
+            style="font-size: 28px;color:#e28e87"
+            title="# Elements - 108 , # Elements Covered - 81 ">BceProtocolDecoder</a>
+            
+    
+            <a href="../traccar/helper/BitUtil.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 10 ">BitUtil</a>
+            
+    
+            <a href="../traccar/protocol/BlackKiteProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">BlackKiteProtocol</a>
+            
+    
+            <a href="../traccar/protocol/BlackKiteProtocolDecoder.html" class="tag"
+            style="font-size: 29px;color:#e28e87"
+            title="# Elements - 112 , # Elements Covered - 86 ">BlackKiteProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/BoxProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">BoxProtocol</a>
+            
+    
+            <a href="../traccar/protocol/BoxProtocolDecoder.html" class="tag"
+            style="font-size: 19px;color:#d9695f"
+            title="# Elements - 49 , # Elements Covered - 46 ">BoxProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/CalAmpProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 2 ">CalAmpProtocol</a>
+            
+    
+            <a href="../traccar/protocol/CalAmpProtocolDecoder.html" class="tag"
+            style="font-size: 32px;color:#e7a19b"
+            title="# Elements - 132 , # Elements Covered - 102 ">CalAmpProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/CarTrackProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 2 ">CarTrackProtocol</a>
+            
+    
+            <a href="../traccar/protocol/CarTrackProtocolDecoder.html" class="tag"
+            style="font-size: 21px;color:#de7b72"
+            title="# Elements - 65 , # Elements Covered - 54 ">CarTrackProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/CarscopProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">CarscopProtocol</a>
+            
+    
+            <a href="../traccar/protocol/CarscopProtocolDecoder.html" class="tag"
+            style="font-size: 20px;color:#d9695f"
+            title="# Elements - 54 , # Elements Covered - 47 ">CarscopProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/CastelProtocol.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 14 , # Elements Covered - 2 ">CastelProtocol</a>
+            
+    
+            <a href="../traccar/protocol/CastelProtocolDecoder.html" class="tag"
+            style="font-size: 31px;color:#e28e87"
+            title="# Elements - 125 , # Elements Covered - 82 ">CastelProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/CellocatorProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">CellocatorProtocol</a>
+            
+    
+            <a href="../traccar/protocol/CellocatorProtocolDecoder.html" class="tag"
+            style="font-size: 26px;color:#e28e87"
+            title="# Elements - 94 , # Elements Covered - 76 ">CellocatorProtocolDecoder</a>
+            
+    
+            <a href="../traccar/helper/ChannelBufferTools.html" class="tag"
+            style="font-size: 25px;color:#e28e87"
+            title="# Elements - 88 , # Elements Covered - 79 ">ChannelBufferTools</a>
+            
+    
+            <a href="../traccar/protocol/CityeasyProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 2 ">CityeasyProtocol</a>
+            
+    
+            <a href="../traccar/protocol/CityeasyProtocolDecoder.html" class="tag"
+            style="font-size: 21px;color:#d9695f"
+            title="# Elements - 62 , # Elements Covered - 51 ">CityeasyProtocolDecoder</a>
+            
+    
+            <a href="../traccar/model/Command.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 27 , # Elements Covered - 16 ">Command</a>
+            
+    
+            <a href="../traccar/Config.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 30 , # Elements Covered - 14 ">Config</a>
+            
+    
+            <a href="../traccar/database/ConnectionManager.html" class="tag"
+            style="font-size: 20px;color:#d04437"
+            title="# Elements - 55 , # Elements Covered - 5 ">ConnectionManager</a>
+            
+    
+            <a href="../traccar/Context.html" class="tag"
+            style="font-size: 24px;color:#d04437"
+            title="# Elements - 79 , # Elements Covered - 10 ">Context</a>
+            
+    
+            <a href="../traccar/helper/Crc.html" class="tag"
+            style="font-size: 21px;color:#d9695f"
+            title="# Elements - 60 , # Elements Covered - 51 ">Crc</a>
+            
+    
+            <a href="../traccar/helper/DecoderVerifier.html" class="tag"
+            style="font-size: 17px;color:#d9695f"
+            title="# Elements - 35 , # Elements Covered - 34 ">DecoderVerifier</a>
+            
+    
+            <a href="../traccar/model/Device.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 14 , # Elements Covered - 8 ">Device</a>
+            
+    
+            <a href="../traccar/helper/DistanceCalculator.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 7 ">DistanceCalculator</a>
+            
+    
+            <a href="../traccar/DistanceHandler.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 22 , # Elements Covered - 11 ">DistanceHandler</a>
+            
+    
+            <a href="../traccar/protocol/EasyTrackProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 2 ">EasyTrackProtocol</a>
+            
+    
+            <a href="../traccar/protocol/EasyTrackProtocolDecoder.html" class="tag"
+            style="font-size: 19px;color:#d9695f"
+            title="# Elements - 49 , # Elements Covered - 47 ">EasyTrackProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/EelinkProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 2 ">EelinkProtocol</a>
+            
+    
+            <a href="../traccar/protocol/EelinkProtocolDecoder.html" class="tag"
+            style="font-size: 21px;color:#d9695f"
+            title="# Elements - 62 , # Elements Covered - 39 ">EelinkProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/EnforaProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 2 ">EnforaProtocol</a>
+            
+    
+            <a href="../traccar/protocol/EnforaProtocolDecoder.html" class="tag"
+            style="font-size: 23px;color:#de7b72"
+            title="# Elements - 73 , # Elements Covered - 65 ">EnforaProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/Ev603Protocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 2 ">Ev603Protocol</a>
+            
+    
+            <a href="../traccar/protocol/Ev603ProtocolDecoder.html" class="tag"
+            style="font-size: 17px;color:#d9695f"
+            title="# Elements - 37 , # Elements Covered - 37 ">Ev603ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/model/Event.html" class="tag"
+            style="font-size: 17px;color:#d5584c"
+            title="# Elements - 37 , # Elements Covered - 23 ">Event</a>
+            
+    
+            <a href="../traccar/ExtendedObjectDecoder.html" class="tag"
+            style="font-size: 15px;color:#d04437"
+            title="# Elements - 22 , # Elements Covered - 4 ">ExtendedObjectDecoder</a>
+            
+    
+            <a href="../traccar/FilterHandler.html" class="tag"
+            style="font-size: 23px;color:#de7b72"
+            title="# Elements - 72 , # Elements Covered - 54 ">FilterHandler</a>
+            
+    
+            <a href="../traccar/protocol/FlextrackProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">FlextrackProtocol</a>
+            
+    
+            <a href="../traccar/protocol/FlextrackProtocolDecoder.html" class="tag"
+            style="font-size: 24px;color:#de7b72"
+            title="# Elements - 80 , # Elements Covered - 64 ">FlextrackProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/FreedomProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 2 ">FreedomProtocol</a>
+            
+    
+            <a href="../traccar/protocol/FreedomProtocolDecoder.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="# Elements - 44 , # Elements Covered - 36 ">FreedomProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/GalileoProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">GalileoProtocol</a>
+            
+    
+            <a href="../traccar/protocol/GalileoProtocolDecoder.html" class="tag"
+            style="font-size: 28px;color:#e7a19b"
+            title="# Elements - 107 , # Elements Covered - 101 ">GalileoProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/GatorProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 2 ">GatorProtocol</a>
+            
+    
+            <a href="../traccar/protocol/GatorProtocolDecoder.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="# Elements - 42 , # Elements Covered - 38 ">GatorProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/Gl100Protocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">Gl100Protocol</a>
+            
+    
+            <a href="../traccar/protocol/Gl100ProtocolDecoder.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="# Elements - 40 , # Elements Covered - 33 ">Gl100ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/Gl200Protocol.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 14 , # Elements Covered - 2 ">Gl200Protocol</a>
+            
+    
+            <a href="../traccar/protocol/Gl200ProtocolDecoder.html" class="tag"
+            style="font-size: 24px;color:#e28e87"
+            title="# Elements - 79 , # Elements Covered - 73 ">Gl200ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/GlobalSatProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">GlobalSatProtocol</a>
+            
+    
+            <a href="../traccar/protocol/GlobalSatProtocolDecoder.html" class="tag"
+            style="font-size: 40px;color:#f6c342"
+            title="# Elements - 188 , # Elements Covered - 134 ">GlobalSatProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/GoSafeProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">GoSafeProtocol</a>
+            
+    
+            <a href="../traccar/protocol/GoSafeProtocolDecoder.html" class="tag"
+            style="font-size: 19px;color:#d9695f"
+            title="# Elements - 50 , # Elements Covered - 42 ">GoSafeProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/GotopProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 2 ">GotopProtocol</a>
+            
+    
+            <a href="../traccar/protocol/GotopProtocolDecoder.html" class="tag"
+            style="font-size: 19px;color:#d9695f"
+            title="# Elements - 47 , # Elements Covered - 43 ">GotopProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/Gps103Protocol.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 17 , # Elements Covered - 3 ">Gps103Protocol</a>
+            
+    
+            <a href="../traccar/protocol/Gps103ProtocolDecoder.html" class="tag"
+            style="font-size: 31px;color:#f6c342"
+            title="# Elements - 128 , # Elements Covered - 115 ">Gps103ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/Gps103ProtocolEncoder.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 32 , # Elements Covered - 13 ">Gps103ProtocolEncoder</a>
+            
+    
+            <a href="../traccar/protocol/GpsGateProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">GpsGateProtocol</a>
+            
+    
+            <a href="../traccar/protocol/GpsGateProtocolDecoder.html" class="tag"
+            style="font-size: 25px;color:#de7b72"
+            title="# Elements - 85 , # Elements Covered - 61 ">GpsGateProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/GpsMarkerProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 2 ">GpsMarkerProtocol</a>
+            
+    
+            <a href="../traccar/protocol/GpsMarkerProtocolDecoder.html" class="tag"
+            style="font-size: 20px;color:#d9695f"
+            title="# Elements - 56 , # Elements Covered - 50 ">GpsMarkerProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/GpsmtaProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 2 ">GpsmtaProtocol</a>
+            
+    
+            <a href="../traccar/protocol/GpsmtaProtocolDecoder.html" class="tag"
+            style="font-size: 17px;color:#d5584c"
+            title="# Elements - 34 , # Elements Covered - 28 ">GpsmtaProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/Gt02Protocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 2 ">Gt02Protocol</a>
+            
+    
+            <a href="../traccar/protocol/Gt02ProtocolDecoder.html" class="tag"
+            style="font-size: 22px;color:#de7b72"
+            title="# Elements - 69 , # Elements Covered - 62 ">Gt02ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/Gt06Protocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 3 ">Gt06Protocol</a>
+            
+    
+            <a href="../traccar/protocol/Gt06ProtocolDecoder.html" class="tag"
+            style="font-size: 34px;color:#f6c342"
+            title="# Elements - 147 , # Elements Covered - 129 ">Gt06ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/Gt06ProtocolEncoder.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 21 , # Elements Covered - 18 ">Gt06ProtocolEncoder</a>
+            
+    
+            <a href="../traccar/protocol/H02Protocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 2 ">H02Protocol</a>
+            
+    
+            <a href="../traccar/protocol/H02ProtocolDecoder.html" class="tag"
+            style="font-size: 30px;color:#f6c342"
+            title="# Elements - 121 , # Elements Covered - 114 ">H02ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/HaicomProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 2 ">HaicomProtocol</a>
+            
+    
+            <a href="../traccar/protocol/HaicomProtocolDecoder.html" class="tag"
+            style="font-size: 19px;color:#d9695f"
+            title="# Elements - 52 , # Elements Covered - 46 ">HaicomProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/IntellitracProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">IntellitracProtocol</a>
+            
+    
+            <a href="../traccar/protocol/IntellitracProtocolDecoder.html" class="tag"
+            style="font-size: 19px;color:#d9695f"
+            title="# Elements - 50 , # Elements Covered - 48 ">IntellitracProtocolDecoder</a>
+            
+    
+            <a href="../traccar/web/JsonConverter.html" class="tag"
+            style="font-size: 28px;color:#d9695f"
+            title="# Elements - 106 , # Elements Covered - 39 ">JsonConverter</a>
+            
+    
+            <a href="../traccar/protocol/Jt600Protocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 2 ">Jt600Protocol</a>
+            
+    
+            <a href="../traccar/protocol/Jt600ProtocolDecoder.html" class="tag"
+            style="font-size: 30px;color:#e7a19b"
+            title="# Elements - 121 , # Elements Covered - 110 ">Jt600ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/KhdProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 3 ">KhdProtocol</a>
+            
+    
+            <a href="../traccar/protocol/KhdProtocolDecoder.html" class="tag"
+            style="font-size: 23px;color:#de7b72"
+            title="# Elements - 72 , # Elements Covered - 56 ">KhdProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/KhdProtocolEncoder.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 17 , # Elements Covered - 14 ">KhdProtocolEncoder</a>
+            
+    
+            <a href="../traccar/protocol/LaipacProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">LaipacProtocol</a>
+            
+    
+            <a href="../traccar/protocol/LaipacProtocolDecoder.html" class="tag"
+            style="font-size: 23px;color:#de7b72"
+            title="# Elements - 74 , # Elements Covered - 65 ">LaipacProtocolDecoder</a>
+            
+    
+            <a href="../traccar/helper/Log.html" class="tag"
+            style="font-size: 28px;color:#d04437"
+            title="# Elements - 106 , # Elements Covered - 8 ">Log</a>
+            
+    
+            <a href="../traccar/protocol/M2mProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 2 ">M2mProtocol</a>
+            
+    
+            <a href="../traccar/protocol/M2mProtocolDecoder.html" class="tag"
+            style="font-size: 23px;color:#de7b72"
+            title="# Elements - 75 , # Elements Covered - 68 ">M2mProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/ManPowerProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">ManPowerProtocol</a>
+            
+    
+            <a href="../traccar/protocol/ManPowerProtocolDecoder.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="# Elements - 44 , # Elements Covered - 36 ">ManPowerProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/MegastekProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">MegastekProtocol</a>
+            
+    
+            <a href="../traccar/protocol/MegastekProtocolDecoder.html" class="tag"
+            style="font-size: 46px;color:#89c495"
+            title="# Elements - 228 , # Elements Covered - 186 ">MegastekProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/MeiligaoProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 2 ">MeiligaoProtocol</a>
+            
+    
+            <a href="../traccar/protocol/MeiligaoProtocolDecoder.html" class="tag"
+            style="font-size: 47px;color:#89c495"
+            title="# Elements - 230 , # Elements Covered - 183 ">MeiligaoProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/MeitrackProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 3 ">MeitrackProtocol</a>
+            
+    
+            <a href="../traccar/protocol/MeitrackProtocolDecoder.html" class="tag"
+            style="font-size: 32px;color:#f6c342"
+            title="# Elements - 132 , # Elements Covered - 115 ">MeitrackProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/MiniFinderProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 2 ">MiniFinderProtocol</a>
+            
+    
+            <a href="../traccar/protocol/MiniFinderProtocolDecoder.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="# Elements - 41 , # Elements Covered - 38 ">MiniFinderProtocolDecoder</a>
+            
+    
+            <a href="../traccar/model/MiscFormatter.html" class="tag"
+            style="font-size: 22px;color:#d5584c"
+            title="# Elements - 68 , # Elements Covered - 13 ">MiscFormatter</a>
+            
+    
+            <a href="../traccar/protocol/MtxProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">MtxProtocol</a>
+            
+    
+            <a href="../traccar/protocol/MtxProtocolDecoder.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="# Elements - 41 , # Elements Covered - 35 ">MtxProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/MxtProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">MxtProtocol</a>
+            
+    
+            <a href="../traccar/protocol/MxtProtocolDecoder.html" class="tag"
+            style="font-size: 25px;color:#e28e87"
+            title="# Elements - 87 , # Elements Covered - 75 ">MxtProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/NavigilProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">NavigilProtocol</a>
+            
+    
+            <a href="../traccar/protocol/NavigilProtocolDecoder.html" class="tag"
+            style="font-size: 38px;color:#de7b72"
+            title="# Elements - 174 , # Elements Covered - 54 ">NavigilProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/NavisProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">NavisProtocol</a>
+            
+    
+            <a href="../traccar/protocol/NavisProtocolDecoder.html" class="tag"
+            style="font-size: 40px;color:#fae1a0"
+            title="# Elements - 187 , # Elements Covered - 150 ">NavisProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/NavisProtocolDecoder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 5 ">NavisProtocolDecoder.ParseResult</a>
+            
+    
+            <a href="../traccar/protocol/NoranProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 2 ">NoranProtocol</a>
+            
+    
+            <a href="../traccar/protocol/NoranProtocolDecoder.html" class="tag"
+            style="font-size: 24px;color:#de7b72"
+            title="# Elements - 82 , # Elements Covered - 65 ">NoranProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/OrionProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">OrionProtocol</a>
+            
+    
+            <a href="../traccar/protocol/OrionProtocolDecoder.html" class="tag"
+            style="font-size: 21px;color:#d9695f"
+            title="# Elements - 61 , # Elements Covered - 51 ">OrionProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/OsmAndProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 2 ">OsmAndProtocol</a>
+            
+    
+            <a href="../traccar/protocol/OsmAndProtocolDecoder.html" class="tag"
+            style="font-size: 24px;color:#de7b72"
+            title="# Elements - 79 , # Elements Covered - 69 ">OsmAndProtocolDecoder</a>
+            
+    
+            <a href="../traccar/helper/PatternUtil.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 12 , # Elements Covered - 11 ">PatternUtil</a>
+            
+    
+            <a href="../traccar/protocol/PiligrimProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">PiligrimProtocol</a>
+            
+    
+            <a href="../traccar/protocol/PiligrimProtocolDecoder.html" class="tag"
+            style="font-size: 27px;color:#e28e87"
+            title="# Elements - 100 , # Elements Covered - 79 ">PiligrimProtocolDecoder</a>
+            
+    
+            <a href="../traccar/model/Position.html" class="tag"
+            style="font-size: 17px;color:#d9695f"
+            title="# Elements - 37 , # Elements Covered - 31 ">Position</a>
+            
+    
+            <a href="../traccar/protocol/ProgressProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">ProgressProtocol</a>
+            
+    
+            <a href="../traccar/protocol/ProgressProtocolDecoder.html" class="tag"
+            style="font-size: 29px;color:#d5584c"
+            title="# Elements - 116 , # Elements Covered - 17 ">ProgressProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/ProtocolDecoderTest.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 3 , # Elements Covered - 3 ">ProtocolDecoderTest</a>
+            
+    
+            <a href="../traccar/protocol/Pt3000Protocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">Pt3000Protocol</a>
+            
+    
+            <a href="../traccar/protocol/Pt3000ProtocolDecoder.html" class="tag"
+            style="font-size: 19px;color:#d9695f"
+            title="# Elements - 52 , # Elements Covered - 43 ">Pt3000ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/Pt502Protocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 2 ">Pt502Protocol</a>
+            
+    
+            <a href="../traccar/protocol/Pt502ProtocolDecoder.html" class="tag"
+            style="font-size: 23px;color:#de7b72"
+            title="# Elements - 74 , # Elements Covered - 70 ">Pt502ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/RitiProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">RitiProtocol</a>
+            
+    
+            <a href="../traccar/protocol/RitiProtocolDecoder.html" class="tag"
+            style="font-size: 21px;color:#de7b72"
+            title="# Elements - 63 , # Elements Covered - 52 ">RitiProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/RuptelaProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 2 ">RuptelaProtocol</a>
+            
+    
+            <a href="../traccar/protocol/RuptelaProtocolDecoder.html" class="tag"
+            style="font-size: 21px;color:#de7b72"
+            title="# Elements - 64 , # Elements Covered - 55 ">RuptelaProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/SanavProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 2 ">SanavProtocol</a>
+            
+    
+            <a href="../traccar/protocol/SanavProtocolDecoder.html" class="tag"
+            style="font-size: 19px;color:#d9695f"
+            title="# Elements - 49 , # Elements Covered - 40 ">SanavProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/SkypatrolProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 2 ">SkypatrolProtocol</a>
+            
+    
+            <a href="../traccar/protocol/SkypatrolProtocolDecoder.html" class="tag"
+            style="font-size: 34px;color:#e7a19b"
+            title="# Elements - 144 , # Elements Covered - 109 ">SkypatrolProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/Stl060Protocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 2 ">Stl060Protocol</a>
+            
+    
+            <a href="../traccar/protocol/Stl060ProtocolDecoder.html" class="tag"
+            style="font-size: 21px;color:#de7b72"
+            title="# Elements - 65 , # Elements Covered - 57 ">Stl060ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/StringProtocolEncoder.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 17 , # Elements Covered - 17 ">StringProtocolEncoder</a>
+            
+    
+            <a href="../traccar/protocol/SuntechProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 3 ">SuntechProtocol</a>
+            
+    
+            <a href="../traccar/protocol/SuntechProtocolDecoder.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="# Elements - 40 , # Elements Covered - 38 ">SuntechProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/T55Protocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">T55Protocol</a>
+            
+    
+            <a href="../traccar/protocol/T55ProtocolDecoder.html" class="tag"
+            style="font-size: 40px;color:#14892c"
+            title="# Elements - 189 , # Elements Covered - 169 ">T55ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/TaipProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 2 ">TaipProtocol</a>
+            
+    
+            <a href="../traccar/protocol/TaipProtocolDecoder.html" class="tag"
+            style="font-size: 26px;color:#e28e87"
+            title="# Elements - 96 , # Elements Covered - 83 ">TaipProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/TelikProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 2 ">TelikProtocol</a>
+            
+    
+            <a href="../traccar/protocol/TelikProtocolDecoder.html" class="tag"
+            style="font-size: 17px;color:#d9695f"
+            title="# Elements - 33 , # Elements Covered - 31 ">TelikProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/TeltonikaProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 2 ">TeltonikaProtocol</a>
+            
+    
+            <a href="../traccar/protocol/TeltonikaProtocolDecoder.html" class="tag"
+            style="font-size: 34px;color:#f6c342"
+            title="# Elements - 144 , # Elements Covered - 124 ">TeltonikaProtocolDecoder</a>
+            
+    
+            <a href="../traccar/helper/TestIdentityManager.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 8 ">TestIdentityManager</a>
+            
+    
+            <a href="../traccar/protocol/Tk102Protocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">Tk102Protocol</a>
+            
+    
+            <a href="../traccar/protocol/Tk102ProtocolDecoder.html" class="tag"
+            style="font-size: 20px;color:#d9695f"
+            title="# Elements - 57 , # Elements Covered - 49 ">Tk102ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/Tk103Protocol.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 14 , # Elements Covered - 2 ">Tk103Protocol</a>
+            
+    
+            <a href="../traccar/protocol/Tk103ProtocolDecoder.html" class="tag"
+            style="font-size: 25px;color:#de7b72"
+            title="# Elements - 87 , # Elements Covered - 70 ">Tk103ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/Tlt2hProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">Tlt2hProtocol</a>
+            
+    
+            <a href="../traccar/protocol/Tlt2hProtocolDecoder.html" class="tag"
+            style="font-size: 22px;color:#de7b72"
+            title="# Elements - 66 , # Elements Covered - 61 ">Tlt2hProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/TopflytechProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 2 ">TopflytechProtocol</a>
+            
+    
+            <a href="../traccar/protocol/TopflytechProtocolDecoder.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="# Elements - 44 , # Elements Covered - 37 ">TopflytechProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/TotemProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 3 ">TotemProtocol</a>
+            
+    
+            <a href="../traccar/protocol/TotemProtocolDecoder.html" class="tag"
+            style="font-size: 32px;color:#f6c342"
+            title="# Elements - 134 , # Elements Covered - 120 ">TotemProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/TotemProtocolEncoder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 5 ">TotemProtocolEncoder</a>
+            
+    
+            <a href="../traccar/protocol/Tr20Protocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">Tr20Protocol</a>
+            
+    
+            <a href="../traccar/protocol/Tr20ProtocolDecoder.html" class="tag"
+            style="font-size: 20px;color:#d9695f"
+            title="# Elements - 55 , # Elements Covered - 45 ">Tr20ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/Tr900Protocol.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 14 , # Elements Covered - 2 ">Tr900Protocol</a>
+            
+    
+            <a href="../traccar/protocol/Tr900ProtocolDecoder.html" class="tag"
+            style="font-size: 19px;color:#d9695f"
+            title="# Elements - 52 , # Elements Covered - 46 ">Tr900ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/TrackboxProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">TrackboxProtocol</a>
+            
+    
+            <a href="../traccar/protocol/TrackboxProtocolDecoder.html" class="tag"
+            style="font-size: 21px;color:#de7b72"
+            title="# Elements - 62 , # Elements Covered - 53 ">TrackboxProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/TramigoProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">TramigoProtocol</a>
+            
+    
+            <a href="../traccar/protocol/TramigoProtocolDecoder.html" class="tag"
+            style="font-size: 23px;color:#d9695f"
+            title="# Elements - 73 , # Elements Covered - 47 ">TramigoProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/TytanProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 2 ">TytanProtocol</a>
+            
+    
+            <a href="../traccar/protocol/TytanProtocolDecoder.html" class="tag"
+            style="font-size: 31px;color:#e28e87"
+            title="# Elements - 130 , # Elements Covered - 79 ">TytanProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/TzoneProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 2 ">TzoneProtocol</a>
+            
+    
+            <a href="../traccar/protocol/TzoneProtocolDecoder.html" class="tag"
+            style="font-size: 28px;color:#e7a19b"
+            title="# Elements - 110 , # Elements Covered - 100 ">TzoneProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/UlbotechProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 2 ">UlbotechProtocol</a>
+            
+    
+            <a href="../traccar/protocol/UlbotechProtocolDecoder.html" class="tag"
+            style="font-size: 19px;color:#d9695f"
+            title="# Elements - 49 , # Elements Covered - 47 ">UlbotechProtocolDecoder</a>
+            
+    
+            <a href="../traccar/helper/UnitsConverter.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 8 ">UnitsConverter</a>
+            
+    
+            <a href="../traccar/protocol/V680Protocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 2 ">V680Protocol</a>
+            
+    
+            <a href="../traccar/protocol/V680ProtocolDecoder.html" class="tag"
+            style="font-size: 23px;color:#de7b72"
+            title="# Elements - 77 , # Elements Covered - 72 ">V680ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/VisiontekProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 2 ">VisiontekProtocol</a>
+            
+    
+            <a href="../traccar/protocol/VisiontekProtocolDecoder.html" class="tag"
+            style="font-size: 21px;color:#de7b72"
+            title="# Elements - 60 , # Elements Covered - 54 ">VisiontekProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/WialonProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">WialonProtocol</a>
+            
+    
+            <a href="../traccar/protocol/WialonProtocolDecoder.html" class="tag"
+            style="font-size: 32px;color:#e7a19b"
+            title="# Elements - 133 , # Elements Covered - 113 ">WialonProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/WondexProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 2 ">WondexProtocol</a>
+            
+    
+            <a href="../traccar/protocol/WondexProtocolDecoder.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="# Elements - 41 , # Elements Covered - 37 ">WondexProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/XexunProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 2 ">XexunProtocol</a>
+            
+    
+            <a href="../traccar/protocol/XexunProtocolDecoder.html" class="tag"
+            style="font-size: 23px;color:#de7b72"
+            title="# Elements - 73 , # Elements Covered - 71 ">XexunProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/XirgoProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">XirgoProtocol</a>
+            
+    
+            <a href="../traccar/protocol/XirgoProtocolDecoder.html" class="tag"
+            style="font-size: 17px;color:#d9695f"
+            title="# Elements - 39 , # Elements Covered - 35 ">XirgoProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/Xt013Protocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 2 ">Xt013Protocol</a>
+            
+    
+            <a href="../traccar/protocol/Xt013ProtocolDecoder.html" class="tag"
+            style="font-size: 17px;color:#d9695f"
+            title="# Elements - 37 , # Elements Covered - 33 ">Xt013ProtocolDecoder</a>
+            
+    
+            <a href="../traccar/protocol/YwtProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">YwtProtocol</a>
+            
+    
+            <a href="../traccar/protocol/YwtProtocolDecoder.html" class="tag"
+            style="font-size: 23px;color:#de7b72"
+            title="# Elements - 76 , # Elements Covered - 53 ">YwtProtocolDecoder</a>
+           </div>
+   
+          <div id="shallowPackageCloud"  style="display: none"  >
+                          
+    
+        
+    
+            <a href="../traccar/BaseDataHandler.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 6 , # Elements Covered - 4 ">BaseDataHandler</a>
+            
+    
+            <a href="../traccar/BaseProtocol.html" class="tag"
+            style="font-size: 17px;color:#d5584c"
+            title="# Elements - 12 , # Elements Covered - 6 ">BaseProtocol</a>
+            
+    
+            <a href="../traccar/BaseProtocolDecoder.html" class="tag"
+            style="font-size: 25px;color:#de7b72"
+            title="# Elements - 30 , # Elements Covered - 20 ">BaseProtocolDecoder</a>
+            
+    
+            <a href="../traccar/BaseProtocolEncoder.html" class="tag"
+            style="font-size: 15px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 2 ">BaseProtocolEncoder</a>
+            
+    
+            <a href="../traccar/Config.html" class="tag"
+            style="font-size: 25px;color:#d9695f"
+            title="# Elements - 30 , # Elements Covered - 14 ">Config</a>
+            
+    
+            <a href="../traccar/Context.html" class="tag"
+            style="font-size: 48px;color:#d9695f"
+            title="# Elements - 79 , # Elements Covered - 10 ">Context</a>
+            
+    
+            <a href="../traccar/DistanceHandler.html" class="tag"
+            style="font-size: 22px;color:#d9695f"
+            title="# Elements - 22 , # Elements Covered - 11 ">DistanceHandler</a>
+            
+    
+            <a href="../traccar/ExtendedObjectDecoder.html" class="tag"
+            style="font-size: 22px;color:#d5584c"
+            title="# Elements - 22 , # Elements Covered - 4 ">ExtendedObjectDecoder</a>
+            
+    
+            <a href="../traccar/FilterHandler.html" class="tag"
+            style="font-size: 44px;color:#89c495"
+            title="# Elements - 72 , # Elements Covered - 54 ">FilterHandler</a>
+            
+    
+            <a href="../traccar/StringProtocolEncoder.html" class="tag"
+            style="font-size: 19px;color:#de7b72"
+            title="# Elements - 17 , # Elements Covered - 17 ">StringProtocolEncoder</a>
+           </div>
+   </div>
+    </div> <!-- tabs-pane active-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="https://openclover.org">OpenClover</a> v 4.5.2
+                on Wed Jun 5 2024 13:34:03 CST using coverage data from Wed Jun 5 2024 13:34:00 CST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

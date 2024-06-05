@@ -1,0 +1,1879 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../style.css');
+        @import url('../../../tree.css');
+        
+    </style>
+
+    <script src="../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../clover.js" type="text/javascript"></script>
+    <script src="../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../cloud.js" type="text/javascript"></script>
+
+            <title>traccar 3.12-SNAPSHOT</title>
+    </head>
+
+<body  >
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="https://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="https://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                    <a href="https://www.traccar.org" target="_top">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+                    </a>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                            <a href="https://www.traccar.org" target="_top">
+                                        traccar 3.12-SNAPSHOT
+                                        </a>
+                    </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../" data-package-name="org.traccar.protocol">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="../../../dashboard.html">Project Clover database Mon Jun 3 2024 11:03:55 CST</a></li> 
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            Package org.traccar.protocol
+    </h1>
+<div class="aui-tabs horizontal-tabs">
+            <ul class="tabs-menu">
+                <li class="menu-item ">
+            <a href="pkg-summary.html"><strong>Application code</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="testsrc-pkg-summary.html"><strong>Test code</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="test-pkg-summary.html"><strong>Test results</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="top-risks.html"><strong>Top risks</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="quick-wins.html"><strong>Quick wins</strong></a>
+        </li>
+                            </ul>
+    <div class="tabs-pane active-pane" id="tabs-first">
+
+        <div>&#160;</div>
+
+        
+
+
+                        <div style="text-align: right; margin-bottom: 10px">
+            
+            
+                                    <button class="aui-button aui-button-subtle" id="popupHelp">
+    <span class="aui-icon aui-icon-small aui-iconfont-help"></span>&#160;How to read this chart
+</button>
+<script>
+    AJS.InlineDialog(AJS.$("#popupHelp"), "helpDialog",
+            function (content, trigger, showPopup) {
+                var description = quickWinsDescription();
+                var title = 'Quick Wins';
+                content.css({"padding": "20px"}).html(
+                        '<h2>' + title + '</h2>' + description);
+                showPopup();
+                return false;
+            },
+            {
+                width: 600
+            }
+    );
+</script>
+        </div>
+
+        
+
+<div style="padding: 20px; border: 1px solid #cccccc; background-color: #f5f5f5; border-radius: 3px">
+   
+          <div id="shallowPackageCloud"  >
+                          
+    
+        
+    
+            <a href="../protocol/AdmProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">AdmProtocol</a>
+            
+    
+            <a href="../protocol/AdmProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 64 , # Elements Covered - 52 ">AdmProtocolDecoder</a>
+            
+    
+            <a href="../protocol/AisProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 2 ">AisProtocol</a>
+            
+    
+            <a href="../protocol/AisProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 71 , # Elements Covered - 67 ">AisProtocolDecoder</a>
+            
+    
+            <a href="../protocol/AlematicsProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">AlematicsProtocol</a>
+            
+    
+            <a href="../protocol/AlematicsProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 75 , # Elements Covered - 58 ">AlematicsProtocolDecoder</a>
+            
+    
+            <a href="../protocol/ApelProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">ApelProtocol</a>
+            
+    
+            <a href="../protocol/ApelProtocolDecoder.html" class="tag"
+            style="font-size: 20px;color:#d04437"
+            title="# Elements - 128 , # Elements Covered - 2 ">ApelProtocolDecoder</a>
+            
+    
+            <a href="../protocol/AplicomFrameDecoder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 27 , # Elements Covered - 21 ">AplicomFrameDecoder</a>
+            
+    
+            <a href="../protocol/AplicomProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 2 ">AplicomProtocol</a>
+            
+    
+            <a href="../protocol/AplicomProtocolDecoder.html" class="tag"
+            style="font-size: 48px;color:#89c495"
+            title="# Elements - 563 , # Elements Covered - 406 ">AplicomProtocolDecoder</a>
+            
+    
+            <a href="../protocol/AppelloProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">AppelloProtocol</a>
+            
+    
+            <a href="../protocol/AppelloProtocolDecoder.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 30 , # Elements Covered - 26 ">AppelloProtocolDecoder</a>
+            
+    
+            <a href="../protocol/AquilaProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">AquilaProtocol</a>
+            
+    
+            <a href="../protocol/AquilaProtocolDecoder.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 60 , # Elements Covered - 58 ">AquilaProtocolDecoder</a>
+            
+    
+            <a href="../protocol/Ardi01Protocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">Ardi01Protocol</a>
+            
+    
+            <a href="../protocol/Ardi01ProtocolDecoder.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 29 , # Elements Covered - 25 ">Ardi01ProtocolDecoder</a>
+            
+    
+            <a href="../protocol/ArknavProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">ArknavProtocol</a>
+            
+    
+            <a href="../protocol/ArknavProtocolDecoder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 24 , # Elements Covered - 20 ">ArknavProtocolDecoder</a>
+            
+    
+            <a href="../protocol/ArknavX8Protocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">ArknavX8Protocol</a>
+            
+    
+            <a href="../protocol/ArknavX8ProtocolDecoder.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 32 , # Elements Covered - 30 ">ArknavX8ProtocolDecoder</a>
+            
+    
+            <a href="../protocol/ArnaviProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">ArnaviProtocol</a>
+            
+    
+            <a href="../protocol/ArnaviProtocolDecoder.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 31 , # Elements Covered - 27 ">ArnaviProtocolDecoder</a>
+            
+    
+            <a href="../protocol/AstraProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 2 ">AstraProtocol</a>
+            
+    
+            <a href="../protocol/AstraProtocolDecoder.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 61 , # Elements Covered - 54 ">AstraProtocolDecoder</a>
+            
+    
+            <a href="../protocol/At2000FrameDecoder.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 38 , # Elements Covered - 25 ">At2000FrameDecoder</a>
+            
+    
+            <a href="../protocol/AtrackFrameDecoder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 28 , # Elements Covered - 22 ">AtrackFrameDecoder</a>
+            
+    
+            <a href="../protocol/AtrackProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 3 ">AtrackProtocol</a>
+            
+    
+            <a href="../protocol/AtrackProtocolDecoder.html" class="tag"
+            style="font-size: 26px;color:#de7b72"
+            title="# Elements - 231 , # Elements Covered - 139 ">AtrackProtocolDecoder</a>
+            
+    
+            <a href="../protocol/AuroProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">AuroProtocol</a>
+            
+    
+            <a href="../protocol/AuroProtocolDecoder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 26 , # Elements Covered - 22 ">AuroProtocolDecoder</a>
+            
+    
+            <a href="../protocol/AutoFonProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 2 ">AutoFonProtocol</a>
+            
+    
+            <a href="../protocol/AutoFonProtocolDecoder.html" class="tag"
+            style="font-size: 20px;color:#d9695f"
+            title="# Elements - 128 , # Elements Covered - 103 ">AutoFonProtocolDecoder</a>
+            
+    
+            <a href="../protocol/AutoGradeProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">AutoGradeProtocol</a>
+            
+    
+            <a href="../protocol/AutoGradeProtocolDecoder.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 36 , # Elements Covered - 32 ">AutoGradeProtocolDecoder</a>
+            
+    
+            <a href="../protocol/Avl301Protocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 2 ">Avl301Protocol</a>
+            
+    
+            <a href="../protocol/Avl301ProtocolDecoder.html" class="tag"
+            style="font-size: 17px;color:#d5584c"
+            title="# Elements - 85 , # Elements Covered - 66 ">Avl301ProtocolDecoder</a>
+            
+    
+            <a href="../protocol/BceProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">BceProtocol</a>
+            
+    
+            <a href="../protocol/BceProtocolDecoder.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="# Elements - 105 , # Elements Covered - 78 ">BceProtocolDecoder</a>
+            
+    
+            <a href="../protocol/BlackKiteProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">BlackKiteProtocol</a>
+            
+    
+            <a href="../protocol/BlackKiteProtocolDecoder.html" class="tag"
+            style="font-size: 19px;color:#d9695f"
+            title="# Elements - 113 , # Elements Covered - 86 ">BlackKiteProtocolDecoder</a>
+            
+    
+            <a href="../protocol/BoxProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">BoxProtocol</a>
+            
+    
+            <a href="../protocol/BoxProtocolDecoder.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 45 , # Elements Covered - 40 ">BoxProtocolDecoder</a>
+            
+    
+            <a href="../protocol/CalAmpProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 2 ">CalAmpProtocol</a>
+            
+    
+            <a href="../protocol/CalAmpProtocolDecoder.html" class="tag"
+            style="font-size: 20px;color:#d9695f"
+            title="# Elements - 135 , # Elements Covered - 110 ">CalAmpProtocolDecoder</a>
+            
+    
+            <a href="../protocol/CarTrackProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">CarTrackProtocol</a>
+            
+    
+            <a href="../protocol/CarTrackProtocolDecoder.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 37 , # Elements Covered - 35 ">CarTrackProtocolDecoder</a>
+            
+    
+            <a href="../protocol/CarscopProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">CarscopProtocol</a>
+            
+    
+            <a href="../protocol/CarscopProtocolDecoder.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 35 , # Elements Covered - 33 ">CarscopProtocolDecoder</a>
+            
+    
+            <a href="../protocol/CastelProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 14 , # Elements Covered - 2 ">CastelProtocol</a>
+            
+    
+            <a href="../protocol/CastelProtocolDecoder.html" class="tag"
+            style="font-size: 30px;color:#e7a19b"
+            title="# Elements - 284 , # Elements Covered - 233 ">CastelProtocolDecoder</a>
+            
+    
+            <a href="../protocol/CellocatorProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 17 , # Elements Covered - 3 ">CellocatorProtocol</a>
+            
+    
+            <a href="../protocol/CellocatorProtocolDecoder.html" class="tag"
+            style="font-size: 17px;color:#d9695f"
+            title="# Elements - 88 , # Elements Covered - 77 ">CellocatorProtocolDecoder</a>
+            
+    
+            <a href="../protocol/CguardProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">CguardProtocol</a>
+            
+    
+            <a href="../protocol/CguardProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="# Elements - 74 , # Elements Covered - 68 ">CguardProtocolDecoder</a>
+            
+    
+            <a href="../protocol/CityeasyProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 3 ">CityeasyProtocol</a>
+            
+    
+            <a href="../protocol/CityeasyProtocolDecoder.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 40 , # Elements Covered - 36 ">CityeasyProtocolDecoder</a>
+            
+    
+            <a href="../protocol/CityeasyProtocolEncoder.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 36 , # Elements Covered - 22 ">CityeasyProtocolEncoder</a>
+            
+    
+            <a href="../protocol/CradlepointProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">CradlepointProtocol</a>
+            
+    
+            <a href="../protocol/CradlepointProtocolDecoder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 25 , # Elements Covered - 21 ">CradlepointProtocolDecoder</a>
+            
+    
+            <a href="../protocol/DishaProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">DishaProtocol</a>
+            
+    
+            <a href="../protocol/DishaProtocolDecoder.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 32 , # Elements Covered - 28 ">DishaProtocolDecoder</a>
+            
+    
+            <a href="../protocol/DmtHttpProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">DmtHttpProtocol</a>
+            
+    
+            <a href="../protocol/DmtHttpProtocolDecoder.html" class="tag"
+            style="font-size: 17px;color:#d9695f"
+            title="# Elements - 84 , # Elements Covered - 71 ">DmtHttpProtocolDecoder</a>
+            
+    
+            <a href="../protocol/DmtProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">DmtProtocol</a>
+            
+    
+            <a href="../protocol/DmtProtocolDecoder.html" class="tag"
+            style="font-size: 19px;color:#d9695f"
+            title="# Elements - 120 , # Elements Covered - 93 ">DmtProtocolDecoder</a>
+            
+    
+            <a href="../protocol/EasyTrackProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">EasyTrackProtocol</a>
+            
+    
+            <a href="../protocol/EasyTrackProtocolDecoder.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 39 , # Elements Covered - 37 ">EasyTrackProtocolDecoder</a>
+            
+    
+            <a href="../protocol/EelinkProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 3 ">EelinkProtocol</a>
+            
+    
+            <a href="../protocol/EelinkProtocolDecoder.html" class="tag"
+            style="font-size: 22px;color:#de7b72"
+            title="# Elements - 164 , # Elements Covered - 122 ">EelinkProtocolDecoder</a>
+            
+    
+            <a href="../protocol/EelinkProtocolEncoder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 25 , # Elements Covered - 15 ">EelinkProtocolEncoder</a>
+            
+    
+            <a href="../protocol/EnforaProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 3 ">EnforaProtocol</a>
+            
+    
+            <a href="../protocol/EnforaProtocolDecoder.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 51 , # Elements Covered - 43 ">EnforaProtocolDecoder</a>
+            
+    
+            <a href="../protocol/ExtremTracProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">ExtremTracProtocol</a>
+            
+    
+            <a href="../protocol/ExtremTracProtocolDecoder.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 25 , # Elements Covered - 23 ">ExtremTracProtocolDecoder</a>
+            
+    
+            <a href="../protocol/FifotrackProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 2 ">FifotrackProtocol</a>
+            
+    
+            <a href="../protocol/FifotrackProtocolDecoder.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 50 , # Elements Covered - 45 ">FifotrackProtocolDecoder</a>
+            
+    
+            <a href="../protocol/FlexCommProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">FlexCommProtocol</a>
+            
+    
+            <a href="../protocol/FlexCommProtocolDecoder.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 52 , # Elements Covered - 45 ">FlexCommProtocolDecoder</a>
+            
+    
+            <a href="../protocol/FlextrackProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">FlextrackProtocol</a>
+            
+    
+            <a href="../protocol/FlextrackProtocolDecoder.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 56 , # Elements Covered - 47 ">FlextrackProtocolDecoder</a>
+            
+    
+            <a href="../protocol/FoxProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">FoxProtocol</a>
+            
+    
+            <a href="../protocol/FoxProtocolDecoder.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 53 , # Elements Covered - 44 ">FoxProtocolDecoder</a>
+            
+    
+            <a href="../protocol/FreedomProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">FreedomProtocol</a>
+            
+    
+            <a href="../protocol/FreedomProtocolDecoder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 22 , # Elements Covered - 18 ">FreedomProtocolDecoder</a>
+            
+    
+            <a href="../protocol/GalileoFrameDecoder.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 7 ">GalileoFrameDecoder</a>
+            
+    
+            <a href="../protocol/GalileoProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 3 ">GalileoProtocol</a>
+            
+    
+            <a href="../protocol/GalileoProtocolDecoder.html" class="tag"
+            style="font-size: 26px;color:#e28e87"
+            title="# Elements - 223 , # Elements Covered - 197 ">GalileoProtocolDecoder</a>
+            
+    
+            <a href="../protocol/GalileoProtocolEncoder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 25 , # Elements Covered - 19 ">GalileoProtocolEncoder</a>
+            
+    
+            <a href="../protocol/GatorProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 2 ">GatorProtocol</a>
+            
+    
+            <a href="../protocol/GatorProtocolDecoder.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 58 , # Elements Covered - 44 ">GatorProtocolDecoder</a>
+            
+    
+            <a href="../protocol/Gl100Protocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 14 , # Elements Covered - 2 ">Gl100Protocol</a>
+            
+    
+            <a href="../protocol/Gl100ProtocolDecoder.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 32 , # Elements Covered - 25 ">Gl100ProtocolDecoder</a>
+            
+    
+            <a href="../protocol/Gl200BinaryProtocolDecoder.html" class="tag"
+            style="font-size: 28px;color:#e28e87"
+            title="# Elements - 264 , # Elements Covered - 197 ">Gl200BinaryProtocolDecoder</a>
+            
+    
+            <a href="../protocol/Gl200FrameDecoder.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 50 , # Elements Covered - 32 ">Gl200FrameDecoder</a>
+            
+    
+            <a href="../protocol/Gl200Protocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 15 , # Elements Covered - 3 ">Gl200Protocol</a>
+            
+    
+            <a href="../protocol/Gl200TextProtocolDecoder.html" class="tag"
+            style="font-size: 40px;color:#d04437"
+            title="# Elements - 451 , # Elements Covered - 3 ">Gl200TextProtocolDecoder</a>
+            
+    
+            <a href="../protocol/Gl200TextProtocolDecoder_ESTest_scaffolding.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 34 , # Elements Covered - 34 ">Gl200TextProtocolDecoder_ESTest_scaffolding</a>
+            
+    
+            <a href="../protocol/GlobalSatProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">GlobalSatProtocol</a>
+            
+    
+            <a href="../protocol/GlobalSatProtocolDecoder.html" class="tag"
+            style="font-size: 22px;color:#de7b72"
+            title="# Elements - 165 , # Elements Covered - 115 ">GlobalSatProtocolDecoder</a>
+            
+    
+            <a href="../protocol/GnxProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">GnxProtocol</a>
+            
+    
+            <a href="../protocol/GnxProtocolDecoder.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 38 , # Elements Covered - 36 ">GnxProtocolDecoder</a>
+            
+    
+            <a href="../protocol/GoSafeProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">GoSafeProtocol</a>
+            
+    
+            <a href="../protocol/GoSafeProtocolDecoder.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="# Elements - 102 , # Elements Covered - 92 ">GoSafeProtocolDecoder</a>
+            
+    
+            <a href="../protocol/GotopProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">GotopProtocol</a>
+            
+    
+            <a href="../protocol/GotopProtocolDecoder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 24 , # Elements Covered - 22 ">GotopProtocolDecoder</a>
+            
+    
+            <a href="../protocol/Gps056FrameDecoder.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 15 , # Elements Covered - 12 ">Gps056FrameDecoder</a>
+            
+    
+            <a href="../protocol/Gps056Protocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 2 ">Gps056Protocol</a>
+            
+    
+            <a href="../protocol/Gps056ProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 73 , # Elements Covered - 58 ">Gps056ProtocolDecoder</a>
+            
+    
+            <a href="../protocol/Gps103Protocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 17 , # Elements Covered - 3 ">Gps103Protocol</a>
+            
+    
+            <a href="../protocol/Gps103ProtocolDecoder.html" class="tag"
+            style="font-size: 24px;color:#e28e87"
+            title="# Elements - 188 , # Elements Covered - 161 ">Gps103ProtocolDecoder</a>
+            
+    
+            <a href="../protocol/Gps103ProtocolEncoder.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 39 , # Elements Covered - 15 ">Gps103ProtocolEncoder</a>
+            
+    
+            <a href="../protocol/GpsGateProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">GpsGateProtocol</a>
+            
+    
+            <a href="../protocol/GpsGateProtocolDecoder.html" class="tag"
+            style="font-size: 17px;color:#d5584c"
+            title="# Elements - 87 , # Elements Covered - 65 ">GpsGateProtocolDecoder</a>
+            
+    
+            <a href="../protocol/GpsMarkerProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">GpsMarkerProtocol</a>
+            
+    
+            <a href="../protocol/GpsMarkerProtocolDecoder.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 28 , # Elements Covered - 26 ">GpsMarkerProtocolDecoder</a>
+            
+    
+            <a href="../protocol/GpsmtaProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 2 ">GpsmtaProtocol</a>
+            
+    
+            <a href="../protocol/GpsmtaProtocolDecoder.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 33 , # Elements Covered - 27 ">GpsmtaProtocolDecoder</a>
+            
+    
+            <a href="../protocol/GranitFrameDecoder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 19 , # Elements Covered - 15 ">GranitFrameDecoder</a>
+            
+    
+            <a href="../protocol/GranitProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 5 ">GranitProtocol</a>
+            
+    
+            <a href="../protocol/GranitProtocolDecoder.html" class="tag"
+            style="font-size: 23px;color:#de7b72"
+            title="# Elements - 174 , # Elements Covered - 135 ">GranitProtocolDecoder</a>
+            
+    
+            <a href="../protocol/Gt02Protocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 2 ">Gt02Protocol</a>
+            
+    
+            <a href="../protocol/Gt02ProtocolDecoder.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 59 , # Elements Covered - 51 ">Gt02ProtocolDecoder</a>
+            
+    
+            <a href="../protocol/Gt06FrameDecoder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 21 , # Elements Covered - 15 ">Gt06FrameDecoder</a>
+            
+    
+            <a href="../protocol/Gt06Protocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 3 ">Gt06Protocol</a>
+            
+    
+            <a href="../protocol/Gt06ProtocolDecoder.html" class="tag"
+            style="font-size: 38px;color:#fae1a0"
+            title="# Elements - 416 , # Elements Covered - 321 ">Gt06ProtocolDecoder</a>
+            
+    
+            <a href="../protocol/Gt06ProtocolEncoder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 31 , # Elements Covered - 20 ">Gt06ProtocolEncoder</a>
+            
+    
+            <a href="../protocol/Gt30Protocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">Gt30Protocol</a>
+            
+    
+            <a href="../protocol/Gt30ProtocolDecoder.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 45 , # Elements Covered - 33 ">Gt30ProtocolDecoder</a>
+            
+    
+            <a href="../protocol/H02FrameDecoder.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 48 , # Elements Covered - 33 ">H02FrameDecoder</a>
+            
+    
+            <a href="../protocol/H02Protocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 3 ">H02Protocol</a>
+            
+    
+            <a href="../protocol/H02ProtocolDecoder.html" class="tag"
+            style="font-size: 26px;color:#e28e87"
+            title="# Elements - 227 , # Elements Covered - 200 ">H02ProtocolDecoder</a>
+            
+    
+            <a href="../protocol/H02ProtocolEncoder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 25 , # Elements Covered - 19 ">H02ProtocolEncoder</a>
+            
+    
+            <a href="../protocol/HaicomProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">HaicomProtocol</a>
+            
+    
+            <a href="../protocol/HaicomProtocolDecoder.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 41 , # Elements Covered - 35 ">HaicomProtocolDecoder</a>
+            
+    
+            <a href="../protocol/HomtecsProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 2 ">HomtecsProtocol</a>
+            
+    
+            <a href="../protocol/HomtecsProtocolDecoder.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 28 , # Elements Covered - 26 ">HomtecsProtocolDecoder</a>
+            
+    
+            <a href="../protocol/HuaShengFrameDecoder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 29 , # Elements Covered - 20 ">HuaShengFrameDecoder</a>
+            
+    
+            <a href="../protocol/HuaShengProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 2 ">HuaShengProtocol</a>
+            
+    
+            <a href="../protocol/HuaShengProtocolDecoder.html" class="tag"
+            style="font-size: 17px;color:#d5584c"
+            title="# Elements - 79 , # Elements Covered - 62 ">HuaShengProtocolDecoder</a>
+            
+    
+            <a href="../protocol/HuabaoFrameDecoder.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 29 , # Elements Covered - 24 ">HuabaoFrameDecoder</a>
+            
+    
+            <a href="../protocol/HuabaoProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 3 ">HuabaoProtocol</a>
+            
+    
+            <a href="../protocol/HuabaoProtocolDecoder.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="# Elements - 108 , # Elements Covered - 70 ">HuabaoProtocolDecoder</a>
+            
+    
+            <a href="../protocol/HunterProProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">HunterProProtocol</a>
+            
+    
+            <a href="../protocol/HunterProProtocolDecoder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 26 , # Elements Covered - 22 ">HunterProProtocolDecoder</a>
+            
+    
+            <a href="../protocol/IdplProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">IdplProtocol</a>
+            
+    
+            <a href="../protocol/IdplProtocolDecoder.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 42 , # Elements Covered - 36 ">IdplProtocolDecoder</a>
+            
+    
+            <a href="../protocol/IntellitracProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">IntellitracProtocol</a>
+            
+    
+            <a href="../protocol/IntellitracProtocolDecoder.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 41 , # Elements Covered - 39 ">IntellitracProtocolDecoder</a>
+            
+    
+            <a href="../protocol/JpKorjarProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 2 ">JpKorjarProtocol</a>
+            
+    
+            <a href="../protocol/JpKorjarProtocolDecoder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 25 , # Elements Covered - 21 ">JpKorjarProtocolDecoder</a>
+            
+    
+            <a href="../protocol/Jt600FrameDecoder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 27 , # Elements Covered - 20 ">Jt600FrameDecoder</a>
+            
+    
+            <a href="../protocol/Jt600Protocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 3 ">Jt600Protocol</a>
+            
+    
+            <a href="../protocol/Jt600ProtocolDecoder.html" class="tag"
+            style="font-size: 23px;color:#de7b72"
+            title="# Elements - 173 , # Elements Covered - 153 ">Jt600ProtocolDecoder</a>
+            
+    
+            <a href="../protocol/Jt600ProtocolEncoder.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 15 , # Elements Covered - 11 ">Jt600ProtocolEncoder</a>
+            
+    
+            <a href="../protocol/KenjiProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">KenjiProtocol</a>
+            
+    
+            <a href="../protocol/KenjiProtocolDecoder.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 47 , # Elements Covered - 29 ">KenjiProtocolDecoder</a>
+            
+    
+            <a href="../protocol/KhdProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 3 ">KhdProtocol</a>
+            
+    
+            <a href="../protocol/KhdProtocolDecoder.html" class="tag"
+            style="font-size: 17px;color:#d5584c"
+            title="# Elements - 82 , # Elements Covered - 61 ">KhdProtocolDecoder</a>
+            
+    
+            <a href="../protocol/KhdProtocolEncoder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 20 , # Elements Covered - 14 ">KhdProtocolEncoder</a>
+            
+    
+            <a href="../protocol/L100FrameDecoder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 20 , # Elements Covered - 14 ">L100FrameDecoder</a>
+            
+    
+            <a href="../protocol/L100Protocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 2 ">L100Protocol</a>
+            
+    
+            <a href="../protocol/L100ProtocolDecoder.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 36 , # Elements Covered - 32 ">L100ProtocolDecoder</a>
+            
+    
+            <a href="../protocol/LaipacProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">LaipacProtocol</a>
+            
+    
+            <a href="../protocol/LaipacProtocolDecoder.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 55 , # Elements Covered - 31 ">LaipacProtocolDecoder</a>
+            
+    
+            <a href="../protocol/M2mProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 2 ">M2mProtocol</a>
+            
+    
+            <a href="../protocol/M2mProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 70 , # Elements Covered - 62 ">M2mProtocolDecoder</a>
+            
+    
+            <a href="../protocol/MaestroProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">MaestroProtocol</a>
+            
+    
+            <a href="../protocol/MaestroProtocolDecoder.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 35 , # Elements Covered - 31 ">MaestroProtocolDecoder</a>
+            
+    
+            <a href="../protocol/ManPowerProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">ManPowerProtocol</a>
+            
+    
+            <a href="../protocol/ManPowerProtocolDecoder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 23 , # Elements Covered - 19 ">ManPowerProtocolDecoder</a>
+            
+    
+            <a href="../protocol/MegastekFrameDecoder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 29 , # Elements Covered - 20 ">MegastekFrameDecoder</a>
+            
+    
+            <a href="../protocol/MegastekProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">MegastekProtocol</a>
+            
+    
+            <a href="../protocol/MegastekProtocolDecoder.html" class="tag"
+            style="font-size: 24px;color:#e28e87"
+            title="# Elements - 202 , # Elements Covered - 169 ">MegastekProtocolDecoder</a>
+            
+    
+            <a href="../protocol/MeiligaoFrameDecoder.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 14 , # Elements Covered - 13 ">MeiligaoFrameDecoder</a>
+            
+    
+            <a href="../protocol/MeiligaoProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 3 ">MeiligaoProtocol</a>
+            
+    
+            <a href="../protocol/MeiligaoProtocolDecoder.html" class="tag"
+            style="font-size: 27px;color:#e28e87"
+            title="# Elements - 243 , # Elements Covered - 160 ">MeiligaoProtocolDecoder</a>
+            
+    
+            <a href="../protocol/MeiligaoProtocolEncoder.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 39 , # Elements Covered - 29 ">MeiligaoProtocolEncoder</a>
+            
+    
+            <a href="../protocol/MeitrackFrameDecoder.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 15 , # Elements Covered - 10 ">MeitrackFrameDecoder</a>
+            
+    
+            <a href="../protocol/MeitrackProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 19 , # Elements Covered - 3 ">MeitrackProtocol</a>
+            
+    
+            <a href="../protocol/MeitrackProtocolDecoder.html" class="tag"
+            style="font-size: 24px;color:#de7b72"
+            title="# Elements - 195 , # Elements Covered - 126 ">MeitrackProtocolDecoder</a>
+            
+    
+            <a href="../protocol/MeitrackProtocolEncoder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 27 , # Elements Covered - 13 ">MeitrackProtocolEncoder</a>
+            
+    
+            <a href="../protocol/MiniFinderProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 3 ">MiniFinderProtocol</a>
+            
+    
+            <a href="../protocol/MiniFinderProtocolDecoder.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="# Elements - 105 , # Elements Covered - 79 ">MiniFinderProtocolDecoder</a>
+            
+    
+            <a href="../protocol/MiniFinderProtocolEncoder.html" class="tag"
+            style="font-size: 15px;color:#d04437"
+            title="# Elements - 52 , # Elements Covered - 21 ">MiniFinderProtocolEncoder</a>
+            
+    
+            <a href="../protocol/MtxProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">MtxProtocol</a>
+            
+    
+            <a href="../protocol/MtxProtocolDecoder.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 32 , # Elements Covered - 26 ">MtxProtocolDecoder</a>
+            
+    
+            <a href="../protocol/MxtProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">MxtProtocol</a>
+            
+    
+            <a href="../protocol/MxtProtocolDecoder.html" class="tag"
+            style="font-size: 19px;color:#d9695f"
+            title="# Elements - 112 , # Elements Covered - 77 ">MxtProtocolDecoder</a>
+            
+    
+            <a href="../protocol/NavigilProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">NavigilProtocol</a>
+            
+    
+            <a href="../protocol/NavigilProtocolDecoder.html" class="tag"
+            style="font-size: 23px;color:#d5584c"
+            title="# Elements - 178 , # Elements Covered - 58 ">NavigilProtocolDecoder</a>
+            
+    
+            <a href="../protocol/NavisProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">NavisProtocol</a>
+            
+    
+            <a href="../protocol/NavisProtocolDecoder.html" class="tag"
+            style="font-size: 23px;color:#de7b72"
+            title="# Elements - 187 , # Elements Covered - 157 ">NavisProtocolDecoder</a>
+            
+    
+            <a href="../protocol/NavisProtocolDecoder.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 7 ">NavisProtocolDecoder.ParseResult</a>
+            
+    
+            <a href="../protocol/NoranProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 3 ">NoranProtocol</a>
+            
+    
+            <a href="../protocol/NoranProtocolDecoder.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="# Elements - 95 , # Elements Covered - 69 ">NoranProtocolDecoder</a>
+            
+    
+            <a href="../protocol/NoranProtocolEncoder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 29 , # Elements Covered - 16 ">NoranProtocolEncoder</a>
+            
+    
+            <a href="../protocol/NvsFrameDecoder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 16 , # Elements Covered - 12 ">NvsFrameDecoder</a>
+            
+    
+            <a href="../protocol/NvsProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 2 ">NvsProtocol</a>
+            
+    
+            <a href="../protocol/NvsProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 70 , # Elements Covered - 62 ">NvsProtocolDecoder</a>
+            
+    
+            <a href="../protocol/ObdDongleProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 2 ">ObdDongleProtocol</a>
+            
+    
+            <a href="../protocol/ObdDongleProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 66 , # Elements Covered - 50 ">ObdDongleProtocolDecoder</a>
+            
+    
+            <a href="../protocol/OigoProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 2 ">OigoProtocol</a>
+            
+    
+            <a href="../protocol/OigoProtocolDecoder.html" class="tag"
+            style="font-size: 22px;color:#de7b72"
+            title="# Elements - 162 , # Elements Covered - 125 ">OigoProtocolDecoder</a>
+            
+    
+            <a href="../protocol/OrionProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">OrionProtocol</a>
+            
+    
+            <a href="../protocol/OrionProtocolDecoder.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 55 , # Elements Covered - 45 ">OrionProtocolDecoder</a>
+            
+    
+            <a href="../protocol/OsmAndProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 2 ">OsmAndProtocol</a>
+            
+    
+            <a href="../protocol/OsmAndProtocolDecoder.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="# Elements - 101 , # Elements Covered - 81 ">OsmAndProtocolDecoder</a>
+            
+    
+            <a href="../protocol/OwnTracksProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 2 ">OwnTracksProtocol</a>
+            
+    
+            <a href="../protocol/OwnTracksProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 66 , # Elements Covered - 50 ">OwnTracksProtocolDecoder</a>
+            
+    
+            <a href="../protocol/PathAwayProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 2 ">PathAwayProtocol</a>
+            
+    
+            <a href="../protocol/PathAwayProtocolDecoder.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 31 , # Elements Covered - 24 ">PathAwayProtocolDecoder</a>
+            
+    
+            <a href="../protocol/PiligrimProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">PiligrimProtocol</a>
+            
+    
+            <a href="../protocol/PiligrimProtocolDecoder.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="# Elements - 94 , # Elements Covered - 73 ">PiligrimProtocolDecoder</a>
+            
+    
+            <a href="../protocol/PretraceProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">PretraceProtocol</a>
+            
+    
+            <a href="../protocol/PretraceProtocolDecoder.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 28 , # Elements Covered - 24 ">PretraceProtocolDecoder</a>
+            
+    
+            <a href="../protocol/PricolProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 2 ">PricolProtocol</a>
+            
+    
+            <a href="../protocol/PricolProtocolDecoder.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 46 , # Elements Covered - 40 ">PricolProtocolDecoder</a>
+            
+    
+            <a href="../protocol/ProgressProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">ProgressProtocol</a>
+            
+    
+            <a href="../protocol/ProgressProtocolDecoder.html" class="tag"
+            style="font-size: 18px;color:#d04437"
+            title="# Elements - 109 , # Elements Covered - 17 ">ProgressProtocolDecoder</a>
+            
+    
+            <a href="../protocol/Pt3000Protocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">Pt3000Protocol</a>
+            
+    
+            <a href="../protocol/Pt3000ProtocolDecoder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 25 , # Elements Covered - 21 ">Pt3000ProtocolDecoder</a>
+            
+    
+            <a href="../protocol/Pt502FrameDecoder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 17 , # Elements Covered - 13 ">Pt502FrameDecoder</a>
+            
+    
+            <a href="../protocol/Pt502Protocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 3 ">Pt502Protocol</a>
+            
+    
+            <a href="../protocol/Pt502ProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 67 , # Elements Covered - 56 ">Pt502ProtocolDecoder</a>
+            
+    
+            <a href="../protocol/Pt502ProtocolEncoder.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 14 , # Elements Covered - 8 ">Pt502ProtocolEncoder</a>
+            
+    
+            <a href="../protocol/RaveonProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">RaveonProtocol</a>
+            
+    
+            <a href="../protocol/RaveonProtocolDecoder.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 31 , # Elements Covered - 27 ">RaveonProtocolDecoder</a>
+            
+    
+            <a href="../protocol/RitiProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">RitiProtocol</a>
+            
+    
+            <a href="../protocol/RitiProtocolDecoder.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 37 , # Elements Covered - 33 ">RitiProtocolDecoder</a>
+            
+    
+            <a href="../protocol/RuptelaProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 3 ">RuptelaProtocol</a>
+            
+    
+            <a href="../protocol/RuptelaProtocolDecoder.html" class="tag"
+            style="font-size: 20px;color:#de7b72"
+            title="# Elements - 128 , # Elements Covered - 115 ">RuptelaProtocolDecoder</a>
+            
+    
+            <a href="../protocol/RuptelaProtocolEncoder.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 36 , # Elements Covered - 13 ">RuptelaProtocolEncoder</a>
+            
+    
+            <a href="../protocol/SanavProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">SanavProtocol</a>
+            
+    
+            <a href="../protocol/SanavProtocolDecoder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 25 , # Elements Covered - 21 ">SanavProtocolDecoder</a>
+            
+    
+            <a href="../protocol/SiwiProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 2 ">SiwiProtocol</a>
+            
+    
+            <a href="../protocol/SiwiProtocolDecoder.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 28 , # Elements Covered - 24 ">SiwiProtocolDecoder</a>
+            
+    
+            <a href="../protocol/SkypatrolProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 2 ">SkypatrolProtocol</a>
+            
+    
+            <a href="../protocol/SkypatrolProtocolDecoder.html" class="tag"
+            style="font-size: 20px;color:#d9695f"
+            title="# Elements - 139 , # Elements Covered - 107 ">SkypatrolProtocolDecoder</a>
+            
+    
+            <a href="../protocol/SmokeyProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 2 ">SmokeyProtocol</a>
+            
+    
+            <a href="../protocol/SmokeyProtocolDecoder.html" class="tag"
+            style="font-size: 17px;color:#d5584c"
+            title="# Elements - 84 , # Elements Covered - 52 ">SmokeyProtocolDecoder</a>
+            
+    
+            <a href="../protocol/StarLinkProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">StarLinkProtocol</a>
+            
+    
+            <a href="../protocol/StarLinkProtocolDecoder.html" class="tag"
+            style="font-size: 21px;color:#de7b72"
+            title="# Elements - 141 , # Elements Covered - 130 ">StarLinkProtocolDecoder</a>
+            
+    
+            <a href="../protocol/Stl060Protocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">Stl060Protocol</a>
+            
+    
+            <a href="../protocol/Stl060ProtocolDecoder.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 42 , # Elements Covered - 38 ">Stl060ProtocolDecoder</a>
+            
+    
+            <a href="../protocol/SuntechProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 3 ">SuntechProtocol</a>
+            
+    
+            <a href="../protocol/SuntechProtocolDecoder.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="# Elements - 108 , # Elements Covered - 93 ">SuntechProtocolDecoder</a>
+            
+    
+            <a href="../protocol/SupermateProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">SupermateProtocol</a>
+            
+    
+            <a href="../protocol/SupermateProtocolDecoder.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 46 , # Elements Covered - 34 ">SupermateProtocolDecoder</a>
+            
+    
+            <a href="../protocol/T55Protocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 14 , # Elements Covered - 2 ">T55Protocol</a>
+            
+    
+            <a href="../protocol/T55ProtocolDecoder.html" class="tag"
+            style="font-size: 22px;color:#de7b72"
+            title="# Elements - 165 , # Elements Covered - 152 ">T55ProtocolDecoder</a>
+            
+    
+            <a href="../protocol/T800xProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 3 ">T800xProtocol</a>
+            
+    
+            <a href="../protocol/T800xProtocolDecoder.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="# Elements - 100 , # Elements Covered - 77 ">T800xProtocolDecoder</a>
+            
+    
+            <a href="../protocol/T800xProtocolEncoder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 19 , # Elements Covered - 15 ">T800xProtocolEncoder</a>
+            
+    
+            <a href="../protocol/TaipProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 14 , # Elements Covered - 2 ">TaipProtocol</a>
+            
+    
+            <a href="../protocol/TaipProtocolDecoder.html" class="tag"
+            style="font-size: 22px;color:#de7b72"
+            title="# Elements - 158 , # Elements Covered - 129 ">TaipProtocolDecoder</a>
+            
+    
+            <a href="../protocol/TelicFrameDecoder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 25 , # Elements Covered - 21 ">TelicFrameDecoder</a>
+            
+    
+            <a href="../protocol/TelicProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 2 ">TelicProtocol</a>
+            
+    
+            <a href="../protocol/TelicProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 65 , # Elements Covered - 49 ">TelicProtocolDecoder</a>
+            
+    
+            <a href="../protocol/TeltonikaProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 3 ">TeltonikaProtocol</a>
+            
+    
+            <a href="../protocol/TeltonikaProtocolDecoder.html" class="tag"
+            style="font-size: 27px;color:#e7a19b"
+            title="# Elements - 249 , # Elements Covered - 205 ">TeltonikaProtocolDecoder</a>
+            
+    
+            <a href="../protocol/TeltonikaProtocolEncoder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 22 , # Elements Covered - 18 ">TeltonikaProtocolEncoder</a>
+            
+    
+            <a href="../protocol/ThinkRaceProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 2 ">ThinkRaceProtocol</a>
+            
+    
+            <a href="../protocol/ThinkRaceProtocolDecoder.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 61 , # Elements Covered - 44 ">ThinkRaceProtocolDecoder</a>
+            
+    
+            <a href="../protocol/Tk102Protocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 2 ">Tk102Protocol</a>
+            
+    
+            <a href="../protocol/Tk102ProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 63 , # Elements Covered - 51 ">Tk102ProtocolDecoder</a>
+            
+    
+            <a href="../protocol/Tk103Protocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 17 , # Elements Covered - 3 ">Tk103Protocol</a>
+            
+    
+            <a href="../protocol/Tk103ProtocolDecoder.html" class="tag"
+            style="font-size: 23px;color:#de7b72"
+            title="# Elements - 179 , # Elements Covered - 124 ">Tk103ProtocolDecoder</a>
+            
+    
+            <a href="../protocol/Tk103ProtocolEncoder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 22 , # Elements Covered - 16 ">Tk103ProtocolEncoder</a>
+            
+    
+            <a href="../protocol/Tlt2hProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">Tlt2hProtocol</a>
+            
+    
+            <a href="../protocol/Tlt2hProtocolDecoder.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 39 , # Elements Covered - 36 ">Tlt2hProtocolDecoder</a>
+            
+    
+            <a href="../protocol/TlvProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 2 ">TlvProtocol</a>
+            
+    
+            <a href="../protocol/TlvProtocolDecoder.html" class="tag"
+            style="font-size: 15px;color:#d04437"
+            title="# Elements - 56 , # Elements Covered - 10 ">TlvProtocolDecoder</a>
+            
+    
+            <a href="../protocol/TmgProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">TmgProtocol</a>
+            
+    
+            <a href="../protocol/TmgProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 68 , # Elements Covered - 56 ">TmgProtocolDecoder</a>
+            
+    
+            <a href="../protocol/TopflytechProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">TopflytechProtocol</a>
+            
+    
+            <a href="../protocol/TopflytechProtocolDecoder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 23 , # Elements Covered - 19 ">TopflytechProtocolDecoder</a>
+            
+    
+            <a href="../protocol/TotemFrameDecoder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 26 , # Elements Covered - 20 ">TotemFrameDecoder</a>
+            
+    
+            <a href="../protocol/TotemProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 3 ">TotemProtocol</a>
+            
+    
+            <a href="../protocol/TotemProtocolDecoder.html" class="tag"
+            style="font-size: 21px;color:#de7b72"
+            title="# Elements - 154 , # Elements Covered - 137 ">TotemProtocolDecoder</a>
+            
+    
+            <a href="../protocol/TotemProtocolEncoder.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 5 ">TotemProtocolEncoder</a>
+            
+    
+            <a href="../protocol/Tr20Protocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">Tr20Protocol</a>
+            
+    
+            <a href="../protocol/Tr20ProtocolDecoder.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 32 , # Elements Covered - 26 ">Tr20ProtocolDecoder</a>
+            
+    
+            <a href="../protocol/Tr900Protocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 14 , # Elements Covered - 2 ">Tr900Protocol</a>
+            
+    
+            <a href="../protocol/Tr900ProtocolDecoder.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 29 , # Elements Covered - 25 ">Tr900ProtocolDecoder</a>
+            
+    
+            <a href="../protocol/TrackboxProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">TrackboxProtocol</a>
+            
+    
+            <a href="../protocol/TrackboxProtocolDecoder.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 46 , # Elements Covered - 39 ">TrackboxProtocolDecoder</a>
+            
+    
+            <a href="../protocol/TrakMateProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">TrakMateProtocol</a>
+            
+    
+            <a href="../protocol/TrakMateProtocolDecoder.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="# Elements - 105 , # Elements Covered - 83 ">TrakMateProtocolDecoder</a>
+            
+    
+            <a href="../protocol/TramigoProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">TramigoProtocol</a>
+            
+    
+            <a href="../protocol/TramigoProtocolDecoder.html" class="tag"
+            style="font-size: 17px;color:#d5584c"
+            title="# Elements - 91 , # Elements Covered - 66 ">TramigoProtocolDecoder</a>
+            
+    
+            <a href="../protocol/TrvProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">TrvProtocol</a>
+            
+    
+            <a href="../protocol/TrvProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 76 , # Elements Covered - 63 ">TrvProtocolDecoder</a>
+            
+    
+            <a href="../protocol/Tt8850Protocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">Tt8850Protocol</a>
+            
+    
+            <a href="../protocol/Tt8850ProtocolDecoder.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 29 , # Elements Covered - 27 ">Tt8850ProtocolDecoder</a>
+            
+    
+            <a href="../protocol/TytanProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 2 ">TytanProtocol</a>
+            
+    
+            <a href="../protocol/TytanProtocolDecoder.html" class="tag"
+            style="font-size: 20px;color:#d9695f"
+            title="# Elements - 135 , # Elements Covered - 96 ">TytanProtocolDecoder</a>
+            
+    
+            <a href="../protocol/TzoneProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 2 ">TzoneProtocol</a>
+            
+    
+            <a href="../protocol/TzoneProtocolDecoder.html" class="tag"
+            style="font-size: 21px;color:#de7b72"
+            title="# Elements - 147 , # Elements Covered - 123 ">TzoneProtocolDecoder</a>
+            
+    
+            <a href="../protocol/UlbotechFrameDecoder.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 37 , # Elements Covered - 27 ">UlbotechFrameDecoder</a>
+            
+    
+            <a href="../protocol/UlbotechProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 2 ">UlbotechProtocol</a>
+            
+    
+            <a href="../protocol/UlbotechProtocolDecoder.html" class="tag"
+            style="font-size: 28px;color:#e28e87"
+            title="# Elements - 251 , # Elements Covered - 195 ">UlbotechProtocolDecoder</a>
+            
+    
+            <a href="../protocol/UproProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 2 ">UproProtocol</a>
+            
+    
+            <a href="../protocol/UproProtocolDecoder.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="# Elements - 103 , # Elements Covered - 91 ">UproProtocolDecoder</a>
+            
+    
+            <a href="../protocol/V680Protocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 14 , # Elements Covered - 2 ">V680Protocol</a>
+            
+    
+            <a href="../protocol/V680ProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 64 , # Elements Covered - 60 ">V680ProtocolDecoder</a>
+            
+    
+            <a href="../protocol/VisiontekProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">VisiontekProtocol</a>
+            
+    
+            <a href="../protocol/VisiontekProtocolDecoder.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 54 , # Elements Covered - 52 ">VisiontekProtocolDecoder</a>
+            
+    
+            <a href="../protocol/Vt200FrameDecoder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 17 , # Elements Covered - 15 ">Vt200FrameDecoder</a>
+            
+    
+            <a href="../protocol/Vt200Protocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 2 ">Vt200Protocol</a>
+            
+    
+            <a href="../protocol/Vt200ProtocolDecoder.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 49 , # Elements Covered - 43 ">Vt200ProtocolDecoder</a>
+            
+    
+            <a href="../protocol/VtfmsFrameDecoder.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 8 ">VtfmsFrameDecoder</a>
+            
+    
+            <a href="../protocol/VtfmsProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 12 , # Elements Covered - 2 ">VtfmsProtocol</a>
+            
+    
+            <a href="../protocol/VtfmsProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 70 , # Elements Covered - 55 ">VtfmsProtocolDecoder</a>
+            
+    
+            <a href="../protocol/WatchFrameDecoder.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 40 , # Elements Covered - 18 ">WatchFrameDecoder</a>
+            
+    
+            <a href="../protocol/WatchProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 3 ">WatchProtocol</a>
+            
+    
+            <a href="../protocol/WatchProtocolDecoder.html" class="tag"
+            style="font-size: 24px;color:#de7b72"
+            title="# Elements - 189 , # Elements Covered - 145 ">WatchProtocolDecoder</a>
+            
+    
+            <a href="../protocol/WatchProtocolEncoder.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 76 , # Elements Covered - 42 ">WatchProtocolEncoder</a>
+            
+    
+            <a href="../protocol/WialonProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 16 , # Elements Covered - 3 ">WialonProtocol</a>
+            
+    
+            <a href="../protocol/WialonProtocolDecoder.html" class="tag"
+            style="font-size: 19px;color:#d9695f"
+            title="# Elements - 124 , # Elements Covered - 91 ">WialonProtocolDecoder</a>
+            
+    
+            <a href="../protocol/WondexFrameDecoder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 22 , # Elements Covered - 18 ">WondexFrameDecoder</a>
+            
+    
+            <a href="../protocol/WondexProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 16 , # Elements Covered - 4 ">WondexProtocol</a>
+            
+    
+            <a href="../protocol/WondexProtocolDecoder.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 53 , # Elements Covered - 49 ">WondexProtocolDecoder</a>
+            
+    
+            <a href="../protocol/WondexProtocolEncoder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 19 , # Elements Covered - 5 ">WondexProtocolEncoder</a>
+            
+    
+            <a href="../protocol/XexunFrameDecoder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 26 , # Elements Covered - 14 ">XexunFrameDecoder</a>
+            
+    
+            <a href="../protocol/XexunProtocol.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 16 , # Elements Covered - 3 ">XexunProtocol</a>
+            
+    
+            <a href="../protocol/XexunProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 74 , # Elements Covered - 62 ">XexunProtocolDecoder</a>
+            
+    
+            <a href="../protocol/XirgoProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 14 , # Elements Covered - 2 ">XirgoProtocol</a>
+            
+    
+            <a href="../protocol/XirgoProtocolDecoder.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="# Elements - 74 , # Elements Covered - 68 ">XirgoProtocolDecoder</a>
+            
+    
+            <a href="../protocol/Xt013Protocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">Xt013Protocol</a>
+            
+    
+            <a href="../protocol/Xt013ProtocolDecoder.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 28 , # Elements Covered - 24 ">Xt013ProtocolDecoder</a>
+            
+    
+            <a href="../protocol/Xt2400Protocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 2 ">Xt2400Protocol</a>
+            
+    
+            <a href="../protocol/Xt2400ProtocolDecoder.html" class="tag"
+            style="font-size: 19px;color:#d9695f"
+            title="# Elements - 119 , # Elements Covered - 97 ">Xt2400ProtocolDecoder</a>
+            
+    
+            <a href="../protocol/YwtProtocol.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">YwtProtocol</a>
+            
+    
+            <a href="../protocol/YwtProtocolDecoder.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 49 , # Elements Covered - 32 ">YwtProtocolDecoder</a>
+           </div>
+   </div>
+    </div> <!-- tabs-pane active-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="https://openclover.org">OpenClover</a> v 4.5.2
+                on Mon Jun 3 2024 11:04:29 CST using coverage data from Mon Jun 3 2024 11:04:25 CST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

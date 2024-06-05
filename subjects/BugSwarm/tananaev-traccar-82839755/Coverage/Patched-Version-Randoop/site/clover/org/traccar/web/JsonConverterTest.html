@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../style.css');
+        @import url('../../../tree.css');
+        
+    </style>
+
+    <script src="../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../clover.js" type="text/javascript"></script>
+    <script src="../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../cloud.js" type="text/javascript"></script>
+
+            <title>traccar 3.1-SNAPSHOT</title>
+    </head>
+
+<body  onload="onLoad('traccar 3.1-SNAPSHOT: org.traccar.web.JsonConverterTest.java')">
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="https://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="https://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                    <a href="https://www.traccar.org" target="_top">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+                    </a>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                            <a href="https://www.traccar.org" target="_top">
+                                        traccar 3.1-SNAPSHOT
+                                        </a>
+                    </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../" data-package-name="org.traccar.web">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="../../../dashboard.html">Project Clover database Wed Jun 5 2024 13:33:00 CST</a></li> 
+        <li><a href="testsrc-pkg-summary.html">        Package org.traccar.web</a></li> 
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            File JsonConverterTest.java
+    </h1>
+
+
+
+
+
+
+
+
+            
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+                <ul class="tabs-menu">
+            <li class="menu-item active-tab">
+                <a href="#tabs-file-source"><strong>Source file</strong></a>
+            </li>
+            <li class="menu-item">
+                <a href="test-JsonConverterTest.html"><strong>Test results</strong></a>
+            </li>
+        </ul>
+        <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-source">
+        <div>&#160;</div>
+
+        
+                <div style="display: table; width: 100%">
+                        <div style="display: table-cell; ">
+                    <div class="dashboard-widget">
+        <header class="dashboard-widget-header">
+            <h3>Code metrics</h3>
+        </header>
+        <div class="dashboard-widget-content">
+                        
+
+<div id="td-header-stats" class="aui-item" style="display: ">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">0</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">19</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">14</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">2</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">66</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">50</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">14</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.74</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">1.36</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">7</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+</div>
+
+</div>
+                        
+
+<div id="td-filtered-header-stats" class="aui-item" style="display: none">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">0</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">19</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">14</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">2</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">66</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">50</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">14</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.74</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">1.36</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">7</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+</div>
+
+</div>        </div>
+    </div>
+            </div>
+        </div>
+
+        
+        
+
+
+    <h2>Classes</h2>
+
+        <table class="aui aui-table-sortable">
+        <thead>
+                        <tr>     <th>Class</th>
+    <th>Line #</th>
+
+            
+        <th class="">
+            <label  title="The total number of statements.">Total Statements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The percentage of elements that have been filtered from this report.">% Filtered</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label>
+        </th>
+        
+    
+            <th>Actions</th>
+    </tr>         </thead>
+        <tbody>
+                              <tr> <td id="JsonConverterTest">
+        <span><a href="#10" title="JsonConverterTest" onclick="closeDialogAndScrollTo('dialog-JsonConverterTest', '10');">JsonConverterTest</a></span>
+</td>
+<td>10<a name="sl-10"></a></td>
+    <td class="">6</td>
+    <td class="">0%</td>
+    <td class="">1</td>
+    <td class="">7</td>
+    <td class=""><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+    <td><button data-dialog-id="dialog-JsonConverterTest" class="aui-button aui-button-link dialog-show-button">Show methods</button></td>
+</tr>                               <tr> <td id="JsonConverterTest.Primitives">
+        <span><a href="#33" title="JsonConverterTest.Primitives" onclick="closeDialogAndScrollTo('dialog-JsonConverterTest_Primitives', '33');">JsonConverterTest.Primitives</a></span>
+</td>
+<td>33<a name="sl-33"></a></td>
+    <td class="">13</td>
+    <td class="">0%</td>
+    <td class="">13</td>
+    <td class="">26</td>
+    <td class=""><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+    <td><button data-dialog-id="dialog-JsonConverterTest_Primitives" class="aui-button aui-button-link dialog-show-button">Show methods</button></td>
+</tr>                      </tbody>
+    </table>
+
+    
+     
+        <section role="dialog" id="dialog-JsonConverterTest" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+            
+            <header class="aui-dialog2-header">
+                <h1 class="aui-dialog2-header-main">Class JsonConverterTest</h1>
+                <div class="aui-dialog2-header-secondary">
+                    <input id="dialog-JsonConverterTest-method-filter" class="test-filter text" type="text" name="method-filter"
+                           placeholder="Type to filter methods..." autocomplete="off"
+                           onkeyup="filterMethods('dialog-JsonConverterTest-methods-body', 'dialog-JsonConverterTest-method-filter');"/>
+                </div>
+            </header>
+
+            
+            <div class="aui-dialog2-content">
+
+                
+
+                <table class="aui aui-table-sortable">
+                                                                                                            
+                    <thead>
+                                                 <tr> <th id="JsonConverterTest">
+    Class<br/>    <span><a href="#10" title="JsonConverterTest" onclick="closeDialogAndScrollTo('dialog-JsonConverterTest', '10');">JsonConverterTest</a></span>
+</th>
+<th>Line #<br/>10<a name="sl-10"></a></th>
+    <th class=""><label  title="The total number of statements.">Total Statements</label><br/>6</th>
+    <th class=""><label  title="The percentage of elements that have been filtered from this report.">% Filtered</label><br/>0%</th>
+    <th class=""><label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label><br/>1</th>
+    <th class=""><label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label><br/>7</th>
+    <th class=""><label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label><br/><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></th>
+</tr>                     </thead>
+                    <tbody id="dialog-JsonConverterTest-methods-body">
+                                                                                                            <tr id="JsonConverterTest-1">
+<td id="summary-12-5">
+ <span class="sortValue">primitiveConversion()&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#12" title="primitiveConversion()&#160;:&#160;void" name="sl-12" onclick="closeDialogAndScrollTo('dialog-JsonConverterTest', '12');">primitiveConversion()&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">12</span>12</td>
+<td class="" align="right"><span class="sortValue">6.0</span>6</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">6.0</span>6</td>
+<td class="" align="right"><span class="sortValue">0.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+ </tr>                                                                         </tbody>
+                </table>
+
+                <div>&#160;</div>
+                
+
+            </div>
+
+            
+            <footer class="aui-dialog2-footer">
+                <div class="aui-dialog2-footer-actions">
+                    <button class="aui-button aui-button-primary dialog-close-button"
+                            data-dialog-id="dialog-JsonConverterTest">Close</button>
+                </div>
+                <div class="aui-dialog2-footer-hint">Click on a class or a method name to jump to source.</div>
+            </footer>
+        </section>
+
+     
+        <section role="dialog" id="dialog-JsonConverterTest_Primitives" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+            
+            <header class="aui-dialog2-header">
+                <h1 class="aui-dialog2-header-main">Class JsonConverterTest.Primitives</h1>
+                <div class="aui-dialog2-header-secondary">
+                    <input id="dialog-JsonConverterTest.Primitives-method-filter" class="test-filter text" type="text" name="method-filter"
+                           placeholder="Type to filter methods..." autocomplete="off"
+                           onkeyup="filterMethods('dialog-JsonConverterTest.Primitives-methods-body', 'dialog-JsonConverterTest.Primitives-method-filter');"/>
+                </div>
+            </header>
+
+            
+            <div class="aui-dialog2-content">
+
+                
+
+                <table class="aui aui-table-sortable">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+                    <thead>
+                                                 <tr> <th id="JsonConverterTest.Primitives">
+    Class<br/>    <span><a href="#33" title="JsonConverterTest.Primitives" onclick="closeDialogAndScrollTo('dialog-JsonConverterTest_Primitives', '33');">JsonConverterTest.Primitives</a></span>
+</th>
+<th>Line #<br/>33<a name="sl-33"></a></th>
+    <th class=""><label  title="The total number of statements.">Total Statements</label><br/>13</th>
+    <th class=""><label  title="The percentage of elements that have been filtered from this report.">% Filtered</label><br/>0%</th>
+    <th class=""><label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label><br/>13</th>
+    <th class=""><label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label><br/>26</th>
+    <th class=""><label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label><br/><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></th>
+</tr>                     </thead>
+                    <tbody id="dialog-JsonConverterTest.Primitives-methods-body">
+                                                                                                            <tr id="JsonConverterTest.Primitives-1">
+<td id="summary-35-9">
+ <span class="sortValue">create()&#160;:&#160;Primitives</span>
+&#160;&#160;<a href="?line=29#35" title="create()&#160;:&#160;Primitives" name="sl-35" onclick="closeDialogAndScrollTo('dialog-JsonConverterTest.Primitives', '35');">create()&#160;:&#160;Primitives</a>
+</td>
+<td align="right"><span class="sortValue">35</span>35</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="JsonConverterTest.Primitives-2">
+<td id="summary-41-9">
+ <span class="sortValue">getBoolean()&#160;:&#160;boolean</span>
+&#160;&#160;<a href="?line=29#41" title="getBoolean()&#160;:&#160;boolean" name="sl-41" onclick="closeDialogAndScrollTo('dialog-JsonConverterTest.Primitives', '41');">getBoolean()&#160;:&#160;boolean</a>
+</td>
+<td align="right"><span class="sortValue">41</span>41</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="JsonConverterTest.Primitives-3">
+<td id="summary-42-9">
+ <span class="sortValue">setBoolean(boolean)&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#42" title="setBoolean(boolean)&#160;:&#160;void" name="sl-42" onclick="closeDialogAndScrollTo('dialog-JsonConverterTest.Primitives', '42');">setBoolean(boolean)&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">42</span>42</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="JsonConverterTest.Primitives-4">
+<td id="summary-45-9">
+ <span class="sortValue">getInt()&#160;:&#160;int</span>
+&#160;&#160;<a href="?line=29#45" title="getInt()&#160;:&#160;int" name="sl-45" onclick="closeDialogAndScrollTo('dialog-JsonConverterTest.Primitives', '45');">getInt()&#160;:&#160;int</a>
+</td>
+<td align="right"><span class="sortValue">45</span>45</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="JsonConverterTest.Primitives-5">
+<td id="summary-46-9">
+ <span class="sortValue">setInt(int)&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#46" title="setInt(int)&#160;:&#160;void" name="sl-46" onclick="closeDialogAndScrollTo('dialog-JsonConverterTest.Primitives', '46');">setInt(int)&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">46</span>46</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="JsonConverterTest.Primitives-6">
+<td id="summary-49-9">
+ <span class="sortValue">getLong()&#160;:&#160;long</span>
+&#160;&#160;<a href="?line=29#49" title="getLong()&#160;:&#160;long" name="sl-49" onclick="closeDialogAndScrollTo('dialog-JsonConverterTest.Primitives', '49');">getLong()&#160;:&#160;long</a>
+</td>
+<td align="right"><span class="sortValue">49</span>49</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="JsonConverterTest.Primitives-7">
+<td id="summary-50-9">
+ <span class="sortValue">setLong(long)&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#50" title="setLong(long)&#160;:&#160;void" name="sl-50" onclick="closeDialogAndScrollTo('dialog-JsonConverterTest.Primitives', '50');">setLong(long)&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">50</span>50</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="JsonConverterTest.Primitives-8">
+<td id="summary-53-9">
+ <span class="sortValue">getDouble()&#160;:&#160;double</span>
+&#160;&#160;<a href="?line=29#53" title="getDouble()&#160;:&#160;double" name="sl-53" onclick="closeDialogAndScrollTo('dialog-JsonConverterTest.Primitives', '53');">getDouble()&#160;:&#160;double</a>
+</td>
+<td align="right"><span class="sortValue">53</span>53</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="JsonConverterTest.Primitives-9">
+<td id="summary-54-9">
+ <span class="sortValue">setDouble(double)&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#54" title="setDouble(double)&#160;:&#160;void" name="sl-54" onclick="closeDialogAndScrollTo('dialog-JsonConverterTest.Primitives', '54');">setDouble(double)&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">54</span>54</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="JsonConverterTest.Primitives-10">
+<td id="summary-57-9">
+ <span class="sortValue">getString()&#160;:&#160;String</span>
+&#160;&#160;<a href="?line=29#57" title="getString()&#160;:&#160;String" name="sl-57" onclick="closeDialogAndScrollTo('dialog-JsonConverterTest.Primitives', '57');">getString()&#160;:&#160;String</a>
+</td>
+<td align="right"><span class="sortValue">57</span>57</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="JsonConverterTest.Primitives-11">
+<td id="summary-58-9">
+ <span class="sortValue">setString(String)&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#58" title="setString(String)&#160;:&#160;void" name="sl-58" onclick="closeDialogAndScrollTo('dialog-JsonConverterTest.Primitives', '58');">setString(String)&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">58</span>58</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="JsonConverterTest.Primitives-12">
+<td id="summary-61-9">
+ <span class="sortValue">getDate()&#160;:&#160;Date</span>
+&#160;&#160;<a href="?line=29#61" title="getDate()&#160;:&#160;Date" name="sl-61" onclick="closeDialogAndScrollTo('dialog-JsonConverterTest.Primitives', '61');">getDate()&#160;:&#160;Date</a>
+</td>
+<td align="right"><span class="sortValue">61</span>61</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="JsonConverterTest.Primitives-13">
+<td id="summary-62-9">
+ <span class="sortValue">setDate(Date)&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#62" title="setDate(Date)&#160;:&#160;void" name="sl-62" onclick="closeDialogAndScrollTo('dialog-JsonConverterTest.Primitives', '62');">setDate(Date)&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">62</span>62</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+ </tr>                                                                         </tbody>
+                </table>
+
+                <div>&#160;</div>
+                
+
+            </div>
+
+            
+            <footer class="aui-dialog2-footer">
+                <div class="aui-dialog2-footer-actions">
+                    <button class="aui-button aui-button-primary dialog-close-button"
+                            data-dialog-id="dialog-JsonConverterTest_Primitives">Close</button>
+                </div>
+                <div class="aui-dialog2-footer-hint">Click on a class or a method name to jump to source.</div>
+            </footer>
+        </section>
+
+     
+ 
+        
+        <div>&#160;</div>
+
+<h2>Contributing tests</h2>
+
+    <div class="aui-message">
+        <p>No tests hitting this source file were found.</p>
+    </div>
+ 
+        
+        
+
+
+
+
+
+<h2>Source view</h2>
+
+
+<div style="display: table; width: 100%;">
+    <div style="display: table-cell">
+        <button class="aui-button aui-button-link"
+                title="Toggles all methods in the source to be either expanded or collapsed."
+                onclick="toggleAllInlineMethods(this); return false;" id="method-expander">
+            Collapse all methods
+        </button>
+    </div>
+    <div style="display: table-cell">
+        <div style="text-align: right; margin-bottom: 10px">
+            <button class="aui-button aui-button-subtle" id="popupHelp">
+    <span class="aui-icon aui-icon-small aui-iconfont-help"></span>&#160;Show legend
+</button>
+<script>
+    AJS.InlineDialog(AJS.$("#popupHelp"), "helpDialog",
+            function(content, trigger, showPopup) {
+                content.css({"padding":"20px"}).html(SRC_FILE_LEGEND_TEXT);
+                showPopup();
+                return false;
+            },
+            {
+                width: 700, hideDelay: 60000
+            }
+    );
+</script>        </div>
+    </div>
+</div>
+
+<table cellspacing="0" cellpadding="0" class="srcView" width="100%">
+
+    
+<tbody> <tr id="l1">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=1#src-1">1</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-1" class="srcLine"><span class="keyword">package</span> org.<a href="../../traccar/pkg-summary.html">traccar</a>.<a href="../web/pkg-summary.html">web</a>;</span></td>
+</tr>
+ <tr id="l2">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=2#src-2">2</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-2" class="srcLine"></span></td>
+</tr>
+ <tr id="l3">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=3#src-3">3</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-3" class="srcLine"><span class="keyword">import</span> java.io.StringReader;</span></td>
+</tr>
+ <tr id="l4">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=4#src-4">4</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-4" class="srcLine"><span class="keyword">import</span> java.text.ParseException;</span></td>
+</tr>
+ <tr id="l5">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=5#src-5">5</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-5" class="srcLine"><span class="keyword">import</span> java.util.Date;</span></td>
+</tr>
+ <tr id="l6">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=6#src-6">6</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-6" class="srcLine"><span class="keyword">import</span> <span class="keyword">static</span> org.junit.Assert.assertEquals;</span></td>
+</tr>
+ <tr id="l7">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=7#src-7">7</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-7" class="srcLine"><span class="keyword">import</span> org.junit.Test;</span></td>
+</tr>
+ <tr id="l8">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=8#src-8">8</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-8" class="srcLine"><span class="keyword">import</span> org.<a href="../../traccar/pkg-summary.html">traccar</a>.<a href="../model/pkg-summary.html">model</a>.<a href="../../../org/traccar/model/Factory.html#Factory">Factory</a>;</span></td>
+</tr>
+ <tr id="l9">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=9#src-9">9</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-9" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="10" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-10' onclick="toggleInlineStats(this, 'inlinestats-10');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-10" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-10'), 'inlinestats-10');return true;">
+                <td><div>
+<div title="0% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:0%"></div></div></div></td><td>0%</td>
+                <td class="inlineStat">Uncovered Elements: 7 (7)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.17</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l10">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=10#src-10">10</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" id="id-10"><span class="spacer"></span><span id="src-10" class="srcLine"><span class="keyword">public</span> <span class="keyword">class</span> <a href="../../../org/traccar/web/JsonConverterTest.html#JsonConverterTest">JsonConverterTest</a> {</span></td>
+</tr>
+ <tr id="l11">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=11#src-11">11</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-11" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="12" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-12' onclick="toggleInlineStats(this, 'inlinestats-12');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-12" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-12'), 'inlinestats-12');return true;">
+                <td><div>
+<div title="0% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:0%"></div></div></div></td><td>0%</td>
+                <td class="inlineStat">Uncovered Elements: 6 (6)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.17</td>
+                                    <td class="inlineStat">  <span class="sortValue">4</span>-
+</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l12">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=12#src-12">12</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 12, Col 5: method not entered." class="nolink">&#160;0</span></td>
+<td class=" methodStart  srcCell" id="id-12"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 12,31);" id="img-12" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-12" class="srcLineHilight"><span class="nolink" title="Line 12, Col 5: method not entered.">    @Test</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-12'), 12,31);" id="e12" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l13">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=13#src-13">13</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-13" class="srcLine">    <span class="keyword">public</span> <span class="keyword">void</span> primitiveConversion() <span class="keyword">throws</span> ParseException {</span></td>
+</tr>
+ <tr id="l14">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=14#src-14">14</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-14" class="srcLine"></span></td>
+</tr>
+ <tr id="l15">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=15#src-15">15</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 15, Col 9: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-15" class="srcLineHilight"><span class="nolink" title="Line 15, Col 9: statement not executed.">        Primitives o = <a href="../../../org/traccar/web/JsonConverter.html#JsonConverter">JsonConverter</a>.objectFromJson(<span class="keyword">new</span> StringReader(</span></span></td>
+</tr>
+ <tr id="l16">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=16#src-16">16</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-16" class="srcLine">                <span class="string">&quot;{&quot;</span> +</span></td>
+</tr>
+ <tr id="l17">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=17#src-17">17</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-17" class="srcLine">                <span class="string">&quot;\&quot;boolean\&quot;: true, &quot;</span> +</span></td>
+</tr>
+ <tr id="l18">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=18#src-18">18</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-18" class="srcLine">                <span class="string">&quot;\&quot;int\&quot;: 42, &quot;</span> +</span></td>
+</tr>
+ <tr id="l19">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=19#src-19">19</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-19" class="srcLine">                <span class="string">&quot;\&quot;double\&quot;: 41.99, &quot;</span> +</span></td>
+</tr>
+ <tr id="l20">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=20#src-20">20</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-20" class="srcLine">                <span class="string">&quot;\&quot;string\&quot;: \&quot;discworld\&quot;, &quot;</span> +</span></td>
+</tr>
+ <tr id="l21">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=21#src-21">21</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-21" class="srcLine">                <span class="string">&quot;\&quot;date\&quot;:\&quot;2015-07-09T19:02:17.000Z\&quot;&quot;</span> +</span></td>
+</tr>
+ <tr id="l22">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=22#src-22">22</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-22" class="srcLine">                <span class="string">&quot;}&quot;</span>),</span></td>
+</tr>
+ <tr id="l23">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=23#src-23">23</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-23" class="srcLine">                <span class="keyword">new</span> Primitives());</span></td>
+</tr>
+ <tr id="l24">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=24#src-24">24</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-24" class="srcLine"></span></td>
+</tr>
+ <tr id="l25">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=25#src-25">25</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 25, Col 9: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-25" class="srcLineHilight"><span class="nolink" title="Line 25, Col 9: statement not executed.">        assertEquals(<span class="keyword">true</span>, o.getBoolean());</span></span></td>
+</tr>
+ <tr id="l26">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=26#src-26">26</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 26, Col 9: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-26" class="srcLineHilight"><span class="nolink" title="Line 26, Col 9: statement not executed.">        assertEquals(42, o.getInt());</span></span></td>
+</tr>
+ <tr id="l27">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=27#src-27">27</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 27, Col 9: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-27" class="srcLineHilight"><span class="nolink" title="Line 27, Col 9: statement not executed.">        assertEquals(41.99, o.getDouble(), 0.001);</span></span></td>
+</tr>
+ <tr id="l28">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=28#src-28">28</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 28, Col 9: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-28" class="srcLineHilight"><span class="nolink" title="Line 28, Col 9: statement not executed.">        assertEquals(<span class="string">&quot;discworld&quot;</span>, o.getString());</span></span></td>
+</tr>
+ <tr id="l29">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=29#src-29">29</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 29, Col 9: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-29" class="srcLineHilight"><span class="nolink" title="Line 29, Col 9: statement not executed.">        assertEquals(1436468537000L, o.getDate().getTime());</span></span></td>
+</tr>
+ <tr id="l30">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=30#src-30">30</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-30" class="srcLine"></span></td>
+</tr>
+ <tr id="l31">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=31#src-31">31</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-31" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l32">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=32#src-32">32</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-32" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="33" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-33' onclick="toggleInlineStats(this, 'inlinestats-33');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-33" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-33'), 'inlinestats-33');return true;">
+                <td><div>
+<div title="0% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:0%"></div></div></div></td><td>0%</td>
+                <td class="inlineStat">Uncovered Elements: 26 (26)</td>
+                <td class="inlineStat">Complexity: 13</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l33">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=33#src-33">33</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" id="id-33"><span class="spacer"></span><span id="src-33" class="srcLine">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class</span> Primitives <span class="keyword">implements</span> <a href="../../../org/traccar/model/Factory.html#Factory">Factory</a> {</span></td>
+</tr>
+ <tr id="l34">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=34#src-34">34</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-34" class="srcLine">        </span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="35" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-35' onclick="toggleInlineStats(this, 'inlinestats-35');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-35" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-35'), 'inlinestats-35');return true;">
+                <td><div>
+<div title="0% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:0%"></div></div></div></td><td>0%</td>
+                <td class="inlineStat">Uncovered Elements: 1 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l35">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=35#src-35">35</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 35, Col 9: method not entered." class="nolink">&#160;0</span></td>
+<td class=" methodStart  srcCell" id="id-35"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 35,38);" id="img-35" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-35" class="srcLineHilight"><span class="nolink" title="Line 35, Col 9: method not entered.">        @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-35'), 35,38);" id="e35" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l36">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=36#src-36">36</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-36" class="srcLine">        <span class="keyword">public</span> Primitives create() {</span></td>
+</tr>
+ <tr id="l37">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=37#src-37">37</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 37, Col 13: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-37" class="srcLineHilight"><span class="nolink" title="Line 37, Col 13: statement not executed.">            <span class="keyword">return</span> <span class="keyword">new</span> Primitives();</span></span></td>
+</tr>
+ <tr id="l38">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=38#src-38">38</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-38" class="srcLine">        }</span></td>
+</tr>
+ <tr id="l39">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=39#src-39">39</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-39" class="srcLine"></span></td>
+</tr>
+ <tr id="l40">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=40#src-40">40</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-40" class="srcLine">        <span class="keyword">private</span> <span class="keyword">boolean</span> b;</span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="41" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-41' onclick="toggleInlineStats(this, 'inlinestats-41');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-41" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-41'), 'inlinestats-41');return true;">
+                <td><div>
+<div title="0% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:0%"></div></div></div></td><td>0%</td>
+                <td class="inlineStat">Uncovered Elements: 1 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l41">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=41#src-41">41</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 41, Col 9: method not entered." class="nolink">&#160;0</span></td>
+<td class=" methodStart  srcCell" id="id-41"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 41,41);" id="img-41" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-41" class="srcLineHilight"><span class="nolink" title="Line 41, Col 9: method not entered.">        <span class="keyword">public</span> <span class="keyword">boolean</span> getBoolean() { <span class="keyword">return</span> b; }</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-41'), 41,41);" id="e41" style="display:none;border:none;">...</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="42" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-42' onclick="toggleInlineStats(this, 'inlinestats-42');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-42" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-42'), 'inlinestats-42');return true;">
+                <td><div>
+<div title="0% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:0%"></div></div></div></td><td>0%</td>
+                <td class="inlineStat">Uncovered Elements: 1 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l42">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=42#src-42">42</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 42, Col 9: method not entered." class="nolink">&#160;0</span></td>
+<td class=" methodStart  srcCell" id="id-42"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 42,42);" id="img-42" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-42" class="srcLineHilight"><span class="nolink" title="Line 42, Col 9: method not entered.">        <span class="keyword">public</span> <span class="keyword">void</span> setBoolean(<span class="keyword">boolean</span> b) { <span class="keyword">this</span>.b = b; }</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-42'), 42,42);" id="e42" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l43">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=43#src-43">43</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-43" class="srcLine">        </span></td>
+</tr>
+ <tr id="l44">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=44#src-44">44</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-44" class="srcLine">        <span class="keyword">private</span> <span class="keyword">int</span> i;</span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="45" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-45' onclick="toggleInlineStats(this, 'inlinestats-45');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-45" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-45'), 'inlinestats-45');return true;">
+                <td><div>
+<div title="0% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:0%"></div></div></div></td><td>0%</td>
+                <td class="inlineStat">Uncovered Elements: 1 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l45">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=45#src-45">45</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 45, Col 9: method not entered." class="nolink">&#160;0</span></td>
+<td class=" methodStart  srcCell" id="id-45"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 45,45);" id="img-45" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-45" class="srcLineHilight"><span class="nolink" title="Line 45, Col 9: method not entered.">        <span class="keyword">public</span> <span class="keyword">int</span> getInt() { <span class="keyword">return</span> i; }</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-45'), 45,45);" id="e45" style="display:none;border:none;">...</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="46" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-46' onclick="toggleInlineStats(this, 'inlinestats-46');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-46" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-46'), 'inlinestats-46');return true;">
+                <td><div>
+<div title="0% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:0%"></div></div></div></td><td>0%</td>
+                <td class="inlineStat">Uncovered Elements: 1 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l46">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=46#src-46">46</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 46, Col 9: method not entered." class="nolink">&#160;0</span></td>
+<td class=" methodStart  srcCell" id="id-46"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 46,46);" id="img-46" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-46" class="srcLineHilight"><span class="nolink" title="Line 46, Col 9: method not entered.">        <span class="keyword">public</span> <span class="keyword">void</span> setInt(<span class="keyword">int</span> i) { <span class="keyword">this</span>.i = i; }</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-46'), 46,46);" id="e46" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l47">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=47#src-47">47</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-47" class="srcLine">        </span></td>
+</tr>
+ <tr id="l48">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=48#src-48">48</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-48" class="srcLine">        <span class="keyword">private</span> <span class="keyword">long</span> l;</span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="49" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-49' onclick="toggleInlineStats(this, 'inlinestats-49');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-49" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-49'), 'inlinestats-49');return true;">
+                <td><div>
+<div title="0% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:0%"></div></div></div></td><td>0%</td>
+                <td class="inlineStat">Uncovered Elements: 1 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l49">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=49#src-49">49</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 49, Col 9: method not entered." class="nolink">&#160;0</span></td>
+<td class=" methodStart  srcCell" id="id-49"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 49,49);" id="img-49" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-49" class="srcLineHilight"><span class="nolink" title="Line 49, Col 9: method not entered.">        <span class="keyword">public</span> <span class="keyword">long</span> getLong() { <span class="keyword">return</span> l; }</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-49'), 49,49);" id="e49" style="display:none;border:none;">...</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="50" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-50' onclick="toggleInlineStats(this, 'inlinestats-50');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-50" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-50'), 'inlinestats-50');return true;">
+                <td><div>
+<div title="0% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:0%"></div></div></div></td><td>0%</td>
+                <td class="inlineStat">Uncovered Elements: 1 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l50">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=50#src-50">50</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 50, Col 9: method not entered." class="nolink">&#160;0</span></td>
+<td class=" methodStart  srcCell" id="id-50"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 50,50);" id="img-50" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-50" class="srcLineHilight"><span class="nolink" title="Line 50, Col 9: method not entered.">        <span class="keyword">public</span> <span class="keyword">void</span> setLong(<span class="keyword">long</span> l) { <span class="keyword">this</span>.l = l; }</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-50'), 50,50);" id="e50" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l51">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=51#src-51">51</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-51" class="srcLine">        </span></td>
+</tr>
+ <tr id="l52">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=52#src-52">52</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-52" class="srcLine">        <span class="keyword">private</span> <span class="keyword">double</span> d;</span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="53" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-53' onclick="toggleInlineStats(this, 'inlinestats-53');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-53" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-53'), 'inlinestats-53');return true;">
+                <td><div>
+<div title="0% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:0%"></div></div></div></td><td>0%</td>
+                <td class="inlineStat">Uncovered Elements: 1 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l53">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=53#src-53">53</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 53, Col 9: method not entered." class="nolink">&#160;0</span></td>
+<td class=" methodStart  srcCell" id="id-53"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 53,53);" id="img-53" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-53" class="srcLineHilight"><span class="nolink" title="Line 53, Col 9: method not entered.">        <span class="keyword">public</span> <span class="keyword">double</span> getDouble() { <span class="keyword">return</span> d; }</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-53'), 53,53);" id="e53" style="display:none;border:none;">...</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="54" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-54' onclick="toggleInlineStats(this, 'inlinestats-54');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-54" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-54'), 'inlinestats-54');return true;">
+                <td><div>
+<div title="0% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:0%"></div></div></div></td><td>0%</td>
+                <td class="inlineStat">Uncovered Elements: 1 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l54">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=54#src-54">54</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 54, Col 9: method not entered." class="nolink">&#160;0</span></td>
+<td class=" methodStart  srcCell" id="id-54"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 54,54);" id="img-54" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-54" class="srcLineHilight"><span class="nolink" title="Line 54, Col 9: method not entered.">        <span class="keyword">public</span> <span class="keyword">void</span> setDouble(<span class="keyword">double</span> d) { <span class="keyword">this</span>.d = d; }</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-54'), 54,54);" id="e54" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l55">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=55#src-55">55</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-55" class="srcLine">        </span></td>
+</tr>
+ <tr id="l56">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=56#src-56">56</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-56" class="srcLine">        <span class="keyword">private</span> String s;</span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="57" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-57' onclick="toggleInlineStats(this, 'inlinestats-57');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-57" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-57'), 'inlinestats-57');return true;">
+                <td><div>
+<div title="0% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:0%"></div></div></div></td><td>0%</td>
+                <td class="inlineStat">Uncovered Elements: 1 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l57">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=57#src-57">57</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 57, Col 9: method not entered." class="nolink">&#160;0</span></td>
+<td class=" methodStart  srcCell" id="id-57"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 57,57);" id="img-57" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-57" class="srcLineHilight"><span class="nolink" title="Line 57, Col 9: method not entered.">        <span class="keyword">public</span> String getString() { <span class="keyword">return</span> s; }</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-57'), 57,57);" id="e57" style="display:none;border:none;">...</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="58" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-58' onclick="toggleInlineStats(this, 'inlinestats-58');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-58" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-58'), 'inlinestats-58');return true;">
+                <td><div>
+<div title="0% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:0%"></div></div></div></td><td>0%</td>
+                <td class="inlineStat">Uncovered Elements: 1 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l58">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=58#src-58">58</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 58, Col 9: method not entered." class="nolink">&#160;0</span></td>
+<td class=" methodStart  srcCell" id="id-58"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 58,58);" id="img-58" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-58" class="srcLineHilight"><span class="nolink" title="Line 58, Col 9: method not entered.">        <span class="keyword">public</span> <span class="keyword">void</span> setString(String s) { <span class="keyword">this</span>.s = s; }</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-58'), 58,58);" id="e58" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l59">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=59#src-59">59</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-59" class="srcLine">        </span></td>
+</tr>
+ <tr id="l60">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=60#src-60">60</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-60" class="srcLine">        <span class="keyword">private</span> Date t;</span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="61" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-61' onclick="toggleInlineStats(this, 'inlinestats-61');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-61" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-61'), 'inlinestats-61');return true;">
+                <td><div>
+<div title="0% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:0%"></div></div></div></td><td>0%</td>
+                <td class="inlineStat">Uncovered Elements: 1 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l61">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=61#src-61">61</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 61, Col 9: method not entered." class="nolink">&#160;0</span></td>
+<td class=" methodStart  srcCell" id="id-61"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 61,61);" id="img-61" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-61" class="srcLineHilight"><span class="nolink" title="Line 61, Col 9: method not entered.">        <span class="keyword">public</span> Date getDate() { <span class="keyword">return</span> t; }</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-61'), 61,61);" id="e61" style="display:none;border:none;">...</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="62" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-62' onclick="toggleInlineStats(this, 'inlinestats-62');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-62" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-62'), 'inlinestats-62');return true;">
+                <td><div>
+<div title="0% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:0%"></div></div></div></td><td>0%</td>
+                <td class="inlineStat">Uncovered Elements: 1 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l62">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=62#src-62">62</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 62, Col 9: method not entered." class="nolink">&#160;0</span></td>
+<td class=" methodStart  srcCell" id="id-62"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 62,62);" id="img-62" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-62" class="srcLineHilight"><span class="nolink" title="Line 62, Col 9: method not entered.">        <span class="keyword">public</span> <span class="keyword">void</span> setDate(Date t) { <span class="keyword">this</span>.t = t; }</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-62'), 62,62);" id="e62" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l63">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=63#src-63">63</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-63" class="srcLine"></span></td>
+</tr>
+ <tr id="l64">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=64#src-64">64</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-64" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l65">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=65#src-65">65</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-65" class="srcLine"></span></td>
+</tr>
+ <tr id="l66">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=66#src-66">66</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-66" class="srcLine">}</span></td>
+</tr>
+ 
+    </tbody></table>    </div>
+</div><!-- .aui-tabs -->
+
+<script type="text/javascript"> 
+    var ol_bgclass = "overBG";
+    var ol_fgclass = "overFG";
+    var ol_cgclass = "overCaption";
+    var ol_captionfontclass= "overCaption";
+    var ol_closefontclass = "closeFont";
+    var ol_closeclick = 1;
+    var ol_close = 'X';
+    var ol_wrap = 1;
+    var rootRelPath = '../../../';
+    var testsPerFile = -1;
+</script>
+<script src="JsonConverterTest.js" type="text/javascript"></script>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="https://openclover.org">OpenClover</a> v 4.5.2
+                on Wed Jun 5 2024 13:33:19 CST using coverage data from Wed Jun 5 2024 13:33:16 CST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

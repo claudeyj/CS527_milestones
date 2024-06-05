@@ -1,0 +1,994 @@
+diff -x ".*" -x .git -ruw /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/feeder/ReferenceStripFeeder.java /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/feeder/ReferenceStripFeeder.java
+--- /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/feeder/ReferenceStripFeeder.java	2024-06-05 10:54:43
++++ /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/feeder/ReferenceStripFeeder.java	2024-06-05 10:54:44
+@@ -247,7 +247,12 @@
+         if (holeLocations.isEmpty()) {
+             return null;
+         }
++        try {
+             MainFrame.cameraPanel.getCameraView(camera).showFilteredImage(image, 500);
++        }
++        catch (Exception e) {
++            // if we aren't running in the UI this will fail, and that's okay
++        }
+         return holeLocations.get(0);
+     }
+ 
+Binary files /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/target/classes/org/openpnp/machine/reference/feeder/ReferenceStripFeeder.class and /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/target/classes/org/openpnp/machine/reference/feeder/ReferenceStripFeeder.class differ
+diff -x ".*" -x .git -ruw /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+--- /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst	2024-06-05 10:55:57
++++ /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst	2024-06-05 10:56:43
+@@ -1,344 +1,344 @@
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/support/IdentifiableComparator.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/pipeline/stages/ReadModelProperty.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/spi/PartAlignment.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Sheet.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/vision/OpenCvVisionProvider.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/components/ClassSelectionDialog.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/feeder/ReferenceAutoFeeder.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/importer/SolderPasteGerberImporterDlg.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/LensCalibration.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Board.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/support/NozzleItem.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/pipeline/stages/BottomVisionCriS.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/pipeline/stages/ImageWriteDebug.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Vertex.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/components/CameraViewSelectionTextDelegate.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Devices.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/spi/base/AbstractNozzleTip.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/JogControlsPanel.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/spi/NozzleTip.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/support/LengthConverter.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/components/reticle/Reticle.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/tablemodel/PartsTableModel.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/pipeline/ui/ResultsPanel.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/spi/Actuator.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/spi/base/SimplePropertySheetHolder.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/components/reticle/FootprintReticle.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Classes.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/components/reticle/RulerReticle.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Technology.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Deviceset.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/driver/LinuxCNC.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/spi/PropertySheetHolder.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/Identifiable.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/camera/SimulatedUpCamera.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/support/PackagesComboBoxModel.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/Job.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Drawing.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Packages.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/pipeline/CvPipeline.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/spi/FiducialLocator.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/components/LocationButtonsPanel.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/MassUnit.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/ReferenceCamera.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/components/reticle/PackageReticle.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Autorouter.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Variantdefs.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/spi/WizardConfigurable.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/spi/base/AbstractActuator.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/spi/PasteDispenser.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/feeder/ReferenceStripFeeder.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/spi/base/AbstractNozzle.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/support/IdentifiableTableCellRenderer.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/util/MovableUtils.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/wizards/ReferenceActuatorConfigurationWizard.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Label.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/driver/NullDriver.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/importer/BoardImporter.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/ObjectFactory.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/camera/wizards/LtiCivilCameraConfigurationWizard.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/spi/VisionProvider.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Connects.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/JobProcessorListener.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/EagleLoader.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/util/VisionUtils.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/pipeline/ui/StagesTableModel.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/openbuilds/OpenBuildsDriver.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Port.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Connect.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/JobProcessorDelegate.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Devicesets.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/pipeline/ui/StandaloneEditor.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/driver/wizards/AbstractSerialPortDriverConfigurationWizard.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/pipeline/ui/Reorderable.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Sheets.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/camera/OpenCvCamera.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/MachineSetupPanel.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/spi/Movable.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/JobPlacementsPanel.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Nets.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Instances.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/pipeline/stages/SetColor.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/importer/SolderPasteGerberImporter.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/support/PropertySheetWizardAdapter.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Compatibility.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Ports.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/tablemodel/HeadsTableModel.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/driver/MarlinDriver.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/support/ActionGroup.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Portref.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/Length.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/tablemodel/PackagesTableModel.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Modules.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/support/MessageBoxes.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Param.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/pipeline/stages/ImageRead.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Attributes.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Technologies.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/spi/MachineListener.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Hole.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/Package.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/pipeline/CvStage.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/pipeline/stages/ImageWrite.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/ReferenceMachine.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/Pad.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/pipeline/stages/DrawCircles.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/support/IntegerConverter.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/pipeline/stages/ImageCapture.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/PackagesPanel.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Parts.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/Ransac.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/support/AbstractConfigurationWizard.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/support/WizardContainer.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/support/DoubleConverter.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/util/IdentifiableList.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/Board.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/pipeline/stages/DrawRotatedRects.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/pipeline/stages/ImageRecall.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/spi/Machine.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/pipeline/ui/CvPipelineEditor.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/components/reticle/OutlineReticle.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/PartsPanel.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Schematic.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/tablemodel/FeedersTableModel.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/JobPanel.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/pipeline/Property.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/support/MutableLocationProxy.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Busses.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Gate.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Signal.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/util/ImageUtils.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/support/CompositeWizard.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/spi/base/AbstractJobProcessor.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/ReferenceFeeder.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/pipeline/ui/MatView.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/support/Helpers.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/planner/AbstractJobPlanner.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Grid.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/feeder/ReferenceTrayFeeder.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/vision/wizards/ReferenceBottomVisionConfigurationWizard.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Package.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/pipeline/stages/MinAreaRect.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/driver/AbstractSerialPortDriver.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/wizards/ReferencePasteDispenserConfigurationWizard.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/components/SeparatorComboBox.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Frame.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/components/CameraPanel.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/pipeline/stages/DetectEdgesCanny.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/ReferenceActuator.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Bus.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/camera/wizards/WebcamConfigurationWizard.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/components/reticle/FiducialReticle.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Symbols.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/components/reticle/CrosshairReticle.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Designrules.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/pipeline/stages/convert/ColorConverter.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/pipeline/stages/Threshold.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Part.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/pipeline/stages/BlurMedian.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/FootprintPanel.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/spi/base/AbstractFeeder.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/feeder/wizards/ReferenceTrayFeederConfigurationWizard.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/driver/wizards/TinygDriverConfigurationWizard.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Settings.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/Configuration.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/pipeline/stages/Normalize.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Signals.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/importer/EagleMountsmdUlpImporter.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/support/PartConverter.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/Fiducial.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/spi/Camera.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/support/HeadCellValue.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/util/OpenCvUtils.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/FeedersPanel.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/spi/JobPlanner.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/feeder/wizards/ReferenceStripFeederConfigurationWizard.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Layer.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/support/OSXAdapter.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Library.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/pipeline/stages/DrawTemplateMatches.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/Main.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Eagle.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/support/LengthCellValue.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/tablemodel/PadsTableModel.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/ReferenceNozzleTip.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/ReferenceHead.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/wizards/ReferenceNozzleConfigurationWizard.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/pipeline/stages/DetectCirclesHough.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Symbol.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Moduleinst.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/spi/JobProcessor.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/spi/Head.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Junction.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/processes/TwoPlacementBoardLocationProcess.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Variantdef.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/feeder/wizards/ReferenceDragFeederConfigurationWizard.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/wizards/ReferenceCameraConfigurationWizard.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/components/CameraViewActionEvent.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/CamerasPanel.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/ReferencePasteDispenser.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Gates.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/pipeline/Stage.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/spi/Locatable.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/support/ApplyResetBindingListener.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/ReferenceNozzle.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/vision/wizards/ReferenceBottomVisionPartConfigurationWizard.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/feeder/ReferenceTubeFeeder.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/pipeline/ui/PipelinePanel.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/components/AutoSelectTextTable.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/support/LongConverter.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/support/PartsComboBoxModel.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/Footprint.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/support/SvgIcon.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Attribute.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Pad.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/pipeline/stages/FilterContours.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/support/ActuatorItem.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/tablemodel/PlacementsTableModel.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Pinref.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/util/ResourceUtils.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Setting.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/camera/LtiCivilCamera.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Errors.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/feeder/wizards/AbstractReferenceFeederConfigurationWizard.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/wizards/ReferenceMachineConfigurationWizard.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/Named.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/components/CameraViewFilter.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/feeder/wizards/ReferenceAutoFeederConfigurationWizard.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/Point.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/util/XmlSerialize.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/wizards/ReferenceJobProcessorConfigurationWizard.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/components/CameraViewPopupMenu.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Moduleinsts.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/util/HslColor.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/camera/wizards/OpenCvCameraConfigurationWizard.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/Placement.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/spi/base/AbstractMachine.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/driver/SprinterDriver.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/ReferenceDriver.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Element.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/pipeline/stages/DetectEdgesRobertsCross.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/support/Icons.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/util/Utils2D.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/pipeline/stages/MaskCircle.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Module.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Elements.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Note.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/FluentCv.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/spi/base/AbstractHead.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/JobPastePanel.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Class.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Smd.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/planner/SimpleJobPlanner.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/pipeline/stages/FindContours.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/components/FxNavigationView.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/support/IdentifiableObjectToStringConverter.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/experiments/FiducialTest.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/spi/Nozzle.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/camera/VfwCamera.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/LengthUnit.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/pipeline/ui/TableRowTransferHandler.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/util/UiUtils.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/importer/EagleBoardImporter.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/experiments/BottomVisionTest.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Text.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Plain.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/Location.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/pipeline/stages/DrawKeyPoints.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/tablemodel/BoardLocationsTableModel.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/support/Wizard.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/feeder/wizards/ReferenceTubeFeederConfigurationWizard.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/driver/SimulatorDriver.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Approved.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/importer/NamedCSVImporter.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Instance.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/spi/Feeder.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/support/JBindings.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/MainFrame.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Net.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/camera/ImageCamera.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/camera/Webcams.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Via.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/Rectangle.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Layers.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/support/BoundProperty.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/tablemodel/FootprintTableModel.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/driver/GrblDriver.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/camera/wizards/VfwCameraConfigurationWizard.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/ConfigurationListener.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/ReferenceHeadMountable.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Segment.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/driver/GcodeDriver.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Variant.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/components/CameraView.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/Part.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/openbuilds/OpenBuildsDriverWizard.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Wire.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/pipeline/stages/ConvertColor.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/ReferenceSolderPasteJobProcessor.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/Outline.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/support/CameraItem.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Pin.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/components/NavigationView.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/components/ComponentDecorators.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/spi/base/AbstractPasteDispenser.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/BoardLocation.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/importer/rs274x/Rs274xParser.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Clearance.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Contactref.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/driver/TinygDriver.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/support/IdentifiableListCellRenderer.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/spi/base/AbstractCamera.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/wizards/ReferenceNozzleTipConfigurationWizard.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Circle.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/pipeline/stages/MatchTemplate.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Rectangle.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/pipeline/stages/BlurGaussian.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/camera/wizards/ImageCameraConfigurationWizard.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/vision/ReferenceBottomVision.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/feeder/ReferenceDragFeeder.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/vision/ReferenceFiducialLocator.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/wizards/ReferenceHeadConfigurationWizard.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/wizards/CameraConfigurationWizard.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Libraries.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/importer/KicadPosImporter.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/support/PercentConverter.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/pipeline/stages/MaskHsv.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/support/BufferedImageIconConverter.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/AbstractModelObject.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Device.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/ReferenceJobProcessor.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Dimension.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/components/CameraViewActionListener.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Pass.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/pipeline/stages/DrawContours.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/MachineControlsPanel.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/AboutDialog.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/vision/pipeline/stages/SetModel.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/vision/wizards/OpenCvVisionProviderConfigurationWizard.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/BoardPad.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Description.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/spi/HeadMountable.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/model/eagle/xml/Polygon.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/tablemodel/CamerasTableModel.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/CameraListener.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/LengthUnit.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/camera/ImageCamera.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/pipeline/stages/MaskHsv.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/camera/LtiCivilCamera.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Text.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/spi/Head.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/importer/EagleMountsmdUlpImporter.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Module.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Device.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/Rectangle.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/Footprint.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Attribute.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/camera/VfwCamera.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/ReferenceHeadMountable.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/wizards/ReferenceJobProcessorConfigurationWizard.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/EagleLoader.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Approved.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/driver/MarlinDriver.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/pipeline/ui/StagesTableModel.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/support/BoundProperty.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/spi/Feeder.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/support/MessageBoxes.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/FeedersPanel.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Devices.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/ReferenceHead.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/BoardLocation.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/PackagesPanel.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Errors.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/feeder/ReferenceTrayFeeder.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Instance.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/support/WizardContainer.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Circle.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/vision/OpenCvVisionProvider.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/spi/Machine.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/spi/PartAlignment.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Symbols.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/tablemodel/PackagesTableModel.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Layer.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/support/IdentifiableListCellRenderer.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/components/AutoSelectTextTable.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/util/OpenCvUtils.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Busses.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/driver/wizards/AbstractSerialPortDriverConfigurationWizard.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/support/AbstractConfigurationWizard.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/spi/PropertySheetHolder.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/ObjectFactory.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/vision/ReferenceFiducialLocator.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/AboutDialog.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Pad.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/driver/NullDriver.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/MainFrame.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/feeder/wizards/ReferenceTrayFeederConfigurationWizard.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/pipeline/stages/Threshold.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/ReferenceDriver.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Sheet.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/components/reticle/OutlineReticle.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/pipeline/stages/FilterContours.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/openbuilds/OpenBuildsDriver.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/spi/base/AbstractJobProcessor.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/spi/base/AbstractPasteDispenser.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Connects.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/camera/Webcams.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Drawing.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Param.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/Point.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Frame.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Note.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/components/reticle/RulerReticle.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/spi/HeadMountable.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/tablemodel/HeadsTableModel.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Classes.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/support/PartsComboBoxModel.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/tablemodel/BoardLocationsTableModel.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/spi/PasteDispenser.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/pipeline/stages/ImageCapture.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/support/IdentifiableObjectToStringConverter.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/feeder/wizards/ReferenceStripFeederConfigurationWizard.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/pipeline/stages/MaskCircle.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/importer/rs274x/Rs274xParser.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/spi/base/AbstractNozzle.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/Length.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/support/Wizard.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/support/HeadCellValue.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/driver/SprinterDriver.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/components/LocationButtonsPanel.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/pipeline/ui/MatView.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/wizards/ReferenceNozzleConfigurationWizard.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Description.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/MassUnit.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Elements.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/ReferenceNozzle.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/Package.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/support/CompositeWizard.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/spi/base/AbstractHead.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/support/IdentifiableTableCellRenderer.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/pipeline/stages/DetectEdgesCanny.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/pipeline/ui/TableRowTransferHandler.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/Ransac.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/driver/TinygDriver.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/importer/EagleBoardImporter.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/support/ApplyResetBindingListener.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/spi/VisionProvider.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/ReferenceCamera.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Pass.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/components/CameraView.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Moduleinst.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/components/CameraViewSelectionTextDelegate.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/Named.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/camera/wizards/LtiCivilCameraConfigurationWizard.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/pipeline/ui/StandaloneEditor.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/LensCalibration.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/processes/TwoPlacementBoardLocationProcess.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/support/DoubleConverter.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/pipeline/stages/DrawRotatedRects.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/vision/ReferenceBottomVision.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/importer/KicadPosImporter.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/pipeline/CvPipeline.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/feeder/wizards/AbstractReferenceFeederConfigurationWizard.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/support/OSXAdapter.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/tablemodel/CamerasTableModel.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Vertex.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/util/ResourceUtils.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/pipeline/stages/DrawContours.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Symbol.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/feeder/wizards/ReferenceTubeFeederConfigurationWizard.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/pipeline/stages/SetColor.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/CameraListener.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/support/IntegerConverter.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Variantdef.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/pipeline/stages/MatchTemplate.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Element.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Variantdefs.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/Main.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/spi/Nozzle.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/wizards/ReferenceMachineConfigurationWizard.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/components/NavigationView.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/FluentCv.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Compatibility.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/spi/base/AbstractCamera.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Settings.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/pipeline/Stage.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/wizards/ReferenceCameraConfigurationWizard.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/components/CameraViewPopupMenu.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Dimension.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Segment.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Pin.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/feeder/ReferenceStripFeeder.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Polygon.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/FootprintPanel.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/components/reticle/PackageReticle.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/pipeline/stages/DetectEdgesRobertsCross.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/Job.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/driver/GcodeDriver.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/vision/wizards/OpenCvVisionProviderConfigurationWizard.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/importer/SolderPasteGerberImporterDlg.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/support/LengthConverter.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/tablemodel/FootprintTableModel.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/camera/wizards/WebcamConfigurationWizard.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Setting.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/camera/wizards/OpenCvCameraConfigurationWizard.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/AbstractModelObject.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/wizards/ReferencePasteDispenserConfigurationWizard.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Technologies.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Variant.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Net.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Class.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/pipeline/stages/DrawTemplateMatches.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/importer/NamedCSVImporter.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/support/Icons.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/ReferenceSolderPasteJobProcessor.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Rectangle.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/vision/wizards/ReferenceBottomVisionConfigurationWizard.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Devicesets.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/pipeline/ui/ResultsPanel.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/components/reticle/CrosshairReticle.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Wire.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/support/PropertySheetWizardAdapter.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/pipeline/stages/DrawKeyPoints.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/util/XmlSerialize.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/spi/Actuator.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Clearance.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/spi/NozzleTip.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Gates.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Library.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/pipeline/stages/BlurMedian.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/CamerasPanel.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Part.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/camera/SimulatedUpCamera.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Layers.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/pipeline/stages/ImageWrite.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/spi/Locatable.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/feeder/wizards/ReferenceDragFeederConfigurationWizard.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/feeder/ReferenceAutoFeeder.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/pipeline/stages/convert/ColorConverter.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/util/ImageUtils.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/pipeline/stages/SetModel.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/tablemodel/PadsTableModel.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Attributes.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Instances.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/support/IdentifiableComparator.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Contactref.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/driver/SimulatorDriver.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/util/UiUtils.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/components/ComponentDecorators.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Eagle.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/components/FxNavigationView.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/ConfigurationListener.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/pipeline/Property.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/ReferencePasteDispenser.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/BoardPad.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/components/reticle/Reticle.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/util/IdentifiableList.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/tablemodel/PartsTableModel.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Parts.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/pipeline/stages/FindContours.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/driver/LinuxCNC.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/spi/JobProcessor.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/camera/wizards/VfwCameraConfigurationWizard.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/tablemodel/FeedersTableModel.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/pipeline/stages/BottomVisionCriS.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/spi/JobPlanner.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/components/CameraViewFilter.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Nets.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/pipeline/ui/Reorderable.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/support/LengthCellValue.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/support/MutableLocationProxy.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/camera/OpenCvCamera.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/tablemodel/PlacementsTableModel.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/Location.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/planner/AbstractJobPlanner.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/support/PercentConverter.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/JobProcessorDelegate.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/components/CameraPanel.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/pipeline/stages/DetectCirclesHough.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/components/CameraViewActionEvent.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/wizards/ReferenceNozzleTipConfigurationWizard.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Via.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/camera/wizards/ImageCameraConfigurationWizard.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Deviceset.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/support/ActuatorItem.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/JobPanel.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/pipeline/stages/ImageRead.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/pipeline/stages/BlurGaussian.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Board.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/JobProcessorListener.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/spi/Movable.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Designrules.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/experiments/FiducialTest.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Hole.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/JogControlsPanel.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/components/reticle/FiducialReticle.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Port.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/support/NozzleItem.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Signal.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/support/BufferedImageIconConverter.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/spi/Camera.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/support/Helpers.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/spi/FiducialLocator.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/spi/base/AbstractActuator.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Modules.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/spi/base/AbstractMachine.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/PartsPanel.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/planner/SimpleJobPlanner.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/Pad.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/util/MovableUtils.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Smd.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/util/Utils2D.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Autorouter.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/pipeline/stages/MinAreaRect.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/openbuilds/OpenBuildsDriverWizard.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/support/ActionGroup.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/pipeline/stages/ImageWriteDebug.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/pipeline/ui/PipelinePanel.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/ReferenceMachine.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/components/ClassSelectionDialog.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Portref.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Technology.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/spi/WizardConfigurable.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/spi/MachineListener.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/components/SeparatorComboBox.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/components/CameraViewActionListener.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/pipeline/stages/ImageRecall.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/Outline.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Grid.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/spi/base/AbstractNozzleTip.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/support/PackagesComboBoxModel.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Signals.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Plain.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/pipeline/CvStage.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Schematic.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/components/reticle/FootprintReticle.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/pipeline/stages/Normalize.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/support/LongConverter.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Packages.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Junction.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/support/CameraItem.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/Fiducial.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/support/JBindings.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/Identifiable.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/feeder/ReferenceDragFeeder.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/spi/base/AbstractFeeder.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/Part.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/Board.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/driver/AbstractSerialPortDriver.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/Configuration.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/support/SvgIcon.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/wizards/CameraConfigurationWizard.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/pipeline/stages/ConvertColor.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/spi/base/SimplePropertySheetHolder.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/util/HslColor.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/JobPastePanel.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Connect.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Sheets.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/pipeline/stages/DrawCircles.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/feeder/wizards/ReferenceAutoFeederConfigurationWizard.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/driver/wizards/TinygDriverConfigurationWizard.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Bus.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/ReferenceActuator.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/feeder/ReferenceTubeFeeder.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/JobPlacementsPanel.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/pipeline/stages/ReadModelProperty.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/wizards/ReferenceActuatorConfigurationWizard.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Pinref.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Moduleinsts.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/MachineControlsPanel.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/vision/wizards/ReferenceBottomVisionPartConfigurationWizard.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/ReferenceFeeder.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Ports.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/support/PartConverter.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/ReferenceNozzleTip.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Package.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/experiments/BottomVisionTest.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/driver/GrblDriver.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/importer/BoardImporter.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/Placement.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Label.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Libraries.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/model/eagle/xml/Gate.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/ReferenceJobProcessor.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/machine/reference/wizards/ReferenceHeadConfigurationWizard.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/MachineSetupPanel.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/vision/pipeline/ui/CvPipelineEditor.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/gui/importer/SolderPasteGerberImporter.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/main/java/org/openpnp/util/VisionUtils.java
+diff -x ".*" -x .git -ruw /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+--- /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst	2024-06-05 10:55:57
++++ /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst	2024-06-05 10:56:43
+@@ -1,7 +1,7 @@
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/test/java/SampleJobTest.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/test/java/EagleLoaderTest.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/test/java/Utils2DTest.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/test/java/org/openpnp/machine/reference/driver/test/TestDriver.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/test/java/VisionUtilsTest.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/test/java/BasicJobTest.java
+-/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/src/test/java/OpenCvTest.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/test/java/EagleLoaderTest.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/test/java/SampleJobTest.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/test/java/Utils2DTest.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/test/java/org/openpnp/machine/reference/driver/test/TestDriver.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/test/java/OpenCvTest.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/test/java/VisionUtilsTest.java
++/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/src/test/java/BasicJobTest.java
+diff -x ".*" -x .git -ruw /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/target/surefire-reports/BasicJobTest.txt /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/target/surefire-reports/BasicJobTest.txt
+--- /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/target/surefire-reports/BasicJobTest.txt	2024-06-05 10:56:05
++++ /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/target/surefire-reports/BasicJobTest.txt	2024-06-05 10:56:48
+@@ -1,4 +1,4 @@
+ -------------------------------------------------------------------------------
+ Test set: BasicJobTest
+ -------------------------------------------------------------------------------
+-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.114 sec
++Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.92 sec
+diff -x ".*" -x .git -ruw /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/target/surefire-reports/EagleLoaderTest.txt /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/target/surefire-reports/EagleLoaderTest.txt
+--- /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/target/surefire-reports/EagleLoaderTest.txt	2024-06-05 10:56:06
++++ /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/target/surefire-reports/EagleLoaderTest.txt	2024-06-05 10:56:50
+@@ -1,4 +1,4 @@
+ -------------------------------------------------------------------------------
+ Test set: EagleLoaderTest
+ -------------------------------------------------------------------------------
+-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.07 sec
++Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.279 sec
+diff -x ".*" -x .git -ruw /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/target/surefire-reports/OpenCvTest.txt /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/target/surefire-reports/OpenCvTest.txt
+--- /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/target/surefire-reports/OpenCvTest.txt	2024-06-05 10:56:06
++++ /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/target/surefire-reports/OpenCvTest.txt	2024-06-05 10:56:50
+@@ -1,4 +1,4 @@
+ -------------------------------------------------------------------------------
+ Test set: OpenCvTest
+ -------------------------------------------------------------------------------
+-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
++Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
+diff -x ".*" -x .git -ruw /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/target/surefire-reports/SampleJobTest.txt /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/target/surefire-reports/SampleJobTest.txt
+--- /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/target/surefire-reports/SampleJobTest.txt	2024-06-05 10:56:23
++++ /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/target/surefire-reports/SampleJobTest.txt	2024-06-05 10:57:14
+@@ -1,12 +1,4 @@
+ -------------------------------------------------------------------------------
+ Test set: SampleJobTest
+ -------------------------------------------------------------------------------
+-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 16.075 sec <<< FAILURE!
+-testSampleJob(SampleJobTest)  Time elapsed: 16.073 sec  <<< ERROR!
+-java.lang.Exception: FeederError null
+-	at SampleJobTest$SampleJobTestProcessorListener.jobEncounteredError(SampleJobTest.java:115)
+-	at org.openpnp.spi.base.AbstractJobProcessor.fireJobEncounteredError(AbstractJobProcessor.java:160)
+-	at org.openpnp.machine.reference.ReferenceJobProcessor.pick(ReferenceJobProcessor.java:435)
+-	at org.openpnp.machine.reference.ReferenceJobProcessor.run(ReferenceJobProcessor.java:153)
+-	at java.lang.Thread.run(Thread.java:748)
+-
++Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 24.502 sec
+diff -x ".*" -x .git -ruw /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/target/surefire-reports/TEST-BasicJobTest.xml /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/target/surefire-reports/TEST-BasicJobTest.xml
+--- /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/target/surefire-reports/TEST-BasicJobTest.xml	2024-06-05 10:56:05
++++ /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/target/surefire-reports/TEST-BasicJobTest.xml	2024-06-05 10:56:49
+@@ -1,12 +1,12 @@
+ <?xml version="1.0" encoding="UTF-8" ?>
+-<testsuite tests="1" failures="0" name="BasicJobTest" time="7.006" errors="0" skipped="0">
++<testsuite tests="1" failures="0" name="BasicJobTest" time="3.791" errors="0" skipped="0">
+   <properties>
+     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib"/>
+     <property name="java.vm.version" value="25.202-b08"/>
+     <property name="gopherProxySet" value="false"/>
+     <property name="java.vm.vendor" value="Oracle Corporation"/>
+-    <property name="maven.multiModuleProjectDirectory" value="/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version"/>
++    <property name="maven.multiModuleProjectDirectory" value="/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version"/>
+     <property name="java.vendor.url" value="http://java.oracle.com/"/>
+     <property name="path.separator" value=":"/>
+     <property name="guice.disable.misplaced.annotation.check" value="true"/>
+@@ -16,7 +16,7 @@
+     <property name="sun.java.launcher" value="SUN_STANDARD"/>
+     <property name="sun.os.patch.level" value="unknown"/>
+     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+-    <property name="user.dir" value="/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version"/>
++    <property name="user.dir" value="/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version"/>
+     <property name="java.runtime.version" value="1.8.0_202-b08"/>
+     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+     <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/endorsed"/>
+@@ -61,5 +61,5 @@
+     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+     <property name="sun.cpu.isalist" value=""/>
+   </properties>
+-  <testcase classname="BasicJobTest" name="testSimpleJob" time="7.006"/>
++  <testcase classname="BasicJobTest" name="testSimpleJob" time="3.791"/>
+ </testsuite>
+\ No newline at end of file
+diff -x ".*" -x .git -ruw /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/target/surefire-reports/TEST-EagleLoaderTest.xml /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/target/surefire-reports/TEST-EagleLoaderTest.xml
+--- /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/target/surefire-reports/TEST-EagleLoaderTest.xml	2024-06-05 10:56:06
++++ /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/target/surefire-reports/TEST-EagleLoaderTest.xml	2024-06-05 10:56:50
+@@ -1,12 +1,12 @@
+ <?xml version="1.0" encoding="UTF-8" ?>
+-<testsuite tests="2" failures="0" name="EagleLoaderTest" time="1.068" errors="0" skipped="0">
++<testsuite tests="2" failures="0" name="EagleLoaderTest" time="1.278" errors="0" skipped="0">
+   <properties>
+     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib"/>
+     <property name="java.vm.version" value="25.202-b08"/>
+     <property name="gopherProxySet" value="false"/>
+     <property name="java.vm.vendor" value="Oracle Corporation"/>
+-    <property name="maven.multiModuleProjectDirectory" value="/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version"/>
++    <property name="maven.multiModuleProjectDirectory" value="/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version"/>
+     <property name="java.vendor.url" value="http://java.oracle.com/"/>
+     <property name="path.separator" value=":"/>
+     <property name="guice.disable.misplaced.annotation.check" value="true"/>
+@@ -16,7 +16,7 @@
+     <property name="sun.java.launcher" value="SUN_STANDARD"/>
+     <property name="sun.os.patch.level" value="unknown"/>
+     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+-    <property name="user.dir" value="/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version"/>
++    <property name="user.dir" value="/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version"/>
+     <property name="java.runtime.version" value="1.8.0_202-b08"/>
+     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+     <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/endorsed"/>
+@@ -61,6 +61,6 @@
+     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+     <property name="sun.cpu.isalist" value=""/>
+   </properties>
+-  <testcase classname="EagleLoaderTest" name="testLoadSchematic" time="0.846"/>
+-  <testcase classname="EagleLoaderTest" name="testLoadBoard" time="0.222"/>
++  <testcase classname="EagleLoaderTest" name="testLoadSchematic" time="1.006"/>
++  <testcase classname="EagleLoaderTest" name="testLoadBoard" time="0.272"/>
+ </testsuite>
+\ No newline at end of file
+diff -x ".*" -x .git -ruw /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/target/surefire-reports/TEST-OpenCvTest.xml /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/target/surefire-reports/TEST-OpenCvTest.xml
+--- /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/target/surefire-reports/TEST-OpenCvTest.xml	2024-06-05 10:56:06
++++ /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/target/surefire-reports/TEST-OpenCvTest.xml	2024-06-05 10:56:50
+@@ -1,12 +1,12 @@
+ <?xml version="1.0" encoding="UTF-8" ?>
+-<testsuite tests="1" failures="0" name="OpenCvTest" time="0.02" errors="0" skipped="0">
++<testsuite tests="1" failures="0" name="OpenCvTest" time="0.017" errors="0" skipped="0">
+   <properties>
+     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib"/>
+     <property name="java.vm.version" value="25.202-b08"/>
+     <property name="gopherProxySet" value="false"/>
+     <property name="java.vm.vendor" value="Oracle Corporation"/>
+-    <property name="maven.multiModuleProjectDirectory" value="/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version"/>
++    <property name="maven.multiModuleProjectDirectory" value="/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version"/>
+     <property name="java.vendor.url" value="http://java.oracle.com/"/>
+     <property name="path.separator" value=":"/>
+     <property name="guice.disable.misplaced.annotation.check" value="true"/>
+@@ -16,7 +16,7 @@
+     <property name="sun.java.launcher" value="SUN_STANDARD"/>
+     <property name="sun.os.patch.level" value="unknown"/>
+     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+-    <property name="user.dir" value="/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version"/>
++    <property name="user.dir" value="/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version"/>
+     <property name="java.runtime.version" value="1.8.0_202-b08"/>
+     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+     <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/endorsed"/>
+@@ -61,5 +61,5 @@
+     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+     <property name="sun.cpu.isalist" value=""/>
+   </properties>
+-  <testcase classname="OpenCvTest" name="openCvWorks" time="0.02"/>
++  <testcase classname="OpenCvTest" name="openCvWorks" time="0.017"/>
+ </testsuite>
+\ No newline at end of file
+diff -x ".*" -x .git -ruw /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/target/surefire-reports/TEST-SampleJobTest.xml /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/target/surefire-reports/TEST-SampleJobTest.xml
+--- /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/target/surefire-reports/TEST-SampleJobTest.xml	2024-06-05 10:56:23
++++ /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/target/surefire-reports/TEST-SampleJobTest.xml	2024-06-05 10:57:14
+@@ -1,12 +1,12 @@
+ <?xml version="1.0" encoding="UTF-8" ?>
+-<testsuite tests="1" failures="0" name="SampleJobTest" time="16.073" errors="1" skipped="0">
++<testsuite tests="1" failures="0" name="SampleJobTest" time="24.501" errors="0" skipped="0">
+   <properties>
+     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib"/>
+     <property name="java.vm.version" value="25.202-b08"/>
+     <property name="gopherProxySet" value="false"/>
+     <property name="java.vm.vendor" value="Oracle Corporation"/>
+-    <property name="maven.multiModuleProjectDirectory" value="/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version"/>
++    <property name="maven.multiModuleProjectDirectory" value="/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version"/>
+     <property name="java.vendor.url" value="http://java.oracle.com/"/>
+     <property name="path.separator" value=":"/>
+     <property name="guice.disable.misplaced.annotation.check" value="true"/>
+@@ -16,7 +16,7 @@
+     <property name="sun.java.launcher" value="SUN_STANDARD"/>
+     <property name="sun.os.patch.level" value="unknown"/>
+     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+-    <property name="user.dir" value="/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version"/>
++    <property name="user.dir" value="/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version"/>
+     <property name="java.runtime.version" value="1.8.0_202-b08"/>
+     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+     <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/endorsed"/>
+@@ -61,20 +61,5 @@
+     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+     <property name="sun.cpu.isalist" value=""/>
+   </properties>
+-  <testcase classname="SampleJobTest" name="testSampleJob" time="16.073">
+-    <error message="FeederError null" type="java.lang.Exception">java.lang.Exception: FeederError null
+-	at SampleJobTest$SampleJobTestProcessorListener.jobEncounteredError(SampleJobTest.java:115)
+-	at org.openpnp.spi.base.AbstractJobProcessor.fireJobEncounteredError(AbstractJobProcessor.java:160)
+-	at org.openpnp.machine.reference.ReferenceJobProcessor.pick(ReferenceJobProcessor.java:435)
+-	at org.openpnp.machine.reference.ReferenceJobProcessor.run(ReferenceJobProcessor.java:153)
+-	at java.lang.Thread.run(Thread.java:748)
+-</error>
+-    <system-out>Configuration directory: /var/folders/9b/flm_0ch13sbfkx6hysxjlch80000gn/T/1717556166955-0/.openpnp
+-10:56:06,956 No packages.xml found in configuration directory, loading defaults.
+-10:56:07,007 No parts.xml found in configuration directory, loading defaults.
+-10:56:07,016 No machine.xml found in configuration directory, loading defaults.
+-10:56:07,728 Defaults were loaded. Saving to configuration directory.
+-10:56:22,610 Start R1
+-</system-out>
+-  </testcase>
++  <testcase classname="SampleJobTest" name="testSampleJob" time="24.501"/>
+ </testsuite>
+\ No newline at end of file
+diff -x ".*" -x .git -ruw /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/target/surefire-reports/TEST-Utils2DTest.xml /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/target/surefire-reports/TEST-Utils2DTest.xml
+--- /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/target/surefire-reports/TEST-Utils2DTest.xml	2024-06-05 10:55:58
++++ /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/target/surefire-reports/TEST-Utils2DTest.xml	2024-06-05 10:56:45
+@@ -1,12 +1,12 @@
+ <?xml version="1.0" encoding="UTF-8" ?>
+-<testsuite tests="2" failures="0" name="Utils2DTest" time="0.031" errors="0" skipped="0">
++<testsuite tests="2" failures="0" name="Utils2DTest" time="0.032" errors="0" skipped="0">
+   <properties>
+     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib"/>
+     <property name="java.vm.version" value="25.202-b08"/>
+     <property name="gopherProxySet" value="false"/>
+     <property name="java.vm.vendor" value="Oracle Corporation"/>
+-    <property name="maven.multiModuleProjectDirectory" value="/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version"/>
++    <property name="maven.multiModuleProjectDirectory" value="/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version"/>
+     <property name="java.vendor.url" value="http://java.oracle.com/"/>
+     <property name="path.separator" value=":"/>
+     <property name="guice.disable.misplaced.annotation.check" value="true"/>
+@@ -16,7 +16,7 @@
+     <property name="sun.java.launcher" value="SUN_STANDARD"/>
+     <property name="sun.os.patch.level" value="unknown"/>
+     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+-    <property name="user.dir" value="/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version"/>
++    <property name="user.dir" value="/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version"/>
+     <property name="java.runtime.version" value="1.8.0_202-b08"/>
+     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+     <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/endorsed"/>
+@@ -61,6 +61,6 @@
+     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+     <property name="sun.cpu.isalist" value=""/>
+   </properties>
+-  <testcase classname="Utils2DTest" name="testCalculateBoardPlacementLocation" time="0.03"/>
++  <testcase classname="Utils2DTest" name="testCalculateBoardPlacementLocation" time="0.031"/>
+   <testcase classname="Utils2DTest" name="testCalculateAngleAndOffset" time="0.001"/>
+ </testsuite>
+\ No newline at end of file
+diff -x ".*" -x .git -ruw /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/target/surefire-reports/TEST-VisionUtilsTest.xml /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/target/surefire-reports/TEST-VisionUtilsTest.xml
+--- /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/target/surefire-reports/TEST-VisionUtilsTest.xml	2024-06-05 10:56:06
++++ /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/target/surefire-reports/TEST-VisionUtilsTest.xml	2024-06-05 10:56:50
+@@ -6,7 +6,7 @@
+     <property name="java.vm.version" value="25.202-b08"/>
+     <property name="gopherProxySet" value="false"/>
+     <property name="java.vm.vendor" value="Oracle Corporation"/>
+-    <property name="maven.multiModuleProjectDirectory" value="/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version"/>
++    <property name="maven.multiModuleProjectDirectory" value="/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version"/>
+     <property name="java.vendor.url" value="http://java.oracle.com/"/>
+     <property name="path.separator" value=":"/>
+     <property name="guice.disable.misplaced.annotation.check" value="true"/>
+@@ -16,7 +16,7 @@
+     <property name="sun.java.launcher" value="SUN_STANDARD"/>
+     <property name="sun.os.patch.level" value="unknown"/>
+     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+-    <property name="user.dir" value="/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version"/>
++    <property name="user.dir" value="/Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version"/>
+     <property name="java.runtime.version" value="1.8.0_202-b08"/>
+     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+     <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/endorsed"/>
+diff -x ".*" -x .git -ruw /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/target/surefire-reports/Utils2DTest.txt /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/target/surefire-reports/Utils2DTest.txt
+--- /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Buggy-Version/target/surefire-reports/Utils2DTest.txt	2024-06-05 10:55:58
++++ /Users/jun/Documents/TA/CS527/milestone_answer/subjects/BugSwarm/openpnp-openpnp-130246850/Patched-Version/target/surefire-reports/Utils2DTest.txt	2024-06-05 10:56:45
+@@ -1,4 +1,4 @@
+ -------------------------------------------------------------------------------
+ Test set: Utils2DTest
+ -------------------------------------------------------------------------------
+-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 sec
++Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 sec

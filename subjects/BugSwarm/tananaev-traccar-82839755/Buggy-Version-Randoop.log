@@ -1,0 +1,53 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< org.traccar:traccar >-------------------------
+[INFO] Building traccar 3.1-SNAPSHOT
+[INFO]   from pom_for_clover.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ traccar ---
+[INFO] Deleting /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-82839755/Buggy-Version/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ traccar ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ traccar ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 284 source files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-82839755/Buggy-Version/target/classes
+[INFO] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-82839755/Buggy-Version/src/org/traccar/web/JsonConverter.java: Some input files use unchecked or unsafe operations.
+[INFO] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-82839755/Buggy-Version/src/org/traccar/web/JsonConverter.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ traccar ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-82839755/Buggy-Version/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ traccar ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 114 source files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-82839755/Buggy-Version/target/test-classes
+[INFO] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-82839755/Buggy-Version/test/org/traccar/helper/DecoderVerifier.java: /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-82839755/Buggy-Version/test/org/traccar/helper/DecoderVerifier.java uses unchecked or unsafe operations.
+[INFO] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-82839755/Buggy-Version/test/org/traccar/helper/DecoderVerifier.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ traccar ---
+[INFO] Surefire report directory: /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-82839755/Buggy-Version/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running RegressionTest
+Tests run: 81, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.35 sec
+Running RegressionTest0
+Tests run: 81, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec
+
+Results :
+
+Tests run: 162, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  12.368 s
+[INFO] Finished at: 2024-06-05T12:44:29+08:00
+[INFO] ------------------------------------------------------------------------

@@ -1,0 +1,25 @@
+--- /Users/jun/Documents/TA/CS527/milestone_answer/subjects/QuixBugs/FLATTEN/Buggy-Version/java_programs/FLATTEN.java	2024-06-05 11:19:50
++++ /Users/jun/Documents/TA/CS527/milestone_answer/subjects/QuixBugs/FLATTEN/Patched-Version/correct_java_programs/FLATTEN.java	2024-06-05 11:19:50
+@@ -1,5 +1,6 @@
+-package java_programs;
++package correct_java_programs;
+ import java.util.*;
++
+ /*
+  * To change this template, choose Tools | Templates
+  * and open the template in the editor.
+@@ -18,12 +19,12 @@
+                 if (x instanceof ArrayList) {
+                     result.addAll((ArrayList) flatten(x));
+                 } else {
+-                    result.add(flatten(x));
++                    result.add((x));
+                 }
+             }
+             return result;
+         } else {
+-            return flatten(arr);
++            return arr;
+         }
+     }
+ }

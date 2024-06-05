@@ -1,0 +1,74 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< org.apache.commons:commons-math3 >------------------
+[INFO] Building Commons Math 3.2-SNAPSHOT
+[INFO]   from pom_for_clover.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ commons-math3 ---
+[INFO] Deleting /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Math_9/Buggy-Version/target
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.7:run (javadoc.resources) @ commons-math3 ---
+[INFO] Executing tasks
+
+main:
+     [copy] Copying 2 files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Math_9/Buggy-Version/target/apidocs/META-INF
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ commons-math3 ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.2:create (default) @ commons-math3 ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Math_9/Buggy-Version && svn --non-interactive info
+[INFO] Working directory: /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Math_9/Buggy-Version
+[INFO] Storing buildNumber: ?????? at timestamp: 1717525167662
+[INFO] Executing: /bin/sh -c cd /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Math_9/Buggy-Version && svn --non-interactive info
+[INFO] Working directory: /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Math_9/Buggy-Version
+[INFO] Storing buildScmBranch: UNKNOWN_BRANCH
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ commons-math3 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ commons-math3 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 756 source files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Math_9/Buggy-Version/target/classes
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Math_9/Buggy-Version/src/main/java/org/apache/commons/math3/optimization/univariate/SimpleUnivariateValueChecker.java: Some input files use or override a deprecated API.
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Math_9/Buggy-Version/src/main/java/org/apache/commons/math3/optimization/univariate/SimpleUnivariateValueChecker.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ commons-math3 ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ commons-math3 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 28 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ commons-math3 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 455 source files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Math_9/Buggy-Version/target/test-classes
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Math_9/Buggy-Version/src/test/java/org/apache/commons/math3/optimization/fitting/CurveFitterTest.java: Some input files use or override a deprecated API.
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Math_9/Buggy-Version/src/test/java/org/apache/commons/math3/optimization/fitting/CurveFitterTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.13:test (default-test) @ commons-math3 ---
+[INFO] Surefire report directory: /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Math_9/Buggy-Version/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running RegressionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.077 sec
+Running RegressionTest0
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+
+Results :
+
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  24.350 s
+[INFO] Finished at: 2024-06-05T02:19:49+08:00
+[INFO] ------------------------------------------------------------------------

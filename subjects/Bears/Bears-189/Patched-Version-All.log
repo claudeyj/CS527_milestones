@@ -1,0 +1,96 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< AutomatedCar:AutomatedCar >----------------------
+[INFO] Building AutomatedCar 1.0
+[INFO]   from pom_for_clover.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ AutomatedCar ---
+[INFO] Deleting /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-189/Patched-Version/target
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.8:prepare-agent (prepare-agent) @ AutomatedCar ---
+[INFO] argLine set to -javaagent:/Users/jun/.m2/repository/org/jacoco/org.jacoco.agent/0.7.8/org.jacoco.agent-0.7.8-runtime.jar=destfile=/Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-189/Patched-Version/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ AutomatedCar ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 44 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ AutomatedCar ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 57 source files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-189/Patched-Version/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ AutomatedCar ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-189/Patched-Version/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ AutomatedCar ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 24 source files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-189/Patched-Version/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ AutomatedCar ---
+[INFO] Surefire report directory: /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-189/Patched-Version/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running RegressionTest
+ERROR StatusLogger No log4j2 configuration file found. Using default configuration: logging only errors to the console.
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.2 sec
+Running hu.oe.nik.szfmv.visualization.DashboardTest
+Warning: the font "Times" is not available, so "Lucida Bright" has been substituted, but may have unexpected appearance or behavor. Re-enable the "Times" font to remove this warning.
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.606 sec
+Running hu.oe.nik.szfmv.automatedcar.sensors.UltrasonicSensorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.417 sec
+Running hu.oe.nik.szfmv.automatedcar.bus.VirtualFunctionBusTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running hu.oe.nik.szfmv.automatedcar.steering.WheelDisplacementTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec
+Running hu.oe.nik.szfmv.automatedcar.steering.CarHeadingTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running hu.oe.nik.szfmv.automatedcar.steering.WheelPositionTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running hu.oe.nik.szfmv.automatedcar.steering.CarPositionTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running hu.oe.nik.szfmv.automatedcar.steering.SteerAngleTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running hu.oe.nik.szfmv.automatedcar.systemcomponents.PowertrainSystemTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.123 sec
+Running hu.oe.nik.szfmv.Main_ESTest
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.88 sec
+Running hu.oe.nik.szfmv.common.ConfigProviderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running hu.oe.nik.szfmv.common.UtilsTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running hu.oe.nik.szfmv.detector.DetectorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.263 sec
+Running hu.oe.nik.szfmv.detector.TriangleTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running hu.oe.nik.szfmv.environment.WorldTest
+[Fatal Error] :1:1: Content is not allowed in prolog.
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.007 sec
+Running hu.oe.nik.szfmv.environment.models.PedestrianTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Running hu.oe.nik.szfmv.environment.models.RoadSignTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running hu.oe.nik.szfmv.environment.models.RoadTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running hu.oe.nik.szfmv.environment.models.TreeTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running hu.oe.nik.szfmv.environment.models.CrosswalkTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running hu.oe.nik.szfmv.environment.models.ParkingSpotTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+
+Results :
+
+Tests run: 94, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  19.714 s
+[INFO] Finished at: 2024-06-03T16:41:55+08:00
+[INFO] ------------------------------------------------------------------------

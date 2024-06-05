@@ -1,0 +1,107 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< org.traccar:traccar >-------------------------
+[INFO] Building traccar 3.0-SNAPSHOT
+[INFO]   from pom_for_clover.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ traccar ---
+[INFO] Deleting /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-68883949/Buggy-Version/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ traccar ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ traccar ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 261 source files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-68883949/Buggy-Version/target/classes
+[INFO] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-68883949/Buggy-Version/src/org/traccar/BaseProtocol.java: Some input files use unchecked or unsafe operations.
+[INFO] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-68883949/Buggy-Version/src/org/traccar/BaseProtocol.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ traccar ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-68883949/Buggy-Version/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ traccar ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 100 source files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-68883949/Buggy-Version/target/test-classes
+[INFO] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-68883949/Buggy-Version/test/org/traccar/helper/DecoderVerifier.java: /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-68883949/Buggy-Version/test/org/traccar/helper/DecoderVerifier.java uses unchecked or unsafe operations.
+[INFO] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-68883949/Buggy-Version/test/org/traccar/helper/DecoderVerifier.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ traccar ---
+[INFO] Surefire report directory: /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/tananaev-traccar-68883949/Buggy-Version/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.traccar.Context_ESTest
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Warning: the font "Times" is not available, so "Lucida Bright" has been substituted, but may have unexpected appearance or behavor. Re-enable the "Times" font to remove this warning.
+MLog initialization issue: slf4j found no binding or threatened to use its (dangerously silent) NOPLogger. We consider the slf4j library not found.
+log4j:WARN No appenders could be found for logger (com.mchange.v2.cfg.MConfig).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+MLog initialization issue: slf4j found no binding or threatened to use its (dangerously silent) NOPLogger. We consider the slf4j library not found.
+log4j:WARN No appenders could be found for logger (com.mchange.v2.cfg.MConfig).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+MLog initialization issue: slf4j found no binding or threatened to use its (dangerously silent) NOPLogger. We consider the slf4j library not found.
+log4j:WARN No appenders could be found for logger (com.mchange.v2.cfg.MConfig).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+MLog initialization issue: slf4j found no binding or threatened to use its (dangerously silent) NOPLogger. We consider the slf4j library not found.
+log4j:WARN No appenders could be found for logger (com.mchange.v2.cfg.MConfig).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+MLog initialization issue: slf4j found no binding or threatened to use its (dangerously silent) NOPLogger. We consider the slf4j library not found.
+log4j:WARN No appenders could be found for logger (com.mchange.v2.cfg.MConfig).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+MLog initialization issue: slf4j found no binding or threatened to use its (dangerously silent) NOPLogger. We consider the slf4j library not found.
+log4j:WARN No appenders could be found for logger (com.mchange.v2.cfg.MConfig).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+MLog initialization issue: slf4j found no binding or threatened to use its (dangerously silent) NOPLogger. We consider the slf4j library not found.
+log4j:WARN No appenders could be found for logger (com.mchange.v2.cfg.MConfig).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+MLog initialization issue: slf4j found no binding or threatened to use its (dangerously silent) NOPLogger. We consider the slf4j library not found.
+log4j:WARN No appenders could be found for logger (com.mchange.v2.cfg.MConfig).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+MLog initialization issue: slf4j found no binding or threatened to use its (dangerously silent) NOPLogger. We consider the slf4j library not found.
+log4j:WARN No appenders could be found for logger (com.mchange.v2.cfg.MConfig).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+MLog initialization issue: slf4j found no binding or threatened to use its (dangerously silent) NOPLogger. We consider the slf4j library not found.
+log4j:WARN No appenders could be found for logger (com.mchange.v2.cfg.MConfig).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+MLog initialization issue: slf4j found no binding or threatened to use its (dangerously silent) NOPLogger. We consider the slf4j library not found.
+log4j:WARN No appenders could be found for logger (com.mchange.v2.cfg.MConfig).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+MLog initialization issue: slf4j found no binding or threatened to use its (dangerously silent) NOPLogger. We consider the slf4j library not found.
+log4j:WARN No appenders could be found for logger (com.mchange.v2.cfg.MConfig).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+MLog initialization issue: slf4j found no binding or threatened to use its (dangerously silent) NOPLogger. We consider the slf4j library not found.
+log4j:WARN No appenders could be found for logger (com.mchange.v2.cfg.MConfig).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.808 sec
+
+Results :
+
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  19.683 s
+[INFO] Finished at: 2024-06-05T12:28:16+08:00
+[INFO] ------------------------------------------------------------------------

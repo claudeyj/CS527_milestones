@@ -1,0 +1,84 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< org.openpnp:openpnp-gui >-----------------------
+[INFO] Building openpnp-gui 0.0.1-alpha-SNAPSHOT
+[INFO]   from pom_for_clover.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ openpnp-gui ---
+[INFO] Deleting /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/openpnp-openpnp-130246850/Buggy-Version/target
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.3:create (default) @ openpnp-gui ---
+[INFO] ShortRevision tag detected. The value is '6'.
+[INFO] Executing: /bin/sh -c cd /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/openpnp-openpnp-130246850/Buggy-Version && git rev-parse --verify --short=6 HEAD
+[INFO] Working directory: /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/openpnp-openpnp-130246850/Buggy-Version
+[INFO] Storing buildNumber: 3ac9b4 at timestamp: 1717569921442
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] ShortRevision tag detected. The value is '6'.
+[INFO] Executing: /bin/sh -c cd /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/openpnp-openpnp-130246850/Buggy-Version && git rev-parse --verify --short=6 HEAD
+[INFO] Working directory: /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/openpnp-openpnp-130246850/Buggy-Version
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ openpnp-gui ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 52 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ openpnp-gui ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 344 source files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/openpnp-openpnp-130246850/Buggy-Version/target/classes
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/camera/wizards/LtiCivilCameraConfigurationWizard.java: Some input files use or override a deprecated API.
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/machine/reference/camera/wizards/LtiCivilCameraConfigurationWizard.java: Recompile with -Xlint:deprecation for details.
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/support/AbstractConfigurationWizard.java: Some input files use unchecked or unsafe operations.
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/openpnp-openpnp-130246850/Buggy-Version/src/main/java/org/openpnp/gui/support/AbstractConfigurationWizard.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ openpnp-gui ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ openpnp-gui ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 11 source files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/openpnp-openpnp-130246850/Buggy-Version/target/test-classes
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/openpnp-openpnp-130246850/Buggy-Version/src/test/java/Utils2DTest.java: /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/openpnp-openpnp-130246850/Buggy-Version/src/test/java/Utils2DTest.java uses or overrides a deprecated API.
+[WARNING] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/openpnp-openpnp-130246850/Buggy-Version/src/test/java/Utils2DTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ openpnp-gui ---
+[INFO] Surefire report directory: /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/openpnp-openpnp-130246850/Buggy-Version/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.openpnp.machine.reference.feeder.ReferenceStripFeeder_ESTest
+14:45:36,650 dynamically loading javaagent
+14:45:36,944 Using JavaAgent in /Users/jun/.m2/repository/org/evosuite/evosuite-standalone-runtime/1.2.0/evosuite-standalone-runtime-1.2.0.jar
+14:45:36,984 Classpath: /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/openpnp-openpnp-130246850/Buggy-Version/target/test-classes:/Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/openpnp-openpnp-130246850/Buggy-Version/target/classes:/Users/jun/.m2/repository/com/github/sarxos/webcam-capture/0.3.10/webcam-capture-0.3.10.jar:/Users/jun/.m2/repository/com/nativelibs4java/bridj/0.6.2/bridj-0.6.2.jar:/Users/jun/.m2/repository/org/ostermiller/utils/1.07.00/utils-1.07.00.jar:/Users/jun/.m2/repository/commons-codec/commons-codec/1.6/commons-codec-1.6.jar:/Users/jun/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/jun/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/jun/.m2/repository/org/jdesktop/beansbinding/1.2.1/beansbinding-1.2.1.jar:/Users/jun/.m2/repository/log4j/log4j/1.2.16/log4j-1.2.16.jar:/Users/jun/.m2/repository/org/slf4j/slf4j-api/1.6.4/slf4j-api-1.6.4.jar:/Users/jun/.m2/repository/org/slf4j/slf4j-log4j12/1.6.4/slf4j-log4j12-1.6.4.jar:/Users/jun/.m2/repository/org/simpleframework/simple-xml/2.7.1/simple-xml-2.7.1.jar:/Users/jun/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar:/Users/jun/.m2/repository/stax/stax/1.2.0/stax-1.2.0.jar:/Users/jun/.m2/repository/xpp3/xpp3/1.1.3.3/xpp3-1.1.3.3.jar:/Users/jun/.m2/repository/commons-io/commons-io/2.1/commons-io-2.1.jar:/Users/jun/.m2/repository/org/lti-civil/lti-civil/20070920-1721/lti-civil-20070920-1721.jar:/Users/jun/.m2/repository/org/vonnieda/jvfw/0.0.2/jvfw-0.0.2.jar:/Users/jun/.m2/repository/org/scream3r/jssc/2.8.0/jssc-2.8.0.jar:/Users/jun/.m2/repository/org/swinglabs/swingx/swingx-all/1.6.4/swingx-all-1.6.4.jar:/Users/jun/.m2/repository/org/openpnp/opencv/2.4.11-2/opencv-2.4.11-2.jar:/Users/jun/.m2/repository/com/google/code/gson/gson/2.2.3/gson-2.2.3.jar:/Users/jun/.m2/repository/org/apache/xmlgraphics/batik-transcoder/1.7/batik-transcoder-1.7.jar:/Users/jun/.m2/repository/org/apache/xmlgraphics/fop/0.94/fop-0.94.jar:/Users/jun/.m2/repository/org/apache/xmlgraphics/xmlgraphics-commons/1.2/xmlgraphics-commons-1.2.jar:/Users/jun/.m2/repository/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar:/Users/jun/.m2/repository/org/apache/avalon/framework/avalon-framework-api/4.3.1/avalon-framework-api-4.3.1.jar:/Users/jun/.m2/repository/org/apache/avalon/framework/avalon-framework-impl/4.3.1/avalon-framework-impl-4.3.1.jar:/Users/jun/.m2/repository/org/apache/xmlgraphics/batik-awt-util/1.7/batik-awt-util-1.7.jar:/Users/jun/.m2/repository/org/apache/xmlgraphics/batik-bridge/1.7/batik-bridge-1.7.jar:/Users/jun/.m2/repository/org/apache/xmlgraphics/batik-anim/1.7/batik-anim-1.7.jar:/Users/jun/.m2/repository/org/apache/xmlgraphics/batik-css/1.7/batik-css-1.7.jar:/Users/jun/.m2/repository/org/apache/xmlgraphics/batik-ext/1.7/batik-ext-1.7.jar:/Users/jun/.m2/repository/org/apache/xmlgraphics/batik-parser/1.7/batik-parser-1.7.jar:/Users/jun/.m2/repository/org/apache/xmlgraphics/batik-script/1.7/batik-script-1.7.jar:/Users/jun/.m2/repository/org/apache/xmlgraphics/batik-js/1.7/batik-js-1.7.jar:/Users/jun/.m2/repository/xalan/xalan/2.6.0/xalan-2.6.0.jar:/Users/jun/.m2/repository/org/apache/xmlgraphics/batik-dom/1.7/batik-dom-1.7.jar:/Users/jun/.m2/repository/org/apache/xmlgraphics/batik-gvt/1.7/batik-gvt-1.7.jar:/Users/jun/.m2/repository/org/apache/xmlgraphics/batik-svg-dom/1.7/batik-svg-dom-1.7.jar:/Users/jun/.m2/repository/org/apache/xmlgraphics/batik-svggen/1.7/batik-svggen-1.7.jar:/Users/jun/.m2/repository/org/apache/xmlgraphics/batik-util/1.7/batik-util-1.7.jar:/Users/jun/.m2/repository/org/apache/xmlgraphics/batik-xml/1.7/batik-xml-1.7.jar:/Users/jun/.m2/repository/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04.jar:/Users/jun/.m2/repository/xml-apis/xml-apis-ext/1.3.04/xml-apis-ext-1.3.04.jar:/Users/jun/.m2/repository/com/google/zxing/javase/2.2/javase-2.2.jar:/Users/jun/.m2/repository/com/google/zxing/core/2.2/core-2.2.jar:/Users/jun/.m2/repository/com/google/guava/guava/14.0.1/guava-14.0.1.jar:/Users/jun/.m2/repository/com/jgoodies/jgoodies-forms/1.8.0/jgoodies-forms-1.8.0.jar:/Users/jun/.m2/repository/com/jgoodies/jgoodies-common/1.8.0/jgoodies-common-1.8.0.jar:/Users/jun/.m2/repository/org/jcodec/jcodec-javase/0.1.9/jcodec-javase-0.1.9.jar:/Users/jun/.m2/repository/org/jcodec/jcodec/0.1.9/jcodec-0.1.9.jar:/Users/jun/.m2/repository/org/tros/l2fprod-properties-editor/1.0.3/l2fprod-properties-editor-1.0.3.jar:/Users/jun/.m2/repository/org/tros/l2fprod-common-annotations/1.0.3/l2fprod-common-annotations-1.0.3.jar:/Users/jun/.m2/repository/org/evosuite/evosuite-standalone-runtime/1.2.0/evosuite-standalone-runtime-1.2.0.jar:
+14:45:36,984 Going to attach agent to process 98993
+14:45:37,428 Executing agentmain of JavaAgent
+Warning: the font "Times" is not available, so "Lucida Bright" has been substituted, but may have unexpected appearance or behavor. Re-enable the "Times" font to remove this warning.
+14:45:40,047 Adding mock interface to class org/openpnp/model/AbstractModelObject
+14:45:40,346 Creating brand-new static initializer in class org/openpnp/model/AbstractModelObject
+14:45:40,383 Adding mock interface to class org/openpnp/spi/base/AbstractFeeder
+14:45:40,384 Creating brand-new static initializer in class org/openpnp/spi/base/AbstractFeeder
+14:45:40,398 Adding mock interface to class org/openpnp/machine/reference/ReferenceFeeder
+14:45:40,399 Creating brand-new static initializer in class org/openpnp/machine/reference/ReferenceFeeder
+14:45:40,400 Adding mock interface to class org/openpnp/util/ResourceUtils$PathResolutionException
+14:45:40,414 Creating brand-new static initializer in class org/openpnp/util/ResourceUtils$PathResolutionException
+14:45:40,429 Adding mock interface to class org/openpnp/model/Configuration
+14:45:40,508 Found static initializer in class org/openpnp/model/Configuration
+14:45:40,518 Adding mock interface to class org/openpnp/machine/reference/feeder/ReferenceStripFeeder$TapeType
+14:45:40,521 Found static initializer in class org/openpnp/machine/reference/feeder/ReferenceStripFeeder$TapeType
+14:45:40,532 Adding mock interface to class org/openpnp/machine/reference/feeder/ReferenceStripFeeder
+14:45:40,563 Found static initializer in class org/openpnp/machine/reference/feeder/ReferenceStripFeeder
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.29 sec
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  22.051 s
+[INFO] Finished at: 2024-06-05T14:45:41+08:00
+[INFO] ------------------------------------------------------------------------

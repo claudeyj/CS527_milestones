@@ -1,0 +1,12 @@
+diff -x ".*" -x .git -x .defects4j.config -ruw /Users/jun/Documents/TA/CS527/milestone_answer/subjects/Defects4J/Math_27/Buggy-Version/src/main/java/org/apache/commons/math3/fraction/Fraction.java /Users/jun/Documents/TA/CS527/milestone_answer/subjects/Defects4J/Math_27/Patched-Version/src/main/java/org/apache/commons/math3/fraction/Fraction.java
+--- /Users/jun/Documents/TA/CS527/milestone_answer/subjects/Defects4J/Math_27/Buggy-Version/src/main/java/org/apache/commons/math3/fraction/Fraction.java	2024-06-05 09:29:57
++++ /Users/jun/Documents/TA/CS527/milestone_answer/subjects/Defects4J/Math_27/Patched-Version/src/main/java/org/apache/commons/math3/fraction/Fraction.java	2024-06-05 09:30:01
+@@ -594,7 +594,7 @@
+      * @return the fraction percentage as a <tt>double</tt>.
+      */
+     public double percentageValue() {
+-        return multiply(100).doubleValue();
++        return 100 * doubleValue();
+     }
+ 
+     /**

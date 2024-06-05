@@ -1,0 +1,471 @@
+[INFO] Scanning for projects...
+[INFO] Inspecting build with total of 1 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 1 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO] 
+[INFO] ------------------< io.github.classgraph:classgraph >-------------------
+[INFO] Building ClassGraph 4.4.13-SNAPSHOT
+[INFO]   from pom_for_clover.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ classgraph ---
+[INFO] Deleting /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ classgraph ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ classgraph ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 106 source files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/target/classes
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.5.1:manifest (bundle-manifest) @ classgraph ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-source (add-test-source) @ classgraph ---
+[INFO] Test Source directory: /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/perf added.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ classgraph ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 22 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ classgraph ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 142 source files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/target/test-classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/ErrorTest0.java:[14,45] cannot find symbol
+  symbol:   method enableSystemJarsAndModules()
+  location: variable classGraph0 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/ErrorTest0.java:[15,45] method verbose in class io.github.classgraph.ClassGraph cannot be applied to given types;
+  required: no arguments
+  found: boolean
+  reason: actual and formal argument lists differ in length
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/ErrorTest0.java:[17,20] cannot find symbol
+  symbol:   method acceptClasses(java.lang.String[])
+  location: variable classGraph3 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[14,40] cannot find symbol
+  symbol:   class CircumventEncapsulationMethod
+  location: class io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[14,135] cannot find symbol
+  symbol:   variable CIRCUMVENT_ENCAPSULATION
+  location: class io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[15,84] incompatible types: io.github.classgraph.ClassGraph.CircumventEncapsulationMethod.getClass cannot be converted to java.lang.Class<?>
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[16,118] cannot find symbol
+  symbol:   variable CircumventEncapsulationMethod
+  location: class io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[16,230] cannot find symbol
+  symbol:   variable CircumventEncapsulationMethod
+  location: class io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[24,40] cannot find symbol
+  symbol:   class CircumventEncapsulationMethod
+  location: class io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[24,135] cannot find symbol
+  symbol:   variable CircumventEncapsulationMethod
+  location: class io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[25,118] cannot find symbol
+  symbol:   variable CircumventEncapsulationMethod
+  location: class io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[25,236] cannot find symbol
+  symbol:   variable CircumventEncapsulationMethod
+  location: class io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[32,40] cannot find symbol
+  symbol:   class CircumventEncapsulationMethod
+  location: class io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[32,135] cannot find symbol
+  symbol:   variable CIRCUMVENT_ENCAPSULATION
+  location: class io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[33,40] cannot find symbol
+  symbol:   variable CIRCUMVENT_ENCAPSULATION
+  location: class io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[34,40] cannot find symbol
+  symbol:   variable CIRCUMVENT_ENCAPSULATION
+  location: class io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[35,118] cannot find symbol
+  symbol:   variable CircumventEncapsulationMethod
+  location: class io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[35,230] cannot find symbol
+  symbol:   variable CircumventEncapsulationMethod
+  location: class io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[42,40] cannot find symbol
+  symbol:   class CircumventEncapsulationMethod
+  location: class io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[42,135] cannot find symbol
+  symbol:   variable CircumventEncapsulationMethod
+  location: class io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[43,118] cannot find symbol
+  symbol:   variable CircumventEncapsulationMethod
+  location: class io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[43,230] cannot find symbol
+  symbol:   variable CircumventEncapsulationMethod
+  location: class io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[51,66] cannot find symbol
+  symbol:   method enableSystemJarsAndModules()
+  location: variable classGraph0 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[52,66] method verbose in class io.github.classgraph.ClassGraph cannot be applied to given types;
+  required: no arguments
+  found: boolean
+  reason: actual and formal argument lists differ in length
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[55,67] cannot find symbol
+  symbol:   method rejectClasses(java.lang.String[])
+  location: variable classGraph4 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[74,66] cannot find symbol
+  symbol:   method enableSystemJarsAndModules()
+  location: variable classGraph0 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[75,29] cannot find symbol
+  symbol:   class ModulePathInfo
+  location: package io.github.classgraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[75,74] cannot find symbol
+  symbol:   method getModulePathInfo()
+  location: variable classGraph1 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[94,66] cannot find symbol
+  symbol:   method enableSystemJarsAndModules()
+  location: variable classGraph0 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[95,66] method verbose in class io.github.classgraph.ClassGraph cannot be applied to given types;
+  required: no arguments
+  found: boolean
+  reason: actual and formal argument lists differ in length
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[96,60] cannot find symbol
+  symbol:   method getClasspathURIs()
+  location: variable classGraph3 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[109,66] cannot find symbol
+  symbol:   method enableSystemJarsAndModules()
+  location: variable classGraph0 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[110,66] method verbose in class io.github.classgraph.ClassGraph cannot be applied to given types;
+  required: no arguments
+  found: boolean
+  reason: actual and formal argument lists differ in length
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[128,66] cannot find symbol
+  symbol:   method enableSystemJarsAndModules()
+  location: variable classGraph0 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[129,66] method verbose in class io.github.classgraph.ClassGraph cannot be applied to given types;
+  required: no arguments
+  found: boolean
+  reason: actual and formal argument lists differ in length
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[149,66] cannot find symbol
+  symbol:   method enableSystemJarsAndModules()
+  location: variable classGraph0 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[150,66] method verbose in class io.github.classgraph.ClassGraph cannot be applied to given types;
+  required: no arguments
+  found: boolean
+  reason: actual and formal argument lists differ in length
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[154,66] cannot find symbol
+  symbol:   method enableSystemJarsAndModules()
+  location: variable classGraph6 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[155,66] cannot find symbol
+  symbol:   method enableInterClassDependencies()
+  location: variable classGraph6 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[157,67] cannot find symbol
+  symbol:   method rejectModules(java.lang.String[])
+  location: variable classGraph6 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[160,68] cannot find symbol
+  symbol:   method enableSystemJarsAndModules()
+  location: variable classGraph18 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[161,68] method verbose in class io.github.classgraph.ClassGraph cannot be applied to given types;
+  required: no arguments
+  found: boolean
+  reason: actual and formal argument lists differ in length
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[165,68] cannot find symbol
+  symbol:   method enableSystemJarsAndModules()
+  location: variable classGraph24 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[166,68] cannot find symbol
+  symbol:   method enableInterClassDependencies()
+  location: variable classGraph24 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[168,68] cannot find symbol
+  symbol:   method rejectModules(java.lang.String[])
+  location: variable classGraph24 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[170,68] cannot find symbol
+  symbol:   method acceptPackagesNonRecursive(java.lang.String[])
+  location: variable classGraph17 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[197,66] cannot find symbol
+  symbol:   method enableSystemJarsAndModules()
+  location: variable classGraph0 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[198,66] method verbose in class io.github.classgraph.ClassGraph cannot be applied to given types;
+  required: no arguments
+  found: boolean
+  reason: actual and formal argument lists differ in length
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[202,67] cannot find symbol
+  symbol:   method rejectClasses(java.lang.String[])
+  location: variable classGraph5 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[219,66] cannot find symbol
+  symbol:   method enableSystemJarsAndModules()
+  location: variable classGraph0 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[221,66] cannot find symbol
+  symbol:   method enableSystemJarsAndModules()
+  location: variable classGraph2 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[222,66] method verbose in class io.github.classgraph.ClassGraph cannot be applied to given types;
+  required: no arguments
+  found: boolean
+  reason: actual and formal argument lists differ in length
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[226,66] cannot find symbol
+  symbol:   method enableSystemJarsAndModules()
+  location: variable classGraph8 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[227,67] cannot find symbol
+  symbol:   method enableInterClassDependencies()
+  location: variable classGraph8 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[229,67] cannot find symbol
+  symbol:   method rejectModules(java.lang.String[])
+  location: variable classGraph8 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[233,71] cannot find symbol
+  symbol:   method rejectPackages(java.lang.String[])
+  location: variable classGraph1 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[255,66] cannot find symbol
+  symbol:   method enableSystemJarsAndModules()
+  location: variable classGraph0 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[256,66] method verbose in class io.github.classgraph.ClassGraph cannot be applied to given types;
+  required: no arguments
+  found: boolean
+  reason: actual and formal argument lists differ in length
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[260,67] cannot find symbol
+  symbol:   method rejectClasses(java.lang.String[])
+  location: variable classGraph5 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[279,66] cannot find symbol
+  symbol:   method enableSystemJarsAndModules()
+  location: variable classGraph0 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[292,66] cannot find symbol
+  symbol:   method enableSystemJarsAndModules()
+  location: variable classGraph0 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[293,66] cannot find symbol
+  symbol:   method enableInterClassDependencies()
+  location: variable classGraph0 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[295,66] cannot find symbol
+  symbol:   method enableSystemJarsAndModules()
+  location: variable classGraph3 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[296,66] cannot find symbol
+  symbol:   method enableInterClassDependencies()
+  location: variable classGraph3 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[298,67] cannot find symbol
+  symbol:   method rejectModules(java.lang.String[])
+  location: variable classGraph3 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[299,67] cannot find symbol
+  symbol:   method acceptPackages(java.lang.String[])
+  location: variable classGraph0 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[301,68] cannot find symbol
+  symbol:   method acceptClasspathElementsContainingResourcePath(java.lang.String[])
+  location: variable classGraph14 of type io.github.classgraph.ClassGraph
+[INFO] 67 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  18.860 s
+[INFO] Finished at: 2024-06-03T16:42:52+08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile (default-testCompile) on project classgraph: Compilation failure: Compilation failure: 
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/ErrorTest0.java:[14,45] cannot find symbol
+[ERROR]   symbol:   method enableSystemJarsAndModules()
+[ERROR]   location: variable classGraph0 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/ErrorTest0.java:[15,45] method verbose in class io.github.classgraph.ClassGraph cannot be applied to given types;
+[ERROR]   required: no arguments
+[ERROR]   found: boolean
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/ErrorTest0.java:[17,20] cannot find symbol
+[ERROR]   symbol:   method acceptClasses(java.lang.String[])
+[ERROR]   location: variable classGraph3 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[14,40] cannot find symbol
+[ERROR]   symbol:   class CircumventEncapsulationMethod
+[ERROR]   location: class io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[14,135] cannot find symbol
+[ERROR]   symbol:   variable CIRCUMVENT_ENCAPSULATION
+[ERROR]   location: class io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[15,84] incompatible types: io.github.classgraph.ClassGraph.CircumventEncapsulationMethod.getClass cannot be converted to java.lang.Class<?>
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[16,118] cannot find symbol
+[ERROR]   symbol:   variable CircumventEncapsulationMethod
+[ERROR]   location: class io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[16,230] cannot find symbol
+[ERROR]   symbol:   variable CircumventEncapsulationMethod
+[ERROR]   location: class io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[24,40] cannot find symbol
+[ERROR]   symbol:   class CircumventEncapsulationMethod
+[ERROR]   location: class io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[24,135] cannot find symbol
+[ERROR]   symbol:   variable CircumventEncapsulationMethod
+[ERROR]   location: class io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[25,118] cannot find symbol
+[ERROR]   symbol:   variable CircumventEncapsulationMethod
+[ERROR]   location: class io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[25,236] cannot find symbol
+[ERROR]   symbol:   variable CircumventEncapsulationMethod
+[ERROR]   location: class io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[32,40] cannot find symbol
+[ERROR]   symbol:   class CircumventEncapsulationMethod
+[ERROR]   location: class io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[32,135] cannot find symbol
+[ERROR]   symbol:   variable CIRCUMVENT_ENCAPSULATION
+[ERROR]   location: class io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[33,40] cannot find symbol
+[ERROR]   symbol:   variable CIRCUMVENT_ENCAPSULATION
+[ERROR]   location: class io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[34,40] cannot find symbol
+[ERROR]   symbol:   variable CIRCUMVENT_ENCAPSULATION
+[ERROR]   location: class io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[35,118] cannot find symbol
+[ERROR]   symbol:   variable CircumventEncapsulationMethod
+[ERROR]   location: class io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[35,230] cannot find symbol
+[ERROR]   symbol:   variable CircumventEncapsulationMethod
+[ERROR]   location: class io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[42,40] cannot find symbol
+[ERROR]   symbol:   class CircumventEncapsulationMethod
+[ERROR]   location: class io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[42,135] cannot find symbol
+[ERROR]   symbol:   variable CircumventEncapsulationMethod
+[ERROR]   location: class io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[43,118] cannot find symbol
+[ERROR]   symbol:   variable CircumventEncapsulationMethod
+[ERROR]   location: class io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[43,230] cannot find symbol
+[ERROR]   symbol:   variable CircumventEncapsulationMethod
+[ERROR]   location: class io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[51,66] cannot find symbol
+[ERROR]   symbol:   method enableSystemJarsAndModules()
+[ERROR]   location: variable classGraph0 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[52,66] method verbose in class io.github.classgraph.ClassGraph cannot be applied to given types;
+[ERROR]   required: no arguments
+[ERROR]   found: boolean
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[55,67] cannot find symbol
+[ERROR]   symbol:   method rejectClasses(java.lang.String[])
+[ERROR]   location: variable classGraph4 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[74,66] cannot find symbol
+[ERROR]   symbol:   method enableSystemJarsAndModules()
+[ERROR]   location: variable classGraph0 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[75,29] cannot find symbol
+[ERROR]   symbol:   class ModulePathInfo
+[ERROR]   location: package io.github.classgraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[75,74] cannot find symbol
+[ERROR]   symbol:   method getModulePathInfo()
+[ERROR]   location: variable classGraph1 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[94,66] cannot find symbol
+[ERROR]   symbol:   method enableSystemJarsAndModules()
+[ERROR]   location: variable classGraph0 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[95,66] method verbose in class io.github.classgraph.ClassGraph cannot be applied to given types;
+[ERROR]   required: no arguments
+[ERROR]   found: boolean
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[96,60] cannot find symbol
+[ERROR]   symbol:   method getClasspathURIs()
+[ERROR]   location: variable classGraph3 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[109,66] cannot find symbol
+[ERROR]   symbol:   method enableSystemJarsAndModules()
+[ERROR]   location: variable classGraph0 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[110,66] method verbose in class io.github.classgraph.ClassGraph cannot be applied to given types;
+[ERROR]   required: no arguments
+[ERROR]   found: boolean
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[128,66] cannot find symbol
+[ERROR]   symbol:   method enableSystemJarsAndModules()
+[ERROR]   location: variable classGraph0 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[129,66] method verbose in class io.github.classgraph.ClassGraph cannot be applied to given types;
+[ERROR]   required: no arguments
+[ERROR]   found: boolean
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[149,66] cannot find symbol
+[ERROR]   symbol:   method enableSystemJarsAndModules()
+[ERROR]   location: variable classGraph0 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[150,66] method verbose in class io.github.classgraph.ClassGraph cannot be applied to given types;
+[ERROR]   required: no arguments
+[ERROR]   found: boolean
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[154,66] cannot find symbol
+[ERROR]   symbol:   method enableSystemJarsAndModules()
+[ERROR]   location: variable classGraph6 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[155,66] cannot find symbol
+[ERROR]   symbol:   method enableInterClassDependencies()
+[ERROR]   location: variable classGraph6 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[157,67] cannot find symbol
+[ERROR]   symbol:   method rejectModules(java.lang.String[])
+[ERROR]   location: variable classGraph6 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[160,68] cannot find symbol
+[ERROR]   symbol:   method enableSystemJarsAndModules()
+[ERROR]   location: variable classGraph18 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[161,68] method verbose in class io.github.classgraph.ClassGraph cannot be applied to given types;
+[ERROR]   required: no arguments
+[ERROR]   found: boolean
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[165,68] cannot find symbol
+[ERROR]   symbol:   method enableSystemJarsAndModules()
+[ERROR]   location: variable classGraph24 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[166,68] cannot find symbol
+[ERROR]   symbol:   method enableInterClassDependencies()
+[ERROR]   location: variable classGraph24 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[168,68] cannot find symbol
+[ERROR]   symbol:   method rejectModules(java.lang.String[])
+[ERROR]   location: variable classGraph24 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[170,68] cannot find symbol
+[ERROR]   symbol:   method acceptPackagesNonRecursive(java.lang.String[])
+[ERROR]   location: variable classGraph17 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[197,66] cannot find symbol
+[ERROR]   symbol:   method enableSystemJarsAndModules()
+[ERROR]   location: variable classGraph0 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[198,66] method verbose in class io.github.classgraph.ClassGraph cannot be applied to given types;
+[ERROR]   required: no arguments
+[ERROR]   found: boolean
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[202,67] cannot find symbol
+[ERROR]   symbol:   method rejectClasses(java.lang.String[])
+[ERROR]   location: variable classGraph5 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[219,66] cannot find symbol
+[ERROR]   symbol:   method enableSystemJarsAndModules()
+[ERROR]   location: variable classGraph0 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[221,66] cannot find symbol
+[ERROR]   symbol:   method enableSystemJarsAndModules()
+[ERROR]   location: variable classGraph2 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[222,66] method verbose in class io.github.classgraph.ClassGraph cannot be applied to given types;
+[ERROR]   required: no arguments
+[ERROR]   found: boolean
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[226,66] cannot find symbol
+[ERROR]   symbol:   method enableSystemJarsAndModules()
+[ERROR]   location: variable classGraph8 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[227,67] cannot find symbol
+[ERROR]   symbol:   method enableInterClassDependencies()
+[ERROR]   location: variable classGraph8 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[229,67] cannot find symbol
+[ERROR]   symbol:   method rejectModules(java.lang.String[])
+[ERROR]   location: variable classGraph8 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[233,71] cannot find symbol
+[ERROR]   symbol:   method rejectPackages(java.lang.String[])
+[ERROR]   location: variable classGraph1 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[255,66] cannot find symbol
+[ERROR]   symbol:   method enableSystemJarsAndModules()
+[ERROR]   location: variable classGraph0 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[256,66] method verbose in class io.github.classgraph.ClassGraph cannot be applied to given types;
+[ERROR]   required: no arguments
+[ERROR]   found: boolean
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[260,67] cannot find symbol
+[ERROR]   symbol:   method rejectClasses(java.lang.String[])
+[ERROR]   location: variable classGraph5 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[279,66] cannot find symbol
+[ERROR]   symbol:   method enableSystemJarsAndModules()
+[ERROR]   location: variable classGraph0 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[292,66] cannot find symbol
+[ERROR]   symbol:   method enableSystemJarsAndModules()
+[ERROR]   location: variable classGraph0 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[293,66] cannot find symbol
+[ERROR]   symbol:   method enableInterClassDependencies()
+[ERROR]   location: variable classGraph0 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[295,66] cannot find symbol
+[ERROR]   symbol:   method enableSystemJarsAndModules()
+[ERROR]   location: variable classGraph3 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[296,66] cannot find symbol
+[ERROR]   symbol:   method enableInterClassDependencies()
+[ERROR]   location: variable classGraph3 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[298,67] cannot find symbol
+[ERROR]   symbol:   method rejectModules(java.lang.String[])
+[ERROR]   location: variable classGraph3 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[299,67] cannot find symbol
+[ERROR]   symbol:   method acceptPackages(java.lang.String[])
+[ERROR]   location: variable classGraph0 of type io.github.classgraph.ClassGraph
+[ERROR] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/Bears-202/Buggy-Version/src/test/java/RegressionTest0.java:[301,68] cannot find symbol
+[ERROR]   symbol:   method acceptClasspathElementsContainingResourcePath(java.lang.String[])
+[ERROR]   location: variable classGraph14 of type io.github.classgraph.ClassGraph
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[INFO] Build failures were ignored.

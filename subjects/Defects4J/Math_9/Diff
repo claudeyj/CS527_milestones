@@ -1,0 +1,13 @@
+diff -x ".*" -x .git -x .defects4j.config -ruw /Users/jun/Documents/TA/CS527/milestone_answer/subjects/Defects4J/Math_9/Buggy-Version/src/main/java/org/apache/commons/math3/geometry/euclidean/threed/Line.java /Users/jun/Documents/TA/CS527/milestone_answer/subjects/Defects4J/Math_9/Patched-Version/src/main/java/org/apache/commons/math3/geometry/euclidean/threed/Line.java
+--- /Users/jun/Documents/TA/CS527/milestone_answer/subjects/Defects4J/Math_9/Buggy-Version/src/main/java/org/apache/commons/math3/geometry/euclidean/threed/Line.java	2024-06-05 00:42:07
++++ /Users/jun/Documents/TA/CS527/milestone_answer/subjects/Defects4J/Math_9/Patched-Version/src/main/java/org/apache/commons/math3/geometry/euclidean/threed/Line.java	2024-06-05 00:42:12
+@@ -84,7 +84,8 @@
+      * @return a new instance, with reversed direction
+      */
+     public Line revert() {
+-        final Line reverted = new Line(zero, zero.subtract(direction));
++        final Line reverted = new Line(this);
++        reverted.direction = reverted.direction.negate();
+         return reverted;
+     }
+ 

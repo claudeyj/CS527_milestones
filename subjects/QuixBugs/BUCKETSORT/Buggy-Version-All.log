@@ -1,0 +1,101 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------------< quixbugs:quixbugs >--------------------------
+[INFO] Building quixbugs 1.0-SNAPSHOT
+[INFO]   from pom_for_clover.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ quixbugs ---
+[INFO] Deleting /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/QuixBugs/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ quixbugs ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/QuixBugs/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ quixbugs ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 88 source files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/QuixBugs/target/classes
+[INFO] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/QuixBugs/src/main/java/java_programs/SHUNTING_YARD.java: Some input files use unchecked or unsafe operations.
+[INFO] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/QuixBugs/src/main/java/java_programs/SHUNTING_YARD.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ quixbugs ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/QuixBugs/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ quixbugs ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 97 source files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/QuixBugs/target/test-classes
+[INFO] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/QuixBugs/src/test/java/java_testcases/junit/crt_program/MERGESORT_TEST.java: Some input files use unchecked or unsafe operations.
+[INFO] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/QuixBugs/src/test/java/java_testcases/junit/crt_program/MERGESORT_TEST.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ quixbugs ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running RegressionTest
+[INFO] Tests run: 87, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.135 s - in RegressionTest
+[INFO] Running RegressionTest0
+[INFO] Tests run: 87, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in RegressionTest0
+[INFO] Running java_programs.BUCKETSORT_ESTest
+Warning: the font "Times" is not available, so "Lucida Bright" has been substituted, but may have unexpected appearance or behavor. Re-enable the "Times" font to remove this warning.
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.653 s - in java_programs.BUCKETSORT_ESTest
+[INFO] Running java_testcases.junit.BUCKETSORT_TEST
+[ERROR] Tests run: 6, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 0.111 s <<< FAILURE! - in java_testcases.junit.BUCKETSORT_TEST
+[ERROR] java_testcases.junit.BUCKETSORT_TEST.test_0  Time elapsed: 0.035 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[[1,2,3,5,9,11]]> but was:<[[0,0,0,1,1,1,1,1,1,1,1,1,1,1,2,2,3,3,3,3,3,3,3,3,3,4,5,5,5,5,5]]>
+	at java_testcases.junit.BUCKETSORT_TEST.test_0(BUCKETSORT_TEST.java:9)
+
+[ERROR] java_testcases.junit.BUCKETSORT_TEST.test_1  Time elapsed: 0 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[[2,2,3,3,4],5]> but was:<[[0,0,0,1,1,2,2,2,2,3,3,4,4,4,5,5,5,5],5]>
+	at java_testcases.junit.BUCKETSORT_TEST.test_1(BUCKETSORT_TEST.java:16)
+
+[ERROR] java_testcases.junit.BUCKETSORT_TEST.test_2  Time elapsed: 0 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[[1,1,2,2,3,4,4,6],9,9]> but was:<[[0,1,1,1,2,2,2,2,3,3,3,3,3,3,4,4,4,4,5,5,6,6,6,6,6,6,6,6,6,7,8,8,9,9,9,9,9,9,9],9,9]>
+	at java_testcases.junit.BUCKETSORT_TEST.test_2(BUCKETSORT_TEST.java:23)
+
+[ERROR] java_testcases.junit.BUCKETSORT_TEST.test_3  Time elapsed: 0.002 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[[11,12,13,14,15,16,17,18,19,20]]> but was:<[[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,6,6,7,7,7,7,7,7,7,7,7,7,7,7,7,8,8,8,8,8,8,8,8,8,8,8,8,9,9,9,9,9,9,9,9,9,9,9]]>
+	at java_testcases.junit.BUCKETSORT_TEST.test_3(BUCKETSORT_TEST.java:30)
+
+[ERROR] java_testcases.junit.BUCKETSORT_TEST.test_4  Time elapsed: 0.004 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[[20,21,22,23,24,25,26,27,28,2]9]> but was:<[[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,]9]>
+	at java_testcases.junit.BUCKETSORT_TEST.test_4(BUCKETSORT_TEST.java:37)
+
+[ERROR] java_testcases.junit.BUCKETSORT_TEST.test_5  Time elapsed: 0.047 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[0,[1,2,3,4,5,5,6,7,8,9]]> but was:<[0,[0,0,0,0,0,0,0,1,1,1,1,1,2,2,2,3,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,7,7,7,7,7,7,7,8,8,8,8,9,9,10,10,10,10,10]]>
+	at java_testcases.junit.BUCKETSORT_TEST.test_5(BUCKETSORT_TEST.java:44)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   BUCKETSORT_TEST.test_0:9 expected:<[[1,2,3,5,9,11]]> but was:<[[0,0,0,1,1,1,1,1,1,1,1,1,1,1,2,2,3,3,3,3,3,3,3,3,3,4,5,5,5,5,5]]>
+[ERROR]   BUCKETSORT_TEST.test_1:16 expected:<[[2,2,3,3,4],5]> but was:<[[0,0,0,1,1,2,2,2,2,3,3,4,4,4,5,5,5,5],5]>
+[ERROR]   BUCKETSORT_TEST.test_2:23 expected:<[[1,1,2,2,3,4,4,6],9,9]> but was:<[[0,1,1,1,2,2,2,2,3,3,3,3,3,3,4,4,4,4,5,5,6,6,6,6,6,6,6,6,6,7,8,8,9,9,9,9,9,9,9],9,9]>
+[ERROR]   BUCKETSORT_TEST.test_3:30 expected:<[[11,12,13,14,15,16,17,18,19,20]]> but was:<[[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,6,6,7,7,7,7,7,7,7,7,7,7,7,7,7,8,8,8,8,8,8,8,8,8,8,8,8,9,9,9,9,9,9,9,9,9,9,9]]>
+[ERROR]   BUCKETSORT_TEST.test_4:37 expected:<[[20,21,22,23,24,25,26,27,28,2]9]> but was:<[[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,]9]>
+[ERROR]   BUCKETSORT_TEST.test_5:44 expected:<[0,[1,2,3,4,5,5,6,7,8,9]]> but was:<[0,[0,0,0,0,0,0,0,1,1,1,1,1,2,2,2,3,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,7,7,7,7,7,7,7,8,8,8,8,9,9,10,10,10,10,10]]>
+[INFO] 
+[ERROR] Tests run: 187, Failures: 6, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  15.806 s
+[INFO] Finished at: 2024-06-04T10:25:31+08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.0.0-M5:test (default-test) on project quixbugs: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/QuixBugs/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[INFO] Build failures were ignored.

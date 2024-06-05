@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../style.css');
+        @import url('../../../tree.css');
+        
+    </style>
+
+    <script src="../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../clover.js" type="text/javascript"></script>
+    <script src="../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../cloud.js" type="text/javascript"></script>
+
+            <title>traccar 3.10-SNAPSHOT</title>
+    </head>
+
+<body  onload="onLoad('traccar 3.10-SNAPSHOT: org.traccar.protocol.UproProtocolDecoderTest.java')">
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="https://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="https://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                    <a href="https://www.traccar.org" target="_top">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+                    </a>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                            <a href="https://www.traccar.org" target="_top">
+                                        traccar 3.10-SNAPSHOT
+                                        </a>
+                    </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../" data-package-name="org.traccar.protocol">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="../../../dashboard.html">Project Clover database Wed Jun 5 2024 13:28:40 CST</a></li> 
+        <li><a href="testsrc-pkg-summary.html">        Package org.traccar.protocol</a></li> 
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            File UproProtocolDecoderTest.java
+    </h1>
+
+
+
+
+
+
+
+
+        
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+                <ul class="tabs-menu">
+            <li class="menu-item active-tab">
+                <a href="#tabs-file-source"><strong>Source file</strong></a>
+            </li>
+            <li class="menu-item">
+                <a href="test-UproProtocolDecoderTest.html"><strong>Test results</strong></a>
+            </li>
+        </ul>
+        <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-source">
+        <div>&#160;</div>
+
+        
+                <div style="display: table; width: 100%">
+                        <div style="display: table-cell; ">
+                    <div class="dashboard-widget">
+        <header class="dashboard-widget-header">
+            <h3>Code metrics</h3>
+        </header>
+        <div class="dashboard-widget-content">
+                        
+
+<div id="td-header-stats" class="aui-item" style="display: ">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">0</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">14</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">56</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">37</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.07</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">14</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+</div>
+
+</div>
+                        
+
+<div id="td-filtered-header-stats" class="aui-item" style="display: none">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">0</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">14</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">56</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">37</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.07</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">14</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+</div>
+
+</div>        </div>
+    </div>
+            </div>
+        </div>
+
+        
+        
+
+
+    <h2>Classes</h2>
+
+        <table class="aui aui-table-sortable">
+        <thead>
+                        <tr>     <th>Class</th>
+    <th>Line #</th>
+
+            
+        <th class="">
+            <label  title="The total number of statements.">Total Statements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The percentage of elements that have been filtered from this report.">% Filtered</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label>
+        </th>
+        
+    
+            <th>Actions</th>
+    </tr>         </thead>
+        <tbody>
+                              <tr> <td id="UproProtocolDecoderTest">
+        <span><a href="#6" title="UproProtocolDecoderTest" onclick="closeDialogAndScrollTo('dialog-UproProtocolDecoderTest', '6');">UproProtocolDecoderTest</a></span>
+</td>
+<td>6<a name="sl-6"></a></td>
+    <td class="">14</td>
+    <td class="">0%</td>
+    <td class="">1</td>
+    <td class="">0</td>
+    <td class=""><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+    <td><button data-dialog-id="dialog-UproProtocolDecoderTest" class="aui-button aui-button-link dialog-show-button">Show methods</button></td>
+</tr>                      </tbody>
+    </table>
+
+    
+     
+        <section role="dialog" id="dialog-UproProtocolDecoderTest" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+            
+            <header class="aui-dialog2-header">
+                <h1 class="aui-dialog2-header-main">Class UproProtocolDecoderTest</h1>
+                <div class="aui-dialog2-header-secondary">
+                    <input id="dialog-UproProtocolDecoderTest-method-filter" class="test-filter text" type="text" name="method-filter"
+                           placeholder="Type to filter methods..." autocomplete="off"
+                           onkeyup="filterMethods('dialog-UproProtocolDecoderTest-methods-body', 'dialog-UproProtocolDecoderTest-method-filter');"/>
+                </div>
+            </header>
+
+            
+            <div class="aui-dialog2-content">
+
+                
+
+                <table class="aui aui-table-sortable">
+                                                                                                            
+                    <thead>
+                                                 <tr> <th id="UproProtocolDecoderTest">
+    Class<br/>    <span><a href="#6" title="UproProtocolDecoderTest" onclick="closeDialogAndScrollTo('dialog-UproProtocolDecoderTest', '6');">UproProtocolDecoderTest</a></span>
+</th>
+<th>Line #<br/>6<a name="sl-6"></a></th>
+    <th class=""><label  title="The total number of statements.">Total Statements</label><br/>14</th>
+    <th class=""><label  title="The percentage of elements that have been filtered from this report.">% Filtered</label><br/>0%</th>
+    <th class=""><label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label><br/>1</th>
+    <th class=""><label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label><br/>0</th>
+    <th class=""><label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label><br/><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></th>
+</tr>                     </thead>
+                    <tbody id="dialog-UproProtocolDecoderTest-methods-body">
+                                                                                                            <tr id="UproProtocolDecoderTest-1">
+<td id="summary-8-5">
+ <span class="sortValue">testDecode()&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#8" title="testDecode()&#160;:&#160;void" name="sl-8" onclick="closeDialogAndScrollTo('dialog-UproProtocolDecoderTest', '8');">testDecode()&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">8</span>8</td>
+<td class="" align="right"><span class="sortValue">14.0</span>14</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                         </tbody>
+                </table>
+
+                <div>&#160;</div>
+                
+
+            </div>
+
+            
+            <footer class="aui-dialog2-footer">
+                <div class="aui-dialog2-footer-actions">
+                    <button class="aui-button aui-button-primary dialog-close-button"
+                            data-dialog-id="dialog-UproProtocolDecoderTest">Close</button>
+                </div>
+                <div class="aui-dialog2-footer-hint">Click on a class or a method name to jump to source.</div>
+            </footer>
+        </section>
+
+     
+ 
+        
+        <div>&#160;</div>
+
+<h2>Contributing tests</h2>
+
+    <div>
+                This file is covered by 1 test.
+        <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-link dialog-show-button">
+            Select tests to highlight the test coverage
+        </button>.
+    </div>
+
+<section role="dialog" id="contr-tests-dialog" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+    
+    <header class="aui-dialog2-header">
+        <h1 class="aui-dialog2-header-main">Contributing tests</h1>
+        <div class="aui-dialog2-header-secondary">
+            <input id="test-filter" class="test-filter text" type="text" name="test-filter"
+                   placeholder="Type to filter tests..." autocomplete="off"
+                   onkeyup="filterTests('tests-body', 'test-filter', 3);"/>
+        </div>
+    </header>
+
+    
+    <div class="aui-dialog2-content">
+    
+
+        <p class="aui-buttons">
+            <button title="Selects all tests for this file, highlighting their coverage."
+                    class="aui-button" id="selectalltests">Select all</button>
+        </p>
+
+        <table class="aui aui-table-sortable">
+            <thead id="tests-head">
+            <tr id="testHeaderRow">
+                <th class="aui-table-column-unsortable"></th>
+                <th>
+                    <label title="The percentage of coverage contributed by each single test.">Test contribution</label>
+                </th>
+                <th>
+                    <label title="The test (or test iteration) which was executed.">Test</label>
+                </th>
+                <th>
+                    <label>Result</label>
+                </th>
+                <th class="aui-table-column-unsortable">
+                    <label>Actions</label>
+                </th>
+            </tr>
+            </thead>
+            <tbody id="tests-body">
+
+<tr id="test-142">
+<td><a name="testA-142"></a><input type="checkbox" id="cb-142" value="142" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/traccar/protocol/UproProtocolDecoderTest_testDecode_3y.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-142">  <span class="sortValue">org.traccar.protocol.UproProtocolDecoderTest.testDecode</span><a href="../../../org/traccar/protocol/UproProtocolDecoderTest_testDecode_3y.html" title="View Test Summary Page">org.traccar.protocol.UproProtocolDecoderTest.testDecode</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/traccar/protocol/UproProtocolDecoderTest.html?line=8#src-8" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/traccar/protocol/UproProtocolDecoderTest_testDecode_3y.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+
+            </tbody>
+        </table>
+
+        
+        <div>&#160;</div>
+
+    
+    </div>
+
+    
+    <footer class="aui-dialog2-footer">
+        <div class="aui-dialog2-footer-actions">
+            <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-primary dialog-close-button">Apply</button>
+        </div>
+        <div class="aui-dialog2-footer-hint">Select tests to highlight code covered by them in the source view.</div>
+    </footer>
+</section>
+
+ 
+        
+        
+
+
+
+
+
+<h2>Source view</h2>
+
+
+<div style="display: table; width: 100%;">
+    <div style="display: table-cell">
+        <button class="aui-button aui-button-link"
+                title="Toggles all methods in the source to be either expanded or collapsed."
+                onclick="toggleAllInlineMethods(this); return false;" id="method-expander">
+            Collapse all methods
+        </button>
+    </div>
+    <div style="display: table-cell">
+        <div style="text-align: right; margin-bottom: 10px">
+            <button class="aui-button aui-button-subtle" id="popupHelp">
+    <span class="aui-icon aui-icon-small aui-iconfont-help"></span>&#160;Show legend
+</button>
+<script>
+    AJS.InlineDialog(AJS.$("#popupHelp"), "helpDialog",
+            function(content, trigger, showPopup) {
+                content.css({"padding":"20px"}).html(SRC_FILE_LEGEND_TEXT);
+                showPopup();
+                return false;
+            },
+            {
+                width: 700, hideDelay: 60000
+            }
+    );
+</script>        </div>
+    </div>
+</div>
+
+<table cellspacing="0" cellpadding="0" class="srcView" width="100%">
+
+    
+<tbody> <tr id="l1">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=1#src-1">1</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-1" class="srcLine"><span class="keyword">package</span> org.<a href="../../traccar/pkg-summary.html">traccar</a>.<a href="../protocol/pkg-summary.html">protocol</a>;</span></td>
+</tr>
+ <tr id="l2">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=2#src-2">2</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-2" class="srcLine"></span></td>
+</tr>
+ <tr id="l3">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=3#src-3">3</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-3" class="srcLine"><span class="keyword">import</span> org.junit.Test;</span></td>
+</tr>
+ <tr id="l4">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=4#src-4">4</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-4" class="srcLine"><span class="keyword">import</span> org.<a href="../../traccar/pkg-summary.html">traccar</a>.<a href="../../../org/traccar/ProtocolTest.html#ProtocolTest">ProtocolTest</a>;</span></td>
+</tr>
+ <tr id="l5">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=5#src-5">5</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-5" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="6" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-6' onclick="toggleInlineStats(this, 'inlinestats-6');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-6" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-6'), 'inlinestats-6');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (15)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.07</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l6">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=6#src-6">6</a></td>
+<td align="right" class="coverageCount NoHilight "   onclick="return showTestsForLine(this, 6, 'Tests that hit UproProtocolDecoderTest');" >&#160;&#160;</td>
+<td class=" srcCell" id="id-6"><span class="spacer"></span><span id="src-6" class="srcLine"><span class="keyword">public</span> <span class="keyword">class</span> <a href="../../../org/traccar/protocol/UproProtocolDecoderTest.html#UproProtocolDecoderTest">UproProtocolDecoderTest</a> <span class="keyword">extends</span> <a href="../../../org/traccar/ProtocolTest.html#ProtocolTest">ProtocolTest</a> {</span></td>
+</tr>
+ <tr id="l7">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=7#src-7">7</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-7" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="8" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-8' onclick="toggleInlineStats(this, 'inlinestats-8');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-8" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-8'), 'inlinestats-8');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (14)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.07</td>
+                                    <td class="inlineStat">      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l8">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=8#src-8">8</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 8, 'Tests that hit testDecode()&#160;:&#160;void');" ><span title="Line 8, Col 5: method entered 1 time." class="nolink">&#160;1</span></td>
+<td class=" methodStart  srcCell" id="id-8"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 8,54);" id="img-8" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-8" class="srcLine"><span class="nolink" title="Line 8, Col 5: method entered 1 time.">    @Test</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-8'), 8,54);" id="e8" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l9">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=9#src-9">9</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-9" class="srcLine">    <span class="keyword">public</span> <span class="keyword">void</span> testDecode() <span class="keyword">throws</span> Exception {</span></td>
+</tr>
+ <tr id="l10">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=10#src-10">10</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-10" class="srcLine"></span></td>
+</tr>
+ <tr id="l11">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=11#src-11">11</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 11, 'Tests that hit line # 11');" ><span title="Line 11, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-11" class="srcLine"><span class="nolink" title="Line 11, Col 9: statement executed 1 time.">        <a href="../../../org/traccar/protocol/UproProtocolDecoder.html#UproProtocolDecoder">UproProtocolDecoder</a> decoder = <span class="keyword">new</span> <a href="../../../org/traccar/protocol/UproProtocolDecoder.html#UproProtocolDecoder">UproProtocolDecoder</a>(<span class="keyword">new</span> <a href="../../../org/traccar/protocol/UproProtocol.html#UproProtocol">UproProtocol</a>());</span></span></td>
+</tr>
+ <tr id="l12">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=12#src-12">12</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-12" class="srcLine"></span></td>
+</tr>
+ <tr id="l13">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=13#src-13">13</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 13, 'Tests that hit line # 13');" ><span title="Line 13, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-13" class="srcLine"><span class="nolink" title="Line 13, Col 9: statement executed 1 time.">        verifyPosition(decoder, binary(</span></span></td>
+</tr>
+ <tr id="l14">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=14#src-14">14</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-14" class="srcLine">                <span class="string">&quot;2a4d473230313836383530303032303030343836372c414226413035303032343138313438373536303636303131373732323030303031313132313626583331302c3236302c34383837322c353639312c37333b34383837322c3732322c38363b34383837322c353639332c38383b34383837322c323336332c39303b34383837322c323336322c393726423030303030303030303026573030264e3230265a31342659313430303323&quot;</span>));</span></td>
+</tr>
+ <tr id="l15">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=15#src-15">15</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-15" class="srcLine"></span></td>
+</tr>
+ <tr id="l16">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=16#src-16">16</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 16, 'Tests that hit line # 16');" ><span title="Line 16, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-16" class="srcLine"><span class="nolink" title="Line 16, Col 9: statement executed 1 time.">        verifyPosition(decoder, binary(</span></span></td>
+</tr>
+ <tr id="l17">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=17#src-17">17</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-17" class="srcLine">                <span class="string">&quot;2a4d473230303639333530323030303033353537332c42412641303834313237333332363334353230373033383933373630303030303235313131362642303130303030303030302647303036323030264d393930264e3235264f3035303026433030313a363b363926510411058c0c125c0d0a2fff4237ee614d66454c140826555f50000000000300000000000000000026543139333723&quot;</span>));</span></td>
+</tr>
+ <tr id="l18">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=18#src-18">18</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-18" class="srcLine"></span></td>
+</tr>
+ <tr id="l19">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=19#src-19">19</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 19, 'Tests that hit line # 19');" ><span title="Line 19, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-19" class="srcLine"><span class="nolink" title="Line 19, Col 9: statement executed 1 time.">        verifyPosition(decoder, buffer(</span></span></td>
+</tr>
+ <tr id="l20">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=20#src-20">20</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-20" class="srcLine">                <span class="string">&quot;*MG201693502000035441,BA&amp;A1213073325458307036690710000151116&amp;P0730000032ce4fb3&amp;D1&amp;B0000000000&amp;C005799?7&amp;S3,20161115120025,07035.54659E,3324.87721N,3000,0,0,0,0,847,599,8,40,0,19,20&amp;U_P\0\0\0\0\0\0\0\0\0\0\0\0\0\0&amp;T0107&quot;</span>));</span></td>
+</tr>
+ <tr id="l21">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=21#src-21">21</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-21" class="srcLine"></span></td>
+</tr>
+ <tr id="l22">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=22#src-22">22</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 22, 'Tests that hit line # 22');" ><span title="Line 22, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-22" class="srcLine"><span class="nolink" title="Line 22, Col 9: statement executed 1 time.">        verifyPosition(decoder, buffer(</span></span></td>
+</tr>
+ <tr id="l23">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=23#src-23">23</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-23" class="srcLine">                <span class="string">&quot;*MG201693502000034964,AB&amp;A0800253335360507036975710000091116&amp;P0730000032d2a94d&amp;B0000000000&amp;N13&amp;Z12&amp;U_P\0\0\0\u0004\0\0\0\0\0\0\0\0\0\0&quot;</span>),</span></td>
+</tr>
+ <tr id="l24">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=24#src-24">24</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-24" class="srcLine">                position(<span class="string">&quot;2016-11-09 08:00:25.000&quot;</span>, <span class="keyword">true</span>, -33.58934, -70.61626));</span></td>
+</tr>
+ <tr id="l25">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=25#src-25">25</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-25" class="srcLine"></span></td>
+</tr>
+ <tr id="l26">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=26#src-26">26</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 26, 'Tests that hit line # 26');" ><span title="Line 26, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-26" class="srcLine"><span class="nolink" title="Line 26, Col 9: statement executed 1 time.">        verifyNothing(decoder, buffer(</span></span></td>
+</tr>
+ <tr id="l27">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=27#src-27">27</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-27" class="srcLine">                <span class="string">&quot;*MG20113800138000,AH&quot;</span>));</span></td>
+</tr>
+ <tr id="l28">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=28#src-28">28</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-28" class="srcLine"></span></td>
+</tr>
+ <tr id="l29">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=29#src-29">29</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 29, 'Tests that hit line # 29');" ><span title="Line 29, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-29" class="srcLine"><span class="nolink" title="Line 29, Col 9: statement executed 1 time.">        verifyPosition(decoder, buffer(</span></span></td>
+</tr>
+ <tr id="l30">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=30#src-30">30</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-30" class="srcLine">                <span class="string">&quot;*MG201693502000034964,AB&amp;A0200183324418107033792800009051116&amp;B0000000000&amp;N15&amp;Z94&amp;U_P\0\0\0\0\0\0\0\0\0\0\0\0\0\0&quot;</span>));</span></td>
+</tr>
+ <tr id="l31">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=31#src-31">31</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-31" class="srcLine"></span></td>
+</tr>
+ <tr id="l32">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=32#src-32">32</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 32, 'Tests that hit line # 32');" ><span title="Line 32, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-32" class="srcLine"><span class="nolink" title="Line 32, Col 9: statement executed 1 time.">        verifyPosition(decoder, buffer(</span></span></td>
+</tr>
+ <tr id="l33">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=33#src-33">33</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-33" class="srcLine">                <span class="string">&quot;*MG201693502000034964,AB&amp;A0200543324412007033805910000051116&amp;P0730000032d66785&amp;B0000000000&amp;N15&amp;Z92&amp;U_P\0\0\0\0\0\0\0\0\0\0\0\0\0\0&quot;</span>));</span></td>
+</tr>
+ <tr id="l34">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=34#src-34">34</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-34" class="srcLine"></span></td>
+</tr>
+ <tr id="l35">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=35#src-35">35</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 35, 'Tests that hit line # 35');" ><span title="Line 35, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-35" class="srcLine"><span class="nolink" title="Line 35, Col 9: statement executed 1 time.">        verifyPosition(decoder, buffer(</span></span></td>
+</tr>
+ <tr id="l36">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=36#src-36">36</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-36" class="srcLine">                <span class="string">&quot;*AI2000905447674,BA&amp;A2003064913201201845107561627121016&amp;B0100000000&amp;C05&gt;8=961&amp;F0333&amp;K023101002154A7&quot;</span>));</span></td>
+</tr>
+ <tr id="l37">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=37#src-37">37</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-37" class="srcLine"></span></td>
+</tr>
+ <tr id="l38">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=38#src-38">38</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 38, 'Tests that hit line # 38');" ><span title="Line 38, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-38" class="srcLine"><span class="nolink" title="Line 38, Col 9: statement executed 1 time.">        verifyPosition(decoder, buffer(</span></span></td>
+</tr>
+ <tr id="l39">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=39#src-39">39</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-39" class="srcLine">                <span class="string">&quot;*AI200905300036,AH&amp;A0317264913209801844913060000251115&amp;B0500000000&amp;C0;4?72:9&amp;F0000&quot;</span>),</span></td>
+</tr>
+ <tr id="l40">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=40#src-40">40</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-40" class="srcLine">                position(<span class="string">&quot;2015-11-25 03:17:26.000&quot;</span>, <span class="keyword">false</span>, 49.22016, 18.74855));</span></td>
+</tr>
+ <tr id="l41">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=41#src-41">41</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-41" class="srcLine"></span></td>
+</tr>
+ <tr id="l42">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=42#src-42">42</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 42, 'Tests that hit line # 42');" ><span title="Line 42, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-42" class="srcLine"><span class="nolink" title="Line 42, Col 9: statement executed 1 time.">        verifyPosition(decoder, buffer(</span></span></td>
+</tr>
+ <tr id="l43">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=43#src-43">43</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-43" class="srcLine">                <span class="string">&quot;*AI2000905300036,AS&amp;A1647304913209801844913060000251115&amp;B0400000000&amp;C0;4?72:9&amp;F0000&quot;</span>));</span></td>
+</tr>
+ <tr id="l44">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=44#src-44">44</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-44" class="srcLine"></span></td>
+</tr>
+ <tr id="l45">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=45#src-45">45</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 45, 'Tests that hit line # 45');" ><span title="Line 45, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-45" class="srcLine"><span class="nolink" title="Line 45, Col 9: statement executed 1 time.">        verifyPosition(decoder, buffer(</span></span></td>
+</tr>
+ <tr id="l46">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=46#src-46">46</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-46" class="srcLine">                <span class="string">&quot;*AI2000905300036,AC1&amp;A1648014913209801844913060000251115&amp;B0400000000&amp;C0;4?72:9&amp;F0000&quot;</span>));</span></td>
+</tr>
+ <tr id="l47">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=47#src-47">47</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-47" class="srcLine"></span></td>
+</tr>
+ <tr id="l48">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=48#src-48">48</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 48, 'Tests that hit line # 48');" ><span title="Line 48, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-48" class="srcLine"><span class="nolink" title="Line 48, Col 9: statement executed 1 time.">        verifyPosition(decoder, buffer(</span></span></td>
+</tr>
+ <tr id="l49">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=49#src-49">49</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-49" class="srcLine">                <span class="string">&quot;*AI2000905300036,AB1&amp;A1702464913231101844949860000251115&amp;B0500000000&amp;C0;4?72:9&amp;F0000&quot;</span>));</span></td>
+</tr>
+ <tr id="l50">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=50#src-50">50</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-50" class="srcLine"></span></td>
+</tr>
+ <tr id="l51">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=51#src-51">51</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 51, 'Tests that hit line # 51');" ><span title="Line 51, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-51" class="srcLine"><span class="nolink" title="Line 51, Col 9: statement executed 1 time.">        verifyPosition(decoder, buffer(</span></span></td>
+</tr>
+ <tr id="l52">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=52#src-52">52</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-52" class="srcLine">                <span class="string">&quot;*AI2000905300036,AD1&amp;A1703054913231101844949860000251115&amp;B0500000000&amp;C0;4?72:9&amp;F0000&quot;</span>));</span></td>
+</tr>
+ <tr id="l53">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=53#src-53">53</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-53" class="srcLine"></span></td>
+</tr>
+ <tr id="l54">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=54#src-54">54</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-54" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l55">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=55#src-55">55</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-55" class="srcLine"></span></td>
+</tr>
+ <tr id="l56">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=56#src-56">56</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-56" class="srcLine">}</span></td>
+</tr>
+ 
+    </tbody></table>    </div>
+</div><!-- .aui-tabs -->
+
+<script type="text/javascript"> 
+    var ol_bgclass = "overBG";
+    var ol_fgclass = "overFG";
+    var ol_cgclass = "overCaption";
+    var ol_captionfontclass= "overCaption";
+    var ol_closefontclass = "closeFont";
+    var ol_closeclick = 1;
+    var ol_close = 'X';
+    var ol_wrap = 1;
+    var rootRelPath = '../../../';
+    var testsPerFile = -1;
+</script>
+<script src="UproProtocolDecoderTest.js" type="text/javascript"></script>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="https://openclover.org">OpenClover</a> v 4.5.2
+                on Wed Jun 5 2024 13:29:12 CST using coverage data from Wed Jun 5 2024 13:29:08 CST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

@@ -1,0 +1,2 @@
+QuixBugs version: 4257f44b0ff1181dedaedee6a447e133219fcebf
+Bears version: f69ba79793e8dc05888e588660d8e3bb74538d79

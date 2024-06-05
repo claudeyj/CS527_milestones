@@ -1,0 +1,86 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< org.apache.commons:commons-lang3 >------------------
+[INFO] Building Apache Commons Lang 3.6-SNAPSHOT
+[INFO]   from pom_for_clover.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ commons-lang3 ---
+[INFO] Deleting /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/apache-commons-lang-224267191/Buggy-Version/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-3) @ commons-lang3 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.10:parse-version (parse-version) @ commons-lang3 ---
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.8:run (javadoc.resources) @ commons-lang3 ---
+[INFO] Executing tasks
+
+main:
+     [copy] Copying 2 files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/apache-commons-lang-224267191/Buggy-Version/target/apidocs/META-INF
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ commons-lang3 ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ commons-lang3 ---
+[INFO] Executing: /bin/sh -c cd '/Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/apache-commons-lang-224267191/Buggy-Version' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/apache-commons-lang-224267191/Buggy-Version
+[INFO] Storing buildNumber: 314b6b56bec4af56dba667d66a25c1613f4bc800 at timestamp: 1717568610005
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/apache-commons-lang-224267191/Buggy-Version' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/apache-commons-lang-224267191/Buggy-Version
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ commons-lang3 ---
+[INFO] Using 'ISO-8859-1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/apache-commons-lang-224267191/Buggy-Version/src/main/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ commons-lang3 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 155 source files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/apache-commons-lang-224267191/Buggy-Version/target/classes
+[INFO] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/apache-commons-lang-224267191/Buggy-Version/src/main/java/org/apache/commons/lang3/ObjectUtils.java: Some input files use or override a deprecated API.
+[INFO] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/apache-commons-lang-224267191/Buggy-Version/src/main/java/org/apache/commons/lang3/ObjectUtils.java: Recompile with -Xlint:deprecation for details.
+[INFO] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/apache-commons-lang-224267191/Buggy-Version/src/main/java/org/apache/commons/lang3/text/StrBuilder.java: Some input files use unchecked or unsafe operations.
+[INFO] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/apache-commons-lang-224267191/Buggy-Version/src/main/java/org/apache/commons/lang3/text/StrBuilder.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.0.1:manifest (bundle-manifest) @ commons-lang3 ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (checkAPIcompatibility) @ commons-lang3 ---
+[INFO] Signature checking is skipped.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ commons-lang3 ---
+[INFO] Using 'ISO-8859-1' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ commons-lang3 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 185 source files to /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/apache-commons-lang-224267191/Buggy-Version/target/test-classes
+[INFO] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/apache-commons-lang-224267191/Buggy-Version/src/test/java/org/apache/commons/lang3/StringEscapeUtilsTest.java: Some input files use or override a deprecated API.
+[INFO] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/apache-commons-lang-224267191/Buggy-Version/src/test/java/org/apache/commons/lang3/StringEscapeUtilsTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/apache-commons-lang-224267191/Buggy-Version/src/test/java/org/apache/commons/lang3/reflect/MethodUtils_ESTest.java: /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/apache-commons-lang-224267191/Buggy-Version/src/test/java/org/apache/commons/lang3/reflect/MethodUtils_ESTest.java uses unchecked or unsafe operations.
+[INFO] /Users/jun/Documents/TA/CS527/milestone_answer/workspace/milestone3/apache-commons-lang-224267191/Buggy-Version/src/test/java/org/apache/commons/lang3/reflect/MethodUtils_ESTest.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ commons-lang3 ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running RegressionTest
+Tests run: 43, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.14 sec - in RegressionTest
+Running RegressionTest0
+Tests run: 43, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in RegressionTest0
+
+Results :
+
+Tests run: 86, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  27.648 s
+[INFO] Finished at: 2024-06-05T14:23:53+08:00
+[INFO] ------------------------------------------------------------------------

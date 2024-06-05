@@ -1,0 +1,17 @@
+--- /Users/jun/Documents/TA/CS527/milestone_answer/subjects/QuixBugs/BUCKETSORT/Buggy-Version/java_programs/BUCKETSORT.java	2024-06-05 00:16:05
++++ /Users/jun/Documents/TA/CS527/milestone_answer/subjects/QuixBugs/BUCKETSORT/Patched-Version/correct_java_programs/BUCKETSORT.java	2024-06-05 00:16:05
+@@ -1,4 +1,4 @@
+-package java_programs;
++package correct_java_programs;
+ import java.util.*;
+ 
+ /*
+@@ -19,7 +19,7 @@
+ 
+         ArrayList<Integer> sorted_arr = new ArrayList<Integer>(100);
+         int i = 0;
+-        for (Integer count : arr) { // arr is counts in fixed version
++        for (Integer count : counts) {
+             sorted_arr.addAll(Collections.nCopies(count, i));
+             i++;
+         }
